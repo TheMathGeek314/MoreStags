@@ -206,6 +206,7 @@
     "name": "Stag-Mantis_Village",
     "logic": "*Dirtmouth_Stag"
   },
+  //Godhome
   {
     "name": "Stag-God_Spring",
     "logic": "*Dirtmouth_Stag"
@@ -218,6 +219,14 @@
     "name": "Stag-Blue_Room",
     "logic": "*Dirtmouth_Stag"
   },
+  //Greenpath
+  //Hive
+  //Cliffs
+  //Edge
+  //Gardens
+  //Grounds
+  //Waterways
+  //Palace
   {
     "name": "Stag-",
     "logic": "*Dirtmouth_Stag"
