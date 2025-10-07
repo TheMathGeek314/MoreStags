@@ -1,0 +1,225 @@
+[
+  //Basin/Abyss
+  {
+    "name": "Stag-Monarch_Wings",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Mawlurks",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Ancient_Basin",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Lower_Tramway",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Broken_Bridge",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-The_Abyss",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Void_Tendrils",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Birthplace",
+    "logic": "*Dirtmouth_Stag"
+  },
+  //City
+  {
+    "name": "Stag-Flooded_Station",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-East_Elevator",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Memorial",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Watcher's_Spire",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Office",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Triple_Gate",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Lower_Storerooms",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Rafters",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Soul_Sanctum",
+    "logic": "*Dirtmouth_Stag"
+  },
+  //Peak
+  {
+    "name": "Stag-Hallownest's_Crown",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Overlook",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Crystal_Corridor",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Mine_Entrance",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Conga_Line",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Crystallised_Mound",
+    "logic": "*Dirtmouth_Stag"
+  },
+  //Deepnest
+  {
+    "name": "Stag-Weavers'_Den",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Galien",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Failed_Tramway",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Garpedes",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Labyrinth",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Shadow_Gauntlet",
+    "logic": "*Dirtmouth_Stag"
+  },
+  //Fog Canyon
+  {
+    "name": "Stag-Fog_Canyon",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Archives_Entrance",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Teacher's_Archives",
+    "logic": "*Dirtmouth_Stag"
+  },
+  //Crossroads
+  {
+    "name": "Stag-East_Crossroads",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Goams",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Southwest_Crossroads",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Brooding_Mawlek",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-False_Knight",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Grubfather",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Myla",
+    "logic": "*Dirtmouth_Stag"
+  },
+  //Fungal Wastes
+  {
+    "name": "Stag-Upper_Wastes",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Elder_Hu",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Pilgrim's_Way",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-City_Gate",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Fungal_Nexus",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Mantis_Outskirts",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Bretta",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Fungal_Colony",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Fungal_Core",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Fungal_Elder",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Mantis_Village",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-God_Spring",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Hall_of_Gods",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Blue_Room",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-",
+    "logic": "*Dirtmouth_Stag"
+  }
+]
