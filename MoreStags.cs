@@ -74,10 +74,10 @@ namespace MoreStags {
         //temporary until I get real generation
         private void simulateGeneration(LocalData ld) {
             foreach(StagData data in StagData.allStags) {
-                if(data.name != "Greenpath" && data.name != "City 1") {
+                if(data.name != "Greenpath" && data.name != "City 1" && data.name != "Crossroads" && data.name != "Royal Gardens") {
                     ld.activeStags.Add(data);//maintain original order or re-sort by position later
+                    ld.opened.Add(data.name, data.name == "Dirtmouth");
                 }
-                ld.opened.Add(data.name, data.name == "Dirtmouth");
             }
         }
 
@@ -143,7 +143,7 @@ namespace MoreStags {
                 }
             }
             else if(self.FsmName == "Stag Control") {
-                if(StagData.dataByRoom.TryGetValue(self.gameObject.scene.name, out StagData data) && !data.isVanilla) {
+                if(StagData.dataByRoom.TryGetValue(self.gameObject.scene.name, out StagData data) && !data.isVanilla && data.isActive(localData)) {
                     if(ModHooks.GetMod("QoL") is Mod) {
                         QolStagArrive(self);
                     }
@@ -205,34 +205,7 @@ namespace MoreStags {
                 self.FsmVariables.GetFsmBool("Always Active").Value = true;
             }
             else if(self.FsmName == "Conversation Control" && self.gameObject.name == "Stag") {
-                FsmEvent msEvent = new FsmEvent("MS Custom");
-                FsmState customConvo = self.AddState("MS Custom");
-                FsmState convoChoice = self.GetValidState("Convo Choice");
-                convoChoice.AddTransition("MS Custom", customConvo.Name);
-                convoChoice.InsertAction(new IntCompare {
-                    integer1 = self.FsmVariables.GetFsmInt("Location"),
-                    integer2 = new FsmInt { Value = 10 },
-                    greaterThan = msEvent,
-                    everyFrame = false
-                }, 5);
-                customConvo.AddTransition("CONVO_FINISH", "Talk End Anim");
-                CallMethodProper cmpTemplate = self.GetValidState("Resting Grounds").GetFirstActionOfType<CallMethodProper>();
-                SetBoolValue sbvTemplate = self.GetValidState("Resting Grounds").GetFirstActionOfType<SetBoolValue>();
-                customConvo.AddAction(new CallMethodProper {
-                    gameObject = cmpTemplate.gameObject,
-                    behaviour = cmpTemplate.behaviour,
-                    methodName = cmpTemplate.methodName,
-                    parameters = [
-                        new FsmVar { Type = VariableType.String, stringValue = "STAG_RESTINGGROUNDS" },//make a better dialogue later, this just avoids locks
-                        new FsmVar { Type = VariableType.String, stringValue = "Stag" }
-                    ],
-                    storeResult = cmpTemplate.storeResult
-                });
-                customConvo.AddAction(new SetBoolValue {
-                    boolVariable = sbvTemplate.boolVariable,
-                    boolValue = new FsmBool { Value = true },
-                    everyFrame = false
-                });
+                self.GetValidState("Convo Choice").AddTransition("FINISHED", "Exhausted");
             }
             else if(self.gameObject.name == "UI List Stag" && self.FsmName == "ui_list") {
                 //maybe not needed but it tells "Stag Map-Control" to "UI SELECTION MADE" in Notify.SendEventByName
@@ -258,7 +231,7 @@ namespace MoreStags {
         }
 
         private void addCustomStagFsmEdits(PlayMakerFSM self) {
-            self.GetValidState("Init").InsertCustomAction(() => { self.FsmVariables.GetFsmInt("Items").Value = localData.activeStags.Count + 1; }, 14);
+            self.GetValidState("Init").InsertCustomAction(() => { self.FsmVariables.GetFsmInt("Items").Value = 11 + localData.activeStags.Where(stag => !stag.isVanilla && stag.isActive(localData)).Count(); }, 14);
 
             //edit vanilla translations
             FsmFloat spaceToMoveUp = self.FsmVariables.GetFsmFloat("Space to move up");
@@ -417,7 +390,7 @@ namespace MoreStags {
 }
 
 //--bugs--
-//conversation softlock (WIP)
+//none known at this point
 
 //--todo--
 //figure out how I want to group things (exclusions/regions, limited count?, scrolling/compressed menu?)
@@ -442,3 +415,9 @@ namespace MoreStags {
 //setting to avoid vanilla stag locations (excluding dirtmouth/stagnest)
 //consider "vanilla" support
 //      stags not rando'd items/locations but still a different active set
+
+//--menu plans--
+//   Enabled (with either a description or a clearer name)
+//   Selection (balanced/distributed, random, all?)
+//   Avoid vanilla / prefer custom
+//   Disable/prevent cursed locations

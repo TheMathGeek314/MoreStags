@@ -1,4 +1,7 @@
 # MoreStags
 
 A mod for the game Hollow Knight.
-Something about not using the vanilla openedX variables, incompatibilities with bingo goals, achievements, etc.
+Some explanation about how enabling MoreStags doesn't enable stags
+Some description of what the generation settings do
+Description about preferring custom locations (clarification about Dirtmouth/Stag Nest)
+Explanation of cursed locations toggle

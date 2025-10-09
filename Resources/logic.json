@@ -220,6 +220,42 @@
     "logic": "*Dirtmouth_Stag"
   },
   //Greenpath
+  {
+    "name": "Stag-Waterfall_East",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Waterfall_West",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Hunter",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Artist's_Approach",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Moss_Knight",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Central_Greenpath",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Gulkas",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Stone_Sanctuary",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Durandoos",
+    "logic": "*Dirtmouth_Stag"
+  },
   //Hive
   //Cliffs
   //Edge
