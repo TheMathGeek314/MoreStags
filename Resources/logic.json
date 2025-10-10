@@ -257,14 +257,174 @@
     "logic": "*Dirtmouth_Stag"
   },
   //Hive
+  {
+    "name": "Stag-Hive_Entryway",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Honey_Tree",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Library",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Stash",
+    "logic": "*Dirtmouth_Stag"
+  },
   //Cliffs
+  {
+    "name": "Stag-Mato",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Wasteland",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Baldur_Shell",
+    "logic": "*Dirtmouth_Stag"
+  },
   //Edge
+  {
+    "name": "Stag-Lower_Kingdom's_Edge",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Hoppers",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Scarecrow",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Quick_Slash",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Camp",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Bardoon",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Pale_Lurker",
+    "logic": "*Dirtmouth_Stag"
+  },
   //Gardens
+  {
+    "name": "Stag-Droppers",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Garden_Respite",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Love_Key",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Loodles",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-White_Lady",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Upper_Gardens",
+    "logic": "*Dirtmouth_Stag"
+  },
   //Grounds
+  {
+    "name": "Stag-Dreamshield",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Shrine_of_Believers",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Grey_Mourner",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Upper_Tram",
+    "logic": "*Dirtmouth_Stag"
+  },
   //Waterways
+  {
+    "name": "Stag-Flukemarm",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-East_Waterways",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Isma's_Grove",
+    "logic": "*Dirtmouth_Stag"
+  },
   //Palace
   {
-    "name": "Stag-",
+    "name": "Stag-Palace_Entrance",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Palace_Foyer",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Palace_Atrium",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Right_Atrium_Far",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Right_Atrium_Near",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Lower_Left_Atrium",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Upper_Left_Atrium",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Path_of_Pain_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Path_of_Pain_3",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Path_of_Pain_4",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Balcony",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Upper_Balcony",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Workshop",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stag-Nursery",
     "logic": "*Dirtmouth_Stag"
   }
 ]
