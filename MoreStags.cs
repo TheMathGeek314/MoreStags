@@ -9,11 +9,16 @@ using UnityEngine.SceneManagement;
 using HutongGames.PlayMaker;
 using HutongGames.PlayMaker.Actions;
 using Satchel;
+using MoreStags.Rando;
 
 namespace MoreStags {
-    public class MoreStags: Mod, ILocalSettings<LocalData> {
+    public class MoreStags: Mod, ILocalSettings<LocalData>, IGlobalSettings<GlobalSettings> {
         new public string GetName() => "MoreStags";
         public override string GetVersion() => "1.0.0.0";
+
+        public static GlobalSettings Settings { get; set; } = new();
+        public void OnLoadGlobal(GlobalSettings s) => Settings = s;
+        public GlobalSettings OnSaveGlobal() => Settings;
 
         public static LocalData localData { get; set; } = new();
         public void OnLoadLocal(LocalData d) => localData = d;
@@ -59,6 +64,11 @@ namespace MoreStags {
                     break;
                 }
             }
+
+            RandoInterop.Hook();
+            if(ModHooks.GetMod("DebugMod") is Mod) {
+                DebugInterop.HookDebug();
+            }
         }
 
         public override List<(string, string)> GetPreloadNames() {
@@ -71,14 +81,14 @@ namespace MoreStags {
             };
         }
 
-        //temporary until I get real generation
+        //temporary until I get real generation (only works on new save files)
         private void simulateGeneration(LocalData ld) {
             foreach(StagData data in StagData.allStags) {
-                if(data.name != "Greenpath" && data.name != "City 1" && data.name != "Crossroads" && data.name != "Royal Gardens") {
-                    ld.activeStags.Add(data);//maintain original order or re-sort by position later
-                    ld.opened.Add(data.name, data.name == "Dirtmouth");
-                }
+                ld.activeStags.Add(data);//all of 'em
+                ld.opened.Add(data.name, false);
+                //vanilla stags don't use this list, otherwise ["Dirtmouth"]=true
             }
+            ld.activeStags.Sort((a, b) => a.positionNumber.CompareTo(b.positionNumber));
         }
 
         private void earlySceneChange(Scene arg0, Scene arg1) {
@@ -208,7 +218,8 @@ namespace MoreStags {
                 self.GetValidState("Convo Choice").AddTransition("FINISHED", "Exhausted");
             }
             else if(self.gameObject.name == "UI List Stag" && self.FsmName == "ui_list") {
-                //maybe not needed but it tells "Stag Map-Control" to "UI SELECTION MADE" in Notify.SendEventByName
+                self.GetValidState("Activate").InsertCustomAction(() => scrollStagMenu(self, "Initial Item"), 1);
+                self.GetValidState("Update").InsertCustomAction(() => scrollStagMenu(self, "Current Item"), 0);
             }
             else if(self.gameObject.name == "Stag Map(Clone)" && self.FsmName == "Control") {
                 //likely not needed but it responds to UI SELECTION MADE and sends CONTINUE
@@ -226,7 +237,7 @@ namespace MoreStags {
                 newUI.GetComponent<TextMeshPro>().SetText(data.name);
                 newUI.LocateMyFSM("ui_list_item").FsmVariables.GetFsmInt("Item Number").Value = data.positionNumber;
                 newUI.LocateMyFSM("ui_list_item").FsmVariables.GetFsmString("Selection Name").Value = $"MoreStags {data.name}";
-                uiGameobjectDict.Add(data.name, getOwnerFromGameObject(newUI));
+                uiGameobjectDict.Add(data.name, new FsmOwnerDefault { GameObject = new FsmGameObject { Value = newUI }, OwnerOption = OwnerDefaultOption.SpecifyGameObject });
             }
         }
 
@@ -337,8 +348,13 @@ namespace MoreStags {
             lastInitial.AddTransition("FINISHED", "Set Initial Item");
         }
 
-        private FsmOwnerDefault getOwnerFromGameObject(GameObject gameObject) {
-            return new FsmOwnerDefault { GameObject = new FsmGameObject { Value = gameObject }, OwnerOption = OwnerDefaultOption.SpecifyGameObject };
+        private void scrollStagMenu(PlayMakerFSM self, string itemName) {
+            int openedCount = self.FsmVariables.GetFsmInt("Items").Value;
+            if(openedCount > 11) {
+                int currentSelection = self.FsmVariables.GetFsmInt(itemName).Value;
+                float toTranslate = (currentSelection - 1f) * (openedCount - 11f) / (openedCount - 1f);
+                self.gameObject.transform.localPosition = new Vector3(-2, 0.52f + toTranslate * 0.7908f, -1);
+            }
         }
 
         private void QolStagArrive(PlayMakerFSM self) {
@@ -382,28 +398,19 @@ namespace MoreStags {
             Finish();
         }
     }
-
-    public class LocalData {
-        public Dictionary<string, bool> opened = new();
-        public List<StagData> activeStags = new();
-    }
 }
 
 //--bugs--
 //none known at this point
 
 //--todo--
-//figure out how I want to group things (exclusions/regions, limited count?, scrolling/compressed menu?)
-//settle on a region order
 //add all the rando stuff
 //      the menu with settings
 //      the generation options
 //      item and location definitions
 //      make sure the stag locations grant items and the stag items open the locations
 //      logic definitions (or at least filler data)
-//finish naming locations
 //populate the json with every location
-//explore scrolling menu or compressed list size
 
 //stag settings options and notes:
 //dirtmouth is always active, stagnest is always active unless enemy pogos are on probably
@@ -418,6 +425,28 @@ namespace MoreStags {
 
 //--menu plans--
 //   Enabled (with either a description or a clearer name)
-//   Selection (balanced/distributed, random, all?)
+//   Selection (balanced/distributed, random, all)
 //   Avoid vanilla / prefer custom
 //   Disable/prevent cursed locations
+
+//--costs and order and grouping--
+//   Crossroads - 50
+//   East Greenpath - 130
+//   West Greenpath - 140
+//   Canyon - 250
+//   Upper Fungal - 120
+//   Lower Fungal - 130
+//   Gardens - 200
+//   West City - 200
+//   East City - 300
+//   Waterways - 300
+//   Peak - 250
+//   Grounds - 170
+//   Edge - 350
+//   Hive - 350
+//   Deepnest - 250
+//   Basin - 300
+//   Abyss - 400
+//   Cliffs - 170
+//   Palace - 450
+//   Godhome - 450

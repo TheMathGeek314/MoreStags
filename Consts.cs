@@ -2,21 +2,8 @@
 
 namespace MoreStags {
     public static class Consts {
-        /*public static readonly List<string> VanillaStagNames = [
-            "Dirtmouth",
-            "Crossroads",
-            "Greenpath",
-            "Fungal Wastes",
-            "Royal Gardens",
-            "City 1",
-            "Kings Station",
-            "Resting Grounds",
-            "Deepnest",
-            "Hidden Station",
-            "Stag Nest"
-        ];*/
-
         public static readonly Dictionary<string, string> OpenedNames = new() {
+            { "Dirtmouth", "openedTown" },
             { "Crossroads", "openedCrossroads" },
             { "Greenpath", "openedGreenpath" },
             { "Fungal Wastes", "openedFungalWastes" },

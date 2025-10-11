@@ -14,7 +14,7 @@ namespace MoreStags {
 
         public string name;
         public string scene;
-        public string region;//needed?
+        public string region;
         public int cost;
         public int positionNumber;
         public JsonVector2 _bellCoords;
@@ -26,8 +26,8 @@ namespace MoreStags {
         public JsonVector2 _markerPosition;
         public Vector2 markerPosition;
         public bool leftSide;
-        public bool isVanilla;
-        //public Dictionary<LocalData, bool> isActive;//idk if this will work right
+        public bool isVanilla = false;
+        public bool isCursed = false;
         public string[] objectsToRemove;
         public string[] enemiesToRemove;
         //public float stagScale;
@@ -35,7 +35,6 @@ namespace MoreStags {
 
         public void translate() {
             allStags.Add(this);
-            //opened.Add(name, name == "Dirtmouth");
             positionNumber = posNum++;
             dataByRoom.Add(scene, this);
             if(!isVanilla) {
@@ -52,12 +51,6 @@ namespace MoreStags {
             if(enemiesToRemove == null)
                 enemiesToRemove = [];
         }
-
-        //consider using this to ensure the random activations stay in order
-        /*public void activate(LocalData ld) {
-            ld.activeStags.Add(this);
-            //isActive[ld] = true;
-        }*/
 
         public bool isActive(LocalData ld) {
             return ld.activeStags.Contains(this);

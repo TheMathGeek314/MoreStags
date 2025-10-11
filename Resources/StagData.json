@@ -2,6 +2,7 @@
   {
     "name": "Dirtmouth",
     "scene": "Room_Town_Stag_Station",
+    "region": "Dirtmouth",
     "_markerPosition": {
       "x": 1860,
       "y": 570
@@ -11,6 +12,7 @@
   {
     "name": "Crossroads",
     "scene": "Crossroads_47",
+    "region": "Crossroads",
     "_markerPosition": {
       "x": 2122,
       "y": 811
@@ -20,6 +22,7 @@
   {
     "name": "Greenpath",
     "scene": "Fungus1_16_alt",
+    "region": "West Greenpath",
     "_markerPosition": {
       "x": 811,
       "y": 696
@@ -29,6 +32,7 @@
   {
     "name": "Fungal Wastes",
     "scene": "Fungus2_02",
+    "region": "Upper Fungal",
     "_markerPosition": {
       "x": 1329,
       "y": 1326
@@ -38,6 +42,7 @@
   {
     "name": "Royal Gardens",
     "scene": "Fungus3_40",
+    "region": "Gardens",
     "_markerPosition": {
       "x": 760,
       "y": 1247
@@ -47,6 +52,7 @@
   {
     "name": "City 1",
     "scene": "Ruins1_29",
+    "region": "West City",
     "_markerPosition": {
       "x": 2254,
       "y": 1160
@@ -56,6 +62,7 @@
   {
     "name": "Kings Station",
     "scene": "Ruins2_08",
+    "region": "East City",
     "_markerPosition": {
       "x": 3192,
       "y": 1518
@@ -65,6 +72,7 @@
   {
     "name": "Resting Grounds",
     "scene": "RestingGrounds_09",
+    "region": "Grounds",
     "_markerPosition": {
       "x": 3224,
       "y": 784
@@ -74,6 +82,7 @@
   {
     "name": "Deepnest",
     "scene": "Deepnest_09",
+    "region": "Deepnest",
     "_markerPosition": {
       "x": 481,
       "y": 1647
@@ -83,6 +92,7 @@
   {
     "name": "Hidden Station",
     "scene": "Abyss_22",
+    "region": "Basin",
     "_markerPosition": {
       "x": 2935,
       "y": 2032
@@ -92,6 +102,7 @@
   {
     "name": "Stag Nest",
     "scene": "Cliffs_03",
+    "region": "Cliffs",
     "_markerPosition": {
       "x": 1112,
       "y": 284
@@ -101,7 +112,7 @@
   {
     "name": "Crown",
     "scene": "Mines_34",
-    "region": "Crystal Peak",
+    "region": "Peak",
     "cost": 420,
     "_bellCoords": {
       "x": 105,
@@ -117,13 +128,12 @@
       "y": 155
     },
     "leftSide": true,
-    "isVanilla": false,
     "enemiesToRemove": [ "Crystal Crawler" ]
   },
   {
     "name": "Bardoon",
     "scene": "Deepnest_East_04",
-    "region": "Kingdom's Edge",
+    "region": "Edge",
     "cost": "350",
     "_bellCoords": {
       "x": 31,
@@ -139,7 +149,6 @@
       "y": 1281
     },
     "leftSide": false,
-    "isVanilla": false,
     "objectsToRemove": [ "deep_bottle_01 (10)", "white_ash_scenery_0002_3 (24)" ]
   },
   {
@@ -161,7 +170,6 @@
       "y": 2051
     },
     "leftSide": true,
-    "isVanilla": false,
-    "objectsToRemove": ["_0052_white (11)", "_0051_white (13)", "_0050_white (9)", "palace_root1 (6)"]
+    "objectsToRemove": [ "_0052_white (11)", "_0051_white (13)", "_0050_white (9)", "palace_root1 (6)" ]
   }
 ]
