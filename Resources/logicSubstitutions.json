@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Abyss_17[top1]",
+        "old": "Abyss_17[top1]",
+        "replacement": "Abyss_17[top1] | Stag-Lower_Tramway + Can_Stag"
+    },
+    {
+        "name": "Ancient_Basin_Map",
+        "old": "Abyss_04[top1]",
+        "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
+    },
+    {
+        "name": "Geo_Rock-Broken_Bridge_Lower",
+        "old": "Abyss_02[right1]",
+        "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag"
+    },
+    {
+        "name": "Geo_Rock-Broken_Bridge_Upper",
+        "old": "Abyss_02[right1]",
+        "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag"
+    },
+    {
+        "name": "Grimmkin_Flame-Ancient_Basin",
+        "old": "Abyss_02[right1]",
+        "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag + (RIGHTCLAW | WINGS | RIGHTDASH | RIGHTSUPERDASH | ENEMYPOGOS)"
+    },
+    {
+        "name": "Grub-Basin_Requires_Dive",
+        "old": "Abyss_17[top1]",
+        "replacement": "Abyss_17[top1] | Stag-Lower_Tramway + Can_Stag"
+    },
+    {
+        "name": "Monarch_Wings",
+        "old": "Abyss_21[right1]",
+        "replacement": "Abyss_21[right1] | Stag-Monarch_Wings + Can_Stag"
+    },
+    {
+        "name": "Mr_Mushroom-Ancient_Basin",
+        "old": "Abyss_21[right1]",
+        "replacement": "Abyss_21[right1] | Stag-Monarch_Wings + Can_Stag"
+    },
+    {
+        "name": "Pale_Ore-Basin",
+        "old": "Abyss_17[top1]",
+        "replacement": "Abyss_17[top1] | Stag-Lower_Tramway + Can_Stag"
+    },
+    {
+        "name": "Soul_Totem-Basin",
+        "old": "Abyss_04[top1]",
+        "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
+    },
+    {
+        "name": "Vessel_Fragment-Basin",
+        "old": "Abyss_04[top1]",
+        "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
+    },
+    {
+        "name": "Wanderer's_Journal-Ancient_Basin",
+        "old": "Abyss_02[right1]",
+        "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag + (RIGHTCLAW | WINGS | RIGHTDASH | RIGHTSUPERDASH | ENEMYPOGOS)"
+    }
+]

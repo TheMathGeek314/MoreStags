@@ -2,35 +2,35 @@
   //Basin/Abyss
   {
     "name": "Stag-Monarch_Wings",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Abyss_21[right1] | Stag-Monarch_Wings + Can_Stag"
   },
   {
     "name": "Stag-Mawlurks",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Abyss_20[top1] | Abyss_20[top2] + (LEFTCLAW | ENEMYPOGOS + WINGS) | Stag-Mawlurks + Can_Stag"
   },
   {
     "name": "Stag-Ancient_Basin",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Abyss_04 + (ANYCLAW | WINGS + ENEMYPOGOS) | Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
   },
   {
     "name": "Stag-Lower_Tramway",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Abyss_17[top1] + (ANYCLAW | WINGS | DAMAGEBOOSTS + $TAKEDAMAGE) | Stag-Lower_Tramway + Can_Stag"
   },
   {
     "name": "Stag-Broken_Bridge",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Abyss_02[right1] | (Abyss_02[bot1] + (LEFTCLAW | WINGS)) | Stag-Broken_Bridge + Can_Stag"
   },
   {
     "name": "Stag-The_Abyss",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Abyss_06[top1] + BRAND | Stag-The_Abyss + Can_Stag | Abyss_06_Core + (FULLCLAW + FULLDASH | WINGS)"
   },
   {
     "name": "Stag-Void_Tendrils",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Abyss_09[right3] | Stag-Void_Tendrils + Can_Stag"
   },
   {
     "name": "Stag-Birthplace",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Abyss_15[top1] | Stag-Birthplace + Can_Stag"
   },
   //City
   {
