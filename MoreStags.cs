@@ -1,15 +1,15 @@
 ﻿using Modding;
+using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Reflection;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using HutongGames.PlayMaker;
 using HutongGames.PlayMaker.Actions;
+using ItemChanger;
+using RandomizerMod.IC;
 using Satchel;
-using MoreStags.Rando;
 
 namespace MoreStags {
     public class MoreStags: Mod, ILocalSettings<LocalData>, IGlobalSettings<GlobalSettings> {
@@ -50,14 +50,6 @@ namespace MoreStags {
             transitionPrefabLeft = preloadedObjects["Crossroads_47"]["_Transition Gates/door_stagExit"];
             transitionPrefabRight = preloadedObjects["Ruins2_08"]["door_stagExit"];
 
-            Assembly assembly = Assembly.GetExecutingAssembly();
-            string stagDataJson = assembly.GetManifestResourceNames().Single(str => str.EndsWith("StagData.json"));
-            using Stream stagStream = assembly.GetManifestResourceStream(stagDataJson);
-            foreach(StagData data in new ParseJson(stagStream).parseFile<StagData>()) {
-                data.translate();
-            }
-            simulateGeneration(localData);
-
             foreach(GameObject go in Resources.FindObjectsOfTypeAll<GameObject>()) {
                 if(!go.scene.IsValid() && go.name == "Stag Map") {
                     uiPrefab = go.FindGameObjectInChildren("UI List Stag").FindGameObjectInChildren("Crossroads");
@@ -81,17 +73,9 @@ namespace MoreStags {
             };
         }
 
-        //temporary until I get real generation (only works on new save files)
-        private void simulateGeneration(LocalData ld) {
-            foreach(StagData data in StagData.allStags) {
-                ld.activeStags.Add(data);//all of 'em
-                ld.opened.Add(data.name, false);
-                //vanilla stags don't use this list, otherwise ["Dirtmouth"]=true
-            }
-            ld.activeStags.Sort((a, b) => a.positionNumber.CompareTo(b.positionNumber));
-        }
-
         private void earlySceneChange(Scene arg0, Scene arg1) {
+            if(!IsRandoSave())
+                return;
             if(StagData.dataByRoom.TryGetValue(arg1.name, out StagData data)) {
                 if(data.isActive(localData) && !data.isVanilla) {
                     GameObject stag = GameObject.Instantiate(data.leftSide ? stagPrefabLeft : stagPrefabRight, data.stagPosition, Quaternion.identity);
@@ -119,6 +103,8 @@ namespace MoreStags {
 
         private void lateSceneChange(On.GameManager.orig_OnNextLevelReady orig, GameManager self) {
             orig(self);
+            if(!IsRandoSave())
+                return;
             if(StagData.dataByRoom.TryGetValue(self.sceneName, out StagData data)) {
                 if(data.isActive(localData)) {
                     foreach(string toDelete in data.objectsToRemove) {
@@ -136,6 +122,8 @@ namespace MoreStags {
 
         private void editFsm(On.PlayMakerFSM.orig_OnEnable orig, PlayMakerFSM self) {
             orig(self);
+            if(!IsRandoSave())
+                return;
             if(self.FsmName == "Stag Bell") {
                 if(StagData.dataByRoom.TryGetValue(self.gameObject.scene.name, out StagData data)) {
                     if(data.isVanilla && !data.isActive(localData)) {
@@ -228,9 +216,9 @@ namespace MoreStags {
 
         private void createUiObjects(GameObject uiList) {
             uiGameobjectDict.Clear();
-            Vector3 sourcePosition = new Vector3(-5.07f, 4.3f, 0);
+            Vector3 sourcePosition = new(-5.07f, 4.3f, 0);
             foreach(StagData data in localData.activeStags.Where(s => !s.isVanilla)) {
-                Vector3 yOffset = new Vector3(0, data.positionNumber, 0);
+                Vector3 yOffset = new(0, data.positionNumber, 0);
                 GameObject newUI = GameObject.Instantiate(uiPrefab, Vector3.zero, Quaternion.identity, uiList.transform);
                 newUI.transform.localPosition = sourcePosition - yOffset;
                 newUI.name = data.name;
@@ -363,6 +351,16 @@ namespace MoreStags {
                 self.GetValidState("Activate").GetFirstActionOfType<Wait>().Enabled = false;
             }
         }
+
+        public static bool IsRandoSave() {
+            try {
+                RandomizerModule module = ItemChangerMod.Modules.Get<RandomizerModule>();
+                return module is not null;
+            }
+            catch(NullReferenceException) {
+                return false;
+            }
+        }
     }
 
     public class StagOpenedBoolTest: FsmStateAction {
@@ -401,33 +399,14 @@ namespace MoreStags {
 }
 
 //--bugs--
-//none known at this point
+//Resting Grounds lever exists and does nothing if inactive
 
 //--todo--
-//add all the rando stuff
-//      the menu with settings
-//      the generation options
-//      item and location definitions
-//      make sure the stag locations grant items and the stag items open the locations
-//      logic definitions (or at least filler data)
+//investigate lever rando stag levers
+//check on "Stag Bell" fsm in stag nest
 //populate the json with every location
-
-//stag settings options and notes:
-//dirtmouth is always active, stagnest is always active unless enemy pogos are on probably
-//if enabled, you can choose:
-//      distributed (either 1-2 per region or exclusion logic),
-//      random, (no balancing just pure rng)
-//      all locations (if possible to implement)
-//include settings to remove cursed stags (godhome roof) from the pool
-//setting to avoid vanilla stag locations (excluding dirtmouth/stagnest)
-//consider "vanilla" support
-//      stags not rando'd items/locations but still a different active set
-
-//--menu plans--
-//   Enabled (with either a description or a clearer name)
-//   Selection (balanced/distributed, random, all)
-//   Avoid vanilla / prefer custom
-//   Disable/prevent cursed locations
+//write readme
+//Start Items stags option?
 
 //--costs and order and grouping--
 //   Crossroads - 50

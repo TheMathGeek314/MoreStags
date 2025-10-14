@@ -1,15 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using UnityEngine;
 
 namespace MoreStags {
     public class StagData {
-        //several of these need to be reworked as file-specific probably-serialized sets
         public static List<StagData> allStags = new();
-        //public static Dictionary<string, bool> opened = new();
         public static Dictionary<string, StagData> dataByRoom = new();
-        //public static List<StagData> activeStags = new();
         private static int posNum = 1;
 
         public string name;
@@ -31,7 +29,6 @@ namespace MoreStags {
         public string[] objectsToRemove;
         public string[] enemiesToRemove;
         //public float stagScale;
-        //public string[] exclusions;
 
         public void translate() {
             allStags.Add(this);
@@ -54,6 +51,17 @@ namespace MoreStags {
 
         public bool isActive(LocalData ld) {
             return ld.activeStags.Contains(this);
+        }
+
+        public override bool Equals(object obj) {
+            if(obj is StagData data) {
+                return name == data.name;
+            }
+            return false;
+        }
+
+        public override int GetHashCode() {
+            return Tuple.Create(name, scene, region, cost).GetHashCode();
         }
     }
 

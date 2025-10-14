@@ -52,10 +52,16 @@
     <WriteLinesToFile File="$(ExportDir)/$(TargetName)/SHA.txt" Lines="$(OutputFileString);@(FilesWithHashes->'%(FileHash)');$(OutputZipString);@(ZipFilesWithHashes->'%(FileHash)')" Overwrite="true" Encoding="UTF-8" />
   </Target>
   <ItemGroup>
-    <None Remove="Resources\StagData.json" />
+    <None Remove="Resources\*.json" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\StagData.json" />
+    <EmbeddedResource Include="Resources\*.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\stagpin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\stagpin.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
@@ -69,6 +75,9 @@
     </Reference>
     <Reference Include="GalaxyCSharp">
       <HintPath>$(HollowKnightRefs)/GalaxyCSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ItemChanger">
+      <HintPath>..\_dependencies\ItemChanger.dll</HintPath>
     </Reference>
     <Reference Include="MenuChanger">
       <HintPath>..\_dependencies\MenuChanger.dll</HintPath>
@@ -103,8 +112,17 @@
     <Reference Include="QoL">
       <HintPath>..\_dependencies\QoL.dll</HintPath>
     </Reference>
+    <Reference Include="RandomizerCore">
+      <HintPath>..\_dependencies\RandomizerCore.dll</HintPath>
+    </Reference>
+    <Reference Include="RandomizerCore.Json">
+      <HintPath>..\_dependencies\RandomizerCore.Json.dll</HintPath>
+    </Reference>
     <Reference Include="RandomizerMod">
       <HintPath>..\_dependencies\RandomizerMod.dll</HintPath>
+    </Reference>
+    <Reference Include="RandoSettingsManager">
+      <HintPath>..\_dependencies\RandoSettingsManager.dll</HintPath>
     </Reference>
     <Reference Include="Satchel">
       <HintPath>..\_dependencies\Satchel.dll</HintPath>
