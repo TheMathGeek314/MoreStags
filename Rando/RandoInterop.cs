@@ -35,6 +35,7 @@ namespace MoreStags {
                     name = nameToLocation(data.name),
                     sceneName = data.scene,
                     rawName = data.name,
+                    cost = data.cost,
                     x = data.bellPosition.x,
                     y = data.bellPosition.y,
                     elevation = 0f,

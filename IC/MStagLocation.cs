@@ -1,13 +1,16 @@
 ﻿using HutongGames.PlayMaker;
 using HutongGames.PlayMaker.Actions;
+using ItemChanger;
 using ItemChanger.Extensions;
 using ItemChanger.FsmStateActions;
 using ItemChanger.Locations;
+using ItemChanger.Placements;
 using UnityEngine;
 
 namespace MoreStags {
     public class MStagLocation: CoordinateLocation {
         public string rawName;
+        public int cost;
 
         protected override void OnLoad() {
             On.PlayMakerFSM.OnEnable += EditMStag;
@@ -53,6 +56,13 @@ namespace MoreStags {
                 init.GetFirstActionOfType<StagOpenedBoolTest>().Enabled = false;
                 init.AddTransition("FINISHED", "Opened");
             }
+        }
+
+        public override AbstractPlacement Wrap() {
+            return new MutablePlacement(name) {
+                Location = this,
+                Cost = new GeoCost(cost)
+            };
         }
     }
 }

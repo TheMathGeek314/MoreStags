@@ -73,16 +73,6 @@ namespace MoreStags {
             };
         }
 
-        //temporary until I get real generation (only works on new save files)
-        private void simulateGeneration(LocalData ld) {
-            foreach(StagData data in StagData.allStags) {
-                ld.activeStags.Add(data);//all of 'em
-                ld.opened.Add(data.name, false);
-                //vanilla stags don't use this list, otherwise ["Dirtmouth"]=true
-            }
-            ld.activeStags.Sort((a, b) => a.positionNumber.CompareTo(b.positionNumber));
-        }
-
         private void earlySceneChange(Scene arg0, Scene arg1) {
             if(!IsRandoSave())
                 return;

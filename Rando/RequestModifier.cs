@@ -6,8 +6,8 @@ using RandomizerMod.RC;
 namespace MoreStags {
     public class RequestModifier {
         public static void Hook() {
-            RequestBuilder.OnUpdate.Subscribe(-500, ApplyStagDef);
-            RequestBuilder.OnUpdate.Subscribe(-499, SetupItems);
+            RequestBuilder.OnUpdate.Subscribe(3, ApplyStagDef);
+            RequestBuilder.OnUpdate.Subscribe(4, SetupItems);
         }
 
         private static void ApplyStagDef(RequestBuilder rb) {
@@ -66,10 +66,14 @@ namespace MoreStags {
             if(rb.gs.PoolSettings.Stags) {
                 LocalData ld = MoreStags.localData;
                 foreach(StagData data in StagData.allStags.Where(stag => stag.isVanilla && !stag.isActive(ld))) {
-                    rb.RemoveLocationByName(Consts.LocationNames[data.name]);
+                    string nameToRemove = Consts.LocationNames[data.name];
+                    Modding.Logger.Log("[MoreStags] - Removing " + nameToRemove);
+                    rb.RemoveLocationByName(nameToRemove);
+                    rb.RemoveItemByName(nameToRemove);
                 }
                 foreach(StagData data in ld.activeStags.Where(stag => !stag.isVanilla)) {
                     string stagLocation = RandoInterop.nameToLocation(data.name);
+                    Modding.Logger.Log("[MoreStags] - Adding location " + stagLocation);
                     rb.AddLocationByName(stagLocation);
                     rb.EditLocationRequest(stagLocation, info => {
                         info.getLocationDef = () => new() {
@@ -100,6 +104,7 @@ namespace MoreStags {
                     };
                 });
                 if(rb.gs.PoolSettings.Stags) {
+                    Modding.Logger.Log("[MoreStags] - Adding item " + stagLocation);
                     rb.AddItemByName(stagLocation);
                 }
                 else {
