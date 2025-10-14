@@ -1,11 +1,13 @@
 ﻿using HutongGames.PlayMaker;
 using HutongGames.PlayMaker.Actions;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 using ItemChanger;
 using ItemChanger.Extensions;
 using ItemChanger.FsmStateActions;
 using ItemChanger.Locations;
 using ItemChanger.Placements;
-using UnityEngine;
+using uManager = UnityEngine.SceneManagement.SceneManager;
 
 namespace MoreStags {
     public class MStagLocation: CoordinateLocation {
@@ -13,11 +15,20 @@ namespace MoreStags {
         public int cost;
 
         protected override void OnLoad() {
-            On.PlayMakerFSM.OnEnable += EditMStag;
+            base.OnLoad();
+            uManager.sceneLoaded += TryEditFsm;
         }
 
         protected override void OnUnload() {
-            On.PlayMakerFSM.OnEnable -= EditMStag;
+            base.OnUnload();
+            uManager.sceneLoaded -= TryEditFsm;
+        }
+
+        private void TryEditFsm(Scene arg0, LoadSceneMode arg1) {
+            if(arg0.name == UnsafeSceneName)
+                On.PlayMakerFSM.OnEnable += EditMStag;
+            else
+                On.PlayMakerFSM.OnEnable -= EditMStag;
         }
 
         private void EditMStag(On.PlayMakerFSM.orig_OnEnable orig, PlayMakerFSM self) {

@@ -399,9 +399,7 @@ namespace MoreStags {
 }
 
 //--bugs--
-//The rando stag fsm edits might be happening either [twice on enable] or [both MS modded and Rando modded], so MStagLocation line 25 is out of range
-//The map icons should not be the same as the shop icons
-//Shinies are not appearing at modded locations (I blame CoordinateLocation)
+//Resting Grounds lever exists and does nothing if inactive
 
 //--todo--
 //investigate lever rando stag levers

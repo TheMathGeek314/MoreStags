@@ -26,8 +26,8 @@ namespace MoreStags {
             using Stream st = assembly.GetManifestResourceStream("MoreStags.Resources.logicOverrides.json");
             lmb.DeserializeFile(LogicFileType.LogicEdit, fmt, st);
 
-            /*using Stream str = assembly.GetManifestResourceStream("MoreStags.Resources.logicSubstitutions.json");
-            lmb.DeserializeFile(LogicFileType.LogicSubst, fmt, str);*/
+            using Stream str = assembly.GetManifestResourceStream("MoreStags.Resources.logicSubstitutions.json");
+            lmb.DeserializeFile(LogicFileType.LogicSubst, fmt, str);
 
             DefineTermsAndItems(lmb, fmt);
         }
