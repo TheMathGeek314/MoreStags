@@ -34,11 +34,11 @@
         "old": "Abyss_21[right1]",
         "replacement": "Abyss_21[right1] | Stag-Monarch_Wings + Can_Stag"
     },
-    {
+    /*{
         "name": "Mr_Mushroom-Ancient_Basin",
         "old": "Abyss_21[right1]",
         "replacement": "Abyss_21[right1] | Stag-Monarch_Wings + Can_Stag"
-    },
+    },*/
     {
         "name": "Pale_Ore-Basin",
         "old": "Abyss_17[top1]",

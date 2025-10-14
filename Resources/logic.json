@@ -1,5 +1,4 @@
 [
-  //Basin/Abyss
   {
     "name": "Stag-Monarch_Wings",
     "logic": "Abyss_21[right1] | Stag-Monarch_Wings + Can_Stag"
@@ -22,7 +21,7 @@
   },
   {
     "name": "Stag-The_Abyss",
-    "logic": "Abyss_06[top1] + BRAND | Stag-The_Abyss + Can_Stag | Abyss_06_Core + (FULLCLAW + FULLDASH | WINGS)"
+    "logic": "Abyss_06_Core[top1] + BRAND | Stag-The_Abyss + Can_Stag | Abyss_06_Core + (FULLCLAW + FULLDASH | WINGS)"
   },
   {
     "name": "Stag-Void_Tendrils",
@@ -32,7 +31,6 @@
     "name": "Stag-Birthplace",
     "logic": "Abyss_15[top1] | Stag-Birthplace + Can_Stag"
   },
-  //City
   {
     "name": "Stag-Flooded_Station",
     "logic": "*Dirtmouth_Stag"
@@ -69,7 +67,6 @@
     "name": "Stag-Soul_Sanctum",
     "logic": "*Dirtmouth_Stag"
   },
-  //Peak
   {
     "name": "Stag-Hallownest's_Crown",
     "logic": "*Dirtmouth_Stag"
@@ -94,7 +91,6 @@
     "name": "Stag-Crystallised_Mound",
     "logic": "*Dirtmouth_Stag"
   },
-  //Deepnest
   {
     "name": "Stag-Weavers'_Den",
     "logic": "*Dirtmouth_Stag"
@@ -119,7 +115,6 @@
     "name": "Stag-Shadow_Gauntlet",
     "logic": "*Dirtmouth_Stag"
   },
-  //Fog Canyon
   {
     "name": "Stag-Fog_Canyon",
     "logic": "*Dirtmouth_Stag"
@@ -132,7 +127,6 @@
     "name": "Stag-Teacher's_Archives",
     "logic": "*Dirtmouth_Stag"
   },
-  //Crossroads
   {
     "name": "Stag-East_Crossroads",
     "logic": "*Dirtmouth_Stag"
@@ -161,7 +155,6 @@
     "name": "Stag-Myla",
     "logic": "*Dirtmouth_Stag"
   },
-  //Fungal Wastes
   {
     "name": "Stag-Upper_Wastes",
     "logic": "*Dirtmouth_Stag"
@@ -206,7 +199,6 @@
     "name": "Stag-Mantis_Village",
     "logic": "*Dirtmouth_Stag"
   },
-  //Godhome
   {
     "name": "Stag-God_Spring",
     "logic": "*Dirtmouth_Stag"
@@ -219,7 +211,6 @@
     "name": "Stag-Blue_Room",
     "logic": "*Dirtmouth_Stag"
   },
-  //Greenpath
   {
     "name": "Stag-Waterfall_East",
     "logic": "*Dirtmouth_Stag"
@@ -256,7 +247,6 @@
     "name": "Stag-Durandoos",
     "logic": "*Dirtmouth_Stag"
   },
-  //Hive
   {
     "name": "Stag-Hive_Entryway",
     "logic": "*Dirtmouth_Stag"
@@ -273,7 +263,6 @@
     "name": "Stag-Stash",
     "logic": "*Dirtmouth_Stag"
   },
-  //Cliffs
   {
     "name": "Stag-Mato",
     "logic": "*Dirtmouth_Stag"
@@ -286,7 +275,6 @@
     "name": "Stag-Baldur_Shell",
     "logic": "*Dirtmouth_Stag"
   },
-  //Edge
   {
     "name": "Stag-Lower_Kingdom's_Edge",
     "logic": "*Dirtmouth_Stag"
@@ -315,7 +303,6 @@
     "name": "Stag-Pale_Lurker",
     "logic": "*Dirtmouth_Stag"
   },
-  //Gardens
   {
     "name": "Stag-Droppers",
     "logic": "*Dirtmouth_Stag"
@@ -340,7 +327,6 @@
     "name": "Stag-Upper_Gardens",
     "logic": "*Dirtmouth_Stag"
   },
-  //Grounds
   {
     "name": "Stag-Dreamshield",
     "logic": "*Dirtmouth_Stag"
@@ -357,7 +343,6 @@
     "name": "Stag-Upper_Tram",
     "logic": "*Dirtmouth_Stag"
   },
-  //Waterways
   {
     "name": "Stag-Flukemarm",
     "logic": "*Dirtmouth_Stag"
@@ -370,7 +355,6 @@
     "name": "Stag-Isma's_Grove",
     "logic": "*Dirtmouth_Stag"
   },
-  //Palace
   {
     "name": "Stag-Palace_Entrance",
     "logic": "*Dirtmouth_Stag"
