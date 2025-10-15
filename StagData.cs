@@ -14,6 +14,8 @@ namespace MoreStags {
         public string scene;
         public string region;
         public int cost;
+        public bool leftSide;
+        public bool isCursed = false;
         public int positionNumber;
         public JsonVector2 _bellCoords;
         public float _transitionX;
@@ -23,9 +25,7 @@ namespace MoreStags {
         public Vector3 stagPosition;
         public JsonVector2 _markerPosition;
         public Vector2 markerPosition;
-        public bool leftSide;
         public bool isVanilla = false;
-        public bool isCursed = false;
         public string[] objectsToRemove;
         public string[] enemiesToRemove;
         //public float stagScale;

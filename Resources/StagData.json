@@ -22,7 +22,7 @@
   {
     "name": "Greenpath",
     "scene": "Fungus1_16_alt",
-    "region": "West Greenpath",
+    "region": "Upper Greenpath",
     "_markerPosition": {
       "x": 811,
       "y": 696
@@ -110,10 +110,139 @@
     "isVanilla": true
   },
   {
+    "name": "False Knight",
+    "scene": "Crossroads_10",
+    "region": "Crossroads",
+    "cost": 50,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 16.5,
+      "y": 60
+    },
+    "_transitionX": 8.5,
+    "_stagCoords": {
+      "x": 4.5,
+      "y": 60
+    },
+    "_markerPosition": {
+      "x": 1920,
+      "y": 735
+    },
+    "objectsToRemove": [ "brk_barrel_19" ]
+  },
+  {
+    "name": "Waterfall East",
+    "scene": "Fungus1_01",
+    "region": "Upper Greenpath",
+    "cost": 140,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 154,
+      "y": 21
+    },
+    "_transitionX": 159,
+    "_stagCoords": {
+      "x": 164,
+      "y": 21
+    },
+    "_markerPosition": {
+      "x": 1545,
+      "y": 676
+    },
+    "objectsToRemove": [ "vine_39 (2)" ],
+    "enemiesToRemove": [ "Moss Walker (3)" ]
+  },
+  {
+    "name": "Gulkas",
+    "scene": "Fungus1_11",
+    "region": "Lower Greenpath",
+    "cost": 140,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 12,
+      "y": 47
+    },
+    "_transitionX": 14.5,
+    "_stagCoords": {
+      "x": 22,
+      "y": 44
+    },
+    "_markerPosition": {
+      "x": 1315,
+      "y": 930
+    },
+    "objectsToRemove": [ "vine_38" ],
+    "enemiesToRemove": [ "Plant Turret" ]
+  },
+  {
+    "name": "Teacher's Archives",
+    "scene": "Fungus3_archive_02",
+    "region": "Canyon",
+    "cost": 250,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 86.6,
+      "y": 63
+    },
+    "_transitionX": 89.5,
+    "_stagCoords": {
+      "x": 95.7,
+      "y": 63
+    },
+    "_markerPosition": {
+      "x": 1475,
+      "y": 1186
+    },
+    "objectsToRemove": [ "archive_rag (65)", "archive_rag (67)" ]
+  },
+  {
+    "name": "Fungal Nexus",
+    "scene": "Fungus2_11",
+    "region": "Upper Fungal",
+    "cost": 120,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 9.5,
+      "y": 62
+    },
+    "_transitionX": 14.2,
+    "_stagCoords": {
+      "x": 19.5,
+      "y": 62
+    },
+    "_markerPosition": {
+      "x": 1756,
+      "y": 1349
+    },
+    "enemiesToRemove": [ "Fung Crawler", "Fung Crawler (1)" ]
+  },
+  {
+    "name": "Bretta",
+    "scene": "Fungus2_13",
+    "region": "Lower Fungal",
+    "cost": 150,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 8.7,
+      "y": 36
+    },
+    "_transitionX": 12,
+    "_stagCoords": {
+      "x": 16.5,
+      "y": 36
+    },
+    "_markerPosition": {
+      "x": 1901,
+      "y": 1545
+    },
+    "enemiesToRemove": [ "Mantis Flyer Child (1)" ]
+  },
+  {
     "name": "Hallownest's Crown",
     "scene": "Mines_34",
     "region": "Peak",
-    "cost": 420,
+    "cost": 250,
+    "leftSide": true,
     "_bellCoords": {
       "x": 105,
       "y": 22
@@ -127,7 +256,6 @@
       "x": 2928,
       "y": 155
     },
-    "leftSide": true,
     "enemiesToRemove": [ "Crystal Crawler" ]
   },
   {
@@ -135,6 +263,7 @@
     "scene": "Deepnest_East_04",
     "region": "Edge",
     "cost": "350",
+    "leftSide": false,
     "_bellCoords": {
       "x": 31,
       "y": 164
@@ -148,7 +277,6 @@
       "x": 3511,
       "y": 1281
     },
-    "leftSide": false,
     "objectsToRemove": [ "deep_bottle_01 (10)", "white_ash_scenery_0002_3 (24)" ]
   },
   {
@@ -156,6 +284,7 @@
     "scene": "Abyss_21",
     "region": "Basin",
     "cost": 300,
+    "leftSide": true,
     "_bellCoords": {
       "x": 132.5,
       "y": 246
@@ -169,7 +298,6 @@
       "x": 1790,
       "y": 2051
     },
-    "leftSide": true,
     "objectsToRemove": [ "_0052_white (11)", "_0051_white (13)", "_0050_white (9)", "palace_root1 (6)" ]
   }
 ]
