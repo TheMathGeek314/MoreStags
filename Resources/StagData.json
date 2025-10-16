@@ -238,6 +238,92 @@
     "enemiesToRemove": [ "Mantis Flyer Child (1)" ]
   },
   {
+    "name": "White Lady",
+    "scene": "Room_Queen",
+    "region": "Gardens",
+    "cost": 200,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 21.8,
+      "y": 25
+    },
+    "_transitionX": 17.2,
+    "_stagCoords": {
+      "x": 12.8,
+      "y": 25
+    },
+    "_markerPosition": {
+      "x": 500,
+      "y": 1045
+    },
+    "objectsToRemove": [ "palace_root2 (1)" ]
+  },
+  {
+    "name": "Office",
+    "scene": "Ruins1_05",
+    "region": "West City",
+    "cost": 200,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 8.4,
+      "y": 123
+    },
+    "_transitionX": 12.2,
+    "_stagCoords": {
+      "x": 17.5,
+      "y": 123
+    },
+    "_markerPosition": {
+      "x": 2443,
+      "y": 1350
+    },
+    "objectsToRemove": [ "Ruins Stool", "Ruins Dressing Table" ],
+    "enemiesToRemove": [ "Ceiling Dropper" ]
+  },
+  {
+    "name": "Watcher's Spire",
+    "scene": "Ruins2_Watcher_Room",
+    "region": "East City",
+    "cost": 300,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 15.1,
+      "y": 3
+    },
+    "_transitionX": 11.4,
+    "_stagCoords": {
+      "x": 6.6,
+      "y": 3
+    },
+    "_markerPosition": {
+      "x": 2685,
+      "y": 1184
+    },
+    "objectsToRemove": [ "Ruins Trophy Large (12)", "Ruins Trophy Medium (1)", "Ruins Acorn (1)" ]
+  },
+  {
+    "name": "Flukemarm",
+    "scene": "Waterways_08",
+    "region": "Waterways",
+    "cost": 300,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 112.5,
+      "y": 19
+    },
+    "_transitionX": 125.7,
+    "_stagCoords": {
+      "x": 130.3,
+      "y": 19
+    },
+    "_markerPosition": {
+      "x": 2490,
+      "y": 1770
+    },
+    "objectsToRemove": [ "pipe_FG_03 (7)" ],
+    "enemiesToRemove": [ "Ceiling Dropper (3)", "Flukeman (16)", "Fluke Fly (3)" ]
+  },
+  {
     "name": "Hallownest's Crown",
     "scene": "Mines_34",
     "region": "Peak",
@@ -257,6 +343,27 @@
       "y": 155
     },
     "enemiesToRemove": [ "Crystal Crawler" ]
+  },
+  {
+    "name": "Shrine of Believers",
+    "scene": "Dream_Room_Believer_Shrine",
+    "region": "Grounds",
+    "cost": 170,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 47.5,
+      "y": 30
+    },
+    "_transitionX": 50.5,
+    "_stagCoords": {
+      "x": 56.5,
+      "y": 30
+    },
+    "_markerPosition": {
+      "x": 3420,
+      "y": 700
+    },
+    "objectsToRemove": [ "dream_believer_fence (1)" ]
   },
   {
     "name": "Bardoon",
@@ -280,6 +387,48 @@
     "objectsToRemove": [ "deep_bottle_01 (10)", "white_ash_scenery_0002_3 (24)" ]
   },
   {
+    "name": "Library",
+    "scene": "Hive_03_c",
+    "region": "Hive",
+    "cost": 350,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 17.3,
+      "y": 78
+    },
+    "_transitionX": 12.4,
+    "_stagCoords": {
+      "x": 5,
+      "y": 78
+    },
+    "_markerPosition": {
+      "x": 3226,
+      "y": 1815
+    },
+    "objectsToRemove": [ "hive_extras_living_0006_Layer-26 (2)", "hive_scenery_0025_h 1 (8)", "hive_scenery_0025_h 1 (6)" ]
+  },
+  {
+    "name": "Weavers' Den",
+    "scene": "Deepnest_45_v02",
+    "region": "Deepnest",
+    "cost": 250,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 17.6,
+      "y": 42
+    },
+    "_transitionX": 14.7,
+    "_stagCoords": {
+      "x": 10.4,
+      "y": 42
+    },
+    "_markerPosition": {
+      "x": 883,
+      "y": 1774
+    },
+    "objectsToRemove": [ "Loom_Room_0001_39 (8)", "Loom_Room_0012_28 (15)" ]
+  },
+  {
     "name": "Monarch Wings",
     "scene": "Abyss_21",
     "region": "Basin",
@@ -299,5 +448,88 @@
       "y": 2051
     },
     "objectsToRemove": [ "_0052_white (11)", "_0051_white (13)", "_0050_white (9)", "palace_root1 (6)" ]
+  },
+  {
+    "name": "The Abyss",
+    "scene": "Abyss_06_Core",
+    "region": "Abyss",
+    "cost": 400,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 91.7,
+      "y": 108
+    },
+    "_transitionX": 93.4,
+    "_stagCoords": {
+      "x": 97.5,
+      "y": 108
+    },
+    "_markerPosition": {
+      "x": 2518,
+      "y": 2365
+    },
+    "enemiesToRemove": [ "Abyss Crawler (9)" ]
+  },
+  {
+    "name": "Wasteland",
+    "scene": "Cliffs_01",
+    "region": "Cliffs",
+    "cost": 170,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 16,
+      "y": 4
+    },
+    "_transitionX": 13.5,
+    "_stagCoords": {
+      "x": 8.6,
+      "y": 4
+    },
+    "_markerPosition": {
+      "x": 943,
+      "y": 526
+    }
+  },
+  {
+    "name": "Path of Pain 4",
+    "scene": "White_Palace_20",
+    "region": "Palace",
+    "cost": 450,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 13,
+      "y": 157
+    },
+    "_transitionX": 15.6,
+    "_stagCoords": {
+      "x": 19.5,
+      "y": 157
+    },
+    "_markerPosition": {
+      "x": 2767,
+      "y": 2036
+    }
+  },
+  {
+    "name": "God Spring",
+    "scene": "GG_Atrium_Roof",
+    "region": "Godhome",
+    "cost": 450,
+    "leftSide": true,
+    "isCursed": true,
+    "_bellCoords": {
+      "x": 88,
+      "y": 15
+    },
+    "_transitionX": 85.3,
+    "_stagCoords": {
+      "x": 80.8,
+      "y": 15
+    },
+    "_markerPosition": {
+      "x": 1877,
+      "y": 1794
+    },
+    "objectsToRemove": [ "GG_bench_0002_1", "GG_bench_0003_2", "GG_bench_0003_2 (1)" ]
   }
 ]

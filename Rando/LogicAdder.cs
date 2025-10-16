@@ -44,8 +44,6 @@ namespace MoreStags {
             lmb.DeserializeFile(LogicFileType.Terms, fmt, t);
 
             foreach(string stagName in StagData.allStags.Where(stag => !stag.isVanilla).Select(stag => RandoInterop.nameToLocation(stag.name))) {
-                lmb.AddItem(new SingleItem(stagName, new TermValue(lmb.GetTerm(stagName), 1)));
-
                 lmb.AddItem(new MultiItem(stagName, [
                     new TermValue(lmb.GetTerm(stagName), 1),
                     new TermValue(lmb.GetTerm("STAGS"), 1)
