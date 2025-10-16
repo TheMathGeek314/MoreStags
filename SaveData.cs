@@ -11,6 +11,7 @@ namespace MoreStags {
     public class LocalData {
         public Dictionary<string, bool> opened = new();
         public List<StagData> activeStags = new();
+        public bool preserveStagLevers = false;
     }
 
     public enum StagSelection {

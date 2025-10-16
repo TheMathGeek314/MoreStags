@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using RandomizerMod.RandomizerData;
 using RandomizerMod.RC;
@@ -13,6 +14,14 @@ namespace MoreStags {
         private static void ApplyStagDef(RequestBuilder rb) {
             SelectStags(rb);
             AddAndRemoveLocations(rb);
+            PreserveLevers(rb);
+        }
+
+        private static void PreserveLevers(RequestBuilder rb)
+        {
+            bool areLeversOn = rb.GetItemGroupFor("Lever-Resting_Grounds_Stag").Items.GetCount("Lever-Resting_Grounds_Stag") > 0;
+            LocalData ld = MoreStags.localData;
+            ld.preserveStagLevers = areLeversOn;
         }
 
         private static void SelectStags(RequestBuilder rb) {

@@ -61,7 +61,7 @@ namespace MoreStags {
             Assembly assembly = Assembly.GetExecutingAssembly();
             JsonSerializer jsonSerializer = new() { TypeNameHandling = TypeNameHandling.Auto };
 
-            using Stream stream = assembly.GetManifestResourceStream("BreakableWallRandomizer.Resources.Logic.ConnectionOverrides.json");
+            using Stream stream = assembly.GetManifestResourceStream("MoreStags.Resources.connectionOverrides.json");
             StreamReader reader = new(stream);
             List<ConnectionLogicObject> objectList = jsonSerializer.Deserialize<List<ConnectionLogicObject>>(new JsonTextReader(reader));
 

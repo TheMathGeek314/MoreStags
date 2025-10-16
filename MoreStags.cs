@@ -93,8 +93,9 @@ namespace MoreStags {
                         ("Room_Town_Stag_Station", "Station Bell"),
                         ("RestingGrounds_09", "Ruins Lever")
                     }) {
-                        if(data.name == scene) {
-                            GameObject.Find(objectName).SetActive(false);//make sure lever rando stag levers are accounted for
+                        // Remove Stag levers only if Lever Rando is off
+                        if(data.scene == scene && !localData.preserveStagLevers) {
+                            GameObject.Find(objectName).SetActive(false);
                         }
                     }
                 }

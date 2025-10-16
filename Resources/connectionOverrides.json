@@ -1,9 +1,21 @@
 [
     {
+        "name": "Defeated_Any_Maggot",
+        "logicOverride": "",
+        "logicSubstitutions": {
+            "Crossroads_10[left1]": "Stag-False_Knight + Can_Stag + Defeated_False_Knight"
+        }
+    },
+    {
         "name": "Mr_Mushroom-Ancient_Basin",
         "logicOverride": "",
         "logicSubstitutions": {
             "Abyss_21[right1]": "Abyss_21[right1] | Stag-Monarch_Wings + Can_Stag"
         }
+    },
+    {
+        "name": "Wall-Maggot_Room",
+        "logicOverride": "ORIG | Stag-False_Knight + Can_Stag + Defeated_False_Knight",
+        "logicSubstitutions": {}
     }
 ]

@@ -10,6 +10,11 @@
         "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
     },
     {
+        "name": "Defeated_False_Knight",
+        "old": "Crossroads_10[right1]",
+        "replacement": "Crossroads_10[right1] | Stag-False_Knight + Can_Stag + (ANYCLAW | WINGS | RIGHTDASH | ENEMYPOGOS)"
+    },
+    {
         "name": "Geo_Rock-Broken_Bridge_Lower",
         "old": "Abyss_02[right1]",
         "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag"

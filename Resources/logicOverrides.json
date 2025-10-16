@@ -28,6 +28,26 @@
         "logic": "ORIG | Stag-Birthplace + Can_Stag + LEFTDASH + (ANYCLAW | WINGS + ENEMYPOGOS)"
     },
     {
+        "name": "Boss_Essence-Failed_Champion",
+        "logic": "ORIG | Stag-False_Knight + Can_Stag + Defeated_False_Knight + Defeated_Failed_Champion + DREAMNAIL"
+    },
+    {
+        "name": "Crossroads_10[left1]",
+        "logic": "ORIG | Stag-False_Knight + Can_Stag"
+    },
+    {
+        "name": "Crossroads_10[right1]",
+        "logic": "ORIG | Stag-False_Knight + Can_Stag + Defeated_False_Knight"
+    },
+    {
+        "name": "Fungus1_11",
+        "logic": "ORIG | Stag-Gulkas + Can_Stag"
+    },
+    {
+        "name": "Geo_Rock-Crossroads_Above_False_Knight",
+        "logic": "ORIG | Stag-False_Knight + Can_Stag + Defeated_False_Knight"
+    },
+    {
         "name": "Journal_Entry-Void_Tendrils",
         "logic": "ORIG | Stag-Void_Tendrils + Can_Stag"
     },

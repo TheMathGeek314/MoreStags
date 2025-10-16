@@ -145,11 +145,11 @@
   },
   {
     "name": "Stag-False_Knight",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "(Crossroads_10[left1] | Crossroads_10[right1]) + Defeated_False_Knight + (ANYCLAW | WINGS + INFECTED | $SHRIEKPOGO[2,before:AREASOUL]) | Stag-False_Knight + Can_Stag"
   },
   {
     "name": "Stag-Grubfather",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Crossroads_38[right1] | Stag-Grubfather + Can_Stag"
   },
   {
     "name": "Stag-Myla",
@@ -237,7 +237,7 @@
   },
   {
     "name": "Stag-Gulkas",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus1_11"
   },
   {
     "name": "Stag-Stone_Sanctuary",
