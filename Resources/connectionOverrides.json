@@ -1,5 +1,10 @@
 [
     {
+        "name": "Bardoon",
+        "logicOverride": "ORIG | Stag-Bardoon + Can_Stag + (LEFTCLAW | WINGS) + (LISTEN ? TRUE)",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Defeated_Any_Maggot",
         "logicOverride": "",
         "logicSubstitutions": {
@@ -7,11 +12,26 @@
         }
     },
     {
+        "name": "Defeated_Any_Shadow_Creeper",
+        "logicOverride": "ORIG | Stag-The_Abyss + Can_Stag",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Hornet_Abyss",
+        "logicOverride": "ORIG | Stag-The_Abyss + Can_Stag + (RIGHTDASH + FULLCLAW | WINGS) + (LISTEN ? TRUE) + HORNET>2",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Mr_Mushroom-Ancient_Basin",
         "logicOverride": "",
         "logicSubstitutions": {
             "Abyss_21[right1]": "Abyss_21[right1] | Stag-Monarch_Wings + Can_Stag"
         }
+    },
+    {
+        "name": "Quirrel_After_Monomon",
+        "logicOverride": "ORIG | Stag-Teacher's_Archives + Can_Stag + QUIRREL>7 + (LISTEN ? TRUE) + DREAMNAIL + (ACID | LEFTSUPERDASH + RIGHTCLAW) + (LEFTCLAW | WINGS + RIGHTCLAW)",
+        "logicSubstitutions": {}
     },
     {
         "name": "Wall-Maggot_Room",

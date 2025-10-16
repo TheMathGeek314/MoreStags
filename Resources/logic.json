@@ -69,7 +69,7 @@
   },
   {
     "name": "Stag-Hallownest's_Crown",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Mines_34[bot1] + (ANYCLAW | WINGS | ENEMYPOGOS) | Stag-Hallownest's_Crown + Can_Stag"
   },
   {
     "name": "Stag-Overlook",
@@ -125,7 +125,7 @@
   },
   {
     "name": "Stag-Teacher's_Archives",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Uumuu_Arena + Defeated_Uumuu | Stag-Teacher's_Archives + Can_Stag"
   },
   {
     "name": "Stag-East_Crossroads",
@@ -173,7 +173,7 @@
   },
   {
     "name": "Stag-Fungal_Nexus",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus2_11 | Stag-Fungal_Nexus + Can_Stag"
   },
   {
     "name": "Stag-Mantis_Outskirts",
@@ -181,7 +181,7 @@
   },
   {
     "name": "Stag-Bretta",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus2_13 + (LEFTDASH | LEFTSUPERDASH | ANYCLAW | WINGS | ACID | ENEMYPOGOS | PRECISEMOVEMENT) | Stag-Bretta + Can_Stag"
   },
   {
     "name": "Stag-Fungal_Colony",
@@ -213,7 +213,7 @@
   },
   {
     "name": "Stag-Waterfall_East",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus1_01[left1] | Fungus1_01[right1] | Stag-Waterfall_East + Can_Stag"
   },
   {
     "name": "Stag-Waterfall_West",
@@ -297,7 +297,7 @@
   },
   {
     "name": "Stag-Bardoon",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_04[right2] + (RIGHTCLAW | WINGS | LEFTCLAW + RIGHTDASH) | Stag-Bardoon + Can_Stag"
   },
   {
     "name": "Stag-Pale_Lurker",
