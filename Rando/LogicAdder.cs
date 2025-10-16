@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using Newtonsoft.Json;
+using RandomizerCore;
 using RandomizerCore.Json;
 using RandomizerCore.Logic;
 using RandomizerCore.LogicItems;
@@ -42,9 +43,13 @@ namespace MoreStags {
             using Stream t = typeof(LogicAdder).Assembly.GetManifestResourceStream("MoreStags.Resources.terms.json");
             lmb.DeserializeFile(LogicFileType.Terms, fmt, t);
 
-            foreach (string stagName in StagData.allStags.Where(stag => !stag.isVanilla).Select(stag => RandoInterop.nameToLocation(stag.name)))
-            {
-                lmb.AddItem(new SingleItem(stagName, new RandomizerCore.TermValue(lmb.GetTerm(stagName), 1)));
+            foreach(string stagName in StagData.allStags.Where(stag => !stag.isVanilla).Select(stag => RandoInterop.nameToLocation(stag.name))) {
+                lmb.AddItem(new SingleItem(stagName, new TermValue(lmb.GetTerm(stagName), 1)));
+
+                lmb.AddItem(new MultiItem(stagName, [
+                    new TermValue(lmb.GetTerm(stagName), 1),
+                    new TermValue(lmb.GetTerm("STAGS"), 1)
+                ]));
             }
         }
 

@@ -400,6 +400,8 @@ namespace MoreStags {
 
 //--bugs--
 //Resting Grounds lever exists and does nothing if inactive
+//items don't logically STAGS++
+//Cancelling at an unobtained stag location goes to Dirtmouth
 
 //--todo--
 //investigate lever rando stag levers
@@ -410,11 +412,11 @@ namespace MoreStags {
 
 //--costs and order and grouping--
 //   Crossroads - 50
-//   East Greenpath - 130
-//   West Greenpath - 140
+//   Upper Greenpath - 140
+//   Lower Greenpath - 140
 //   Canyon - 250
 //   Upper Fungal - 120
-//   Lower Fungal - 130
+//   Lower Fungal - 150
 //   Gardens - 200
 //   West City - 200
 //   East City - 300
