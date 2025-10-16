@@ -50,6 +50,11 @@
         "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
     },
     {
+        "name": "Void_Heart",
+        "old": "Abyss_15[top1]",
+        "replacement": "Abyss_15[top1] | Stag-Birthplace + Can_Stag"
+    },
+    {
         "name": "Wanderer's_Journal-Ancient_Basin",
         "old": "Abyss_02[right1]",
         "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag + (RIGHTCLAW | WINGS | RIGHTDASH | RIGHTSUPERDASH | ENEMYPOGOS)"

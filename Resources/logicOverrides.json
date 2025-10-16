@@ -16,8 +16,8 @@
         "logic": "ORIG | Stag-Void_Tendrils + Can_Stag"
     },
     {
-        "name": "Journal_Entry-Void_Tendrils",
-        "logic": "ORIG | Stag-Void_Tendrils + Can_Stag"
+        "name": "Abyss_15[top1]",
+        "logic": "ORIG | Stag-Birthplace + Can_Stag + LEFTDASH + (ANYCLAW | WINGS + ENEMYPOGOS)"
     },
     {
         "name": "Abyss_21[right1]",
@@ -25,14 +25,14 @@
     },
     {
         "name": "Arcane_Egg-Birthplace",
-        "logic": "ORIG"
+        "logic": "ORIG | Stag-Birthplace + Can_Stag + LEFTDASH + (ANYCLAW | WINGS + ENEMYPOGOS)"
+    },
+    {
+        "name": "Journal_Entry-Void_Tendrils",
+        "logic": "ORIG | Stag-Void_Tendrils + Can_Stag"
     },
     {
         "name": "Simple_Key-Basin",
         "logic": "ORIG | Stag-Mawlurks + Can_Stag"
-    },
-    {
-        "name": "Void_Heart",
-        "logic": "ORIG"
     }
 ]

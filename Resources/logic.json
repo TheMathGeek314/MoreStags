@@ -29,7 +29,7 @@
   },
   {
     "name": "Stag-Birthplace",
-    "logic": "Abyss_15[top1] | Stag-Birthplace + Can_Stag"
+    "logic": "Abyss_15[top1] + RIGHTDASH + (ANYCLAW | WINGS + ENEMYPOGOS) | Stag-Birthplace + Can_Stag"
   },
   {
     "name": "Stag-Flooded_Station",
