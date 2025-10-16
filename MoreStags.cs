@@ -400,16 +400,14 @@ namespace MoreStags {
 }
 
 //--bugs--
-//Resting Grounds lever exists and does nothing if inactive
-//items don't logically STAGS++
 //Cancelling at an unobtained stag location goes to Dirtmouth
 
 //--todo--
-//investigate lever rando stag levers
 //check on "Stag Bell" fsm in stag nest
 //populate the json with every location
 //write readme
 //Start Items stags option?
+//add quantity setting to menu
 
 //--costs and order and grouping--
 //   Crossroads - 50
