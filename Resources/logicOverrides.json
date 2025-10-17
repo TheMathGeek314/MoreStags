@@ -40,16 +40,76 @@
         "logic": "ORIG | Stag-False_Knight + Can_Stag + Defeated_False_Knight"
     },
     {
+        "name": "Deepnest_East_04",
+        "logic": "ORIG | Stag-Bardoon + Can_Stag"
+    },
+    {
+        "name": "Fungus1_01[left1]",
+        "logic": "ORIG | Stag-Waterfall_East + Can_Stag"
+    },
+    {
+        "name": "Fungus1_01[right1]",
+        "logic": "ORIG | Stag-Waterfall_East + Can_Stag"
+    },
+    {
         "name": "Fungus1_11",
         "logic": "ORIG | Stag-Gulkas + Can_Stag"
+    },
+    {
+        "name": "Fungus2_11",
+        "logic": "ORIG | Stag-Fungal_Nexus + Can_Stag"
+    },
+    {
+        "name": "Fungus2_13",
+        "logic": "ORIG | Stag-Bretta + Can_Stag + (RIGHTDASH | RIGHTSUPERDASH | ANYCLAW | WINGS | ENEMYPOGOS | PRECISEMOVEMENT)"
+    },
+    {
+        "name": "Fungus2_13[left3]",
+        "logic": "ORIG | Stag-Bretta + Can_Stag"
+    },
+    {
+        "name": "Geo_Rock-Abyss_1",
+        "logic": "ORIG | Stag-The_Abyss + Can_Stag + (RIGHTDASH + FULLCLAW | WINGS)"
+    },
+    {
+        "name": "Geo_Rock-Abyss_2",
+        "logic": "ORIG | Stag-The_Abyss + Can_Stag + (RIGHTDASH + FULLCLAW | WINGS)"
+    },
+    {
+        "name": "Geo_Rock-Abyss_3",
+        "logic": "ORIG | Stag-The_Abyss + Can_Stag"
     },
     {
         "name": "Geo_Rock-Crossroads_Above_False_Knight",
         "logic": "ORIG | Stag-False_Knight + Can_Stag + Defeated_False_Knight"
     },
     {
+        "name": "Geo_Rock-Fungal_Below_Pilgrim's_Way",
+        "logic": "ORIG | Stag-Fungal_Nexus + Can_Stag"
+    },
+    {
+        "name": "Geo_Rock-Mantis_Outskirts_Alcove",
+        "logic": "ORIG | Stag-Bretta + Can_Stag"
+    },
+    {
+        "name": "Journal_Entry-Charged_Lumafly",
+        "logic": "ORIG | Stag-Teacher's_Archives + Can_Stag + (ACID + (RIGHTCLAW | WINGS + LEFTCLAW) | ACIDSKIPS + RIGHTSHARPSHADOW + WINGS + SPELLAIRSTALL + $CASTSPELL[2] + RIGHTCLAW + LEFTSUPERDASH)"
+    },
+    {
         "name": "Journal_Entry-Void_Tendrils",
         "logic": "ORIG | Stag-Void_Tendrils + Can_Stag"
+    },
+    {
+        "name": "Lore_Tablet-Archives_Right",
+        "logic": "ORIG | Stag-Teacher's_Archives + Can_Stag + (ANYCLAW | $SHRIEKPOGO[2])"
+    },
+    {
+        "name": "Mines_34[bot1]",
+        "logic": "ORIG | Stag-Hallownest's_Crown + Can_Stag"
+    },
+    {
+        "name": "Monomon",
+        "logic": "ORIG | Stag-Teacher's_Archives + Can_Stag + DREAMNAIL + (ACID | LEFTSUPERDASH + RIGHTCLAW) + (LEFTCLAW | WINGS + RIGHTCLAW)"
     },
     {
         "name": "Simple_Key-Basin",
