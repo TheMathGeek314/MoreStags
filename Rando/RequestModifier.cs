@@ -36,25 +36,21 @@ namespace MoreStags {
                         regions.Remove("Cliffs");
                     while(stagsToActivate.Count < MoreStags.Settings.Quantity) {
                         if(regions.Count == 0) {
-                            mslog("regions.Count = 0, resetting to master list");
                             if(masterRegionList.Count == 0) {
-                                mslog("master region list is empty, terminating");
                                 break;
                             }
                             regions.AddRange(masterRegionList);
                         }
                         string region = regions[rb.rng.Next(regions.Count)];
                         regions.Remove(region);
-                        List<StagData> regionalCandidates = StagData.allStags.Where(stag => stag.region == region && !stag.isActive(MoreStags.localData)).ToList();
+                        List<StagData> regionalCandidates = new(StagData.allStags.Where(stag => stag.region == region && !stagsToActivate.Contains(stag)));
                         filterBySettings(regionalCandidates);
                         if(regionalCandidates.Count == 0) {
-                            mslog($"{region} exhausted, removing from master list");
                             masterRegionList.Remove(region);
                             continue;
                         }
                         StagData chosenCandi = regionalCandidates[rb.rng.Next(regionalCandidates.Count)];
                         stagsToActivate.Add(chosenCandi);
-                        mslog($"selected region ({region}) and activated ({chosenCandi.name})");
                     }
                     break;
                 case StagSelection.Random:
@@ -129,15 +125,11 @@ namespace MoreStags {
             }
         }
 
-        private static void filterBySettings(List<StagData> data) {
-            if(MoreStags.Settings.PreferNonVanilla)
-                data.RemoveAll(stag => stag.isVanilla);
-            if(MoreStags.Settings.RemoveCursedLocations)
-                data.RemoveAll(stag => stag.isCursed);
-        }
-
-        private static void mslog(string msg) {
-            Modding.Logger.Log($"[MoreStags] - \t\t{msg}");
-        }
+private static void filterBySettings(List<StagData> data) {
+    if(MoreStags.Settings.PreferNonVanilla)
+        data.RemoveAll(stag => stag.isVanilla);
+    if(MoreStags.Settings.RemoveCursedLocations)
+        data.RemoveAll(stag => stag.isCursed);
+}
     }
 }

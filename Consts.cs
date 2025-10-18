@@ -51,8 +51,8 @@ namespace MoreStags {
 
         public static readonly List<string> Regions = new() {
             "Crossroads",
-            "East Greenpath",
-            "West Greenpath",
+            "Upper Greenpath",
+            "Lower Greenpath",
             "Canyon",
             "Upper Fungal",
             "Lower Fungal",
