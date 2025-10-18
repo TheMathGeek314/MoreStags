@@ -5,4 +5,5 @@ Some explanation about how enabling MoreStags doesn't enable stags
 Some description of what the generation settings do
 Description about preferring custom locations (clarification about Dirtmouth/Stag Nest)
 Explanation of cursed locations toggle
-Selection=All ignores other filters
+Some comment about quantities 11, 20, and 103
+List of cursed stags

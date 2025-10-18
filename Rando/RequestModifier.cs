@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using RandomizerMod.RandomizerData;
 using RandomizerMod.RC;
@@ -25,23 +24,31 @@ namespace MoreStags {
         }
 
         private static void SelectStags(RequestBuilder rb) {
-            List<StagData> stagsToActivate = new();
-            stagsToActivate.Add(StagData.dataByRoom["Room_Town_Stag_Station"]);
-            int iterations = 10;
+            List<StagData> stagsToActivate = [ StagData.dataByRoom["Room_Town_Stag_Station"] ];
             if(!rb.gs.SkipSettings.EnemyPogos) {
                 stagsToActivate.Add(StagData.dataByRoom["Cliffs_03"]);
-                iterations = 9;
             }
             switch(MoreStags.Settings.Selection) {
                 case StagSelection.Balanced:
-                    List<string> regions = new(Consts.Regions);
+                    List<string> masterRegionList = new(Consts.Regions);
+                    List<string> regions = new(masterRegionList);
                     if(stagsToActivate.Count == 2)
                         regions.Remove("Cliffs");
-                    for(int i = 0; i < iterations; i++) {
+                    while(stagsToActivate.Count < MoreStags.Settings.Quantity) {
+                        if(regions.Count == 0) {
+                            if(masterRegionList.Count == 0) {
+                                break;
+                            }
+                            regions.AddRange(masterRegionList);
+                        }
                         string region = regions[rb.rng.Next(regions.Count)];
                         regions.Remove(region);
-                        List<StagData> regionalCandidates = StagData.allStags.Where(stag => stag.region == region).ToList();
+                        List<StagData> regionalCandidates = new(StagData.allStags.Where(stag => stag.region == region && !stagsToActivate.Contains(stag)));
                         filterBySettings(regionalCandidates);
+                        if(regionalCandidates.Count == 0) {
+                            masterRegionList.Remove(region);
+                            continue;
+                        }
                         StagData chosenCandi = regionalCandidates[rb.rng.Next(regionalCandidates.Count)];
                         stagsToActivate.Add(chosenCandi);
                     }
@@ -51,14 +58,13 @@ namespace MoreStags {
                     if(stagsToActivate.Count == 2)
                         candidates.RemoveAll(stag => stag.name == "Stag Nest");
                     filterBySettings(candidates);
-                    for(int i = 0; i < iterations; i++) {
+                    while(stagsToActivate.Count < MoreStags.Settings.Quantity) {
+                        if(candidates.Count == 0)
+                            break;
                         StagData chosenCandi = candidates[rb.rng.Next(candidates.Count)];
                         candidates.Remove(chosenCandi);
                         stagsToActivate.Add(chosenCandi);
                     }   
-                    break;
-                case StagSelection.All:
-                    stagsToActivate = new(StagData.allStags);
                     break;
             }
             LocalData ld = MoreStags.localData;
@@ -76,13 +82,11 @@ namespace MoreStags {
                 LocalData ld = MoreStags.localData;
                 foreach(StagData data in StagData.allStags.Where(stag => stag.isVanilla && !stag.isActive(ld))) {
                     string nameToRemove = Consts.LocationNames[data.name];
-                    Modding.Logger.Log("[MoreStags] - Removing " + nameToRemove);
                     rb.RemoveLocationByName(nameToRemove);
                     rb.RemoveItemByName(nameToRemove);
                 }
                 foreach(StagData data in ld.activeStags.Where(stag => !stag.isVanilla)) {
                     string stagLocation = RandoInterop.nameToLocation(data.name);
-                    Modding.Logger.Log("[MoreStags] - Adding location " + stagLocation);
                     rb.AddLocationByName(stagLocation);
                     rb.EditLocationRequest(stagLocation, info => {
                         info.getLocationDef = () => new() {
@@ -113,7 +117,6 @@ namespace MoreStags {
                     };
                 });
                 if(rb.gs.PoolSettings.Stags) {
-                    Modding.Logger.Log("[MoreStags] - Adding item " + stagLocation);
                     rb.AddItemByName(stagLocation);
                 }
                 else {
@@ -122,11 +125,11 @@ namespace MoreStags {
             }
         }
 
-        private static void filterBySettings(List<StagData> data) {
-            if(MoreStags.Settings.PreferNonVanilla)
-                data.RemoveAll(stag => stag.isVanilla);
-            if(MoreStags.Settings.RemoveCursedLocations)
-                data.RemoveAll(stag => stag.isCursed);
-        }
+private static void filterBySettings(List<StagData> data) {
+    if(MoreStags.Settings.PreferNonVanilla)
+        data.RemoveAll(stag => stag.isVanilla);
+    if(MoreStags.Settings.RemoveCursedLocations)
+        data.RemoveAll(stag => stag.isCursed);
+}
     }
 }

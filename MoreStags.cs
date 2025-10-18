@@ -408,6 +408,7 @@ namespace MoreStags {
 //write readme
 //Start Items stags option?
 //add quantity setting to menu
+//skip the walking state of stag tolls
 
 //--costs and order and grouping--
 //   Crossroads - 50
@@ -430,3 +431,8 @@ namespace MoreStags {
 //   Cliffs - 170
 //   Palace - 450
 //   Godhome - 450
+
+//--quantity settings notes--
+//   There are 11 by default
+//   There are 20 regions
+//   There are 103 total

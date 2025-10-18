@@ -4,6 +4,10 @@ namespace MoreStags {
     public class GlobalSettings {
         public bool Enabled = false;
         public StagSelection Selection = StagSelection.Balanced;
+
+        [MenuChanger.Attributes.MenuRange(11, 103)]
+        public int Quantity = 11;
+
         public bool PreferNonVanilla = false;
         public bool RemoveCursedLocations = false;
     }
@@ -16,7 +20,6 @@ namespace MoreStags {
 
     public enum StagSelection {
         Balanced,
-        Random,
-        All
+        Random
     }
 }
