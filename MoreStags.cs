@@ -117,6 +117,14 @@ namespace MoreStags {
                             GameObject.Find(toDelete).SetActive(false);
                         }
                     }
+                    foreach(string toDelete in data.childrenToRemove) {
+                        string[] hierarchy = toDelete.Split('/');
+                        GameObject parent = GameObject.Find(hierarchy[0]);
+                        for(int i = 1; i < hierarchy.Length; i++) {
+                            parent = parent.FindGameObjectInChildren(hierarchy[i]);
+                        }
+                        parent.SetActive(false);
+                    }
                 }
             }
         }
@@ -128,7 +136,7 @@ namespace MoreStags {
             if(self.FsmName == "Stag Bell") {
                 if(StagData.dataByRoom.TryGetValue(self.gameObject.scene.name, out StagData data)) {
                     if(data.isVanilla && !data.isActive(localData)) {
-                        self.gameObject.SetActive(false);//double check this for stagnest
+                        self.gameObject.SetActive(false);
                     }
                     if(!data.isVanilla && data.isActive(localData)) {
                         self.GetValidState("Get Price").AddCustomAction(() => { self.FsmVariables.GetFsmInt("Toll Cost").Value = data.cost; });
@@ -140,6 +148,9 @@ namespace MoreStags {
                         yes.InsertCustomAction(() => { localData.opened[data.name] = true; }, 0);
                     }
                 }
+                FsmState checkProx = self.GetValidState("Check Proximity");
+                checkProx.ChangeTransition("MOVE RIGHT", "Turn Hero Left");
+                checkProx.ChangeTransition("MOVE LEFT", "Turn Hero Right");
             }
             else if(self.FsmName == "Stag Control") {
                 if(StagData.dataByRoom.TryGetValue(self.gameObject.scene.name, out StagData data) && !data.isVanilla && data.isActive(localData)) {
@@ -354,6 +365,9 @@ namespace MoreStags {
         }
 
         public static bool IsRandoSave() {
+            /*int i = 1;          //this is just so I
+            if(i == 1)          //can test the plando
+                return true;    //and have it work*/
             try {
                 RandomizerModule module = ItemChangerMod.Modules.Get<RandomizerModule>();
                 return module is not null;
@@ -401,14 +415,12 @@ namespace MoreStags {
 
 //--bugs--
 //Cancelling at an unobtained stag location goes to Dirtmouth
+//Why is egg shop still causing problems with generation
 
 //--todo--
-//check on "Stag Bell" fsm in stag nest
 //populate the json with every location
 //write readme
 //Start Items stags option?
-//add quantity setting to menu
-//skip the walking state of stag tolls
 
 //--costs and order and grouping--
 //   Crossroads - 50

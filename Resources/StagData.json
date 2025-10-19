@@ -110,6 +110,129 @@
     "isVanilla": true
   },
   {
+    "name": "Grubfather",
+    "scene": "Crossroads_38",
+    "region": "Crossroads",
+    "cost": 50,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 15.9,
+      "y": 3
+    },
+    "_transitionX": 12.7,
+    "_stagCoords": {
+      "x": 7.1,
+      "y": 3
+    },
+    "_markerPosition": {
+      "x": 1685,
+      "y": 653
+    },
+    "objectsToRemove": [ "grub_home_FG 2" ]
+  },
+  {
+    "name": "Southwest Crossroads",
+    "scene": "Crossroads_18",
+    "region": "Crossroads",
+    "cost": 50,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 23.1,
+      "y": 27.1131
+    },
+    "_transitionX": 15.5,
+    "_transitionY": 24,
+    "_stagCoords": {
+      "x": 21.4,
+      "y": 21
+    },
+    "_markerPosition": {
+      "x": 1819,
+      "y": 888
+    }
+  },
+  {
+    "name": "Goams",
+    "scene": "Crossroads_42",
+    "region": "Crossroads",
+    "cost": 50,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 15.1,
+      "y": 13
+    },
+    "_transitionX": 11.7,
+    "_stagCoords": {
+      "x": 7.1,
+      "y": 13
+    },
+    "_markerPosition": {
+      "x": 2048,
+      "y": 852
+    }
+  },
+  {
+    "name": "East Crossroads",
+    "scene": "Crossroads_31",
+    "region": "Crossroads",
+    "cost": 50,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 19.1,
+      "y": 3
+    },
+    "_transitionX": 15.9,
+    "_stagCoords": {
+      "x": 11.7,
+      "y": 3
+    },
+    "_markerPosition": {
+      "x": 2231,
+      "y": 829
+    }
+  },
+  {
+    "name": "Myla",
+    "scene": "Crossroads_45",
+    "region": "Crossroads",
+    "cost": 50,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 48.8,
+      "y": 40
+    },
+    "_transitionX": 46.5,
+    "_stagCoords": {
+      "x": 42.2,
+      "y": 40
+    },
+    "_markerPosition": {
+      "x": 2332,
+      "y": 662
+    },
+    "objectsToRemove": [ "mine_strut_02 234 (12)" ]
+  },
+  {
+    "name": "Brooding Mawlek",
+    "scene": "Crossroads_36",
+    "region": "Crossroads",
+    "cost": 50,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 21.5,
+      "y": 31
+    },
+    "_transitionX": 18,
+    "_stagCoords": {
+      "x": 12.5,
+      "y": 31
+    },
+    "_markerPosition": {
+      "x": 1629,
+      "y": 772
+    }
+  },
+  {
     "name": "False Knight",
     "scene": "Crossroads_10",
     "region": "Crossroads",
@@ -308,7 +431,7 @@
     "cost": 300,
     "leftSide": false,
     "_bellCoords": {
-      "x": 112.5,
+      "x": 122.5,
       "y": 19
     },
     "_transitionX": 125.7,
@@ -426,7 +549,8 @@
       "x": 883,
       "y": 1774
     },
-    "objectsToRemove": [ "Loom_Room_0001_39 (8)", "Loom_Room_0012_28 (15)" ]
+    "objectsToRemove": [ "Loom_Room_0001_39 (8)", "Loom_Room_0012_28 (15)" ],
+    "childrenToRemove": [ "Breakable Wall Waterways/Masks" ]
   },
   {
     "name": "Monarch Wings",
@@ -456,7 +580,7 @@
     "cost": 400,
     "leftSide": false,
     "_bellCoords": {
-      "x": 91.7,
+      "x": 91.8,
       "y": 108
     },
     "_transitionX": 93.4,

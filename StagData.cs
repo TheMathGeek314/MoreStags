@@ -19,6 +19,7 @@ namespace MoreStags {
         public int positionNumber;
         public JsonVector2 _bellCoords;
         public float _transitionX;
+        public float _transitionY;
         public JsonVector2 _stagCoords;
         public Vector3 bellPosition;
         public Vector3 transitionPosition;
@@ -28,6 +29,7 @@ namespace MoreStags {
         public bool isVanilla = false;
         public string[] objectsToRemove;
         public string[] enemiesToRemove;
+        public string[] childrenToRemove;
         //public float stagScale;
 
         public void translate() {
@@ -36,7 +38,7 @@ namespace MoreStags {
             dataByRoom.Add(scene, this);
             if(!isVanilla) {
                 bellPosition = new Vector3(_bellCoords.x, _bellCoords.y + 1.1327f, 0.009f);
-                transitionPosition = new Vector3(_transitionX, _bellCoords.y - 0.26f, 0.2f);
+                transitionPosition = new Vector3(_transitionX, (_transitionY == default ? _bellCoords.y : _transitionY) - 0.26f, 0.2f);
                 stagPosition = new Vector3(_stagCoords.x, _stagCoords.y + 1.9f, 0.02f);
             }
             if(_markerPosition == null) {
@@ -47,6 +49,8 @@ namespace MoreStags {
                 objectsToRemove = [];
             if(enemiesToRemove == null)
                 enemiesToRemove = [];
+            if(childrenToRemove == null)
+                childrenToRemove = [];
         }
 
         public bool isActive(LocalData ld) {
