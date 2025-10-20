@@ -453,6 +453,49 @@
     "objectsToRemove": [ "No_eyes_statue1" ]
   },
   {
+    "name": "Fog Canyon",
+    "scene": "Fungus3_30",
+    "region": "Canyon",
+    "cost": 150,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 20.4,
+      "y": 3
+    },
+    "_transitionX": 17.3,
+    "_stagCoords": {
+      "x": 12.1,
+      "y": 3
+    },
+    "_markerPosition": {
+      "x": 1147,
+      "y": 1049
+    },
+    "objectsToRemove": [ "Fungus_Fat_pole", "fung_new_0065_Layer-294 (1)", "health plant 02 break (2)" ]
+  },
+  {
+    "name": "Archives Entrance",
+    "scene": "Fungus3_archive",
+    "region": "Canyon",
+    "cost": 250,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 76.6,
+      "y": 4
+    },
+    "_transitionX": 80.2,
+    "_stagCoords": {
+      "x": 85.7,
+      "y": 4
+    },
+    "_markerPosition": {
+      "x": 1456,
+      "y": 1126
+    },
+    "objectsToRemove": [ "Fung_Temple_0029_24 (14)", "Fung_Temple_0029_24 (13)", "temple_fg_fence (7)" ],
+    "childrenToRemove": [ "fung_temple_tube inactive (3)", "fung_temple_tube inactive (4)", "fung_temple_tube bg version (9)" ]
+  },
+  {
     "name": "Teacher's Archives",
     "scene": "Fungus3_archive_02",
     "region": "Canyon",
@@ -514,6 +557,114 @@
       "y": 1545
     },
     "enemiesToRemove": [ "Mantis Flyer Child (1)" ]
+  },
+  {
+    "name": "Droppers",
+    "scene": "Fungus3_04",
+    "region": "Gardens",
+    "cost": 200,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 29.8,
+      "y": 21
+    },
+    "_transitionX": 31.8,
+    "_stagCoords": {
+      "x": 35.1,
+      "y": 21
+    },
+    "_markerPosition": {
+      "x": 906,
+      "y": 1218
+    },
+    "objectsToRemove": [ "rg_mantis1", "fungd_pole 1" ],
+    "enemiesToRemove": [ "Mantis Heavy Flyer (1)" ]
+  },
+  {
+    "name": "Garden Respite",
+    "scene": "Fungus1_24",
+    "region": "Gardens",
+    "cost": 200,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 12.8,
+      "y": 21
+    },
+    "_transitionX": 9.8,
+    "_stagCoords": {
+      "x": 5.8,
+      "y": 21
+    },
+    "_markerPosition": {
+      "x": 1019,
+      "y": 1209
+    },
+    "objectsToRemove": [ "vine_24 (7)", "fungd_plant_04 (2)" ]
+  },
+  {
+    "name": "Love Key",
+    "scene": "Fungus3_39",
+    "region": "Gardens",
+    "cost": 200,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 13.6,
+      "y": 6
+    },
+    "_transitionX": 10.5,
+    "_stagCoords": {
+      "x": 6.8,
+      "y": 6
+    },
+    "_markerPosition": {
+      "x": 1097,
+      "y": 1396
+    },
+    "objectsToRemove": [ "fungd_vine_12 (2)" ]
+  },
+  {
+    "name": "Loodles",
+    "scene": "Fungus3_48",
+    "region": "Gardens",
+    "cost": 200,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 14.8,
+      "y": 3
+    },
+    "_transitionX": 11.8,
+    "_transitionY": 6,
+    "_stagCoords": {
+      "x": 7.3,
+      "y": 6
+    },
+    "_markerPosition": {
+      "x": 451,
+      "y": 1202
+    },
+    "objectsToRemove": [ "vine_24 (4)", "fungd_plant_04 (13)", "fungd_plant_04 (14)", "fungd_plant_04 (12)" ],
+    "enemiesToRemove": [ "Mantis Heavy Flyer" ]
+  },
+  {
+    "name": "Upper Gardens",
+    "scene": "Fungus3_22",
+    "region": "Gardens",
+    "cost": 200,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 7.9,
+      "y": 24
+    },
+    "_transitionX": 11.2,
+    "_stagCoords": {
+      "x": 16,
+      "y": 24
+    },
+    "_markerPosition": {
+      "x": 767,
+      "y": 1063
+    },
+    "objectsToRemove": [ "rg_mantis1 (13)", "rg_mantis1 (6)" ]
   },
   {
     "name": "White Lady",
