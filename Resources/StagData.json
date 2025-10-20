@@ -169,7 +169,8 @@
     "_markerPosition": {
       "x": 2048,
       "y": 852
-    }
+    },
+    "enemiesToRemove": [ "Buzzer 2", "Buzzer 3" ]
   },
   {
     "name": "East Crossroads",
@@ -276,6 +277,117 @@
     "enemiesToRemove": [ "Moss Walker (3)" ]
   },
   {
+    "name": "Waterfall West",
+    "scene": "Fungus1_02",
+    "region": "Upper Greenpath",
+    "cost": 140,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 22.6,
+      "y": 56
+    },
+    "_transitionX": 25.3,
+    "_transitionY": 54,
+    "_stagCoords": {
+      "x": 28.9,
+      "y": 53
+    },
+    "_markerPosition": {
+      "x": 1255,
+      "y": 729
+    }
+  },
+  {
+    "name": "Central Greenpath",
+    "scene": "Fungus1_03",
+    "region": "Upper Greenpath",
+    "cost": 140,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 13.1,
+      "y": 10
+    },
+    "_transitionX": 9.9,
+    "_stagCoords": {
+      "x": 5,
+      "y": 10
+    },
+    "_markerPosition": {
+      "x": 1019,
+      "y": 718
+    },
+    "objectsToRemove": [ "brk_barrel_03 (1)" ],
+    "enemiesToRemove": [ "Zombie Hornhead", "Zombie Runner" ]
+  },
+  {
+    "name": "Moss Knight",
+    "scene": "Fungus1_32",
+    "region": "Upper Greenpath",
+    "cost": 140,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 67.5,
+      "y": 20
+    },
+    "_transitionX": 64.4,
+    "_transitionY": 17,
+    "_stagCoords": {
+      "x": 58.7,
+      "y": 17
+    },
+    "_markerPosition": {
+      "x": 1051,
+      "y": 635
+    },
+    "objectsToRemove": [ "Fungus_twirl_rock", "vine_24 (3)", "vine_24 (4)" ],
+    "enemiesToRemove": [ "Moss Walker" ]
+  },
+  {
+    "name": "Hunter",
+    "scene": "Fungus1_07",
+    "region": "Lower Greenpath",
+    "cost": 140,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 15,
+      "y": 16.8567
+    },
+    "_transitionX": 9.8,
+    "_transitionY": 20,
+    "_stagCoords": {
+      "x": 6.1,
+      "y": 20
+    },
+    "_markerPosition": {
+      "x": 1384,
+      "y": 861
+    },
+    "objectsToRemove": [ "fung_new_0065_Layer-293" ],
+    "enemiesToRemove": [ "Mosquito (2)" ]
+  },
+  {
+    "name": "Artist's Approach",
+    "scene": "Fungus1_30",
+    "region": "Lower Greenpath",
+    "cost": 140,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 71.1,
+      "y": 8
+    },
+    "_transitionX": 68.4,
+    "_transitionY": 5,
+    "_stagCoords": {
+      "x": 63.9,
+      "y": 3
+    },
+    "_markerPosition": {
+      "x": 935,
+      "y": 890
+    },
+    "objectsToRemove": [ "fung_new_0065_Layer-293 (5)" ]
+  },
+  {
     "name": "Gulkas",
     "scene": "Fungus1_11",
     "region": "Lower Greenpath",
@@ -296,6 +408,49 @@
     },
     "objectsToRemove": [ "vine_38" ],
     "enemiesToRemove": [ "Plant Turret" ]
+  },
+  {
+    "name": "Durandoos",
+    "scene": "Fungus1_13",
+    "region": "Lower Greenpath",
+    "cost": 140,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 171.9,
+      "y": 27
+    },
+    "_transitionX": 170.2,
+    "_transitionY": 26,
+    "_stagCoords": {
+      "x": 166,
+      "y": 26
+    },
+    "_markerPosition": {
+      "x": 1054,
+      "y": 973
+    },
+    "objectsToRemove": [ "Fungus Stone Variant (2)", "Fung_FG_Silhouettes_0005_fv4 (5)", "fung_new_0065_Layer-293 (2)" ]
+  },
+  {
+    "name": "Stone Sanctuary",
+    "scene": "Fungus1_36",
+    "region": "Lower Greenpath",
+    "cost": 150,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 13.6,
+      "y": 3
+    },
+    "_transitionX": 18.1,
+    "_stagCoords": {
+      "x": 22.4,
+      "y": 3
+    },
+    "_markerPosition": {
+      "x": 1527,
+      "y": 943
+    },
+    "objectsToRemove": [ "No_eyes_statue1" ]
   },
   {
     "name": "Teacher's Archives",

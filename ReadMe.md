@@ -7,3 +7,4 @@ Description about preferring custom locations (clarification about Dirtmouth/Sta
 Explanation of cursed locations toggle
 Some comment about quantities 11, 20, and 103
 List of cursed stags
+Mention removing enemies, potential rare TRJR/transition problem

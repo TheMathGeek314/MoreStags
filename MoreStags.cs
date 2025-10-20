@@ -415,12 +415,12 @@ namespace MoreStags {
 
 //--bugs--
 //Cancelling at an unobtained stag location goes to Dirtmouth
-//Why is egg shop still causing problems with generation
 
 //--todo--
 //populate the json with every location
 //write readme
 //Start Items stags option?
+//condensed spoiler interop
 
 //--costs and order and grouping--
 //   Crossroads - 50
