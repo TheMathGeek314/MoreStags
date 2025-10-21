@@ -40,6 +40,14 @@
         "logic": "ORIG | Stag-False_Knight + Can_Stag + Defeated_False_Knight"
     },
     {
+        "name": "Crossroads_18[right1]",
+        "logic": "ORIG | Stag-Southwest_Crossroads + Can_Stag"
+    },
+    {
+        "name": "Crossroads_38[right1]",
+        "logic": "ORIG | Stag-Grubfather + Can_Stag"
+    },
+    {
         "name": "Deepnest_East_04",
         "logic": "ORIG | Stag-Bardoon + Can_Stag"
     },
@@ -50,6 +58,14 @@
     {
         "name": "Fungus1_01[right1]",
         "logic": "ORIG | Stag-Waterfall_East + Can_Stag"
+    },
+    {
+        "name": "Fungus1_02[right1]",
+        "logic": "ORIG | Fungus1_02"
+    },
+    {
+        "name": "Fungus1_02[right2]",
+        "logic": "ORIG | Fungus1_02"
     },
     {
         "name": "Fungus1_11",
@@ -84,12 +100,24 @@
         "logic": "ORIG | Stag-False_Knight + Can_Stag + Defeated_False_Knight"
     },
     {
+        "name": "Geo_Rock-Crossroads_Before_Fungal",
+        "logic": "ORIG | Stag-Southwest_Crossroads + Can_Stag"
+    },
+    {
         "name": "Geo_Rock-Fungal_Below_Pilgrim's_Way",
         "logic": "ORIG | Stag-Fungal_Nexus + Can_Stag"
     },
     {
-        "name": "Geo_Rock-Mantis_Outskirts_Alcove",
-        "logic": "ORIG | Stag-Bretta + Can_Stag"
+        "name": "Geo_Rock-Greenpath_Below_Skip_Squit",
+        "logic": "ORIG | Fungus1_02"
+    },
+    {
+        "name": "Geo_Rock-Greenpath_Skip_Squit",
+        "logic": "ORIG | Fungus1_02"
+    },
+    {
+        "name": "Grub-Crossroads_Spike",
+        "logic": "ORIG | Stag-East_Crossroads + Can_Stag"
     },
     {
         "name": "Journal_Entry-Charged_Lumafly",
@@ -114,5 +142,9 @@
     {
         "name": "Simple_Key-Basin",
         "logic": "ORIG | Stag-Mawlurks + Can_Stag"
+    },
+    {
+        "name": "Soul_Totem-Crossroads_Myla",
+        "logic": "Crossroads_45"
     }
 ]

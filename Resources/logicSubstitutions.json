@@ -10,14 +10,49 @@
         "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
     },
     {
+        "name": "Crossroads_18",
+        "old": "Crossroads_18[right1]",
+        "replacement": "Crossroads_18[right1] | Stag-Southwest_Crossroads + Can_Stag"
+    },
+    {
+        "name": "Crossroads_36[right1]",
+        "old": "Crossroads_36[right2]",
+        "replacement": "Crossroads_36[right2] | Stag-Brooding_Mawlek + Can_Stag"
+    },
+    {
+        "name": "Crossroads_36[right2]",
+        "old": "Crossroads_36[right2]",
+        "replacement": "Crossroads_36[right2] | Stag-Brooding_Mawlek + Can_Stag"
+    },
+    {
         "name": "Defeated_False_Knight",
         "old": "Crossroads_10[right1]",
         "replacement": "Crossroads_10[right1] | Stag-False_Knight + Can_Stag + (ANYCLAW | WINGS | RIGHTDASH | ENEMYPOGOS)"
     },
     {
+        "name": "Fungus1_02[left1]",
+        "old": "Fungus1_02[right2]",
+        "replacement": "Fungus1_02[right2] | Stag-Waterfall_West + Can_Stag"
+    },
+    {
         "name": "Geo_Rock-Broken_Bridge_Lower",
         "old": "Abyss_02[right1]",
         "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag"
+    },
+    {
+        "name": "Geo_Rock-Crossroads_Above_Mawlek",
+        "old": "Crossroads_36[right2]",
+        "replacement": "Crossroads_36[right2] | Stag-Brooding_Mawlek + Can_Stag"
+    },
+    {
+        "name": "Geo_Rock-Crossroads_Goam_Alcove",
+        "old": "Crossroads_42[right1]",
+        "replacement": "Crossroads_42"
+    },
+    {
+        "name": "Geo_Rock-Crossroads_Goam_Damage_Boost",
+        "old": "Crossroads_42[right1]",
+        "replacement": "Crossroads_42"
     },
     {
         "name": "Geo_Rock-Broken_Bridge_Upper",
@@ -48,6 +83,11 @@
         "name": "Soul_Totem-Basin",
         "old": "Abyss_04[top1]",
         "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
+    },
+    {
+        "name": "Soul_Totem-Crossroads_Mawlek_Lower",
+        "old": "Crossroads_36[right2]",
+        "replacement": "Crossroads_36[right2] | Stag-Brooding_Mawlek + Can_Stag"
     },
     {
         "name": "Vessel_Fragment-Basin",

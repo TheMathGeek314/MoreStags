@@ -15,7 +15,7 @@ namespace MoreStags {
     {
         public static void Hook()
         {
-            RCData.RuntimeLogicOverride.Subscribe(50, ApplyLogic);
+            RCData.RuntimeLogicOverride.Subscribe(50f, ApplyLogic);
             RCData.RuntimeLogicOverride.Subscribe(69420f, AlterConnectionLogic);
         }
 
@@ -34,6 +34,9 @@ namespace MoreStags {
 
             using Stream str = assembly.GetManifestResourceStream("MoreStags.Resources.logicSubstitutions.json");
             lmb.DeserializeFile(LogicFileType.LogicSubst, fmt, str);
+
+            using Stream stre = assembly.GetManifestResourceStream("MoreStags.Resources.waypoints.json");
+            lmb.DeserializeFile(LogicFileType.Waypoints, fmt, stre);
 
             DefineTermsAndItems(lmb, fmt);
         }

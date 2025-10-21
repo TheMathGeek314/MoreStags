@@ -129,19 +129,19 @@
   },
   {
     "name": "Stag-East_Crossroads",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Crossroads_31[right1] | Stag-East_Crossroads + Can_Stag"
   },
   {
     "name": "Stag-Goams",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Crossroads_42 | Stag-Goams + Can_Stag"
   },
   {
     "name": "Stag-Southwest_Crossroads",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Crossroads_18 | Crossroads_18[right1] | Stag-Southwest_Crossroads + Can_Stag"
   },
   {
     "name": "Stag-Brooding_Mawlek",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Crossroads_36[right1] + (Collapser-Mawlek_Upper?FALSE + (WINGS | $SHADESKIP + (DAMAGEBOOSTS + $TAKEDAMAGE | ANYCLAW | ANYDASH | SPELLAIRSTALL)) | Collapser-Mawlek_Lower?TRUE) | Crossroads_36[right2] | Stag-Brooding_Mawlek + Can_Stag"
   },
   {
     "name": "Stag-False_Knight",
@@ -153,7 +153,7 @@
   },
   {
     "name": "Stag-Myla",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Crossroads_45 | Stag-Myla + Can_Stag"
   },
   {
     "name": "Stag-Upper_Wastes",
@@ -217,7 +217,7 @@
   },
   {
     "name": "Stag-Waterfall_West",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus1_02 | Stag-Waterfall_West + Can_Stag"
   },
   {
     "name": "Stag-Hunter",

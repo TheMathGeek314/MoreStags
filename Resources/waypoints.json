@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Crossroads_42",
+        "logic": "Crossroads_42[right1] | Crossroads_42[left1] | Stag-Goams + Can_Stag",
+        "Stateless": false
+    },
+    {
+        "name": "Crossroads_45",
+        "logic": "Crossroads_45[right1] | Crossroads_45[left1] | Stag-Myla + Can_Stag",
+        "Stateless": false
+    },
+    {
+        "name": "Fungus1_02",
+        "logic": "Fungus1_02[left1] | Fungus1_02[right1] | Fungus1_02[right2] | Stag-Waterfall_West + Can_Stag",
+        "Stateless": false
+    }
+]
