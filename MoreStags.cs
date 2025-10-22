@@ -229,7 +229,7 @@ namespace MoreStags {
         private void createUiObjects(GameObject uiList) {
             uiGameobjectDict.Clear();
             Vector3 sourcePosition = new(-5.07f, 4.3f, 0);
-            foreach(StagData data in localData.activeStags.Where(s => !s.isVanilla)) {
+            foreach(StagData data in StagData.allStags.Where(s => !s.isVanilla)) {
                 Vector3 yOffset = new(0, data.positionNumber, 0);
                 GameObject newUI = GameObject.Instantiate(uiPrefab, Vector3.zero, Quaternion.identity, uiList.transform);
                 newUI.transform.localPosition = sourcePosition - yOffset;
@@ -274,7 +274,7 @@ namespace MoreStags {
             //add new states
             bool firstCustom = true;
             FsmState lastInitial = self.GetValidState("Stagnest Initial?");
-            foreach(StagData data in localData.activeStags.Where(s => !s.isVanilla)) {
+            foreach(StagData data in StagData.allStags.Where(s => !s.isVanilla)) {
                 FsmState nameState = self.AddState($"MoreStags {data.name}?");
                 FsmState initialState = self.AddState($"MoreStags {data.name} Initial?");
                 nameState.AddTransition("FINISHED", initialState.Name);
@@ -288,20 +288,22 @@ namespace MoreStags {
                 lastInitial = initialState;
 
                 nameState.AddAction(new StagOpenedBoolTest(data.name, "FINISHED", "", localData));
-                nameState.AddAction(new ActivateGameObject {
-                    gameObject = uiGameobjectDict[data.name],
-                    activate = new FsmBool { Value = false },
-                    recursive = new FsmBool { Value = false },
-                    resetOnExit = false,
-                    everyFrame = false
-                });
+                if(uiGameobjectDict.ContainsKey(data.name)) {
+                    nameState.AddAction(new ActivateGameObject {
+                        gameObject = uiGameobjectDict[data.name],
+                        activate = new FsmBool { Value = false },
+                        recursive = new FsmBool { Value = false },
+                        resetOnExit = false,
+                        everyFrame = false
+                    });
+                }
                 bool foundSelf = false;
-                foreach(StagData stagToTranslate in localData.activeStags.Where(s => !s.isVanilla)) {
+                foreach(StagData stagToTranslate in StagData.allStags.Where(s => !s.isVanilla)) {
                     if(stagToTranslate.name == data.name) {
                         foundSelf = true;
                         continue;
                     }
-                    if(!foundSelf)
+                    if(!foundSelf || !stagToTranslate.isActive(localData))
                         continue;
                     nameState.AddAction(new Translate {
                         gameObject = uiGameobjectDict[stagToTranslate.name],
@@ -322,28 +324,33 @@ namespace MoreStags {
                         everyFrame = false
                     });
                 }
-                nameState.AddAction(new IntOperator {
-                    integer1 = self.FsmVariables.GetFsmInt("Items"),
-                    integer2 = new FsmInt { Value = 1 },
-                    operation = IntOperator.Operation.Subtract,
-                    storeResult = self.FsmVariables.GetFsmInt("Items"),
-                    everyFrame = false
-                });
+                if(data.isActive(localData)) {
+                    nameState.AddAction(new IntOperator {
+                        integer1 = self.FsmVariables.GetFsmInt("Items"),
+                        integer2 = new FsmInt { Value = 1 },
+                        operation = IntOperator.Operation.Subtract,
+                        storeResult = self.FsmVariables.GetFsmInt("Items"),
+                        everyFrame = false
+                    });
+                }
 
                 initialState.AddAction(new IntCompare {
                     integer1 = self.FsmVariables.GetFsmInt("Stag Position"),
                     integer2 = new FsmInt { Value = data.positionNumber },
                     lessThan = FsmEvent.GetFsmEvent("FINISHED"),
                     greaterThan = FsmEvent.GetFsmEvent("FINISHED"),
+                    equal = uiGameobjectDict.ContainsKey(data.name) ? null : FsmEvent.GetFsmEvent("FINISHED"),
                     everyFrame = false
                 });
-                initialState.AddAction(new GetFsmInt {
-                    gameObject = uiGameobjectDict[data.name],
-                    fsmName = new FsmString { Value = "ui_list_item" },
-                    variableName = new FsmString { Value = "Item Number" },
-                    storeValue = self.FsmVariables.GetFsmInt("Initial Item"),
-                    everyFrame = false
-                });
+                if(uiGameobjectDict.ContainsKey(data.name)) {
+                    initialState.AddAction(new GetFsmInt {
+                        gameObject = uiGameobjectDict[data.name],
+                        fsmName = new FsmString { Value = "ui_list_item" },
+                        variableName = new FsmString { Value = "Item Number" },
+                        storeValue = self.FsmVariables.GetFsmInt("Initial Item"),
+                        everyFrame = false
+                    });
+                }
             }
             lastInitial.AddTransition("FINISHED", "Set Initial Item");
         }
@@ -398,7 +405,7 @@ namespace MoreStags {
             this.localData = localData;
         }
         public override void OnEnter() {
-            if(localData.opened[name]) {
+            if(localData.opened.ContainsKey(name) && localData.opened[name]) {
                 if(hasTrue) {
                     base.Fsm.Event(isTrue);
                 }
