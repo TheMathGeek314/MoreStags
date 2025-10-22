@@ -372,9 +372,8 @@ namespace MoreStags {
         }
 
         public static bool IsRandoSave() {
-            /*int i = 1;          //this is just so I
-            if(i == 1)          //can test the plando
-                return true;    //and have it work*/
+            if(localData.plandoOverride)
+                return true;
             try {
                 RandomizerModule module = ItemChangerMod.Modules.Get<RandomizerModule>();
                 return module is not null;
