@@ -415,7 +415,6 @@ namespace MoreStags {
 
 //--bugs--
 //Cancelling at an unobtained stag location goes to Dirtmouth
-//Weavers' Den's other breakable wall mask
 
 //--todo--
 //populate the json with every location

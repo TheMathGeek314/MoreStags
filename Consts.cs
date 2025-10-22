@@ -1,5 +1,5 @@
-﻿using ItemChanger;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using ItemChanger;
 
 namespace MoreStags {
     public static class Consts {
