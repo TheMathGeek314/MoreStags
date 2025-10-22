@@ -117,7 +117,7 @@
   },
   {
     "name": "Stag-Fog_Canyon",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus3_30[bot1] | Stag-Fog_Canyon + Can_Stag"
   },
   {
     "name": "Stag-Archives_Entrance",
@@ -221,19 +221,19 @@
   },
   {
     "name": "Stag-Hunter",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus1_07 | Stag-Hunter + Can_Stag"
   },
   {
     "name": "Stag-Artist's_Approach",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus1_30 | Stag-Artist's_Approach + Can_Stag"
   },
   {
     "name": "Stag-Moss_Knight",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus1_32 | Stag-Moss_Knight + Can_Stag"
   },
   {
     "name": "Stag-Central_Greenpath",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus1_03 | Stag-Central_Greenpath + Can_Stag"
   },
   {
     "name": "Stag-Gulkas",
@@ -241,11 +241,11 @@
   },
   {
     "name": "Stag-Stone_Sanctuary",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus1_36[left1] | Stag-Stone_Sanctuary + Can_Stag"
   },
   {
     "name": "Stag-Durandoos",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
   },
   {
     "name": "Stag-Hive_Entryway",

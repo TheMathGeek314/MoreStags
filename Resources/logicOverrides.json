@@ -68,8 +68,56 @@
         "logic": "ORIG | Fungus1_02"
     },
     {
+        "name": "Fungus1_03[bot1]",
+        "logic": "ORIG | Fungus1_03"
+    },
+    {
+        "name": "Fungus1_03[left1]",
+        "logic": "ORIG | Fungus1_03"
+    },
+    {
+        "name": "Fungus1_03[right1]",
+        "logic": "ORIG | Fungus1_03"
+    },
+    {
+        "name": "Fungus1_07[left1]",
+        "logic": "ORIG | Fungus1_07"
+    },
+    {
+        "name": "Fungus1_07[right1]",
+        "logic": "ORIG | Fungus1_07"
+    },
+    {
+        "name": "Fungus1_07[top1]",
+        "logic": "ORIG | Fungus1_07"
+    },
+    {
         "name": "Fungus1_11",
         "logic": "ORIG | Stag-Gulkas + Can_Stag"
+    },
+    {
+        "name": "Fungus1_13[right1]",
+        "logic": "ORIG | Stag-Durandoos + Can_Stag"
+    },
+    {
+        "name": "Fungus1_30",
+        "logic": "ORIG | Stag-Artist's_Approach + Can_Stag"
+    },
+    {
+        "name": "Fungus1_32[bot1]",
+        "logic": "ORIG | Fungus1_32"
+    },
+    {
+        "name": "Fungus1_32[left1]",
+        "logic": "ORIG | Fungus1_32"
+    },
+    {
+        "name": "Fungus1_32[top1]",
+        "logic": "ORIG | Fungus1_32"
+    },
+    {
+        "name": "Fungus1_36[left1]",
+        "logic": "ORIG | Stag-Stone_Sanctuary + Can_Stag"
     },
     {
         "name": "Fungus2_11",
@@ -82,6 +130,18 @@
     {
         "name": "Fungus2_13[left3]",
         "logic": "ORIG | Stag-Bretta + Can_Stag"
+    },
+    {
+        "name": "Fungus3_30[bot1]",
+        "logic": "ORIG | Stag-Fog_Canyon + Can_Stag"
+    },
+    {
+        "name": "Fungus3_archive[bot1]",
+        "logic": "ORIG | Stag-Archives_Entrance + Can_Stag"
+    },
+    {
+        "name": "Fungus3_archive[left1]",
+        "logic": "ORIG | Stag-Archives_Entrance + Can_Stag"
     },
     {
         "name": "Geo_Rock-Abyss_1",
@@ -112,6 +172,14 @@
         "logic": "ORIG | Fungus1_02"
     },
     {
+        "name": "Geo_Rock-Greenpath_Second_Skip_Fool_Eater",
+        "logic": "ORIG | Fungus1_03"
+    },
+    {
+        "name": "Geo_Rock-Greenpath_Second_Skip_Lower",
+        "logic": "ORIG | Fungus1_03"
+    },
+    {
         "name": "Geo_Rock-Greenpath_Skip_Squit",
         "logic": "ORIG | Fungus1_02"
     },
@@ -130,6 +198,14 @@
     {
         "name": "Lore_Tablet-Archives_Right",
         "logic": "ORIG | Stag-Teacher's_Archives + Can_Stag + (ANYCLAW | $SHRIEKPOGO[2])"
+    },
+    {
+        "name": "Lore_Tablet-Greenpath_Lifeblood",
+        "logic": "ORIG | Stag-Moss_Knight + Can_Stag"
+    },
+    {
+        "name": "Mask_Shard-Stone_Sacntuary",
+        "logic": "ORIG | Stag-Stone_Sanctuary + Can_Stag"
     },
     {
         "name": "Mines_34[bot1]",

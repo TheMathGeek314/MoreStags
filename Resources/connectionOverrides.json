@@ -34,6 +34,11 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Wall-Greenpath_Lifeblood",
+        "logicOverride": "ORIG | Stag-Moss_Knight + Can_Stag",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Wall-Maggot_Room",
         "logicOverride": "ORIG | Stag-False_Knight + Can_Stag + Defeated_False_Knight",
         "logicSubstitutions": {}

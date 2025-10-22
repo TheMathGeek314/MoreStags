@@ -10,6 +10,11 @@
         "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
     },
     {
+        "name": "Bench-Archives",
+        "old": "Fungus3_archive[bot1]",
+        "replacement": "Fungus3_archive[bot1] | Stag-Archives_Entrance + Can_Stag"
+    },
+    {
         "name": "Crossroads_18",
         "old": "Crossroads_18[right1]",
         "replacement": "Crossroads_18[right1] | Stag-Southwest_Crossroads + Can_Stag"
@@ -35,7 +40,17 @@
         "replacement": "Fungus1_02[right2] | Stag-Waterfall_West + Can_Stag"
     },
     {
+        "name": "Geo_Chest-Greenpath",
+        "old": "Fungus1_13[right1]",
+        "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
+    },
+    {
         "name": "Geo_Rock-Broken_Bridge_Lower",
+        "old": "Abyss_02[right1]",
+        "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag"
+    },
+    {
+        "name": "Geo_Rock-Broken_Bridge_Upper",
         "old": "Abyss_02[right1]",
         "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag"
     },
@@ -55,9 +70,9 @@
         "replacement": "Crossroads_42"
     },
     {
-        "name": "Geo_Rock-Broken_Bridge_Upper",
-        "old": "Abyss_02[right1]",
-        "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag"
+        "name": "Geo_Rock-Greenpath_Hunter's_Journal",
+        "old": "Fungus1_07[top1]",
+        "replacement": "Fungus1_07[top1] | Stag-Hunter + Can_Stag"
     },
     {
         "name": "Grimmkin_Flame-Ancient_Basin",
@@ -68,6 +83,36 @@
         "name": "Grub-Basin_Requires_Dive",
         "old": "Abyss_17[top1]",
         "replacement": "Abyss_17[top1] | Stag-Lower_Tramway + Can_Stag"
+    },
+    {
+        "name": "Grub-Greenpath_Journal",
+        "old": "Fungus1_07[top1]",
+        "replacement": "Fungus1_07[top1] | Stag-Hunter + Can_Stag"
+    },
+    {
+        "name": "Grub-Greenpath_MMC",
+        "old": "Fungus1_13[right1]",
+        "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
+    },
+    {
+        "name": "Hallownest_Seal-Fog_Canyon_West",
+        "old": "Fungus3_30[bot1]",
+        "replacement": "Fungus3_30[bot1] | Stag-Fog_Canyon + Can_Stag"
+    },
+    {
+        "name": "Lifeblood_Cocoon-Fog_Canyon_West",
+        "old": "Fungus3_30[bot1]",
+        "replacement": "Fungus3_30[bot1] | Stag-Fog_Canyon + Can_Stag"
+    },
+    {
+        "name": "Lifeblood_Cocoon-Greenpath",
+        "old": "Fungus1_32[top1]",
+        "replacement": "Fungus1_32[top1] | Stag-Moss_Knight + Can_Stag"
+    },
+    {
+        "name": "Lore_Tablet-Greenpath_QG",
+        "old": "Fungus1_13[right1]",
+        "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
     },
     {
         "name": "Monarch_Wings",
@@ -90,9 +135,19 @@
         "replacement": "Crossroads_36[right2] | Stag-Brooding_Mawlek + Can_Stag"
     },
     {
+        "name": "Soul_Totem-Greenpath_Hunter's_Journal",
+        "old": "Fungus1_07[top1]",
+        "replacement": "Fungus1_07[top1] | Stag-Hunter + Can_Stag"
+    },
+    {
         "name": "Vessel_Fragment-Basin",
         "old": "Abyss_04[top1]",
         "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
+    },
+    {
+        "name": "Vessel_Fragment-Greenpath",
+        "old": "Fungus1_13[right1]",
+        "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
     },
     {
         "name": "Void_Heart",

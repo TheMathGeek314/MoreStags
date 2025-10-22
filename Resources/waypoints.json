@@ -13,5 +13,20 @@
         "name": "Fungus1_02",
         "logic": "Fungus1_02[left1] | Fungus1_02[right1] | Fungus1_02[right2] | Stag-Waterfall_West + Can_Stag",
         "Stateless": false
+    },
+    {
+        "name": "Fungus1_03",
+        "logic": "Fungus1_03[bot1] | Fungus1_03[left1] | Fungus1_03[right1] | Stag-Central_Greenpath + Can_Stag",
+        "Stateless": false
+    },
+    {
+        "name": "Fungus1_07",
+        "logic": "Fungus1_07[left1] | Fungus1_07[right1] | Fungus1_07[top1] | Stag-Hunter + Can_Stag",
+        "Stateless": false
+    },
+    {
+        "name": "Fungus1_32",
+        "logic": "Fungus1_32[bot1] | Fungus1_32[left1] | Fungus1_32[top1] | Stag-Moss_Knight + Can_Stag",
+        "Stateless": false
     }
 ]
