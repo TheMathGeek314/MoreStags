@@ -16,6 +16,7 @@ namespace MoreStags {
         public int cost;
         public bool leftSide;
         public bool isCursed = false;
+        public string returnScene;
         public int positionNumber;
         public JsonVector2 _bellCoords;
         public float _transitionX;

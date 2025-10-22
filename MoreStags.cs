@@ -116,6 +116,9 @@ namespace MoreStags {
                         foreach(string toDelete in data.enemiesToRemove) {
                             GameObject.Find(toDelete).SetActive(false);
                         }
+                        if(!string.IsNullOrEmpty(data.returnScene)) {
+                            PlayerData.instance.dreamReturnScene = data.returnScene;
+                        }
                     }
                     foreach(string toDelete in data.childrenToRemove) {
                         string[] hierarchy = toDelete.Split('/');
