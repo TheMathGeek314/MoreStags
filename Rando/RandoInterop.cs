@@ -15,8 +15,8 @@ namespace MoreStags {
             DefineLocations();
             DefineItems();
 
-            //if(ModHooks.GetMod("CondensedSpoilerLogger") is Mod)
-            //  todo
+            if(ModHooks.GetMod("CondensedSpoilerLogger") is Mod)
+                CSLInterop.Hook();
 
             if(ModHooks.GetMod("RandoSettingsManager") is Mod)
               RSMInterop.Hook();

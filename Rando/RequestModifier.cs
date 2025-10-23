@@ -16,15 +16,14 @@ namespace MoreStags {
             PreserveLevers(rb);
         }
 
-        private static void PreserveLevers(RequestBuilder rb)
-        {
+        private static void PreserveLevers(RequestBuilder rb) {
             bool areLeversOn = rb.GetItemGroupFor("Lever-Resting_Grounds_Stag").Items.GetCount("Lever-Resting_Grounds_Stag") > 0;
             LocalData ld = MoreStags.localData;
             ld.preserveStagLevers = areLeversOn;
         }
 
         private static void SelectStags(RequestBuilder rb) {
-            List<StagData> stagsToActivate = [ StagData.dataByRoom["Room_Town_Stag_Station"] ];
+            List<StagData> stagsToActivate = [StagData.dataByRoom["Room_Town_Stag_Station"]];
             if(!rb.gs.SkipSettings.EnemyPogos) {
                 stagsToActivate.Add(StagData.dataByRoom["Cliffs_03"]);
             }
@@ -64,7 +63,7 @@ namespace MoreStags {
                         StagData chosenCandi = candidates[rb.rng.Next(candidates.Count)];
                         candidates.Remove(chosenCandi);
                         stagsToActivate.Add(chosenCandi);
-                    }   
+                    }
                     break;
             }
             LocalData ld = MoreStags.localData;
@@ -123,13 +122,19 @@ namespace MoreStags {
                     rb.AddToVanilla(stagLocation, stagLocation);
                 }
             }
+
+            if(!rb.gs.PoolSettings.Stags) {
+                foreach(string vanillaLocation in StagData.allStags.Where(stag => stag.isVanilla && !stag.isActive(MoreStags.localData)).Select(stag => Consts.LocationNames[stag.name])) {
+                    rb.RemoveFromVanilla(vanillaLocation);
+                }
+            }
         }
 
-private static void filterBySettings(List<StagData> data) {
-    if(MoreStags.Settings.PreferNonVanilla)
-        data.RemoveAll(stag => stag.isVanilla);
-    if(MoreStags.Settings.RemoveCursedLocations)
-        data.RemoveAll(stag => stag.isCursed);
-}
+        private static void filterBySettings(List<StagData> data) {
+            if(MoreStags.Settings.PreferNonVanilla)
+                data.RemoveAll(stag => stag.isVanilla);
+            if(MoreStags.Settings.RemoveCursedLocations)
+                data.RemoveAll(stag => stag.isCursed);
+        }
     }
 }

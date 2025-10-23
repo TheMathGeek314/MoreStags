@@ -70,6 +70,9 @@
     <Reference Include="Assembly-CSharp-firstpass">
       <HintPath>$(HollowKnightRefs)/Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
+    <Reference Include="CondensedSpoilerLogger">
+      <HintPath>..\_dependencies\CondensedSpoilerLogger.dll</HintPath>
+    </Reference>
     <Reference Include="DebugMod">
       <HintPath>..\_dependencies\DebugMod.dll</HintPath>
     </Reference>
