@@ -4,7 +4,6 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using MonoMod.RuntimeDetour;
-using CondensedSpoilerLogger;
 using RandomizerMod.Logging;
 using CSL = CondensedSpoilerLogger.Loggers.CondensedSpoilerLog;
 using Category = CondensedSpoilerLogger.Loggers.CondensedSpoilerLog.Category;
@@ -39,8 +38,6 @@ namespace MoreStags {
             if(!MoreStags.Settings.Enabled)
                 return;
             StringBuilder sb = new();
-            SpoilerReader sr = new(args);
-            sr.Indent = 2;
             List<StagData> activeStags = MoreStags.localData.activeStags;
 
             sb.AppendLine($"Stags active for seed: {args.gs.Seed}");

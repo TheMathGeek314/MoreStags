@@ -427,9 +427,9 @@ namespace MoreStags {
 
 //--todo--
 //populate the json with every location
-//write readme
 //Start Items stags option?
-//condensed spoiler interop (consider grouping by area)
+//any stag renames?
+//can stag nest unlock at other numbers?
 
 //--costs and order and grouping--
 //   Crossroads - 50
