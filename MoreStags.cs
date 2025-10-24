@@ -423,7 +423,8 @@ namespace MoreStags {
 }
 
 //--bugs--
-//none probably?
+//GameObject.Find() may not find killed enemies
+//Infrequently, a newly unlocked stag will not appear in the list until after reloading the room
 
 //--todo--
 //populate the json with every location

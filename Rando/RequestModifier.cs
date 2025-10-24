@@ -23,17 +23,21 @@ namespace MoreStags {
         }
 
         private static void SelectStags(RequestBuilder rb) {
+            GlobalSettings ms = MoreStags.Settings;
+            if(!ms.Enabled)
+                return;
             List<StagData> stagsToActivate = [StagData.dataByRoom["Room_Town_Stag_Station"]];
-            if(!rb.gs.SkipSettings.EnemyPogos) {
+            bool isRoomRando = rb.gs.TransitionSettings.Mode == RandomizerMod.Settings.TransitionSettings.TransitionMode.RoomRandomizer;
+            if(!rb.gs.SkipSettings.EnemyPogos && !isRoomRando) {
                 stagsToActivate.Add(StagData.dataByRoom["Cliffs_03"]);
             }
-            switch(MoreStags.Settings.Selection) {
+            switch(ms.Selection) {
                 case StagSelection.Balanced:
                     List<string> masterRegionList = new(Consts.Regions);
                     List<string> regions = new(masterRegionList);
                     if(stagsToActivate.Count == 2)
                         regions.Remove("Cliffs");
-                    while(stagsToActivate.Count < MoreStags.Settings.Quantity) {
+                    while(stagsToActivate.Count < ms.Quantity) {
                         if(regions.Count == 0) {
                             if(masterRegionList.Count == 0) {
                                 break;
@@ -57,7 +61,7 @@ namespace MoreStags {
                     if(stagsToActivate.Count == 2)
                         candidates.RemoveAll(stag => stag.name == "Stag Nest");
                     filterBySettings(candidates);
-                    while(stagsToActivate.Count < MoreStags.Settings.Quantity) {
+                    while(stagsToActivate.Count < ms.Quantity) {
                         if(candidates.Count == 0)
                             break;
                         StagData chosenCandi = candidates[rb.rng.Next(candidates.Count)];

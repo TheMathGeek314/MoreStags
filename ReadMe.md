@@ -23,7 +23,7 @@ These are brand new locations and are not pooled with the rest of the rando chec
 - Dirtmouth will always be active and open from the start, regardless of settings
 - If enemy pogo skips are disabled, Stag Nest will always be active
 - If more than 11 stags are active including Stag Nest, Stag Nest will be available after unlocking 9 other stags (not including Dirtmouth)
-- Some stag locations overlap with enemy placements. These enemies will be removed when arriving via stag, but they will exist as normal when entering from aother transition
+- Some stag locations overlap with enemy placements. These enemies will be removed when arriving via stag, but they will exist as normal when entering from another transition
 	- In rare cases, this could cause impossible seeds when using TheRealJournalRando, especially in decoupled room randos
 
 ## Compatibility / Interop
