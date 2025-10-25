@@ -114,7 +114,10 @@ namespace MoreStags {
                     //so far every test has been around 0.6-0.7 ish so 1.5 should be plenty, but watch out for custom stags near doorways
                     if((HeroController.instance.transform.position - GameObject.Find("door_stagExit").transform.position).magnitude < 1.5f) {
                         foreach(string toDelete in data.enemiesToRemove) {
-                            GameObject.Find(toDelete).SetActive(false);
+                            GameObject go = GameObject.Find(toDelete);
+                            if(go != null) {
+                                go.SetActive(false);
+                            }
                         }
                         if(!string.IsNullOrEmpty(data.returnScene)) {
                             PlayerData.instance.dreamReturnScene = data.returnScene;
@@ -423,8 +426,9 @@ namespace MoreStags {
 }
 
 //--bugs--
-//GameObject.Find() may not find killed enemies
+//GameObject.Find() may not find killed enemies or spriterenderers (lower storerooms)
 //Infrequently, a newly unlocked stag will not appear in the list until after reloading the room
+//Adjust bell/transition coords in city
 
 //--todo--
 //populate the json with every location

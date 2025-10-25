@@ -48,7 +48,7 @@ Hunter, Artist's Approach, Gulkas, Durandoos, Stone Sanctuary
 Fog Canyon, Archives Entrance, Teacher's Archives
 
 #### Upper Fungal
-Upper Wastes, Elder Hu, Pilgrim's Way, Fungal Nexus, City Gate
+Fungal Colony, Upper Wastes, Elder Hu, Pilgrim's Way, Fungal Nexus, City Gate
 
 #### Lower Fungal
 Mantis Outskirts, Bretta, Mantis Village, Fungal Core, Fungal Elder
@@ -57,8 +57,10 @@ Mantis Outskirts, Bretta, Mantis Village, Fungal Core, Fungal Elder
 Droppers, Garden Respite, Love Key, Loodles, Upper Gardens, White Lady
 
 #### West City
+Rafters, Triple Gate, Office, Lower Storerooms, Soul Sanctum
 
 #### East City
+East Elevator, Flooded Station, Memorial, Watcher's Spire
 
 #### Waterways
 

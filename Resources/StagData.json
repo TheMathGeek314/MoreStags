@@ -517,6 +517,26 @@
     "objectsToRemove": [ "archive_rag (65)", "archive_rag (67)" ]
   },
   {
+    "name": "Fungal Colony",
+    "scene": "Fungus2_28",
+    "region": "Upper Fungal",
+    "cost": 120,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 75.8,
+      "y": 3
+    },
+    "_transitionX": 72.7,
+    "_stagCoords": {
+      "x": 67.5,
+      "y": 3
+    },
+    "_markerPosition": {
+      "x": 1788,
+      "y": 1207
+    }
+  },
+  {
     "name": "Upper Wastes",
     "scene": "Fungus2_07",
     "region": "Upper Fungal",
@@ -855,6 +875,47 @@
     "objectsToRemove": [ "palace_root2 (1)" ]
   },
   {
+    "name": "Rafters",
+    "scene": "Ruins1_02",
+    "region": "West City",
+    "cost": 200,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 28.7,
+      "y": 58
+    },
+    "_transitionX": 29.8,
+    "_stagCoords": {
+      "x": 32.9,
+      "y": 58
+    },
+    "_markerPosition": {
+      "x": 2258,
+      "y": 1343
+    },
+    "objectsToRemove": [ "ruin_pole_knob (3)" ]
+  },
+  {
+    "name": "Triple Gate",
+    "scene": "Ruins1_05c",
+    "region": "West City",
+    "cost": 200,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 11.7,
+      "y": 92
+    },
+    "_transitionX": 13.8,
+    "_stagCoords": {
+      "x": 16.9,
+      "y": 92
+    },
+    "_markerPosition": {
+      "x": 2435,
+      "y": 1424
+    }
+  },
+  {
     "name": "Office",
     "scene": "Ruins1_05",
     "region": "West City",
@@ -875,6 +936,113 @@
     },
     "objectsToRemove": [ "Ruins Stool", "Ruins Dressing Table" ],
     "enemiesToRemove": [ "Ceiling Dropper" ]
+  },
+  {
+    "name": "Lower Storerooms",
+    "scene": "Ruins1_17",
+    "region": "West City",
+    "cost": 200,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 70.8,
+      "y": 38
+    },
+    "_transitionX": 73.4,
+    "_stagCoords": {
+      "x": 78.4,
+      "y": 38
+    },
+    "_markerPosition": {
+      "x": 2246,
+      "y": 1217
+    },
+    "enemiesToRemove": [ "Zombie Leaper", "Zombie Hornhead" ],
+    "childrenToRemove": [ "BG_barrel_group (10)", "ruin_roof_standard (14)/ruin_arch_roof_fill_02 (11)", "ruin_roof_standard (14)/ruin_arch_roof_fill_02 (10)" ]
+  },
+  {
+    "name": "Soul Sanctum",
+    "scene": "Ruins1_30",
+    "region": "West City",
+    "cost": 200,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 65.6,
+      "y": 3
+    },
+    "_transitionX": 69.2,
+    "_stagCoords": {
+      "x": 73.9,
+      "y": 3
+    },
+    "_markerPosition": {
+      "x": 2570,
+      "y": 1148
+    },
+    "objectsToRemove": [ "ruins_clutter_0005_a (9)", "ruins_clutter_0000_a (15)", "ruins_clutter_0000_a (10)", "ruins_clutter_0004_a (1)", "ruins_clutter_0004_a" ]
+  },
+  {
+    "name": "East Elevator",
+    "scene": "Ruins2_10b",
+    "region": "East City",
+    "cost": 300,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 9.2,
+      "y": 49
+    },
+    "_transitionX": 7.2,
+    "_stagCoords": {
+      "x": 4.6,
+      "y": 49
+    },
+    "_markerPosition": {
+      "x": 3019,
+      "y": 1319
+    },
+    "objectsToRemove": [ "Wmines_additions_02_0006_a (83)", "brk_barrel_04", "Wmines_additions_02_0006_a (85)", "Wmines_additions_02_0006_a (84)", "Wmines_additions_02_0006_a (82)" ]
+  },
+  {
+    "name": "Flooded Station",
+    "scene": "Ruins2_07",
+    "region": "East City",
+    "cost": 300,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 28,
+      "y": 6
+    },
+    "_transitionX": 31.5,
+    "_stagCoords": {
+      "x": 38.2,
+      "y": 2.2
+    },
+    "_markerPosition": {
+      "x": 3174,
+      "y": 1573
+    },
+    "objectsToRemove": [ "bell_appear0008", "bell0006" ],
+    "enemiesToRemove": [ "Buzzer", "Buzzer (1)" ]
+  },
+  {
+    "name": "Memorial",
+    "scene": "Ruins1_27",
+    "region": "East City",
+    "cost": 300,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 57.2,
+      "y": 15
+    },
+    "_transitionX": 55.4,
+    "_stagCoords": {
+      "x": 52,
+      "y": 15
+    },
+    "_markerPosition": {
+      "x": 2623,
+      "y": 1539
+    },
+    "objectsToRemove": [ "ruins_clutter_0013_a" ]
   },
   {
     "name": "Watcher's Spire",
