@@ -17,10 +17,18 @@ namespace MoreStags {
         public List<StagData> activeStags = new();
         public bool preserveStagLevers = false;
         public bool plandoOverride = false;
+        public bool tramActive = true;//should be false
+        public int tramBlueLakePosition = 1;
+        public bool openedTram = false;
     }
 
     public enum StagSelection {
         Balanced,
         Random
+    }
+
+    public static class TramData {
+        public static bool enteringTram = false;
+        public static bool insideTram = false;
     }
 }

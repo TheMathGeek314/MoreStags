@@ -32,6 +32,8 @@ namespace MoreStags {
         public GameObject transitionPrefabLeft;
         public GameObject transitionPrefabRight;
         public GameObject uiPrefab;
+        public GameObject tramPrefab;
+        public GameObject tramBoxPrefab;
 
         public static Dictionary<string, FsmOwnerDefault> uiGameobjectDict = new();
 
@@ -49,6 +51,8 @@ namespace MoreStags {
             bellPrefab = preloadedObjects["Crossroads_47"]["_Scenery/Station Bell"];
             transitionPrefabLeft = preloadedObjects["Crossroads_47"]["_Transition Gates/door_stagExit"];
             transitionPrefabRight = preloadedObjects["Ruins2_08"]["door_stagExit"];
+            tramPrefab = preloadedObjects["Crossroads_46"]["Tram Main"];
+            tramBoxPrefab = preloadedObjects["Crossroads_46"]["Tram Call Box"];
 
             foreach(GameObject go in Resources.FindObjectsOfTypeAll<GameObject>()) {
                 if(!go.scene.IsValid() && go.name == "Stag Map") {
@@ -69,7 +73,9 @@ namespace MoreStags {
                 ("Crossroads_47", "Stag"),
                 ("Crossroads_47", "_Transition Gates/door_stagExit"),
                 ("Ruins2_08", "Stag"),
-                ("Ruins2_08", "door_stagExit")
+                ("Ruins2_08", "door_stagExit"),
+                ("Crossroads_46", "Tram Main"),
+                ("Crossroads_46", "Tram Call Box")
             };
         }
 
@@ -99,6 +105,28 @@ namespace MoreStags {
                         }
                     }
                 }
+            }
+            if(arg1.name == "Room_Tram_RG") {
+                if(TramData.enteringTram) {
+                    TramData.insideTram = true;
+                    TramData.enteringTram = false;
+                    GameObject.Find("RestBench").SetActive(false);
+                }
+            }
+            else {
+                TramData.insideTram = false;
+            }
+            TramData.enteringTram = false;
+            if(localData.tramActive && arg1.name == "Crossroads_50") {
+                GameObject tramBoxLeft = GameObject.Instantiate(tramBoxPrefab, new Vector3(11.28f, 24.7888f, 0.007f), tramBoxPrefab.transform.rotation);
+                GameObject tramBoxRight = GameObject.Instantiate(tramBoxPrefab, new Vector3(248.56f, 25.7888f, 0.007f), tramBoxPrefab.transform.rotation);
+                GameObject tram = GameObject.Instantiate(tramPrefab, localData.tramBlueLakePosition == 0 ? new Vector3(22.01f, 26.11f, 0.21f) : new Vector3(237.98f, 27.11f, 0.21f), tramPrefab.transform.rotation);
+                tram.FindGameObjectInChildren("door_tram").SetActive(localData.openedTram);
+                tramBoxLeft.name += " Left";
+                tramBoxLeft.SetActive(true);
+                tramBoxRight.name += " Right";
+                tramBoxRight.SetActive(true);
+                tram.SetActive(true);
             }
         }
 
@@ -227,8 +255,83 @@ namespace MoreStags {
                 self.GetValidState("Activate").InsertCustomAction(() => scrollStagMenu(self, "Initial Item"), 1);
                 self.GetValidState("Update").InsertCustomAction(() => scrollStagMenu(self, "Current Item"), 0);
             }
-            else if(self.gameObject.name == "Stag Map(Clone)" && self.FsmName == "Control") {
+            /*else if(self.gameObject.name == "Stag Map(Clone)" && self.FsmName == "Control") {
                 //likely not needed but it responds to UI SELECTION MADE and sends CONTINUE
+            }*/
+            if(localData.tramActive) {
+                if(self.gameObject.scene.name == "Crossroads_50") {
+                    if(self.FsmName == "Tram Control") {
+                        self.GetValidState("Init").InsertCustomAction(() => { self.SendEvent("HERE"); }, 1);
+                        self.GetValidState("Check Opened").InsertCustomAction(() => { self.SendEvent(localData.openedTram ? "OPEN" : "CLOSED"); }, 0);
+                        self.GetValidState("Closed").AddTransition("FINISHED", "Away");
+                        self.GetValidState("Opened").AddTransition("FINISHED", "Arrived");
+                        FsmState tweenIn = self.GetValidState("Tween In");
+                        tweenIn.GetFirstActionOfType<Translate>().Enabled = false;
+                        tweenIn.InsertCustomAction(() => {
+                            int negativeSide = localData.tramBlueLakePosition == 0 ? 1 : -1;
+                            self.FsmVariables.GetFsmVector3("Tween Vector").Value = new Vector3(215.97f * negativeSide, negativeSide, 0);
+                        }, 1);
+                        tweenIn.InsertAction(new ActivateGameObject {
+                            gameObject = self.GetValidState("Away").GetFirstActionOfType<ActivateGameObject>().gameObject,
+                            activate = new FsmBool { Value = false },
+                            recursive = new FsmBool { Value = false },
+                            resetOnExit = false,
+                            everyFrame = false
+                        }, 0);
+                        tweenIn.InsertCustomAction(() => { self.gameObject.FindGameObjectInChildren("Door").transform.localPosition = new Vector3(-3.48f, -0.59f, 0.25f); }, 0);
+                        self.GetValidState("Tween End").InsertCustomAction(() => { localData.tramBlueLakePosition = 1 - localData.tramBlueLakePosition; }, 0);
+                        self.AddTransition("Arrived", "CALL TRAM", "Tween In");
+                    }
+                    else if(self.gameObject.name == "door_tram" && self.FsmName == "Door Control") {
+                        self.GetValidState("Change Scene").InsertCustomAction(() => { TramData.enteringTram = true; }, 0);
+                    }
+                    else if(self.gameObject.name == "Door Inspect" && self.FsmName == "Tram Door") {
+                        self.GetValidState("Y Box Down").InsertCustomAction(() => { localData.openedTram = true; }, 0);
+                    }
+                    else if(self.gameObject.name.StartsWith("Tram Call Box") && self.FsmName == "Conversation Control") {
+                        FsmState yesState = self.GetValidState("Yes");
+                        for(int i = 2; i <= 3; i++) {
+                            yesState.Actions[i].Enabled = false;
+                        }
+                        yesState.AddCustomAction(() => { localData.openedTram = true; });
+                        if(self.gameObject.name.EndsWith("Left")) {
+                            self.GetValidState("Check Tram").InsertCustomAction(() => { self.SendEvent(localData.tramBlueLakePosition == 0 ? "HERE" : "AWAY"); }, 0);
+                        }
+                        else {
+                            self.GetValidState("Check Tram").InsertCustomAction(() => { self.SendEvent(localData.tramBlueLakePosition == 1 ? "HERE" : "AWAY"); }, 0);
+                        }
+                        FsmState noLongerHere = self.AddState("No Longer Here");
+                        self.GetValidState("Tram Called").AddTransition("FINISHED", "No Longer Here");
+                        noLongerHere.AddTransition("FINISHED", "Check Tram");
+                        self.GetValidState("Tram Here").AddTransition("TRAM ARRIVE", "No Longer Here");
+                        noLongerHere.AddAction(new SetCollider {
+                            gameObject = self.GetValidState("Tram Here").GetFirstActionOfType<SetCollider>().gameObject,
+                            active = new FsmBool { Value = true }
+                        });
+                        noLongerHere.AddAction(new SendEventByName {
+                            eventTarget = self.GetValidState("End").GetFirstActionOfType<SendEventByName>().eventTarget,
+                            sendEvent = new FsmString { Value = "CONVO END" },
+                            delay = new FsmFloat { Value = 0 },
+                            everyFrame = false
+                        });
+                    }
+                }
+                else if(self.gameObject.scene.name == "Room_Tram_RG" && TramData.enteringTram) {
+                    if(self.gameObject.name == "door1" && self.FsmName == "Door Target") {
+                        self.GetValidState("Get Station").InsertCustomAction(() => { self.FsmVariables.GetFsmInt("Tram Position").Value = localData.tramBlueLakePosition; }, 1);
+                        foreach(string state in new string[] { "Left", "Right" }) {
+                            self.GetValidState(state).GetFirstActionOfType<SetFsmString>().setValue.Value = "Crossroads_50";
+                        }
+                    }
+                    else if(self.gameObject.name == "Tram Control" && self.FsmName == "Control") {
+                        self.GetValidState("Check Pos").InsertCustomAction(() => { self.FsmVariables.GetFsmInt("Tram Position").Value = localData.tramBlueLakePosition; }, 1);
+                        foreach(string state in new string[] { "Set R", "Set L" }) {
+                            FsmState setState = self.GetValidState(state);
+                            setState.GetFirstActionOfType<PlayerDataIntAdd>().Enabled = false;
+                            setState.InsertCustomAction(() => { localData.tramBlueLakePosition += self.FsmVariables.GetFsmInt("Station Increment").Value; }, 2);
+                        }
+                    }
+                }
             }
         }
 
@@ -426,9 +529,12 @@ namespace MoreStags {
 }
 
 //--bugs--
-//GameObject.Find() may not find killed enemies or spriterenderers (lower storerooms)
 //Infrequently, a newly unlocked stag will not appear in the list until after reloading the room
-//Adjust bell/transition coords in city
+//      try to find consistent setup by following a stag chain with all 103 active
+
+//--tram todo--
+//I'm not 100% confident about warping to upper tram from in/near lake tram
+//Add to generation instead of default values (and decide on probability, maybe 1/6 or 1/10 or 1/20)
 
 //--todo--
 //populate the json with every location
@@ -460,5 +566,5 @@ namespace MoreStags {
 
 //--quantity settings notes--
 //   There are 11 by default
-//   There are 20 regions
+//   There are 20 regions (21 with Dirtmouth)
 //   There are 103 total
