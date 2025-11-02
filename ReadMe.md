@@ -63,8 +63,10 @@ Rafters, Triple Gate, Office, Lower Storerooms, Soul Sanctum
 East Elevator, Flooded Station, Memorial, Watcher's Spire
 
 #### Waterways
+Isma's Grove, Flukemarm, East Waterways
 
 #### Crystal Peak
+Mine Entrance, Overlook, Conga Line, Crystalllised Mound, Crystal Corridor, Hallownest's Crown
 
 #### Resting Grounds
 

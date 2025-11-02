@@ -17,7 +17,7 @@ namespace MoreStags {
         public List<StagData> activeStags = new();
         public bool preserveStagLevers = false;
         public bool plandoOverride = false;
-        public bool tramActive = true;//should be false
+        public bool tramActive = false;
         public int tramBlueLakePosition = 1;
         public bool openedTram = false;
     }

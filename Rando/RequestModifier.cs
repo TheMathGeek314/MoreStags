@@ -14,6 +14,7 @@ namespace MoreStags {
             SelectStags(rb);
             AddAndRemoveLocations(rb);
             PreserveLevers(rb);
+            ConsiderTram(rb);
         }
 
         private static void PreserveLevers(RequestBuilder rb) {
@@ -131,6 +132,17 @@ namespace MoreStags {
                 foreach(string vanillaLocation in StagData.allStags.Where(stag => stag.isVanilla && !stag.isActive(MoreStags.localData)).Select(stag => Consts.LocationNames[stag.name])) {
                     rb.RemoveFromVanilla(vanillaLocation);
                 }
+            }
+        }
+
+        private static void ConsiderTram(RequestBuilder rb) {
+            if(!MoreStags.Settings.Enabled)
+                return;
+            if(rb.ctx.GenerationSettings.Seed % 10 == 3) {
+                LocalData ld = MoreStags.localData;
+                ld.tramActive = true;
+                ld.tramBlueLakePosition = 1;
+                ld.openedTram = false;
             }
         }
 
