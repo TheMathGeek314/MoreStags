@@ -8,6 +8,7 @@ namespace MoreStags {
         public static void Hook() {
             RequestBuilder.OnUpdate.Subscribe(3, ApplyStagDef);
             RequestBuilder.OnUpdate.Subscribe(4, SetupItems);
+            RequestBuilder.OnUpdate.Subscribe(0, CopyGlobalToLocal);
         }
 
         private static void ApplyStagDef(RequestBuilder rb) {
@@ -151,6 +152,10 @@ namespace MoreStags {
                 data.RemoveAll(stag => stag.isVanilla);
             if(MoreStags.Settings.RemoveCursedLocations)
                 data.RemoveAll(stag => stag.isCursed);
+        }
+
+        private static void CopyGlobalToLocal(RequestBuilder rb) {
+            MoreStags.localData.enabled = MoreStags.Settings.Enabled;
         }
     }
 }

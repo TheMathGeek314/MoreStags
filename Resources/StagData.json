@@ -1261,6 +1261,70 @@
     "enemiesToRemove": [ "Crystal Crawler" ]
   },
   {
+    "name": "Upper Tram",
+    "scene": "Crossroads_46b",
+    "region": "Grounds",
+    "cost": 170,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 22.2,
+      "y": 5
+    },
+    "_transitionX": 18.9,
+    "_stagCoords": {
+      "x": 13.9,
+      "y": 4
+    },
+    "_markerPosition": {
+      "x": 2621,
+      "y": 863
+    },
+    "objectsToRemove": [ "roof_FG_rock_07_0005_01", "roof_FG_rock_07_0004_02", "roof_FG_rock_07_0003_03", "roof_FG_rock_07_0003_04", "roof_FG_rock_07_0003_03 (1)", "tramway_0012_Layer-19-copy-17", "cd_FG_rock_20 (11)" ]
+  },
+  {
+    "name": "Dreamshield",
+    "scene": "RestingGrounds_17",
+    "region": "Grounds",
+    "cost": 170,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 58.1,
+      "y": 5
+    },
+    "_transitionX": 55.1,
+    "_stagCoords": {
+      "x": 50.2,
+      "y": 3
+    },
+    "_markerPosition": {
+      "x": 3078,
+      "y": 783
+    },
+    "objectsToRemove": [ "break_graves_0009_3 (17)" ],
+    "childrenToRemove": [ "grave_spiral_break (1)" ]
+  },
+  {
+    "name": "Grey Mourner",
+    "scene": "RestingGrounds_12",
+    "region": "Grounds",
+    "cost": 170,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 75.5,
+      "y": 3
+    },
+    "_transitionX": 78.5,
+    "_stagCoords": {
+      "x": 82.8,
+      "y": 3
+    },
+    "_markerPosition": {
+      "x": 3375,
+      "y": 868
+    },
+    "childrenToRemove": [ "right_wall (2)/tut_wall_r_0005_01" ]
+  },
+  {
     "name": "Shrine of Believers",
     "scene": "Dream_Room_Believer_Shrine",
     "region": "Grounds",

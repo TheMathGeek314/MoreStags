@@ -13,6 +13,7 @@ namespace MoreStags {
     }
 
     public class LocalData {
+        public bool enabled = false;
         public Dictionary<string, bool> opened = new();
         public List<StagData> activeStags = new();
         public bool preserveStagLevers = false;
