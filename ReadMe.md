@@ -69,10 +69,13 @@ Isma's Grove, Flukemarm, East Waterways
 Mine Entrance, Overlook, Conga Line, Crystalllised Mound, Crystal Corridor, Hallownest's Crown
 
 #### Resting Grounds
+Upper Tram, Dreamshield, Grey Mourner, Shrine of Believers
 
 #### Kingdom's Edge
+Lower Kingdom's Edge, Hoppers, Scarecrow, Quick Slash, Camp, Bardoon, Pale Lurker
 
 #### Hive
+Hive Entryway, Honey Tree, Library, Stash
 
 #### Deepnest
 

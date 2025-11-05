@@ -538,7 +538,7 @@ namespace MoreStags {
 
 //--tram todo--
 //I'm not 100% confident about warping to upper tram from in/near lake tram
-//Add to generation instead of default values (and decide on probability, maybe 1/6 or 1/10 or 1/20)
+//Decide on probability, maybe 1/6 or 1/10 or 1/20
 
 //--todo--
 //populate the json with every location
