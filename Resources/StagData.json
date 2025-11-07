@@ -1749,6 +1749,92 @@
     }
   },
   {
+    "name": "Broken Bridge",
+    "scene": "Abyss_02",
+    "region": "Basin",
+    "cost": 300,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 24.7,
+      "y": 32
+    },
+    "_transitionX": 21.7,
+    "_stagCoords": {
+      "x": 16.3,
+      "y": 32
+    },
+    "_markerPosition": {
+      "x": 2495,
+      "y": 1818
+    }
+  },
+  {
+    "name": "Lower Tramway",
+    "scene": "Abyss_17",
+    "region": "Basin",
+    "cost": 300,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 101.4,
+      "y": 38
+    },
+    "_transitionX": 104.3,
+    "_stagCoords": {
+      "x": 109.5,
+      "y": 38
+    },
+    "_markerPosition": {
+      "x": 2313,
+      "y": 1895
+    },
+    "objectsToRemove": [ "tramway_0012_Layer-19-copy-13" ],
+    "enemiesToRemove": [ "Lesser Mawlek (2)" ]
+  },
+  {
+    "name": "Ancient Basin",
+    "scene": "Abyss_04",
+    "region": "Basin",
+    "cost": 300,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 60.3,
+      "y": 83
+    },
+    "_transitionX": 63.3,
+    "_stagCoords": {
+      "x": 68.6,
+      "y": 83
+    },
+    "_markerPosition": {
+      "x": 2543,
+      "y": 1937
+    },
+    "objectsToRemove": [ "palace_root1 (2)" ]
+  },
+  {
+    "name": "Mawlurks",
+    "scene": "Abyss_20",
+    "region": "Basin",
+    "cost": 300,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 86,
+      "y": 55
+    },
+    "_transitionX": 83.3,
+    "_transitionY": 52,
+    "_stagCoords": {
+      "x": 90.6,
+      "y": 50
+    },
+    "_markerPosition": {
+      "x": 2013,
+      "y": 2123
+    },
+    "objectsToRemove": [ "palace_root1 (5)" ],
+    "enemiesToRemove": [ "Parasite Balloon (6)", "Parasite Balloon (7)" ]
+  },
+  {
     "name": "Monarch Wings",
     "scene": "Abyss_21",
     "region": "Basin",
