@@ -45,7 +45,8 @@ namespace MoreStags {
                 };
                 InteropTag tag = AddTag(stagLoc);
                 tag.Properties["PinSprite"] = new EmbeddedSprite("stagpin");
-                tag.Properties["WorldMapLocation"] = (data.scene, data.bellPosition.x, data.bellPosition.y);
+                tag.Properties["WorldMapLocation"] = data.pinInfo;
+
                 Finder.DefineCustomLocation(stagLoc);
             }
         }

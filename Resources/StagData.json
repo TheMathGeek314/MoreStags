@@ -449,7 +449,12 @@
       "x": 1527,
       "y": 943
     },
-    "objectsToRemove": [ "No_eyes_statue1" ]
+    "objectsToRemove": [ "No_eyes_statue1" ],
+    "_pinInfo": {
+      "s": "Fungus1_34",
+      "x": 116,
+      "y": 9
+    }
   },
   {
     "name": "Fog Canyon",
@@ -514,7 +519,12 @@
       "x": 1475,
       "y": 1186
     },
-    "objectsToRemove": [ "archive_rag (65)", "archive_rag (67)" ]
+    "objectsToRemove": [ "archive_rag (65)", "archive_rag (67)" ],
+    "_pinInfo": {
+      "s": "Fungus3_47",
+      "x": 50,
+      "y": -20
+    }
   },
   {
     "name": "Fungal Colony",
@@ -872,7 +882,12 @@
       "x": 500,
       "y": 1045
     },
-    "objectsToRemove": [ "palace_root2 (1)", "queen_0012_a (4)", "rags_04 (24)", "rags_04 (15)" ]
+    "objectsToRemove": [ "palace_root2 (1)", "queen_0012_a (4)", "rags_04 (24)", "rags_04 (15)" ],
+    "_pinInfo": {
+      "s": "Fungus3_48",
+      "x": 38,
+      "y": 94
+    }
   },
   {
     "name": "Rafters",
@@ -1237,7 +1252,12 @@
       "y": 693
     },
     "objectsToRemove": [ "brk_Crystal4 (6)" ],
-    "childrenToRemove": [ "Shaman Fancy (1)", "Torch Breakable (1)", "wd_floor_03 (16)" ]
+    "childrenToRemove": [ "Shaman Fancy (1)", "Torch Breakable (1)", "wd_floor_03 (16)" ],
+    "_pinInfo": {
+      "s": "Mines_28",
+      "x": 81.4,
+      "y": 63
+    }
   },
   {
     "name": "Hallownest's Crown",
@@ -1258,7 +1278,12 @@
       "x": 2928,
       "y": 155
     },
-    "enemiesToRemove": [ "Crystal Crawler" ]
+    "enemiesToRemove": [ "Crystal Crawler" ],
+    "_pinInfo": {
+      "s": "Mines_34",
+      "x": 75,
+      "y": 25
+    }
   },
   {
     "name": "Upper Tram",
@@ -1345,7 +1370,12 @@
       "y": 700
     },
     "objectsToRemove": [ "dream_believer_fence (1)" ],
-    "childrenToRemove": [ "shrine plat (4)/dream_believer_fence (1)" ]
+    "childrenToRemove": [ "shrine plat (4)/dream_believer_fence (1)" ],
+    "_pinInfo": {
+      "s": "RestingGrounds_08",
+      "x": 185,
+      "y": 35
+    }
   },
   {
     "name": "Lower Kingdom's Edge",
@@ -1582,6 +1612,116 @@
     "childrenToRemove": [ "Hive_Break_01 (2)", "Hive_Break_02 (9)", "Hive_Break_01 (7)" ]
   },
   {
+    "name": "Labyrinth",
+    "scene": "Deepnest_16",
+    "region": "Deepnest",
+    "cost": 250,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 46.9,
+      "y": 15
+    },
+    "_transitionX": 48.9,
+    "_stagCoords": {
+      "x": 54.2,
+      "y": 15
+    },
+    "_markerPosition": {
+      "x": 1394,
+      "y": 1619
+    },
+    "objectsToRemove": [ "deep_branches_0007_deep_branch_01 (26)" ],
+    "enemiesToRemove": [ "Baby Centipede (4)" ],
+    "childrenToRemove": [ "Secret Mask (3)" ]
+  },
+  {
+    "name": "Garpedes",
+    "scene": "Deepnest_30",
+    "region": "Deepnest",
+    "cost": 250,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 33.4,
+      "y": 140
+    },
+    "_transitionX": 36.5,
+    "_transitionY": 138,
+    "_stagCoords": {
+      "x": 42,
+      "y": 138
+    },
+    "_markerPosition": {
+      "x": 1310,
+      "y": 1685
+    },
+    "objectsToRemove": [ "deep_branches_0007_deep_branch_01 (73)", "deep_branches_0007_deep_branch_01 (6)" ],
+    "enemiesToRemove": [ "Baby Centipede" ]
+  },
+  {
+    "name": "Shadow Gauntlet",
+    "scene": "Deepnest_44",
+    "region": "Deepnest",
+    "cost": 250,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 13.1,
+      "y": 25
+    },
+    "_transitionX": 11.7,
+    "_stagCoords": {
+      "x": 7.6,
+      "y": 25
+    },
+    "_markerPosition": {
+      "x": 1455,
+      "y": 1957
+    },
+    "objectsToRemove": [ "deep_rag_01 (11)", "deep_branches_0004_deep_branch_04 (12)", "d_break_0042_deep_cocoon_break2 (1)" ]
+  },
+  {
+    "name": "Galien",
+    "scene": "Deepnest_35",
+    "region": "Deepnest",
+    "cost": 250,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 33.3,
+      "y": 4
+    },
+    "_transitionX": 36.6,
+    "_stagCoords": {
+      "x": 41.4,
+      "y": 4
+    },
+    "_markerPosition": {
+      "x": 1104,
+      "y": 1766
+    },
+    "objectsToRemove": [ "deep_web_11 (7)", "deep_web_11 (8)" ],
+    "enemiesToRemove": [ "Zombie Hornhead Sp (2)" ]
+  },
+  {
+    "name": "Failed Tramway",
+    "scene": "Deepnest_26",
+    "region": "Deepnest",
+    "cost": 250,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 146.9,
+      "y": 13
+    },
+    "_transitionX": 148.8,
+    "_stagCoords": {
+      "x": 152.8,
+      "y": 13
+    },
+    "_markerPosition": {
+      "x": 996,
+      "y": 1575
+    },
+    "objectsToRemove": [ "fung_station_bits_0005_a (2)" ]
+  },
+  {
     "name": "Weavers' Den",
     "scene": "Deepnest_45_v02",
     "region": "Deepnest",
@@ -1601,7 +1741,12 @@
       "y": 1774
     },
     "objectsToRemove": [ "Loom_Room_0001_39 (8)", "Loom_Room_0012_28 (15)" ],
-    "childrenToRemove": [ "Breakable Wall Waterways/Masks", "Breakable Wall/Masks/Mask 1 (1)", "Breakable Wall/Masks/Mask 1 (2)", "Breakable Wall/Masks/Mask 1 (3)" ]
+    "childrenToRemove": [ "Breakable Wall Waterways/Masks", "Breakable Wall/Masks/Mask 1 (1)", "Breakable Wall/Masks/Mask 1 (2)", "Breakable Wall/Masks/Mask 1 (3)" ],
+    "_pinInfo": {
+      "s": "Deepnest_39",
+      "x": 204,
+      "y": 40
+    }
   },
   {
     "name": "Monarch Wings",
@@ -1705,6 +1850,11 @@
       "x": 1877,
       "y": 1794
     },
-    "objectsToRemove": [ "GG_bench_0002_1", "GG_bench_0003_2", "GG_bench_0003_2 (1)" ]
+    "objectsToRemove": [ "GG_bench_0002_1", "GG_bench_0003_2", "GG_bench_0003_2 (1)" ],
+    "_pinInfo": {
+      "s": "GG_Waterways",
+      "x": 42,
+      "y": 15
+    }
   }
 ]

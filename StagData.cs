@@ -31,7 +31,8 @@ namespace MoreStags {
         public string[] objectsToRemove;
         public string[] enemiesToRemove;
         public string[] childrenToRemove;
-        //public float stagScale;
+        public (string, float, float) pinInfo;
+        public JsonSffTuple _pinInfo;
 
         public void translate() {
             allStags.Add(this);
@@ -52,6 +53,7 @@ namespace MoreStags {
                 enemiesToRemove = [];
             if(childrenToRemove == null)
                 childrenToRemove = [];
+            pinInfo = _pinInfo == default ? (scene, bellPosition.x, bellPosition.y) : (_pinInfo.s, _pinInfo.x, _pinInfo.y);
         }
 
         public bool isActive(LocalData ld) {
@@ -102,6 +104,12 @@ namespace MoreStags {
     }
 
     public class JsonVector2 {
+        public float x;
+        public float y;
+    }
+
+    public class JsonSffTuple {
+        public string s;
         public float x;
         public float y;
     }

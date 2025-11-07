@@ -534,7 +534,7 @@ namespace MoreStags {
 
 //--bugs--
 //Infrequently, a newly unlocked stag will not appear in the list until after reloading the room
-//      try to find consistent setup by following a stag chain with all 103 active
+//      try to find consistent setup by following a stag chain with all 114 active
 
 //--tram todo--
 //I'm not 100% confident about warping to upper tram from in/near lake tram
@@ -545,6 +545,7 @@ namespace MoreStags {
 //Start Items stags option?
 //any stag renames?
 //can stag nest unlock at other numbers?
+//review and update misaligned map pins
 
 //--costs and order and grouping--
 //   Crossroads - 50
@@ -571,4 +572,4 @@ namespace MoreStags {
 //--quantity settings notes--
 //   There are 11 by default
 //   There are 20 regions (21 with Dirtmouth)
-//   There are 103 total
+//   There are 103 new stags (114 total)
