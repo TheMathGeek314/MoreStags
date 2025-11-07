@@ -120,8 +120,32 @@
         "logic": "ORIG | Stag-Stone_Sanctuary + Can_Stag"
     },
     {
+        "name": "Fungus2_07[left1]",
+        "logic": "ORIG | Stag-Upper_Wastes + Can_Stag"
+    },
+    {
+        "name": "Fungus2_07[right1]",
+        "logic": "ORIG | Stag-Upper_Wastes + Can_Stag"
+    },
+    {
+        "name": "Fungus2_08[left1]",
+        "logic": "ORIG | Stag-Elder_Hu + Can_Stag"
+    },
+    {
+        "name": "Fungus2_08[left2]",
+        "logic": "ORIG | Stag-Elder_Hu + Can_Stag"
+    },
+    {
+        "name": "Fungus2_08[right1]",
+        "logic": "ORIG | Stag-Elder_Hu + Can_Stag"
+    },
+    {
         "name": "Fungus2_11",
         "logic": "ORIG | Stag-Fungal_Nexus + Can_Stag"
+    },
+    {
+        "name": "Fungus2_12[bot1]",
+        "logic": "ORIG | Stag-Mantis_Outskirts + Can_Stag"
     },
     {
         "name": "Fungus2_13",
@@ -130,6 +154,46 @@
     {
         "name": "Fungus2_13[left3]",
         "logic": "ORIG | Stag-Bretta + Can_Stag"
+    },
+    {
+        "name": "Fungus2_15",
+        "logic": "ORIG | Stag-Mantis_Village + Can_Stag"
+    },
+    {
+        "name": "Fungus2_15[top3]",
+        "logic": "ORIG | Stag-Mantis_Village + Can_Stag + (WINGS | LEFTCLAW + (RIGHTCLAW | Lever-Mantis_Lords_Middle_Left?FALSE | ENEMYPOGOS))"
+    },
+    {
+        "name": "Fungus2_21[left1]",
+        "logic": "ORIG | Stag-City_Gate + Can_Stag + (ACID | (RIGHTDASH | WINGS) + (Lever-Pilgrim's_Way_Left?TRUE | LEFTSUPERDASH | (FULLCLAW | WINGS + ANYCLAW) + LEFTDASH))"
+    },
+    {
+        "name": "Fungus2_28[left1]",
+        "logic": "ORIG | Stag-Fungal_Colony + Can_Stag"
+    },
+    {
+        "name": "Fungus2_28[left2]",
+        "logic": "ORIG | Stag-Fungal_Colony + Can_Stag"
+    },
+    {
+        "name": "Fungus2_29",
+        "logic": "ORIG | Stag-Fungal_Core + Can_Stag + (ANYCLAW | WINGS)"
+    },
+    {
+        "name": "Fungus2_29[bot1]",
+        "logic": "ORIG | Stag-Fungal_Core + Can_Stag"
+    },
+    {
+        "name": "Fungus2_29[right1]",
+        "logic": "ORIG | Stag-Fungal_Core + Can_Stag + Plank-Fungal_Core?TRUE"
+    },
+    {
+        "name": "Fungus2_30[bot1]",
+        "logic": "ORIG | Stag-Fungal_Elder + Can_Stag"
+    },
+    {
+        "name": "Fungus2_30[top1]",
+        "logic": "ORIG | Stag-Fungal_Elder + Can_Stag + (RIGHTCLAW | LEFTCLAW + (LEFTDASH | LEFTSUPERDASH | WINGS))"
     },
     {
         "name": "Fungus3_30[bot1]",
@@ -168,6 +232,10 @@
         "logic": "ORIG | Stag-Fungal_Nexus + Can_Stag"
     },
     {
+        "name": "Geo_Rock-Fungal_Core_Entrance",
+        "logic": "ORIG | Stag-Fungal_Core + Can_Stag"
+    },
+    {
         "name": "Geo_Rock-Greenpath_Below_Skip_Squit",
         "logic": "ORIG | Fungus1_02"
     },
@@ -197,11 +265,15 @@
     },
     {
         "name": "Lore_Tablet-Archives_Right",
-        "logic": "ORIG | Stag-Teacher's_Archives + Can_Stag + (ANYCLAW | $SHRIEKPOGO[2])"
+        "logic": "ORIG | (READ ? TRUE) + Stag-Teacher's_Archives + Can_Stag + (ANYCLAW | $SHRIEKPOGO[2])"
+    },
+    {
+        "name": "Lore_Tablet-Fungal_Wastes_Hidden",
+        "logic": "ORIG | (READ ? TRUE) + Stag-Upper_Wastes + Can_Stag + SPORESHROOM"
     },
     {
         "name": "Lore_Tablet-Greenpath_Lifeblood",
-        "logic": "ORIG | Stag-Moss_Knight + Can_Stag"
+        "logic": "ORIG | (READ ? TRUE) + Stag-Moss_Knight + Can_Stag"
     },
     {
         "name": "Mask_Shard-Stone_Sanctuary",
@@ -222,5 +294,9 @@
     {
         "name": "Soul_Totem-Crossroads_Myla",
         "logic": "Crossroads_45"
+    },
+    {
+        "name": "Soul_Totem-Pilgrim's_Way",
+        "logic": "ORIG | Stag-City_Gate + Can_Stag"
     }
 ]

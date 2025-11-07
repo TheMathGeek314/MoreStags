@@ -40,6 +40,11 @@
         "replacement": "Fungus1_02[right2] | Stag-Waterfall_West + Can_Stag"
     },
     {
+        "name": "Fungus2_12[left1]",
+        "old": "Fungus2_12[bot1]",
+        "replacement": "Fungus2_12[bot1] | Stag-Mantis_Outskirts + Can_Stag"
+    },
+    {
         "name": "Geo_Chest-Greenpath",
         "old": "Fungus1_13[right1]",
         "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
@@ -68,6 +73,11 @@
         "name": "Geo_Rock-Crossroads_Goam_Damage_Boost",
         "old": "Crossroads_42[right1]",
         "replacement": "Crossroads_42"
+    },
+    {
+        "name": "Geo_Rock-Fungal_After_Cloth",
+        "old": "Fungus2_10[bot1]",
+        "replacement": "Fungus2_10[bot1] | Stag-Pilgrim's_Way + Can_Stag"
     },
     {
         "name": "Geo_Rock-Greenpath_Hunter's_Journal",
@@ -113,6 +123,11 @@
         "name": "Lore_Tablet-Greenpath_QG",
         "old": "Fungus1_13[right1]",
         "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
+    },
+    {
+        "name": "Lore_Tablet-Mantis_Outskirts",
+        "old": "Fungus2_12[bot1]",
+        "replacement": "Fungus2_12[bot1] | Stag-Mantis_Outskirts + Can_Stag"
     },
     {
         "name": "Monarch_Wings",

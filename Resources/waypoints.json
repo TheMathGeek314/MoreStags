@@ -28,5 +28,14 @@
         "name": "Fungus1_32",
         "logic": "Fungus1_32[bot1] | Fungus1_32[left1] | Fungus1_32[top1] | Stag-Moss_Knight + Can_Stag",
         "Stateless": false
+    },
+    {
+        "name": "Fungus2_08",
+        "logic": "Fungus2_08[right1] | Fungus2_08[left1] | Fungus2_08[left2] | Stag-Elder_Hu + Can_Stag",
+        "Stateless": false
+    },
+    {
+        "name": "Fungus2_10",
+        "logic": "Fungus2_10[bot1] | Fungus2_10[right1] | Fungus2_10[right2] | Stag-Pilgrim's_Way + Can_Stag"
     }
 ]

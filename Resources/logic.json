@@ -157,19 +157,19 @@
   },
   {
     "name": "Stag-Upper_Wastes",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "(Fungus2_07[left1] | Fungus2_07[right1]) + (LEFTCLAW | WINGS + (RIGHTCLAW | ENEMYPOGOS) | RIGHTCLAW + ENEMYPOGOS) | Stag-Upper_Wastes + Can_Stag"
   },
   {
     "name": "Stag-Elder_Hu",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus2_08 | Stag-Elder_Hu + Can_Stag"
   },
   {
     "name": "Stag-Pilgrim's_Way",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus2_10 | Stag-Pilgrim's_Way + Can_Stag"
   },
   {
     "name": "Stag-City_Gate",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Soul_Totem-Pilgrim's_Way | Stag-City_Gate + Can_Stag"
   },
   {
     "name": "Stag-Fungal_Nexus",
@@ -177,7 +177,7 @@
   },
   {
     "name": "Stag-Mantis_Outskirts",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus2_12[left1] | Fungus2_12[bot1] | Stag-Mantis_Outskirts + Can_Stag"
   },
   {
     "name": "Stag-Bretta",
@@ -185,19 +185,19 @@
   },
   {
     "name": "Stag-Fungal_Colony",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus2_28[left1] | Fungus2_28[left2] | Stag-Fungal_Colony + Can_Stag"
   },
   {
     "name": "Stag-Fungal_Core",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus2_29 | Stag-Fungal_Core + Can_Stag"
   },
   {
     "name": "Stag-Fungal_Elder",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus2_30[top1] | Stag-Fungal_Elder + Can_Stag"
   },
   {
     "name": "Stag-Mantis_Village",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus2_15 | Stag-Mantis_Village + Can_Stag"
   },
   {
     "name": "Stag-God_Spring",
