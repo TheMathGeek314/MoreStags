@@ -143,7 +143,7 @@
     "_transitionX": 15.5,
     "_transitionY": 24,
     "_stagCoords": {
-      "x": 21.4,
+      "x": 20.6,
       "y": 21
     },
     "_markerPosition": {
@@ -225,7 +225,7 @@
     },
     "_transitionX": 18,
     "_stagCoords": {
-      "x": 12.5,
+      "x": 13.2,
       "y": 31
     },
     "_markerPosition": {
@@ -362,7 +362,6 @@
       "x": 1384,
       "y": 861
     },
-    "objectsToRemove": [ "fung_new_0065_Layer-293" ],
     "enemiesToRemove": [ "Mosquito (2)" ]
   },
   {
@@ -471,7 +470,8 @@
       "x": 1147,
       "y": 1049
     },
-    "objectsToRemove": [ "Fungus_Fat_pole", "fung_new_0065_Layer-294 (1)", "health plant 02 break (2)" ]
+    "objectsToRemove": [ "fung_new_0065_Layer-294 (1)", "health plant 02 break (2)" ],
+    "childrenToRemove": [ "Fungus_Fat_pole", "bush_set7/fung_bush6" ]
   },
   {
     "name": "Archives Entrance",
@@ -807,7 +807,7 @@
       "x": 1097,
       "y": 1396
     },
-    "objectsToRemove": [ "fungd_vine_12 (2)" ]
+    "objectsToRemove": [ "fungd_vine_12 (2)", "fungd_plant_03" ]
   },
   {
     "name": "Loodles",
@@ -842,9 +842,9 @@
       "x": 7.9,
       "y": 24
     },
-    "_transitionX": 11.2,
+    "_transitionX": 10.5,
     "_stagCoords": {
-      "x": 16,
+      "x": 15.6,
       "y": 24
     },
     "_markerPosition": {
@@ -865,14 +865,14 @@
     },
     "_transitionX": 17.2,
     "_stagCoords": {
-      "x": 12.8,
+      "x": 13.3,
       "y": 25
     },
     "_markerPosition": {
       "x": 500,
       "y": 1045
     },
-    "objectsToRemove": [ "palace_root2 (1)" ]
+    "objectsToRemove": [ "palace_root2 (1)", "queen_0012_a (4)", "rags_04 (24)", "rags_04 (15)" ]
   },
   {
     "name": "Rafters",
@@ -905,7 +905,7 @@
       "x": 11.7,
       "y": 92
     },
-    "_transitionX": 13.8,
+    "_transitionX": 13,
     "_stagCoords": {
       "x": 16.9,
       "y": 92
@@ -922,7 +922,7 @@
     "cost": 200,
     "leftSide": false,
     "_bellCoords": {
-      "x": 8.4,
+      "x": 8.1,
       "y": 123
     },
     "_transitionX": 12.2,
@@ -1063,7 +1063,7 @@
       "x": 2685,
       "y": 1184
     },
-    "objectsToRemove": [ "Ruins Trophy Large (12)", "Ruins Trophy Medium (1)", "Ruins Acorn (1)" ]
+    "objectsToRemove": [ "Ruins Trophy Large (12)", "Ruins Trophy Medium (1)", "Ruins Acorn (1)", "Ruins Trophy Large (14)", "ruins_clutter_0013_a (9)" ]
   },
   {
     "name": "Isma's Grove",
@@ -1261,6 +1261,70 @@
     "enemiesToRemove": [ "Crystal Crawler" ]
   },
   {
+    "name": "Upper Tram",
+    "scene": "Crossroads_46b",
+    "region": "Grounds",
+    "cost": 170,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 22.2,
+      "y": 5
+    },
+    "_transitionX": 18.9,
+    "_stagCoords": {
+      "x": 13.9,
+      "y": 4
+    },
+    "_markerPosition": {
+      "x": 2621,
+      "y": 863
+    },
+    "objectsToRemove": [ "roof_FG_rock_07_0005_01", "roof_FG_rock_07_0004_02", "roof_FG_rock_07_0003_03", "roof_FG_rock_07_0003_04", "roof_FG_rock_07_0003_03 (1)", "tramway_0012_Layer-19-copy-17", "cd_FG_rock_20 (11)" ]
+  },
+  {
+    "name": "Dreamshield",
+    "scene": "RestingGrounds_17",
+    "region": "Grounds",
+    "cost": 170,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 58.1,
+      "y": 5
+    },
+    "_transitionX": 55.1,
+    "_stagCoords": {
+      "x": 50.2,
+      "y": 3
+    },
+    "_markerPosition": {
+      "x": 3078,
+      "y": 783
+    },
+    "objectsToRemove": [ "break_graves_0009_3 (17)" ],
+    "childrenToRemove": [ "grave_spiral_break (1)" ]
+  },
+  {
+    "name": "Grey Mourner",
+    "scene": "RestingGrounds_12",
+    "region": "Grounds",
+    "cost": 170,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 75.5,
+      "y": 3
+    },
+    "_transitionX": 78.5,
+    "_stagCoords": {
+      "x": 82.8,
+      "y": 3
+    },
+    "_markerPosition": {
+      "x": 3375,
+      "y": 868
+    },
+    "childrenToRemove": [ "right_wall (2)/tut_wall_r_0005_01" ]
+  },
+  {
     "name": "Shrine of Believers",
     "scene": "Dream_Room_Believer_Shrine",
     "region": "Grounds",
@@ -1280,7 +1344,114 @@
       "x": 3420,
       "y": 700
     },
-    "objectsToRemove": [ "dream_believer_fence (1)" ]
+    "objectsToRemove": [ "dream_believer_fence (1)" ],
+    "childrenToRemove": [ "shrine plat (4)/dream_believer_fence (1)" ]
+  },
+  {
+    "name": "Lower Kingdom's Edge",
+    "scene": "Deepnest_East_02",
+    "region": "Edge",
+    "cost": 350,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 42.1,
+      "y": 3
+    },
+    "_transitionX": 43.3,
+    "_stagCoords": {
+      "x": 47,
+      "y": 3
+    },
+    "_markerPosition": {
+      "x": 3239,
+      "y": 1696
+    },
+    "enemiesToRemove": [ "Bee Hatchling Ambient", "Bee Hatchling Ambient (1)" ]
+  },
+  {
+    "name": "Hoppers",
+    "scene": "Deepnest_East_06",
+    "region": "Edge",
+    "cost": 350,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 28.1,
+      "y": 33
+    },
+    "_transitionX": 25.3,
+    "_stagCoords": {
+      "x": 20.1,
+      "y": 33
+    },
+    "_markerPosition": {
+      "x": 3472,
+      "y": 1664
+    },
+    "enemiesToRemove": [ "Hopper Spawn (2)" ]
+  },
+  {
+    "name": "Scarecrow",
+    "scene": "Deepnest_East_14",
+    "region": "Edge",
+    "cost": 350,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 139.8,
+      "y": 35
+    },
+    "_transitionX": 142.8,
+    "_stagCoords": {
+      "x": 148.3,
+      "y": 35
+    },
+    "_markerPosition": {
+      "x": 3989,
+      "y": 1745
+    },
+    "objectsToRemove": [ "white_ash_scenery_0000_1 (11)" ],
+    "enemiesToRemove": [ "Hopper Spawn" ]
+  },
+  {
+    "name": "Quick Slash",
+    "scene": "Deepnest_East_14b",
+    "region": "Edge",
+    "cost": 350,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 59.2,
+      "y": 48.33
+    },
+    "_transitionX": 63.1,
+    "_stagCoords": {
+      "x": 69,
+      "y": 44
+    },
+    "_markerPosition": {
+      "x": 3845,
+      "y": 1738
+    },
+    "objectsToRemove": [ "_0038_nail8 (1)" ]
+  },
+  {
+    "name": "Camp",
+    "scene": "Deepnest_East_11",
+    "region": "Edge",
+    "cost": 350,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 8.6,
+      "y": 63
+    },
+    "_transitionX": 11.7,
+    "_stagCoords": {
+      "x": 17.6,
+      "y": 60
+    },
+    "_markerPosition": {
+      "x": 3547,
+      "y": 1556
+    },
+    "objectsToRemove": [ "white_ash_scenery_0000_1 (19)" ]
   },
   {
     "name": "Bardoon",
@@ -1301,7 +1472,71 @@
       "x": 3511,
       "y": 1281
     },
-    "objectsToRemove": [ "deep_bottle_01 (10)", "white_ash_scenery_0002_3 (24)" ]
+    "objectsToRemove": [ "deep_bottle_01 (10)", "white_ash_scenery_0002_3 (24)", "white_ash_scenery_0002_3 (23)" ]
+  },
+  {
+    "name": "Pale Lurker",
+    "scene": "GG_Lurker",
+    "region": "Edge",
+    "cost": 350,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 77.8,
+      "y": 79
+    },
+    "_transitionX": 75.3,
+    "_stagCoords": {
+      "x": 71.1,
+      "y": 79
+    },
+    "_markerPosition": {
+      "x": 3623,
+      "y": 1208
+    },
+    "objectsToRemove": [ "colosseum_gate_0002_a (102)", "colosseum_gate_0002_a (103)" ]
+  },
+  {
+    "name": "Hive Entryway",
+    "scene": "Hive_01",
+    "region": "Hive",
+    "cost": 350,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 86.6,
+      "y": 39
+    },
+    "_transitionX": 89.8,
+    "_stagCoords": {
+      "x": 95.3,
+      "y": 36
+    },
+    "_markerPosition": {
+      "x": 3375,
+      "y": 1883
+    },
+    "objectsToRemove": [ "hive_scenery_0025_h (21)" ]
+  },
+  {
+    "name": "Honey Tree",
+    "scene": "Hive_02",
+    "region": "Hive",
+    "cost": 350,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 157.1,
+      "y": 13
+    },
+    "_transitionX": 160.9,
+    "_stagCoords": {
+      "x": 166.3,
+      "y": 10
+    },
+    "_markerPosition": {
+      "x": 3530,
+      "y": 1926
+    },
+    "objectsToRemove": [ "hive_scenery_0021_h (3)" ],
+    "enemiesToRemove": [ "Zombie Hive (1)" ]
   },
   {
     "name": "Library",
@@ -1323,6 +1558,28 @@
       "y": 1815
     },
     "objectsToRemove": [ "hive_extras_living_0006_Layer-26 (2)", "hive_scenery_0025_h 1 (8)", "hive_scenery_0025_h 1 (6)" ]
+  },
+  {
+    "name": "Stash",
+    "scene": "Hive_03",
+    "region": "Hive",
+    "cost": 350,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 48.4,
+      "y": 131
+    },
+    "_transitionX": 53,
+    "_stagCoords": {
+      "x": 57.5,
+      "y": 130
+    },
+    "_markerPosition": {
+      "x": 3294,
+      "y": 1742
+    },
+    "objectsToRemove": [ "hive_extras_living_0006_Layer-26 (5)", "hive_scenery_0025_h 1 (45)", "hive_scenery_0025_h 1 (37)" ],
+    "childrenToRemove": [ "Hive_Break_01 (2)", "Hive_Break_02 (9)", "Hive_Break_01 (7)" ]
   },
   {
     "name": "Weavers' Den",
@@ -1377,9 +1634,9 @@
       "x": 91.8,
       "y": 108
     },
-    "_transitionX": 93.4,
+    "_transitionX": 92.6,
     "_stagCoords": {
-      "x": 97.5,
+      "x": 95.1,
       "y": 108
     },
     "_markerPosition": {

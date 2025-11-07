@@ -34,6 +34,7 @@ namespace MoreStags {
         public GameObject uiPrefab;
         public GameObject tramPrefab;
         public GameObject tramBoxPrefab;
+        public GameObject tramChairPrefab;
 
         public static Dictionary<string, FsmOwnerDefault> uiGameobjectDict = new();
 
@@ -53,6 +54,7 @@ namespace MoreStags {
             transitionPrefabRight = preloadedObjects["Ruins2_08"]["door_stagExit"];
             tramPrefab = preloadedObjects["Crossroads_46"]["Tram Main"];
             tramBoxPrefab = preloadedObjects["Crossroads_46"]["Tram Call Box"];
+            tramChairPrefab = preloadedObjects["Room_Tram_RG"]["tram_interior_0006_MID"];
 
             foreach(GameObject go in Resources.FindObjectsOfTypeAll<GameObject>()) {
                 if(!go.scene.IsValid() && go.name == "Stag Map") {
@@ -75,12 +77,13 @@ namespace MoreStags {
                 ("Ruins2_08", "Stag"),
                 ("Ruins2_08", "door_stagExit"),
                 ("Crossroads_46", "Tram Main"),
-                ("Crossroads_46", "Tram Call Box")
+                ("Crossroads_46", "Tram Call Box"),
+                ("Room_Tram_RG", "tram_interior_0006_MID")
             };
         }
 
         private void earlySceneChange(Scene arg0, Scene arg1) {
-            if(!IsRandoSave())
+            if(!IsRandoSave() || !localData.enabled)
                 return;
             if(StagData.dataByRoom.TryGetValue(arg1.name, out StagData data)) {
                 if(data.isActive(localData) && !data.isVanilla) {
@@ -111,6 +114,7 @@ namespace MoreStags {
                     TramData.insideTram = true;
                     TramData.enteringTram = false;
                     GameObject.Find("RestBench").SetActive(false);
+                    GameObject.Instantiate(tramChairPrefab, new Vector3(26.68f, 8.84f, 0.23f), Quaternion.identity).SetActive(true);
                 }
             }
             else {
@@ -132,7 +136,7 @@ namespace MoreStags {
 
         private void lateSceneChange(On.GameManager.orig_OnNextLevelReady orig, GameManager self) {
             orig(self);
-            if(!IsRandoSave())
+            if(!IsRandoSave() || !localData.enabled)
                 return;
             if(StagData.dataByRoom.TryGetValue(self.sceneName, out StagData data)) {
                 if(data.isActive(localData)) {
@@ -165,7 +169,7 @@ namespace MoreStags {
 
         private void editFsm(On.PlayMakerFSM.orig_OnEnable orig, PlayMakerFSM self) {
             orig(self);
-            if(!IsRandoSave())
+            if(!IsRandoSave() || !localData.enabled)
                 return;
             if(self.FsmName == "Stag Bell") {
                 if(StagData.dataByRoom.TryGetValue(self.gameObject.scene.name, out StagData data)) {
@@ -534,7 +538,7 @@ namespace MoreStags {
 
 //--tram todo--
 //I'm not 100% confident about warping to upper tram from in/near lake tram
-//Add to generation instead of default values (and decide on probability, maybe 1/6 or 1/10 or 1/20)
+//Decide on probability, maybe 1/6 or 1/10 or 1/20
 
 //--todo--
 //populate the json with every location
