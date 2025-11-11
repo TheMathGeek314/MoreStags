@@ -1877,6 +1877,73 @@
     "enemiesToRemove": [ "Abyss Crawler (9)" ]
   },
   {
+    "name": "Void Tendrils",
+    "scene": "Abyss_09",
+    "region": "Abyss",
+    "cost": 400,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 214.9,
+      "y": 50
+    },
+    "_transitionX": 212.4,
+    "_stagCoords": {
+      "x": 208.4,
+      "y": 50
+    },
+    "_markerPosition": {
+      "x": 3032,
+      "y": 2431
+    }
+  },
+  {
+    "name": "Birthplace",
+    "scene": "Abyss_15",
+    "region": "Abyss",
+    "cost": 400,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 88.2,
+      "y": 38
+    },
+    "_transitionX": 92.3,
+    "_stagCoords": {
+      "x": 98.1,
+      "y": 38
+    },
+    "_markerPosition": {
+      "x": 2620,
+      "y": 2700
+    },
+    "enemiesToRemove": [ "Shade Sibling (14)" ],
+    "_pinInfo": {
+      "s": "Abyss_06_Core",
+      "x": 120,
+      "y": -80
+    }
+  },
+  {
+    "name": "Baldur Shell",
+    "scene": "Fungus1_28",
+    "region": "Cliffs",
+    "cost": 170,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 103.2,
+      "y": 33
+    },
+    "_transitionX": 105.9,
+    "_stagCoords": {
+      "x": 110.5,
+      "y": 33
+    },
+    "_markerPosition": {
+      "x": 1200,
+      "y": 586
+    },
+    "childrenToRemove": [ "Crossroads Statue Horned (2)" ]
+  },
+  {
     "name": "Wasteland",
     "scene": "Cliffs_01",
     "region": "Cliffs",
@@ -1895,6 +1962,53 @@
       "x": 943,
       "y": 526
     }
+  },
+  {
+    "name": "Mato",
+    "scene": "Cliffs_02",
+    "region": "Cliffs",
+    "cost": 170,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 188.8,
+      "y": 26
+    },
+    "_transitionX": 185.3,
+    "_stagCoords": {
+      "x": 179.6,
+      "y": 23
+    },
+    "_markerPosition": {
+      "x": 1356,
+      "y": 323
+    },
+    "_pinInfo": {
+      "s": "Cliffs_02",
+      "x": 188.8,
+      "y": 62
+    }
+  },
+  {
+    "name": "Path of Pain 2",
+    "scene": "White_Palace_17",
+    "region": "Palace",
+    "cost": 450,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 74.7,
+      "y": 103
+    },
+    "_transitionX": 71.7,
+    "_stagCoords": {
+      "x": 66.9,
+      "y": 103
+    },
+    "_markerPosition": {
+      "x": 2767,
+      "y": 2036
+    },
+    "objectsToRemove": [ "wp_cloth_furniture1" ],
+    "childrenToRemove": [ "white_pillar (16)/_0052_white", "white_pillar (16)/_0052_white (1)" ]
   },
   {
     "name": "Path of Pain 4",
@@ -1936,11 +2050,6 @@
       "x": 1877,
       "y": 1794
     },
-    "objectsToRemove": [ "GG_bench_0002_1", "GG_bench_0003_2", "GG_bench_0003_2 (1)" ],
-    "_pinInfo": {
-      "s": "GG_Waterways",
-      "x": 42,
-      "y": 15
-    }
+    "objectsToRemove": [ "GG_bench_0002_1", "GG_bench_0003_2", "GG_bench_0003_2 (1)" ]
   }
 ]
