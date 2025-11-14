@@ -41,7 +41,7 @@ namespace MoreStags {
 
         private static void bossCageStart(On.BossStatueCompletionStates.orig_Start orig, BossStatueCompletionStates self) {
             if(MoreStags.IsRandoSave() && MoreStags.localData.enabled && StagData.dataByRoom["GG_Workshop"].isActive(MoreStags.localData)) {
-                if(MoreStags.localData.opened["Hall of Gods"]) {
+                if(self.gameObject.name == "Knight Statue Cage" && MoreStags.localData.opened["Hall of Gods"]) {
                     self.gameObject.SetActive(false);
                     return;
                 }
