@@ -8,6 +8,7 @@ namespace MoreStags {
         [MenuChanger.Attributes.MenuRange(11, 114)]
         public int Quantity = 11;
 
+        public StagNestThreshold StagNestThreshold = StagNestThreshold.All;
         public bool PreferNonVanilla = false;
         public bool RemoveCursedLocations = false;
     }
@@ -21,11 +22,19 @@ namespace MoreStags {
         public bool tramActive = false;
         public int tramBlueLakePosition = 1;
         public bool openedTram = false;
+        public int threshold = 8;
     }
 
     public enum StagSelection {
         Balanced,
         Random
+    }
+
+    public enum StagNestThreshold {
+        Half,
+        Many,
+        Most,
+        All
     }
 
     public static class TramData {

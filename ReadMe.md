@@ -14,15 +14,19 @@ These are brand new locations and are not pooled with the rest of the rando chec
 	- This ranges from the default 11 up to all 114 active at once
 	- The actual number of active stags may be lower than this value if set higher than the filter settings will allow
 	- Setting this to 21 while using the Balanced setting will guarantee one stag in every area (20 areas + Dirtmouth)
+- **Stag Nest Threshold** - The percentage of active stags required to unlock Stag Nest (if Stag Nest is active)
+	- *Half*: 50%
+	- *Many*: 75%
+	- *Most*: 90%
+	- *All*: 100%
 - **Prefer Non Vanilla** - Removes vanilla stags from the selection pool
 	- Dirtmouth and Stag Nest may ignore this setting
-- **Remove Cursed Locations** - Removes *Stag-God_Spring* from the selection pool
+- **Remove Cursed Locations** - Removes *Stag-God_Spring*, *Stag-Blue_Room*, and *Stag-Hall_of_Gods* from the selection pool
 
 
 ## Misc
 - Dirtmouth will always be active from the start, regardless of settings
 - Stag Nest will be active unless either enemy pogo skips or transition rando are enabled
-- If more than 11 stags are active including Stag Nest, Stag Nest will be available after unlocking 9 other stags (not including Dirtmouth)
 - Some stag locations overlap with enemy placements. These enemies will be removed when arriving via stag, but they will exist as normal when entering from another transition
 	- In rare cases, this could cause impossible seeds when using TheRealJournalRando, especially in decoupled room randos
 
@@ -81,11 +85,15 @@ Hive Entryway, Honey Tree, Library, Stash
 Labyrinth, Garpedes, Shadow Gauntlet, Galien, Failed Tramway, Weavers' Den
 
 #### Ancient Basin
+Broken Bridge, Lower Tramway, Ancient Basin, Mawlurks, Monarch Wings
 
 #### Abyss
+The Abyss, Void Tendrils, Birthplace
 
 #### Howling Cliffs
+Baldur Shell, Wasteland, Mato
 
 #### White Palace
 
 #### Godhome
+Blue Room, Hall of Gods, God Spring

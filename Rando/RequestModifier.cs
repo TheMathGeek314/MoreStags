@@ -2,13 +2,14 @@
 using System.Linq;
 using RandomizerMod.RandomizerData;
 using RandomizerMod.RC;
+using UnityEngine;
 
 namespace MoreStags {
     public class RequestModifier {
         public static void Hook() {
             RequestBuilder.OnUpdate.Subscribe(3, ApplyStagDef);
             RequestBuilder.OnUpdate.Subscribe(4, SetupItems);
-            RequestBuilder.OnUpdate.Subscribe(0, CopyGlobalToLocal);
+            RequestBuilder.OnUpdate.Subscribe(0, WriteToLocal);
         }
 
         private static void ApplyStagDef(RequestBuilder rb) {
@@ -20,8 +21,7 @@ namespace MoreStags {
 
         private static void PreserveLevers(RequestBuilder rb) {
             bool areLeversOn = rb.GetItemGroupFor("Lever-Resting_Grounds_Stag").Items.GetCount("Lever-Resting_Grounds_Stag") > 0;
-            LocalData ld = MoreStags.localData;
-            ld.preserveStagLevers = areLeversOn;
+            MoreStags.localData.preserveStagLevers = areLeversOn;
         }
 
         private static void SelectStags(RequestBuilder rb) {
@@ -80,9 +80,18 @@ namespace MoreStags {
                 ld.opened.Add(data.name, false);
             }
             ld.activeStags.Sort((a, b) => a.positionNumber.CompareTo(b.positionNumber));
+            ld.threshold = Mathf.RoundToInt(ms.StagNestThreshold switch {
+                StagNestThreshold.Half => 0.5f,
+                StagNestThreshold.Many => 0.75f,
+                StagNestThreshold.Most => 0.9f,
+                StagNestThreshold.All => 1f,
+                _ => 1f
+            } * stagsToActivate.Count) - 3;
         }
 
         private static void AddAndRemoveLocations(RequestBuilder rb) {
+            if(!MoreStags.Settings.Enabled)
+                return;
             if(rb.gs.PoolSettings.Stags) {
                 LocalData ld = MoreStags.localData;
                 foreach(StagData data in StagData.allStags.Where(stag => stag.isVanilla && !stag.isActive(ld))) {
@@ -154,7 +163,7 @@ namespace MoreStags {
                 data.RemoveAll(stag => stag.isCursed);
         }
 
-        private static void CopyGlobalToLocal(RequestBuilder rb) {
+        private static void WriteToLocal(RequestBuilder rb) {
             MoreStags.localData.enabled = MoreStags.Settings.Enabled;
         }
     }

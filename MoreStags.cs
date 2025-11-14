@@ -47,6 +47,8 @@ namespace MoreStags {
             On.GameManager.OnNextLevelReady += lateSceneChange;
             On.PlayMakerFSM.OnEnable += editFsm;
 
+            PatchGodhome.Setup();
+
             stagPrefabLeft = preloadedObjects["Crossroads_47"]["Stag"];
             stagPrefabRight = preloadedObjects["Ruins2_08"]["Stag"];
             bellPrefab = preloadedObjects["Crossroads_47"]["_Scenery/Station Bell"];
@@ -215,6 +217,7 @@ namespace MoreStags {
                 }
 
                 //FsmState "Remember 3" hardcoded openedStagNest after >8 stags
+                self.GetValidState("Convo?").GetActions<IntTestToBool>().Where(action => action.int2.Value == 8).First().int2.Value = localData.threshold;
 
                 FsmState checkResult = self.GetValidState("Check Result");
                 foreach(StagData activeStag in localData.activeStags.Where(s => !s.isVanilla)) {
@@ -533,7 +536,7 @@ namespace MoreStags {
 }
 
 //--bugs--
-//Infrequently, a newly unlocked stag will not appear in the list until after reloading the room
+//Occasionally, a newly unlocked stag will not appear in the list until after reloading the room
 //      try to find consistent setup by following a stag chain with all 114 active
 
 //--tram todo--
@@ -544,8 +547,7 @@ namespace MoreStags {
 //populate the json with every location
 //Start Items stags option?
 //any stag renames?
-//can stag nest unlock at other numbers?
-//review and update misaligned map pins
+//sanity check stag nest threshold with and without stag nest active
 
 //--costs and order and grouping--
 //   Crossroads - 50

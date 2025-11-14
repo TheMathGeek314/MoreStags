@@ -2031,6 +2031,59 @@
     }
   },
   {
+    "name": "Blue Room",
+    "scene": "GG_Blue_Room",
+    "region": "Godhome",
+    "cost": 450,
+    "leftSide": false,
+    "isCursed": true,
+    "_bellCoords": {
+      "x": 87.7,
+      "y": 15
+    },
+    "_transitionX": 91,
+    "_stagCoords": {
+      "x": 98.7,
+      "y": 15
+    },
+    "_markerPosition": {
+      "x": 1877,
+      "y": 1794
+    },
+    "objectsToRemove": [ "health_plant_separate000 (2)", "abyss_0006_blue_root_06 (7)" ],
+    "_pinInfo": {
+      "s": "GG_Atrium",
+      "x": 89.8,
+      "y": 14
+    }
+  },
+  {
+    "name": "Hall of Gods",
+    "scene": "GG_Workshop",
+    "region": "Godhome",
+    "cost": 450,
+    "leftSide": false,
+    "isCursed": true,
+    "_bellCoords": {
+      "x": 243.8,
+      "y": 6
+    },
+    "_transitionX": 246.8,
+    "_stagCoords": {
+      "x": 255.3,
+      "y": 6
+    },
+    "_markerPosition": {
+      "x": 1877,
+      "y": 1794
+    },
+    "_pinInfo": {
+      "s": "GG_Atrium",
+      "x": 111.3,
+      "y": 14
+    }
+  },
+  {
     "name": "God Spring",
     "scene": "GG_Atrium_Roof",
     "region": "Godhome",
