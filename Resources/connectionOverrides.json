@@ -22,6 +22,11 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Lever-City_Above_Lemm_Upper",
+        "logicOverride": "ORIG | Stag-Office + Can_Stag + (RIGHTCLAW | LEFTCLAW + (WINGS | ENEMYPOGOS) | WINGS + (LEFTCLAW | ENEMYPOGOS))",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Lever-Pilgrim's_Way_Left",
         "logicOverride": "ORIG | Stag-City_Gate + Can_Stag + (ACID | (RIGHTDASH | WINGS) | Lever-Pilgrim's_Way_Left)",
         "logicSubstitutions": {}
@@ -29,6 +34,11 @@
     {
         "name": "Lever-Pilgrim's_Way_Right",
         "logicOverride": "ORIG | Stag-City_Gate + Can_Stag + (ACID | (RIGHTDASH | WINGS) + (RIGHTSUPERDASH | Lever-Pilgrim's_Way_Right))",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Lurien's_Telescope",
+        "logicOverride": "ORIG | Stag-Watcher's_Spire + Can_Stag",
         "logicSubstitutions": {}
     },
     {
@@ -51,6 +61,11 @@
     {
         "name": "Shroom_King_Dream",
         "logicOverride": "ORIG | Stag-Fungal_Elder + Can_Stag + (RIGHTCLAW | WINGS | LEFTCLAW + (LEFTDASH | LEFTSUPERDASH)) + DREAMNAIL",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Split_Elevator_Pass",
+        "logicOverride": "ORIG | Stag-East_Elevator + Can_Stag",
         "logicSubstitutions": {}
     },
     {

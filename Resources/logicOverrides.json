@@ -28,8 +28,16 @@
         "logic": "ORIG | Stag-Birthplace + Can_Stag + (LEFTDASH | LEFTSUPERDASH) + (ANYCLAW | WINGS)"
     },
     {
+        "name": "Bench-Bretta",
+        "logic": "ORIG | Stag-Bretta + Can_Stag + $BENCHRESET"
+    },
+    {
         "name": "Bench-Gardens_Cornifer",
-        "logic": "ORIG | Stag-Garden_Respite + Can_Stag"
+        "logic": "ORIG | Stag-Garden_Respite + Can_Stag + $BENCHRESET"
+    },
+    {
+        "name": "Bench-Quirrel",
+        "logic": "ORIG | Stag-Rafters + Can_Stag + $BENCHRESET"
     },
     {
         "name": "Boss_Essence-Failed_Champion",
@@ -296,6 +304,10 @@
         "logic": "ORIG | (READ ? TRUE) + Stag-Teacher's_Archives + Can_Stag + (ANYCLAW | $SHRIEKPOGO[2])"
     },
     {
+        "name": "Lore_Tablet-City_Entrance",
+        "logic": "ORIG | (READ ? TRUE) + Stag-Rafters + Can_Stag"
+    },
+    {
         "name": "Lore_Tablet-Fungal_Wastes_Hidden",
         "logic": "ORIG | (READ ? TRUE) + Stag-Upper_Wastes + Can_Stag + SPORESHROOM"
     },
@@ -326,6 +338,42 @@
     {
         "name": "Room_Queen[left1]",
         "logic": "ORIG | Stag-White_Lady + Can_Stag + ANYCLAW"
+    },
+    {
+        "name": "Ruins1_05[bot1]",
+        "logic": "ORIG | Stag-Office + Can_Stag"
+    },
+    {
+        "name": "Ruins1_05[bot2]",
+        "logic": "ORIG | Stag-Office + Can_Stag + (Lever-City_Above_Lemm_Upper?FALSE + (ANYCLAW | WINGS + ENEMYPOGOS) | (RIGHTCLAW | LEFTCLAW + (WINGS | ENEMYPOGOS) | WINGS + (LEFTCLAW | ENEMYPOGOS)))"
+    },
+    {
+        "name": "Ruins1_05c",
+        "logic": "ORIG | Stag-Triple_Gate + Can_Stag"
+    },
+    {
+        "name": "Ruins1_05c[top1]",
+        "logic": "ORIG | Stag-Triple_Gate + Can_Stag + (LEFTCLAW | WINGS + RIGHTCLAW)"
+    },
+    {
+        "name": "Ruins1_17[right1]",
+        "logic": "ORIG | Stag-Lower_Storerooms + Can_Stag"
+    },
+    {
+        "name": "Ruins1_17[top1]",
+        "logic": "ORIG | Stag-Lower_Storerooms + Can_Stag"
+    },
+    {
+        "name": "Ruins1_30",
+        "logic": "ORIG | Stag-Soul_Sanctum + Can_Stag"
+    },
+    {
+        "name": "Ruins2_10b[right1]",
+        "logic": "ORIG | Stag-East_Elevator + Can_Stag"
+    },
+    {
+        "name": "Ruins2_Watcher_Room[bot1]",
+        "logic": "ORIG | Stag-Watcher's_Spire + Can_Stag"
     },
     {
         "name": "Simple_Key-Basin",

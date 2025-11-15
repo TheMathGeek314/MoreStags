@@ -33,39 +33,39 @@
   },
   {
     "name": "Stag-Flooded_Station",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Ruins2_07[left1] | Ruins2_07[right1] + (SWIM | LEFTSKIPACID | (COMPLEXSKIPS + ACIDSKIPS + LEFTDASH + WINGS + (SPELLAIRSTALL + (RIGHTCLAW + $CASTSPELL | LEFTCLAW + $CASTSPELL[2]) | ANYCLAW + LEFTSHARPSHADOW))) | Ruins2_07[top1] + (SWIM | LEFTSKIPACID | (COMPLEXSKIPS + ACIDSKIPS + LEFTDASH + RIGHTCLAW + WINGS + (SPELLAIRSTALL + $CASTSPELL[3] | LEFTSHARPSHADOW))) | Stag-Flooded_Station + Can_Stag"
   },
   {
     "name": "Stag-East_Elevator",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Ruins2_10b[left1] | Ruins2_10b[right1] | Ruins2_10b[right2] + (WINGS + ANYCLAW | FULLCLAW + (RIGHTDASH | RIGHTSUPERDASH)) | Stag-East_Elevator + Can_Stag"
   },
   {
     "name": "Stag-Memorial",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Ruins1_27[left1] + Lever-City_Fountain + (WINGS | ANYCLAW) | Ruins1_27[right1] + (WINGS | ANYCLAW) | Stag-Memorial + Can_Stag"
   },
   {
     "name": "Stag-Watcher's_Spire",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Ruins2_Watcher_Room[bot1] | Stag-Watcher's_Spire + Can_Stag"
   },
   {
     "name": "Stag-Office",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Ruins1_05[bot1] + (LEFTCLAW | RIGHTCLAW + (WINGS | ENEMYPOGOS) | WINGS + (RIGHTCLAW | ENEMYPOGOS)) | Ruins1_05[bot2] + (RIGHTCLAW | WINGS + LEFTCLAW) + Lever-City_Above_Lemm_Upper?FALSE | Stag-Office + Can_Stag"
   },
   {
     "name": "Stag-Triple_Gate",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Ruins1_05c[top1] + (RIGHTDASH | ANYCLAW | WINGS | ENEMYPOGOS) | Ruins1_05c + ((WINGS + (ANYCLAW | ENEMYPOGOS)) | (RIGHTCLAW + (LEFTDASH | LEFTSUPERDASH | ENEMYPOGOS + DIFFICULTSKIPS | SPELLAIRSTALL + $CASTSPELL[2]))) | Stag-Triple_Gate + Can_Stag"
   },
   {
     "name": "Stag-Lower_Storerooms",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Ruins1_17[top1] | Ruins1_17[right1] | Stag-Lower_Storerooms + Can_Stag"
   },
   {
     "name": "Stag-Rafters",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Ruins1_02[top1] | Ruins1_02[bot1] + (ANYCLAW | WINGS) | Stag-Rafters + Can_Stag | Bench-Quirrel"
   },
   {
     "name": "Stag-Soul_Sanctum",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Ruins1_30 | Stag-Soul_Sanctum + Can_Stag"
   },
   {
     "name": "Stag-Hallownest's_Crown",
@@ -121,7 +121,7 @@
   },
   {
     "name": "Stag-Archives_Entrance",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus3_archive[bot1] | Fungus3_archive[left1] | Bench-Archives | Stag-Archives_Entrance + Can_Stag"
   },
   {
     "name": "Stag-Teacher's_Archives",

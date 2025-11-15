@@ -120,6 +120,11 @@
         "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
     },
     {
+        "name": "Grub-King's_Station",
+        "old": "Ruins2_07[left1]",
+        "replacement": "Ruins2_07[left1] | Stag-Flooded_Station + Can_Stag"
+    },
+    {
         "name": "Grub-Queen's_Gardens_Marmu",
         "old": "Fungus3_48[bot1]",
         "replacement": "Fungus3_48[bot1] | Stag-Love_Key + Can_Stag"
@@ -155,9 +160,19 @@
         "replacement": "Fungus2_12[bot1] | Stag-Mantis_Outskirts + Can_Stag"
     },
     {
+        "name": "Lore_Tablet-Watcher's_Spire",
+        "old": "Ruins2_Watcher_Room[bot1]",
+        "replacement": "Ruins2_Watcher_Room[bot1] | Stag-Watcher's_Spire + Can_Stag"
+    },
+    {
         "name": "Love_Key",
         "old": "Fungus3_39[left1]",
         "replacement": "Fungus3_39[left1] | Stag-Love_Key + Can_Stag + (ANYCLAW | WINGS)"
+    },
+    {
+        "name": "Lurien",
+        "old": "Ruins2_Watcher_Room[bot1]",
+        "replacement": "Ruins2_Watcher_Room[bot1] | Stag-Watcher's_Spire + Can_Stag"
     },
     {
         "name": "Monarch_Wings",
@@ -168,6 +183,21 @@
         "name": "Pale_Ore-Basin",
         "old": "Abyss_17[top1]",
         "replacement": "Abyss_17[top1] | Stag-Lower_Tramway + Can_Stag"
+    },
+    {
+        "name": "Ruins2_07[right1]",
+        "old": "Ruins2_07[left1]",
+        "replacement": "Ruins2_07[left1] | Stag-Flooded_Station + Can_Stag"
+    },
+    {
+        "name": "Ruins2_07[top1]",
+        "old": "Ruins2_07[left1]",
+        "replacement": "Ruins2_07[left1] | Stag-Flooded_Station + Can_Stag"
+    },
+    {
+        "name": "Simple_Key-City",
+        "old": "Ruins1_17[top1]",
+        "replacement": "Ruins1_17[top1] | Stag-Lower_Storerooms + Can_Stag"
     },
     {
         "name": "Soul_Totem-Basin",
@@ -203,5 +233,10 @@
         "name": "Wanderer's_Journal-Ancient_Basin",
         "old": "Abyss_02[right1]",
         "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag + (RIGHTCLAW | WINGS | RIGHTDASH | RIGHTSUPERDASH | ENEMYPOGOS)"
+    },
+    {
+        "name": "Whispering_Root-City",
+        "old": "Ruins1_17[top1]",
+        "replacement": "Ruins1_17[top1] | Stag-Lower_Storerooms + Can_Stag"
     }
 ]
