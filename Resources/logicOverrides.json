@@ -17,7 +17,7 @@
     },
     {
         "name": "Abyss_15[top1]",
-        "logic": "ORIG | Stag-Birthplace + Can_Stag + LEFTDASH + (ANYCLAW | WINGS + ENEMYPOGOS)"
+        "logic": "ORIG | Stag-Birthplace + Can_Stag + (LEFTDASH | LEFTSUPERDASH) + (ANYCLAW | WINGS + ENEMYPOGOS)"
     },
     {
         "name": "Abyss_21[right1]",
@@ -25,7 +25,11 @@
     },
     {
         "name": "Arcane_Egg-Birthplace",
-        "logic": "ORIG | Stag-Birthplace + Can_Stag + LEFTDASH + (ANYCLAW | WINGS + ENEMYPOGOS)"
+        "logic": "ORIG | Stag-Birthplace + Can_Stag + (LEFTDASH | LEFTSUPERDASH) + (ANYCLAW | WINGS)"
+    },
+    {
+        "name": "Bench-Gardens_Cornifer",
+        "logic": "ORIG | Stag-Garden_Respite + Can_Stag"
     },
     {
         "name": "Boss_Essence-Failed_Champion",
@@ -98,6 +102,10 @@
     {
         "name": "Fungus1_13[right1]",
         "logic": "ORIG | Stag-Durandoos + Can_Stag"
+    },
+    {
+        "name": "Fungus1_24[left1]",
+        "logic": "ORIG | Stag-Garden_Respite + Can_Stag"
     },
     {
         "name": "Fungus1_30",
@@ -196,8 +204,24 @@
         "logic": "ORIG | Stag-Fungal_Elder + Can_Stag + (RIGHTCLAW | LEFTCLAW + (LEFTDASH | LEFTSUPERDASH | WINGS))"
     },
     {
+        "name": "Fungus3_04",
+        "logic": "ORIG | Stag-Droppers + Can_Stag"
+    },
+    {
+        "name": "Fungus3_22",
+        "logic": "ORIG | Stag-Upper_Gardens + Can_Stag"
+    },
+    {
         "name": "Fungus3_30[bot1]",
         "logic": "ORIG | Stag-Fog_Canyon + Can_Stag"
+    },
+    {
+        "name": "Fungus3_39[left1]",
+        "logic": "ORIG | Stag-Love_Key + Can_Stag + (ANYCLAW | WINGS)"
+    },
+    {
+        "name": "Fungus3_48[bot1]",
+        "logic": "ORIG | Stag-Loodles + Can_Stag"
     },
     {
         "name": "Fungus3_archive[bot1]",
@@ -252,6 +276,10 @@
         "logic": "ORIG | Fungus1_02"
     },
     {
+        "name": "Geo_Rock-Love_Key",
+        "logic": "ORIG | Stag-Love_Key + Can_Stag"
+    },
+    {
         "name": "Grub-Crossroads_Spike",
         "logic": "ORIG | Stag-East_Crossroads + Can_Stag"
     },
@@ -286,6 +314,18 @@
     {
         "name": "Monomon",
         "logic": "ORIG | Stag-Teacher's_Archives + Can_Stag + DREAMNAIL + (ACID | LEFTSUPERDASH + RIGHTCLAW) + (LEFTCLAW | WINGS + RIGHTCLAW)"
+    },
+    {
+        "name": "Queen_Fragment",
+        "logic": "ORIG | Stag-White_Lady + Can_Stag"
+    },
+    {
+        "name": "Queen's_Gardens_Map",
+        "logic": "ORIG | Stag-Garden_Respite + Can_Stag"
+    },
+    {
+        "name": "Room_Queen[left1]",
+        "logic": "ORIG | Stag-White_Lady + Can_Stag + ANYCLAW"
     },
     {
         "name": "Simple_Key-Basin",

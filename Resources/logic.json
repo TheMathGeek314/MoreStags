@@ -305,27 +305,27 @@
   },
   {
     "name": "Stag-Droppers",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus3_04 | Stag-Droppers + Can_Stag"
   },
   {
     "name": "Stag-Garden_Respite",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus1_24[left1] + (ANYCLAW | WINGS | $SHADESKIP + Collapser-Garden_Map?FALSE) | Bench-Gardens_Cornifer | Stag-Garden_Respite + Can_Stag"
   },
   {
     "name": "Stag-Love_Key",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus3_39[left1] | Fungus3_39[right1] + Plank-Moss_Prophet?FALSE | Stag-Love_Key + Can_Stag"
   },
   {
     "name": "Stag-Loodles",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus3_48[bot1] | Fungus3_48[right2]"
   },
   {
     "name": "Stag-White_Lady",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Room_Queen[left1]"
   },
   {
     "name": "Stag-Upper_Gardens",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus3_22[right1] | Fungus3_22 + (ANYCLAW | WINGS)"
   },
   {
     "name": "Stag-Dreamshield",

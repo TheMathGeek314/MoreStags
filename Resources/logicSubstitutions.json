@@ -45,6 +45,16 @@
         "replacement": "Fungus2_12[bot1] | Stag-Mantis_Outskirts + Can_Stag"
     },
     {
+        "name": "Fungus3_39[right1]",
+        "old": "Fungus3_39[left1]",
+        "replacement": "Fungus3_39[left1] | Stag-Love_Key + Can_Stag"
+    },
+    {
+        "name": "Fungus3_48[right2]",
+        "old": "Fungus3_48[bot1]",
+        "replacement": "Fungus3_48[bot1] | Stag-Love_Key + Can_Stag"
+    },
+    {
         "name": "Geo_Chest-Greenpath",
         "old": "Fungus1_13[right1]",
         "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
@@ -85,6 +95,11 @@
         "replacement": "Fungus1_07[top1] | Stag-Hunter + Can_Stag"
     },
     {
+        "name": "Geo_Rock-Queen's_Gardens_Above_Marmu",
+        "old": "Fungus3_48[bot1]",
+        "replacement": "Fungus3_48[bot1] | Stag-Love_Key + Can_Stag"
+    },
+    {
         "name": "Grimmkin_Flame-Ancient_Basin",
         "old": "Abyss_02[right1]",
         "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag + (RIGHTCLAW | WINGS | RIGHTDASH | RIGHTSUPERDASH | ENEMYPOGOS)"
@@ -105,9 +120,19 @@
         "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
     },
     {
+        "name": "Grub-Queen's_Gardens_Marmu",
+        "old": "Fungus3_48[bot1]",
+        "replacement": "Fungus3_48[bot1] | Stag-Love_Key + Can_Stag"
+    },
+    {
         "name": "Hallownest_Seal-Fog_Canyon_West",
         "old": "Fungus3_30[bot1]",
         "replacement": "Fungus3_30[bot1] | Stag-Fog_Canyon + Can_Stag"
+    },
+    {
+        "name": "Hallownest_Seal-Queen's_Gardens",
+        "old": "Fungus3_48[bot1]",
+        "replacement": "Fungus3_48[bot1] | Stag-Love_Key + Can_Stag"
     },
     {
         "name": "Lifeblood_Cocoon-Fog_Canyon_West",
@@ -128,6 +153,11 @@
         "name": "Lore_Tablet-Mantis_Outskirts",
         "old": "Fungus2_12[bot1]",
         "replacement": "Fungus2_12[bot1] | Stag-Mantis_Outskirts + Can_Stag"
+    },
+    {
+        "name": "Love_Key",
+        "old": "Fungus3_39[left1]",
+        "replacement": "Fungus3_39[left1] | Stag-Love_Key + Can_Stag + (ANYCLAW | WINGS)"
     },
     {
         "name": "Monarch_Wings",
