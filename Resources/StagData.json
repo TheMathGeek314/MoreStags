@@ -1989,6 +1989,254 @@
     }
   },
   {
+    "name": "Palace Entrance",
+    "scene": "White_Palace_11",
+    "region": "Palace",
+    "cost": 450,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 156.5,
+      "y": 17
+    },
+    "_transitionX": 159.4,
+    "_stagCoords": {
+      "x": 163.8,
+      "y": 17
+    },
+    "_markerPosition": {
+      "x": 2767,
+      "y": 2036
+    },
+    "_pinInfo": {
+      "s": "White_Palace_01",
+      "x": 0,
+      "y": 18
+    }
+  },
+  {
+    "name": "Palace Foyer",
+    "scene": "White_Palace_01",
+    "region": "Palace",
+    "cost": 450,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 55,
+      "y": 18
+    },
+    "_transitionX": 57.9,
+    "_stagCoords": {
+      "x": 63.6,
+      "y": 18
+    },
+    "_markerPosition": {
+      "x": 2767,
+      "y": 2036
+    }
+  },
+  {
+    "name": "Palace Atrium",
+    "scene": "White_Palace_03_hub",
+    "region": "Palace",
+    "cost": 450,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 81.8,
+      "y": 34
+    },
+    "_transitionX": 84.5,
+    "_stagCoords": {
+      "x": 90.4,
+      "y": 34
+    },
+    "_markerPosition": {
+      "x": 2767,
+      "y": 2036
+    }
+  },
+  {
+    "name": "Right Atrium Far",
+    "scene": "White_Palace_16",
+    "region": "Palace",
+    "cost": 450,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 164.4,
+      "y": 114
+    },
+    "_transitionX": 167.7,
+    "_stagCoords": {
+      "x": 173.9,
+      "y": 114
+    },
+    "_markerPosition": {
+      "x": 2767,
+      "y": 2036
+    },
+    "childrenToRemove": [ "white_vine_silhouette_set (7)/white_vine_01_silhouette (22)", "white_vine_silhouette_set (7)/white_vine_01_silhouette (21)", "white_vine_silhouette_set (7)/white_vine_01_silhouette (20)" ],
+    "_pinInfo": {
+      "s": "White_Palace_16",
+      "x": 340,
+      "y": 140
+    }
+  },
+  {
+    "name": "Right Atrium Near",
+    "scene": "White_Palace_15",
+    "region": "Palace",
+    "cost": 450,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 25.2,
+      "y": 114
+    },
+    "_transitionX": 30.2,
+    "_stagCoords": {
+      "x": 34.9,
+      "y": 114
+    },
+    "_markerPosition": {
+      "x": 2767,
+      "y": 2036
+    }
+  },
+  {
+    "name": "Lower Left Atrium",
+    "scene": "White_Palace_04",
+    "region": "Palace",
+    "cost": 450,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 35.1,
+      "y": 34
+    },
+    "_transitionX": 37.5,
+    "_stagCoords": {
+      "x": 41.8,
+      "y": 34
+    },
+    "_markerPosition": {
+      "x": 2767,
+      "y": 2036
+    }
+  },
+  {
+    "name": "Upper Left Atrium",
+    "scene": "White_Palace_14",
+    "region": "Palace",
+    "cost": 450,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 95.1,
+      "y": 129
+    },
+    "_transitionX": 97.5,
+    "_stagCoords": {
+      "x": 102,
+      "y": 129
+    },
+    "_markerPosition": {
+      "x": 2767,
+      "y": 2036
+    },
+    "_pinInfo": {
+      "s": "White_Palace_14",
+      "x": 96,
+      "y": 150
+    }
+  },
+  {
+    "name": "Balcony",
+    "scene": "White_Palace_07",
+    "region": "Palace",
+    "cost": 450,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 92.6,
+      "y": 79
+    },
+    "_transitionX": 95.8,
+    "_stagCoords": {
+      "x": 100.6,
+      "y": 79
+    },
+    "_markerPosition": {
+      "x": 2767,
+      "y": 2036
+    },
+    "_pinInfo": {
+      "s": "White_Palace_07",
+      "x": 135,
+      "y": 79
+    }
+  },
+  {
+    "name": "Upper Balcony",
+    "scene": "White_Palace_12",
+    "region": "Palace",
+    "cost": 450,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 25.9,
+      "y": 206
+    },
+    "_transitionX": 27.5,
+    "_stagCoords": {
+      "x": 30.9,
+      "y": 206
+    },
+    "_markerPosition": {
+      "x": 2767,
+      "y": 2036
+    },
+    "_pinInfo": {
+      "s": "White_Palace_12",
+      "x": 26,
+      "y": 350
+    }
+  },
+  {
+    "name": "Workshop",
+    "scene": "White_Palace_08",
+    "region": "Palace",
+    "cost": 450,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 22.1,
+      "y": 20
+    },
+    "_transitionX": 20,
+    "_stagCoords": {
+      "x": 11.8,
+      "y": 20
+    },
+    "_markerPosition": {
+      "x": 2767,
+      "y": 2036
+    }
+  },
+  {
+    "name": "Nursery",
+    "scene": "White_Palace_09",
+    "region": "Palace",
+    "cost": 450,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 89.3,
+      "y": 30
+    },
+    "_transitionX": 92.4,
+    "_stagCoords": {
+      "x": 97.4,
+      "y": 30
+    },
+    "_markerPosition": {
+      "x": 2767,
+      "y": 2036
+    },
+    "objectsToRemove": [ "black_solid 413", "black_solid 413 (1)", "core_extras_0034_wp (1)" ],
+    "childrenToRemove": [ "white_vine_01_silhouette", "white_vine_01_silhouette (10)", "white_vine_01_silhouette (11)" ]
+  },
+  {
     "name": "Path of Pain 2",
     "scene": "White_Palace_17",
     "region": "Palace",
@@ -2011,6 +2259,27 @@
     "childrenToRemove": [ "white_pillar (16)/_0052_white", "white_pillar (16)/_0052_white (1)" ]
   },
   {
+    "name": "Path of Pain 3",
+    "scene": "White_Palace_19",
+    "region": "Palace",
+    "cost": 450,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 15.6,
+      "y": 157
+    },
+    "_transitionX": 17.9,
+    "_stagCoords": {
+      "x": 22.1,
+      "y": 157
+    },
+    "_markerPosition": {
+      "x": 2767,
+      "y": 2036
+    },
+    "objectsToRemove": [ "wp_cloth_furniture4 (3)" ]
+  },
+  {
     "name": "Path of Pain 4",
     "scene": "White_Palace_20",
     "region": "Palace",
@@ -2028,6 +2297,11 @@
     "_markerPosition": {
       "x": 2767,
       "y": 2036
+    },
+    "_pinInfo": {
+      "s": "White_Palace_20",
+      "x": 15,
+      "y": 280
     }
   },
   {

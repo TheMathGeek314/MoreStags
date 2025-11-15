@@ -544,34 +544,6 @@ namespace MoreStags {
 //Decide on probability, maybe 1/6 or 1/10 or 1/20
 
 //--todo--
-//populate the json with every location
 //Start Items stags option?
 //any stag renames?
 //sanity check stag nest threshold with and without stag nest active
-
-//--costs and order and grouping--
-//   Crossroads - 50
-//   Upper Greenpath - 140
-//   Lower Greenpath - 140
-//   Canyon - 250
-//   Upper Fungal - 120
-//   Lower Fungal - 150
-//   Gardens - 200
-//   West City - 200
-//   East City - 300
-//   Waterways - 300
-//   Peak - 250
-//   Grounds - 170
-//   Edge - 350
-//   Hive - 350
-//   Deepnest - 250
-//   Basin - 300
-//   Abyss - 400
-//   Cliffs - 170
-//   Palace - 450
-//   Godhome - 450
-
-//--quantity settings notes--
-//   There are 11 by default
-//   There are 20 regions (21 with Dirtmouth)
-//   There are 103 new stags (114 total)
