@@ -143,9 +143,8 @@ namespace MoreStags {
             if(StagData.dataByRoom.TryGetValue(self.sceneName, out StagData data)) {
                 if(data.isActive(localData)) {
                     foreach(string toDelete in data.objectsToRemove) {
-                        GameObject.Find(toDelete).GetComponent<SpriteRenderer>().enabled = false;//make sure it's sprite not mesh?
+                        GameObject.Find(toDelete).GetComponent<SpriteRenderer>().enabled = false;
                     }
-                    //so far every test has been around 0.6-0.7 ish so 1.5 should be plenty, but watch out for custom stags near doorways
                     if((HeroController.instance.transform.position - GameObject.Find("door_stagExit").transform.position).magnitude < 1.5f) {
                         foreach(string toDelete in data.enemiesToRemove) {
                             GameObject go = GameObject.Find(toDelete);
@@ -216,7 +215,6 @@ namespace MoreStags {
                     stationOpened.GetFirstActionOfType<DestroyObject>().Enabled = false;//Destroy Grate
                 }
 
-                //FsmState "Remember 3" hardcoded openedStagNest after >8 stags
                 self.GetValidState("Convo?").GetActions<IntTestToBool>().Where(action => action.int2.Value == 8).First().int2.Value = localData.threshold;
 
                 FsmState checkResult = self.GetValidState("Check Result");
@@ -544,6 +542,5 @@ namespace MoreStags {
 //Decide on probability, maybe 1/6 or 1/10 or 1/20
 
 //--todo--
-//Start Items stags option?
 //any stag renames?
 //sanity check stag nest threshold with and without stag nest active

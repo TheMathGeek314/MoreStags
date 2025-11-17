@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using RandomizerCore.Extensions;
 using RandomizerMod.RandomizerData;
 using RandomizerMod.RC;
+using RandomizerMod.Settings;
 using UnityEngine;
 
 namespace MoreStags {
@@ -9,6 +11,7 @@ namespace MoreStags {
         public static void Hook() {
             RequestBuilder.OnUpdate.Subscribe(3, ApplyStagDef);
             RequestBuilder.OnUpdate.Subscribe(4, SetupItems);
+            RequestBuilder.OnUpdate.Subscribe(6, EditStartItems);
             RequestBuilder.OnUpdate.Subscribe(0, WriteToLocal);
         }
 
@@ -29,7 +32,7 @@ namespace MoreStags {
             if(!ms.Enabled)
                 return;
             List<StagData> stagsToActivate = [StagData.dataByRoom["Room_Town_Stag_Station"]];
-            bool isRoomRando = rb.gs.TransitionSettings.Mode == RandomizerMod.Settings.TransitionSettings.TransitionMode.RoomRandomizer;
+            bool isRoomRando = rb.gs.TransitionSettings.Mode == TransitionSettings.TransitionMode.RoomRandomizer;
             if(!rb.gs.SkipSettings.EnemyPogos && !isRoomRando) {
                 stagsToActivate.Add(StagData.dataByRoom["Cliffs_03"]);
             }
@@ -161,6 +164,56 @@ namespace MoreStags {
                 data.RemoveAll(stag => stag.isVanilla);
             if(MoreStags.Settings.RemoveCursedLocations)
                 data.RemoveAll(stag => stag.isCursed);
+        }
+
+        private static void EditStartItems(RequestBuilder rb) {
+            foreach(string vanillaStag in Data.GetPoolDef(PoolNames.Stag).IncludeItems.ToArray()) {
+                if(rb.IsAtStart(vanillaStag))
+                    rb.RemoveFromStart(vanillaStag);
+            }
+            List<StagData> startItems = new();
+
+            void AddFrom(IList<StagData> items, double rate, int cap) {
+                items = rb.rng.Permute(items);
+                int toAdd = 0;
+                for(int i = 0; i < items.Count; i++) {
+                    if(rb.rng.NextDouble() < rate) {
+                        toAdd = (toAdd + 1) % (cap + 1);
+                    }
+                }
+                for(int i = 0; i < toAdd; i++) {
+                    startItems.Add(items[i]);
+                }
+            }
+
+            List<StagData> stags = new(StagData.allStags);
+            filterBySettings(stags);
+
+            switch(rb.gs.StartItemSettings.Stags) {
+                case StartItemSettings.StartStagType.None:
+                    break;
+                case StartItemSettings.StartStagType.DirtmouthStag:
+                    startItems.Add(StagData.dataByRoom["Room_Town_Stag_Station"]);
+                    break;
+                case StartItemSettings.StartStagType.OneRandomStag:
+                    startItems.Add(rb.rng.Next(StagData.allStags));
+                    break;
+                case StartItemSettings.StartStagType.ZeroOrMoreRandomStags:
+                    AddFrom(StagData.allStags, 1d / stags.Count, 3);
+                    break;
+                case StartItemSettings.StartStagType.ManyRandomStags:
+                    AddFrom(stags, 0.4, stags.Count);
+                    break;
+                case StartItemSettings.StartStagType.AllStags:
+                    startItems.AddRange(stags);
+                    break;
+            }
+            
+            foreach(StagData stag in startItems) {
+                string name = stag.isVanilla ? Consts.LocationNames[stag.name] : RandoInterop.nameToLocation(stag.name);
+                rb.AddToStart(name);
+                rb.GetItemGroupFor(name).Items.Remove(name, 1);
+            }
         }
 
         private static void WriteToLocal(RequestBuilder rb) {
