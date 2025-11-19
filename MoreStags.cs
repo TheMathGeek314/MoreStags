@@ -215,7 +215,10 @@ namespace MoreStags {
                     stationOpened.GetFirstActionOfType<DestroyObject>().Enabled = false;//Destroy Grate
                 }
 
-                self.GetValidState("Convo?").GetActions<IntTestToBool>().Where(action => action.int2.Value == 8).First().int2.Value = localData.threshold;
+                FsmState convoQ = self.GetValidState("Convo?");
+                convoQ.GetActions<IntTestToBool>().Where(action => action.int2.Value == 8).First().int2.Value = localData.threshold;
+                convoQ.GetFirstActionOfType<BoolTestMulti>().Enabled = localData.opened.ContainsKey("Stag Nest");
+                self.GetValidState("Convo Choice").GetFirstActionOfType<BoolTestMulti>().Enabled = localData.opened.ContainsKey("Stag Nest");
 
                 FsmState checkResult = self.GetValidState("Check Result");
                 foreach(StagData activeStag in localData.activeStags.Where(s => !s.isVanilla)) {
@@ -255,6 +258,7 @@ namespace MoreStags {
             }
             else if(self.FsmName == "Conversation Control" && self.gameObject.name == "Stag") {
                 self.GetValidState("Convo Choice").AddTransition("FINISHED", "Exhausted");
+                self.GetValidState("Remember Convo").GetFirstActionOfType<BoolTestMulti>().Enabled = localData.opened.ContainsKey("Stag Nest");
             }
             else if(self.gameObject.name == "UI List Stag" && self.FsmName == "ui_list") {
                 self.GetValidState("Activate").InsertCustomAction(() => scrollStagMenu(self, "Initial Item"), 1);

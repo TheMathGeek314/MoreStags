@@ -186,8 +186,7 @@ namespace MoreStags {
                 }
             }
 
-            List<StagData> stags = new(StagData.allStags);
-            filterBySettings(stags);
+            List<StagData> stags = new(MoreStags.localData.activeStags);
 
             switch(rb.gs.StartItemSettings.Stags) {
                 case StartItemSettings.StartStagType.None:
@@ -196,10 +195,10 @@ namespace MoreStags {
                     startItems.Add(StagData.dataByRoom["Room_Town_Stag_Station"]);
                     break;
                 case StartItemSettings.StartStagType.OneRandomStag:
-                    startItems.Add(rb.rng.Next(StagData.allStags));
+                    startItems.Add(rb.rng.Next(stags));
                     break;
                 case StartItemSettings.StartStagType.ZeroOrMoreRandomStags:
-                    AddFrom(StagData.allStags, 1d / stags.Count, 3);
+                    AddFrom(stags, 1d / stags.Count, 3);
                     break;
                 case StartItemSettings.StartStagType.ManyRandomStags:
                     AddFrom(stags, 0.4, stags.Count);
