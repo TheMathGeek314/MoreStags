@@ -73,19 +73,19 @@
   },
   {
     "name": "Stag-Overlook",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Mines_13[bot1] + (WINGS | ANYCLAW) | Mines_13[top1] | Mines_13[right1] | Stag-Overlook + Can_Stag"
   },
   {
     "name": "Stag-Crystal_Corridor",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Mines_10[bot1] + (RIGHTCLAW + RIGHTSUPERDASH + (LEFTCLAW | RIGHTDASH + WINGS) | RIGHTDASH + $SHRIEKPOGO[3,1] | RIGHTSUPERDASH + $SHRIEKPOGO[3,2] | COMPLEXSKIPS + WINGS + RIGHTDASH + SPELLAIRSTALL + $SHADESKIP[2HITS] + $CASTSPELL[2]) | Mines_10[right1] + (LEFTSUPERDASH | WINGS + LEFTDASH + (LEFTCLAW + (SPELLAIRSTALL + $CASTSPELL[2] | OBSCURESKIPS + LEFTSHARPSHADOW) | $SHRIEKPOGO)) | Stag-Crystal_Corridor + Can_Stag"
   },
   {
     "name": "Stag-Mine_Entrance",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Mines_02 | Stag-Mine_Entrance + Can_Stag"
   },
   {
     "name": "Stag-Conga_Line",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Mines_20 | Stag-Conga_Line + Can_Stag"
   },
   {
     "name": "Stag-Crystallised_Mound",
@@ -345,15 +345,15 @@
   },
   {
     "name": "Stag-Flukemarm",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "(Waterways_08[top1] | Waterways_08[left2] + Wall-Junk_Pit_Entrance?TRUE + Plank-Junk_Pit_Exit?TRUE) + (ENEMYPOGOS | RIGHTCLAW | WINGS | RIGHTSUPERDASH) | (Waterways_08[left1] | Waterways_08[left2] + Wall-Junk_Pit_Entrance?TRUE) + (WINGS + ANYCLAW | FULLCLAW + RIGHTDASH | ENEMYPOGOS) | Stag-Flukemarm + Can_Stag"
   },
   {
     "name": "Stag-East_Waterways",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Waterways_14[bot1] + (ANYCLAW | $SHRIEKPOGO[2]) | Waterways_14[bot2] + (RIGHTCLAW | WINGS + LEFTCLAW | $SHRIEKPOGO[before:ITEMSOUL]) + (ACID | LEFTSUPERDASH) | Stag-East_Waterways + Can_Stag"
   },
   {
     "name": "Stag-Isma's_Grove",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Waterways_13[left1] + (FULLCLAW | ANYCLAW + (WINGS | ENEMYPOGOS) | LEFTCLAW + (RIGHTDASH | RIGHTSUPERDASH) | ENEMYPOGOS + $SHRIEKPOGO[5]) | Waterways_13 + (RIGHTCLAW | LEFTCLAW + WINGS) + (ACID | FULLSKIPACID) | Stag-Isma's_Grove + Can_Stag"
   },
   {
     "name": "Stag-Palace_Entrance",

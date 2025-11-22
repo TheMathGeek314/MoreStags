@@ -5,6 +5,11 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Collapser-Waterways_Tram_Grub",
+        "logicOverride": "ORIG | Stag-East_Waterways + Can_Stag + ((RIGHTSUPERDASH | ACID) + (RIGHTCLAW | LEFTCLAW + WINGS) + Collapser-Waterways_Tram_Grub | RIGHTSUPERDASH + WINGS + (RIGHTCLAW | LEFTCLAW + ENEMYPOGOS | ENEMYPOGOS + DANGEROUSSKIPS) | ACID + (RIGHTCLAW | LEFTCLAW + WINGS | WINGS + ENEMYPOGOS + DANGEROUSSKIPS))",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Defeated_Any_Maggot",
         "logicOverride": "",
         "logicSubstitutions": {
@@ -57,6 +62,13 @@
         "name": "Quirrel_After_Monomon",
         "logicOverride": "ORIG | Stag-Teacher's_Archives + Can_Stag + QUIRREL>7 + (LISTEN ? TRUE) + DREAMNAIL + (ACID | LEFTSUPERDASH + RIGHTCLAW) + (LEFTCLAW | WINGS + RIGHTCLAW)",
         "logicSubstitutions": {}
+    },
+    {
+        "name": "Quirrel_Peaks",
+        "logicOverride": "",
+        "logicSubstitutions": {
+            "Mines_13[right1]": "Mines_13[right1] | Stag-Overlook + Can_Stag"
+        }
     },
     {
         "name": "Shroom_King_Dream",

@@ -292,6 +292,10 @@
         "logic": "ORIG | Stag-East_Crossroads + Can_Stag"
     },
     {
+        "name": "Grub-Waterways_Requires_Tram",
+        "logic": "ORIG | Stag-East_Waterways + Can_Stag + (RIGHTSUPERDASH + WINGS + (RIGHTCLAW | LEFTCLAW + ENEMYPOGOS | ENEMYPOGOS + DANGEROUSSKIPS) | ACID + (RIGHTCLAW | LEFTCLAW + WINGS | WINGS + ENEMYPOGOS + DANGEROUSSKIPS))"
+    },
+    {
         "name": "Journal_Entry-Charged_Lumafly",
         "logic": "ORIG | Stag-Teacher's_Archives + Can_Stag + (ACID + (RIGHTCLAW | WINGS + LEFTCLAW) | ACIDSKIPS + RIGHTSHARPSHADOW + WINGS + SPELLAIRSTALL + $CASTSPELL[2] + RIGHTCLAW + LEFTSUPERDASH)"
     },
@@ -318,6 +322,30 @@
     {
         "name": "Mask_Shard-Stone_Sanctuary",
         "logic": "ORIG | Stag-Stone_Sanctuary + Can_Stag"
+    },
+    {
+        "name": "Mines_02",
+        "logic": "ORIG | Stag-Mine_Entrance + Can_Stag"
+    },
+    {
+        "name": "Mines_10[left1]",
+        "logic": "ORIG | Stag-Overlook + Can_Stag + (FULLCLAW + LEFTSUPERDASH | WINGS + LEFTDASH + LEFTCLAW + (RIGHTCLAW | LEFTSUPERDASH + SPELLAIRSTALL + $CASTSPELL))"
+    },
+    {
+        "name": "Mines_10[right1]",
+        "logic": "ORIG | Stag-Overlook + Can_Stag + (RIGHTSUPERDASH | RIGHTDASH + WINGS + (RIGHTCLAW + SPELLAIRSTALL + $CASTSPELL[3] | $SHADESKIP))"
+    },
+    {
+        "name": "Mines_13[bot1]",
+        "logic": "ORIG | Stag-Overlook + Can_Stag"
+    },
+    {
+        "name": "Mines_13[right1]",
+        "logic": "ORIG | Stag-Overlook + Can_Stag"
+    },
+    {
+        "name": "Mines_20",
+        "logic": "ORIG | Stag-Overlook + Can_Stag + ANYCLAW"
     },
     {
         "name": "Mines_34[bot1]",
@@ -386,5 +414,25 @@
     {
         "name": "Soul_Totem-Pilgrim's_Way",
         "logic": "ORIG | Stag-City_Gate + Can_Stag"
+    },
+    {
+        "name": "Soul_Totem-Waterways_Flukemarm",
+        "logic": "ORIG | Stag-Flukemarm + Can_Stag"
+    },
+    {
+        "name": "Waterways_08[left1]",
+        "logic": "ORIG | Stag-Flukemarm + Can_Stag"
+    },
+    {
+        "name": "Waterways_13",
+        "logic": "ORIG | Stag-Isma's_Grove + Can_Stag"
+    },
+    {
+        "name": "Waterways_14[bot1]",
+        "logic": "ORIG | Stag-East_Waterways + Can_Stag"
+    },
+    {
+        "name": "Waterways_14[bot2]",
+        "logic": "ORIG | Stag-East_Waterways + Can_Stag + (ACID | RIGHTSUPERDASH)"
     }
 ]

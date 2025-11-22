@@ -175,6 +175,11 @@
         "replacement": "Ruins2_Watcher_Room[bot1] | Stag-Watcher's_Spire + Can_Stag"
     },
     {
+        "name": "Mines_20",
+        "old": "Mines_20[right2]",
+        "replacement": "Mines_20[right2] | Stag-Conga_Line + Can_Stag"
+    },
+    {
         "name": "Monarch_Wings",
         "old": "Abyss_21[right1]",
         "replacement": "Abyss_21[right1] | Stag-Monarch_Wings + Can_Stag"
