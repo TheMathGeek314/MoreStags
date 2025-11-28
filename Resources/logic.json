@@ -89,7 +89,7 @@
   },
   {
     "name": "Stag-Crystallised_Mound",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Mines_35[left1] + Broke_Crystallized_Mound_Quake_Floor + (LEFTCLAW | RIGHTCLAW + PRECISEMOVEMENT + (RIGHTDASH | OBSCURESKIPS + DIFFICULTSKIPS) | WINGS + OBSCURESKIPS | $SHRIEKPOGO[2]) | Mines_35[left1] + Plank-Crystallized_Mound?FALSE + (UPWALLBREAK | (((LEFTSUPERDASH + RIGHTCLAW) | (RIGHTSUPERDASH + LEFTCLAW + WINGS + BACKGROUNDPOGOS)) + OBSCURESKIPS)) + (RIGHTDASH | RIGHTSUPERDASH | RIGHTCLAW | WINGS | (FIREBALLSKIPS + (LEFTFIREBALL | SCREAM)) + $CASTSPELL[3]) + (RIGHTCLAW | WINGS + LEFTCLAW + BACKGROUNDPOGOS) | Stag-Crystallised_Mound + Can_Stag"
   },
   {
     "name": "Stag-Weavers'_Den",
@@ -329,19 +329,19 @@
   },
   {
     "name": "Stag-Dreamshield",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "RestingGrounds_17[right1] | Stag-Dreamshield + Can_Stag"
   },
   {
     "name": "Stag-Shrine_of_Believers",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "RestingGrounds_08[left1] + DREAMNAIL + (WINGS | LEFTCLAW + LEFTDASH + PRECISEMOVEMENT) + ((WINGS | LEFTCLAW + LEFTDASH) + ((SWIM + LEFTCLAW) | (SWIM + WINGS + ANYCLAW) | (RIGHTSUPERDASH + FULLCLAW) | (RIGHTSUPERDASH + WINGS + ANYCLAW) | (WINGS + RIGHTDASH) | (RIGHTCLAW + RIGHTDASH + DIFFICULTSKIPS + (SWIM | RIGHTSUPERDASH)))) | Stag-Shrine_of_Believers + Can_Stag"
   },
   {
     "name": "Stag-Grey_Mourner",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "RestingGrounds_12[bot1] | RestingGrounds_12[door_Mansion] | Stag-Grey_Mourner + Can_Stag"
   },
   {
     "name": "Stag-Upper_Tram",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Crossroads_46b[right1] | Upper_Tram | Stag-Upper_Tram + Can_Stag"
   },
   {
     "name": "Stag-Flukemarm",

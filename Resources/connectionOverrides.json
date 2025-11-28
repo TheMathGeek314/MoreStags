@@ -22,6 +22,11 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Dive_Floor-Crystallized_Mound",
+        "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag + Plank-Crystallized_Mound?TRUE + QUAKE + $CASTSPELL",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Hornet_Abyss",
         "logicOverride": "ORIG | Stag-The_Abyss + Can_Stag + (RIGHTDASH + FULLCLAW | WINGS) + (LISTEN ? TRUE) + HORNET>2",
         "logicSubstitutions": {}
@@ -52,6 +57,11 @@
         "logicSubstitutions": {
             "Abyss_21[right1]": "Abyss_21[right1] | Stag-Monarch_Wings + Can_Stag"
         }
+    },
+    {
+        "name": "Plank-Crystallized_Mound",
+        "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag",
+        "logicSubstitutions": {}
     },
     {
         "name": "Plank-Fungal_Bouncy_Shortcut",

@@ -60,8 +60,20 @@
         "logic": "ORIG | Stag-Grubfather + Can_Stag"
     },
     {
+        "name": "Crossroads_46b[right1]",
+        "logic": "ORIG | Stag-Upper_Tram + Can_Stag"
+    },
+    {
         "name": "Deepnest_East_04",
         "logic": "ORIG | Stag-Bardoon + Can_Stag"
+    },
+    {
+        "name": "Descending_Dark",
+        "logic": "ORIG | Stag-Crystallised_Mound + Can_Stag"
+    },
+    {
+        "name": "Dreamshield",
+        "logic": "ORIG | Stag-Dreamshield + Can_Stag"
     },
     {
         "name": "Fungus1_01[left1]",
@@ -292,6 +304,10 @@
         "logic": "ORIG | Stag-East_Crossroads + Can_Stag"
     },
     {
+        "name": "Grub-Crystallized_Mound",
+        "logic": "ORIG | Stag-Crystallised_Mound + Can_Stag"
+    },
+    {
         "name": "Grub-Waterways_Requires_Tram",
         "logic": "ORIG | Stag-East_Waterways + Can_Stag + (RIGHTSUPERDASH + WINGS + (RIGHTCLAW | LEFTCLAW + ENEMYPOGOS | ENEMYPOGOS + DANGEROUSSKIPS) | ACID + (RIGHTCLAW | LEFTCLAW + WINGS | WINGS + ENEMYPOGOS + DANGEROUSSKIPS))"
     },
@@ -352,6 +368,10 @@
         "logic": "ORIG | Stag-Hallownest's_Crown + Can_Stag"
     },
     {
+        "name": "Mines_35[left1]",
+        "logic": "ORIG | Stag-Crystallised_Mound + Can_Stag + Plank-Crystallized_Mound?FALSE + (LEFTDASH | LEFTSUPERDASH | LEFTCLAW | WINGS | (FIREBALLSKIPS + (RIGHTFIREBALL | SCREAM)) + $CASTSPELL[3])"
+    },
+    {
         "name": "Monomon",
         "logic": "ORIG | Stag-Teacher's_Archives + Can_Stag + DREAMNAIL + (ACID | LEFTSUPERDASH + RIGHTCLAW) + (LEFTCLAW | WINGS + RIGHTCLAW)"
     },
@@ -362,6 +382,22 @@
     {
         "name": "Queen's_Gardens_Map",
         "logic": "ORIG | Stag-Garden_Respite + Can_Stag"
+    },
+    {
+        "name": "RestingGrounds_08[left1]",
+        "logic": "ORIG | Stag-Shrine_of_Believers + Can_Stag + (SWIM | LEFTSUPERDASH | LEFTDASH + LEFTCLAW | WINGS + (LEFTDASH | ANYCLAW | SPELLAIRSTALL + $CASTSPELL[2]))"
+    },
+    {
+        "name": "RestingGrounds_12[bot1]",
+        "logic": "ORIG | Stag-Grey_Mourner + Can_Stag"
+    },
+    {
+        "name": "RestingGrounds_12[door_Mansion]",
+        "logic": "ORIG | Stag-Grey_Mourner + Can_Stag"
+    },
+    {
+        "name": "RestingGrounds_17[right1]",
+        "logic": "ORIG | Stag-Dreamshield + Can_Stag"
     },
     {
         "name": "Room_Queen[left1]",
@@ -410,6 +446,10 @@
     {
         "name": "Soul_Totem-Crossroads_Myla",
         "logic": "Crossroads_45"
+    },
+    {
+        "name": "Soul_Totem-Crystallized_Mound",
+        "logic": "ORIG | Stag-Crystallised_Mound + Can_Stag"
     },
     {
         "name": "Soul_Totem-Pilgrim's_Way",
