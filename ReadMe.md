@@ -6,9 +6,9 @@ These are brand new locations and are not pooled with the rest of the rando chec
 
 ## Settings
 - **Enabled** - Toggles whether the set of active stags is vanilla or shuffled
-	- This is different from randomizing stags. Shuffled stags can behave as either vanilla stags or as rando checks based on the Rando 4 stag setting.
+	- This is different from randomizing stags. Shuffled stags can behave as either vanilla stag tolls or as rando shiny checks depending on the base Randomizer stag setting.
 - **Selection** - Choose between a *Balanced* or *Random* selection process
-	- *Balanced* - Stags will be chosen from each of 20 areas without repeating an area until all have been used (repeating this process up to 40, 60, etc)
+	- *Balanced* - Stags will be chosen from each of 20 areas without repeating an area until all have been used (repeating this process up to 41, 61, etc)
 	- *Random* - No smart algorithm will be used, stags will be chosen completely at random
 - **Quantity** - The number of stags active in your seed
 	- This ranges from the default 11 up to all 114 active at once
@@ -19,6 +19,7 @@ These are brand new locations and are not pooled with the rest of the rando chec
 	- *Many*: 75%
 	- *Most*: 90%
 	- *All*: 100%
+	- Due to Dirtmouth and Stag Nest being obtainable items, the exact count may be slightly off
 - **Prefer Non Vanilla** - Removes vanilla stags from the selection pool
 	- Dirtmouth and Stag Nest may ignore this setting
 - **Remove Cursed Locations** - Removes *Stag-God_Spring*, *Stag-Blue_Room*, and *Stag-Hall_of_Gods* from the selection pool
@@ -29,6 +30,8 @@ These are brand new locations and are not pooled with the rest of the rando chec
 - Stag Nest will be active unless either enemy pogo skips or transition rando are enabled
 - Some stag locations overlap with enemy placements. These enemies will be removed when arriving via stag, but they will exist as normal when entering from another transition
 	- In rare cases, this could cause impossible seeds when using TheRealJournalRando, especially in decoupled room randos
+- When a stag item is obtained in the same room as a stag location, in some cases you must reload the room to be able to travel to the new station
+	- This only happens if you open the stag menu before picking up the item
 
 ## Compatibility / Interop
 - **DebugMod**'s *All Stags* bind will grant all active stags, rather than all vanilla stags
