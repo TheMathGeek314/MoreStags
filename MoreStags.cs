@@ -537,14 +537,6 @@ namespace MoreStags {
     }
 }
 
-//--bugs--
-//Occasionally, a newly unlocked stag will not appear in the list until after reloading the room
-//      try to find consistent setup by following a stag chain with all 114 active
-
-//--tram todo--
-//I'm not 100% confident about warping to upper tram from in/near lake tram
-//Decide on probability, maybe 1/6 or 1/10 or 1/20
-
 //--todo--
 //any stag renames?
-//sanity check stag nest threshold with and without stag nest active
+//check whether split tram causes problems
