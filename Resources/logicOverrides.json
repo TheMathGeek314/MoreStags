@@ -68,6 +68,38 @@
         "logic": "ORIG | Stag-Bardoon + Can_Stag"
     },
     {
+        "name": "Deepnest_East_02",
+        "logic": "ORIG | Stag-Lower_Kingdom's_Edge + Can_Stag + (LEFTDASH | WINGS | LEFTSUPERDASH | ACID | SPELLAIRSTALL + $CASTSPELL)"
+    },
+    {
+        "name": "Deepnest_East_06[left1]",
+        "logic": "ORIG | Stag-Hoppers + Can_Stag"
+    },
+    {
+        "name": "Deepnest_East_11",
+        "logic": "ORIG | Stag-Camp + Can_Stag"
+    },
+    {
+        "name": "Deepnest_East_11[bot1]",
+        "logic": "ORIG | Stag-Camp + Can_Stag"
+    },
+    {
+        "name": "Deepnest_East_11[left1]",
+        "logic": "ORIG | Stag-Camp + Can_Stag + (LEFTCLAW + RIGHTDASH | RIGHTCLAW | WINGS)"
+    },
+    {
+        "name": "Deepnest_East_14[top2]",
+        "logic": "ORIG | Stag-Lower_Kingdom's_Edge + Can_Stag + WINGS + ANYCLAW + Broke_Oro_Quake_Floor_2"
+    },
+    {
+        "name": "Deepnest_East_14b[right1]",
+        "logic": "ORIG | Stag-Quick_Slash + Can_Stag"
+    },
+    {
+        "name": "Deepnest_East_14b[top1]",
+        "logic": "ORIG | Stag-Quick_Slash + Can_Stag + (LEFTCLAW | WINGS | ENEMYPOGOS)"
+    },
+    {
         "name": "Descending_Dark",
         "logic": "ORIG | Stag-Crystallised_Mound + Can_Stag"
     },
@@ -300,6 +332,10 @@
         "logic": "ORIG | Stag-Love_Key + Can_Stag"
     },
     {
+        "name": "GG_Lurker[left1]",
+        "logic": "ORIG | Stag-Pale_Lurker + Can_Stag + (WINGS + LEFTCLAW | Defeated_Pale_Lurker + (LEFTDASH | LEFTSUPERDASH | WINGS | LEFTCLAW))"
+    },
+    {
         "name": "Grub-Crossroads_Spike",
         "logic": "ORIG | Stag-East_Crossroads + Can_Stag"
     },
@@ -384,6 +420,10 @@
         "logic": "ORIG | Stag-Garden_Respite + Can_Stag"
     },
     {
+        "name": "Quick_Slash",
+        "logic": "ORIG | Stag-Quick_Slash + Can_Stag"
+    },
+    {
         "name": "RestingGrounds_08[left1]",
         "logic": "ORIG | Stag-Shrine_of_Believers + Can_Stag + (SWIM | LEFTSUPERDASH | LEFTDASH + LEFTCLAW | WINGS + (LEFTDASH | ANYCLAW | SPELLAIRSTALL + $CASTSPELL[2]))"
     },
@@ -450,6 +490,18 @@
     {
         "name": "Soul_Totem-Crystallized_Mound",
         "logic": "ORIG | Stag-Crystallised_Mound + Can_Stag"
+    },
+    {
+        "name": "Soul_Totem-Lower_Kingdom's_Edge_2",
+        "logic": "ORIG | Stag-Lower_Kingdom's_Edge + Can_Stag"
+    },
+    {
+        "name": "Soul_Totem-Oro_Dive_1",
+        "logic": "ORIG | Stag-Lower_Kingdom's_Edge + Can_Stag + WINGS + ANYCLAW + Broke_Oro_Quake_Floor_2"
+    },
+    {
+        "name": "Soul_Totem-Pale_Lurker",
+        "logic": "ORIG | Stag-Pale_Lurker + Can_Stag"
     },
     {
         "name": "Soul_Totem-Pilgrim's_Way",

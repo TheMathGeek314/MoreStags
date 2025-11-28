@@ -30,9 +30,34 @@
         "replacement": "Crossroads_36[right2] | Stag-Brooding_Mawlek + Can_Stag"
     },
     {
+        "name": "Deepnest_East_14[door1]",
+        "old": "Deepnest_East_14[top2]",
+        "replacement": "Deepnest_East_14[top2] | Stag-Scarecrow + Can_Stag"
+    },
+    {
+        "name": "Deepnest_East_14[door1]",
+        "old": "Broke_Oro_Quake_Floor_2",
+        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-Scarecrow + Can_Stag"
+    },
+    {
+        "name": "Deepnest_East_14[left1]",
+        "old": "Deepnest_East_14[top2]",
+        "replacement": "Deepnest_East_14[top2] | Stag-Scarecrow + Can_Stag"
+    },
+    {
+        "name": "Deepnest_East_14[left1]",
+        "old": "Broke_Oro_Quake_Floor_2",
+        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-Scarecrow + Can_Stag"
+    },
+    {
         "name": "Defeated_False_Knight",
         "old": "Crossroads_10[right1]",
         "replacement": "Crossroads_10[right1] | Stag-False_Knight + Can_Stag + (ANYCLAW | WINGS | RIGHTDASH | ENEMYPOGOS)"
+    },
+    {
+        "name": "Defeated_Pale_Lurker",
+        "old": "GG_Lurker[left1]",
+        "replacement": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
     },
     {
         "name": "Fungus1_02[left1]",
@@ -95,6 +120,11 @@
         "replacement": "Fungus1_07[top1] | Stag-Hunter + Can_Stag"
     },
     {
+        "name": "Geo_Rock-Pale_Lurker",
+        "old": "GG_Lurker[left1]",
+        "replacement": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
+    },
+    {
         "name": "Geo_Rock-Queen's_Gardens_Above_Marmu",
         "old": "Fungus3_48[bot1]",
         "replacement": "Fungus3_48[bot1] | Stag-Love_Key + Can_Stag"
@@ -120,6 +150,16 @@
         "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
     },
     {
+        "name": "Grub-Kingdom's_Edge_Oro",
+        "old": "Deepnest_East_14[top2]",
+        "replacement": "Deepnest_East_14[top2] | Stag-Scarecrow + Can_Stag"
+    },
+    {
+        "name": "Grub-Kingdom's_Edge_Oro",
+        "old": "Broke_Oro_Quake_Floor_2",
+        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-Scarecrow + Can_Stag"
+    },
+    {
         "name": "Grub-King's_Station",
         "old": "Ruins2_07[left1]",
         "replacement": "Ruins2_07[left1] | Stag-Flooded_Station + Can_Stag"
@@ -138,6 +178,11 @@
         "name": "Hallownest_Seal-Queen's_Gardens",
         "old": "Fungus3_48[bot1]",
         "replacement": "Fungus3_48[bot1] | Stag-Love_Key + Can_Stag"
+    },
+    {
+        "name": "King's_Idol-Pale_Lurker",
+        "old": "GG_Lurker[left1]",
+        "replacement": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
     },
     {
         "name": "Lifeblood_Cocoon-Fog_Canyon_West",
@@ -185,6 +230,16 @@
         "replacement": "Abyss_17[top1] | Stag-Lower_Tramway + Can_Stag"
     },
     {
+        "name": "Rancid_Egg-Near_Quick_Slash",
+        "old": "Deepnest_East_14[top2]",
+        "replacement": "Deepnest_East_14[top2] | Stag-Scarecrow + Can_Stag"
+    },
+    {
+        "name": "Rancid_Egg-Near_Quick_Slash",
+        "old": "Broke_Oro_Quake_Floor_2",
+        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-Scarecrow + Can_Stag"
+    },
+    {
         "name": "Ruins2_07[right1]",
         "old": "Ruins2_07[left1]",
         "replacement": "Ruins2_07[left1] | Stag-Flooded_Station + Can_Stag"
@@ -200,9 +255,24 @@
         "replacement": "Ruins1_17[top1] | Stag-Lower_Storerooms + Can_Stag"
     },
     {
+        "name": "Simple_Key-Lurker",
+        "old": "GG_Lurker[left1]",
+        "replacement": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
+    },
+    {
         "name": "Soul_Totem-Basin",
         "old": "Abyss_04[top1]",
         "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
+    },
+    {
+        "name": "Soul_Totem-Oro_Dive_2",
+        "old": "Deepnest_East_14[top2]",
+        "replacement": "Deepnest_East_14[top2] | Stag-Scarecrow + Can_Stag"
+    },
+    {
+        "name": "Soul_Totem-Oro_Dive_2",
+        "old": "Broke_Oro_Quake_Floor_2",
+        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-Scarecrow + Can_Stag"
     },
     {
         "name": "Soul_Totem-Crossroads_Mawlek_Lower",
