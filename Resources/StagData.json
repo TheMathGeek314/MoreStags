@@ -896,10 +896,10 @@
     "cost": 200,
     "leftSide": false,
     "_bellCoords": {
-      "x": 28.7,
+      "x": 21.47,
       "y": 58
     },
-    "_transitionX": 29.8,
+    "_transitionX": 28.7,
     "_stagCoords": {
       "x": 32.9,
       "y": 58
@@ -908,7 +908,8 @@
       "x": 2258,
       "y": 1343
     },
-    "objectsToRemove": [ "ruin_pole_knob (3)" ]
+    "objectsToRemove": [ "ruin_pole_knob (3)" ],
+    "childrenToRemove": [ "ruin_pole_knob 1" ]
   },
   {
     "name": "Triple Gate",
@@ -1389,7 +1390,7 @@
     },
     "_transitionX": 43.3,
     "_stagCoords": {
-      "x": 47,
+      "x": 47.5,
       "y": 3
     },
     "_markerPosition": {
