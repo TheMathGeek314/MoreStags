@@ -140,6 +140,8 @@ namespace MoreStags {
             orig(self);
             if(!IsRandoSave() || !localData.enabled)
                 return;
+
+            //edits for stags
             if(StagData.dataByRoom.TryGetValue(self.sceneName, out StagData data)) {
                 if(data.isActive(localData)) {
                     foreach(string toDelete in data.objectsToRemove) {
@@ -165,6 +167,27 @@ namespace MoreStags {
                         parent.SetActive(false);
                     }
                 }
+            }
+
+            //patch reverse transitions
+            switch(self.sceneName) {
+                case SceneNames.Abyss_19:
+                    if(GameManager.instance.entryGateName == "left1") {
+                        foreach(string toHide in new string[] { "infected_door", "Rewake Range", "Battle Start" }) {
+                            GameObject.Find(toHide).SetActive(false);
+                        }
+                    }
+                    break;
+                case SceneNames.GG_Atrium:
+                    if(GameManager.instance.entryGateName == "top2") {
+                        PolygonCollider2D polyCollider = GameObject.Find("top_leaves_closed").FindGameObjectInChildren("Roof Collider").GetComponent<PolygonCollider2D>();
+                        Vector2[] points = polyCollider.points;
+                        points[7] = new Vector2(-22f, 4f);
+                        points[8] = new Vector2(-16f, 3f);
+                        points[9] = new Vector2(-14f, 0f);
+                        polyCollider.points = points;
+                    }
+                    break;
             }
         }
 
