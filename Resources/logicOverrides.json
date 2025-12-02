@@ -20,6 +20,18 @@
         "logic": "ORIG | Stag-Birthplace + Can_Stag + (LEFTDASH | LEFTSUPERDASH) + (ANYCLAW | WINGS + ENEMYPOGOS)"
     },
     {
+        "name": "Abyss_19[bot1]",
+        "logic": "ORIG | Abyss_19[left1]"
+    },
+    {
+        "name": "Abyss_19[bot2]",
+        "logic": "ORIG | Abyss_19[left1] + Plank-Broken_Vessel_Shortcut?TRUE"
+    },
+    {
+        "name": "Abyss_19[right1]",
+        "logic": "ORIG | Abyss_19[left1] + Plank-Broken_Vessel_Shortcut?TRUE"
+    },
+    {
         "name": "Abyss_21[right1]",
         "logic": "ORIG | Stag-Monarch_Wings + Can_Stag"
     },
@@ -346,6 +358,22 @@
     {
         "name": "Grub-Waterways_Requires_Tram",
         "logic": "ORIG | Stag-East_Waterways + Can_Stag + (RIGHTSUPERDASH + WINGS + (RIGHTCLAW | LEFTCLAW + ENEMYPOGOS | ENEMYPOGOS + DANGEROUSSKIPS) | ACID + (RIGHTCLAW | LEFTCLAW + WINGS | WINGS + ENEMYPOGOS + DANGEROUSSKIPS))"
+    },
+    {
+        "name": "Hive_01[left1]",
+        "logic": "ORIG | Stag-Hive_Entryway + Can_Stag"
+    },
+    {
+        "name": "Hive_03[bot1]",
+        "logic": "ORIG | Stag-Honey_Stash + Can_Stag + (RIGHTCLAW | (LEFTCLAW | WINGS) + ENEMYPOGOS)"
+    },
+    {
+        "name": "Hive_03[right1]",
+        "logic": "ORIG | Stag-Honey_Stash + Can_Stag + (RIGHTCLAW | (LEFTCLAW | WINGS) + ENEMYPOGOS)"
+    },
+    {
+        "name": "Hive_03_c",
+        "logic": "ORIG | Stag-Bee_Library + Can_Stag"
     },
     {
         "name": "Journal_Entry-Charged_Lumafly",

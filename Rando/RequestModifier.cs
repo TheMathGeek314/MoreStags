@@ -1,5 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
+using Newtonsoft.Json;
 using RandomizerCore.Extensions;
 using RandomizerMod.RandomizerData;
 using RandomizerMod.RC;
@@ -13,6 +17,50 @@ namespace MoreStags {
             RequestBuilder.OnUpdate.Subscribe(4, SetupItems);
             RequestBuilder.OnUpdate.Subscribe(6, EditStartItems);
             RequestBuilder.OnUpdate.Subscribe(0, WriteToLocal);
+            RequestBuilder.OnUpdate.Subscribe(1100f, AddGodhomeTransitions);
+        }
+
+        private static void AddGodhomeTransitions(RequestBuilder rb)
+        {
+            if (!MoreStags.Settings.Enabled)
+                return;
+            
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            JsonSerializer jsonSerializer = new() {TypeNameHandling = TypeNameHandling.Auto};
+            using Stream stream = assembly.GetManifestResourceStream("MoreStags.Resources.TransitionDefs.json");
+            StreamReader reader = new(stream);
+            List<TransitionDef> list = jsonSerializer.Deserialize<List<TransitionDef>>(new JsonTextReader(reader));
+            int group = 1;
+            foreach (TransitionDef def in list)
+            {
+                bool shouldBeIncluded = def.IsMapAreaTransition && (rb.gs.TransitionSettings.Mode >= TransitionSettings.TransitionMode.MapAreaRandomizer);
+                shouldBeIncluded |= def.IsTitledAreaTransition && (rb.gs.TransitionSettings.Mode >= TransitionSettings.TransitionMode.FullAreaRandomizer);
+                shouldBeIncluded |= rb.gs.TransitionSettings.Mode >= TransitionSettings.TransitionMode.RoomRandomizer;
+                if (shouldBeIncluded)
+                {
+                    rb.EditTransitionRequest($"{def.SceneName}[{def.DoorName}]", info => info.getTransitionDef = () => def);
+                    bool uncoupled = rb.gs.TransitionSettings.TransitionMatching == TransitionSettings.TransitionMatchingSetting.NonmatchingDirections;
+                    if (uncoupled)
+                    {
+                        SelfDualTransitionGroupBuilder tgb = rb.EnumerateTransitionGroups().First(x => x.label == RBConsts.TwoWayGroup) as SelfDualTransitionGroupBuilder;
+                        tgb.Transitions.Add($"{def.SceneName}[{def.DoorName}]");
+                    }
+                    else
+                    {
+                        SymmetricTransitionGroupBuilder stgb = rb.EnumerateTransitionGroups().First(x => x.label == RBConsts.InLeftOutRightGroup) as SymmetricTransitionGroupBuilder;
+                        if (group == 1)
+                            stgb.Group1.Add($"{def.SceneName}[{def.DoorName}]");
+                        else
+                            stgb.Group2.Add($"{def.SceneName}[{def.DoorName}]");
+                    }
+                    group = group == 1 ? 2 : 1;
+                }
+                else
+                {
+                    rb.EditTransitionRequest($"{def.SceneName}[{def.DoorName}]", info => info.getTransitionDef = () => def);
+                    rb.EnsureVanillaSourceTransition($"{def.SceneName}[{def.DoorName}]");
+                }
+            }
         }
 
         private static void ApplyStagDef(RequestBuilder rb) {

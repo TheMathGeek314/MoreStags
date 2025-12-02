@@ -1,0 +1,177 @@
+[
+    {
+        "name": "GG_Atrium",
+        "logic": "Warp-Junk_Pit_to_Godhome + (RIGHTCLAW | WINGS | LEFTCLAW + RIGHTSUPERDASH) | (GG_Atrium[Door_Workshop] | GG_Atrium[door1_blueRoom]) + (LEFTCLAW | RIGHTCLAW + WINGS | $SHRIEKPOGO[5]) | Bench-Godhome_Atrium",
+        "Stateless": false
+    },
+    {
+        "name": "GG_Atrium_Roof",
+        "logic": "GG_Atrium + (LEFTCLAW | $SHRIEKPOGO[6]) + Defeated_Pantheon_1 + Defeated_Pantheon_2 + Defeated_Pantheon_3 + Defeated_Pantheon_4 | Stag-God_Spring + Can_Stag",
+        "Stateless": false
+    },
+    {
+        "name": "GG_Blue_Room",
+        "logic": "GG_Blue_Room[left1]",
+        "Stateless": true
+    },
+    {
+        "name": "GG_Workshop",
+        "logic": "GG_Workshop[left1] + (ANYCLAW | $SHRIEKPOGO[6]) | Bench-Hall_of_Gods",
+        "Stateless": false
+    },
+    {
+        "name": "Opened_Pantheon_1",
+        "logic": "GG_Atrium + ((Defeated_Gruz_Mother + Defeated_False_Knight + Defeated_Massive_Moss_Charger + Defeated_Hornet_1 + Defeated_Gorb + Defeated_Dung_Defender + Defeated_Soul_Warrior + Defeated_Brooding_Mawlek) | (PANTHEON_KEY_1 ? FALSE))",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_Pantheon_1",
+        "logic": "GG_Atrium + Opened_Pantheon_1 + (FOCUS | SPICYCOMBATSKIPS) + COMBAT[Nailmaster_Brothers]",
+        "Stateless": true
+    },
+    {
+        "name": "Opened_Pantheon_2",
+        "logic": "GG_Atrium + ((Defeated_Xero + Defeated_Crystal_Guardian + Defeated_Soul_Master + Defeated_Colosseum_2 + Defeated_Mantis_Lords + Defeated_Marmu + Defeated_Nosk + Defeated_Flukemarm + Defeated_Broken_Vessel) | (PANTHEON_KEY_2 ? FALSE))",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_Pantheon_2",
+        "logic": "GG_Atrium + Opened_Pantheon_2 + (FOCUS | SPICYCOMBATSKIPS) + COMBAT[Paintmaster_Sheo]",
+        "Stateless": true
+    },
+    {
+        "name": "Opened_Pantheon_3",
+        "logic": "GG_Atrium + ((Defeated_Hive_Knight + Defeated_Elder_Hu + Defeated_Collector + Defeated_Colosseum_2 + Defeated_Grimm + Defeated_Galien + Defeated_Uumuu + Defeated_Hornet_2) | (PANTHEON_KEY_3 ? FALSE))",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_Pantheon_3",
+        "logic": "GG_Atrium + Opened_Pantheon_3 + (FOCUS | SPICYCOMBATSKIPS) + COMBAT[Sly]",
+        "Stateless": true
+    },
+    {
+        "name": "Opened_Pantheon_4",
+        "logic": "GG_Atrium + (PANTHEON_COMPLETION_1 ? Defeated_Pantheon_1 + PANTHEON_COMPLETION_2 ? Defeated_Pantheon_2 + PANTHEON_COMPLETION_3 ? Defeated_Pantheon_3 + Defeated_Enraged_Guardian + Defeated_Broken_Vessel + Defeated_No_Eyes + Defeated_Traitor_Lord + Defeated_Dung_Defender + Defeated_Failed_Champion + Defeated_Markoth + Defeated_Watcher_Knights + Defeated_Soul_Tyrant | (PANTHEON_KEY_4 ? FALSE))",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_Pantheon_4",
+        "logic": "GG_Atrium + Opened_Pantheon_4 + (FOCUS | SPICYCOMBATSKIPS) + COMBAT[Pure_Vessel]",
+        "Stateless": true
+    },
+    {
+        "name": "Opened_Pantheon_5",
+        "logic": "GG_Atrium_Roof + (VOIDHEART + (Wall-Godhome_Roof ? FALSE + RIGHTCLAW) | (WINGS + (ANYCLAW | $SHRIEKPOGO[7])) | PANTHEON_KEY_5 ? FALSE)",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_Pantheon_5",
+        "logic": "GG_Atrium_Roof + Opened_Pantheon_5 + COMBAT[Radiance]",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_Vengefly_King",
+        "logic": "*Boss_Geo-Vengefly_King",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_Massive_Moss_Charger",
+        "logic": "*Boss_Geo-Massive_Moss_Charger",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_Oblobbles",
+        "logic": "*Defeated_Colosseum_2",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_God_Tamer",
+        "logic": "Room_Colosseum_01[left1] + Can_Replenish_Geo + (ANYCLAW | (SPICYCOMBATSKIPS + WINGS)) + COMBAT[Colosseum_3] + (READ ? TRUE) + (COLO_KEY_3 ? TRUE)",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_Nightmare_King",
+        "logic": "Grimm_Main_Tent[left1] + Grimmchild + FLAMES>8 + DREAMNAIL + COMBAT[Nightmare_King]",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_Pure_Vessel",
+        "logic": "Defeated_Pantheon_4",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_Radiance",
+        "logic": "Defeated_Pantheon_5",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_Sly",
+        "logic": "Defeated_Pantheon_3",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_Nailmaster_Brothers",
+        "logic": "Defeated_Pantheon_1",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_Soul_Warrior",
+        "logic": "Defeated_Sanctum_Warrior | Defeated_Elegant_Warrior | Defeated_God_Tamer",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_Paintmaster_Sheo",
+        "logic": "Defeated_Pantheon_2",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_Winged_Nosk",
+        "logic": "Defeated_Pantheon_5",
+        "Stateless": true
+    },
+    {
+        "name": "Defeated_Sisters_of_Battle",
+        "logic": "Defeated_Pantheon_5",
+        "Stateless": true
+    },
+    {
+        "name": "Nail_Upgradable_1",
+        "logic": "Room_nailsmith[left1] + LISTEN?TRUE + Can_Replenish_Geo",
+        "Stateless": true
+    },
+    {
+        "name": "Nail_Upgradable_2",
+        "logic": "Room_nailsmith[left1] + LISTEN?TRUE + PALEORE + Can_Replenish_Geo",
+        "Stateless": true
+    },
+    {
+        "name": "Nail_Upgradable_3",
+        "logic": "Room_nailsmith[left1] + LISTEN?TRUE + PALEORE>2 + Can_Replenish_Geo + Can_Visit_Lemm",
+        "Stateless": true
+    },
+    {
+        "name": "Nail_Upgradable_4",
+        "logic": "Room_nailsmith[left1] + LISTEN?TRUE + PALEORE>5 + Can_Replenish_Geo + Can_Visit_Lemm",
+        "Stateless": true
+    },
+    {
+        "name": "Attuned_Combat",
+        "logic": "NAILCOMBAT + (SPELLS | MILDCOMBATSKIPS) + (Nail_Upgradable_1 | MILDCOMBATSKIPS) | SPICYCOMBATSKIPS",
+        "Stateless": true
+    },
+    {
+        "name": "Ascended_Combat",
+        "logic": "NAILCOMBAT + (SPELLS>1 | QUAKE | MILDCOMBATSKIPS) + (FULLDASH | ANYDASH + MILDCOMBATSKIPS) + (Nail_Upgradable_2 | Nail_Upgradable_1 + MILDCOMBATSKIPS) | SPICYCOMBATSKIPS",
+        "Stateless": true
+    },
+    {
+        "name": "Radiant_Combat",
+        "logic":  "NAILCOMBAT + (SPELLS>2 + QUAKE>1 | QUAKE + (CURSED | MILDCOMBATSKIPS)) + (FULLSHADOWDASH | ANYSHADOWDASH + MILDCOMBATSKIPS) + (Nail_Upgradable_3 | Nail_Upgradable_1 + MILDCOMBATSKIPS)  | SPICYCOMBATSKIPS",
+        "Stateless": true
+    },
+    {
+        "name": "Hardcore_Combat",
+        "logic":  "NAILCOMBAT + QUAKE + ((Nail_Upgradable_4 + (SPELLS>5 | CURSED + SPELLS>2) + FULLSHADOWDASH) | (Nail_Upgradable_2 + SPELLS>2 + ANYSHADOWDASH + FULLDASH + MILDCOMBATSKIPS) | (Nail_Upgradable_1 + SPICYCOMBATSKIPS))",
+        "Stateless": true
+    }
+]

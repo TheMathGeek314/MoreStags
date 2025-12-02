@@ -120,6 +120,21 @@
         "replacement": "Fungus1_07[top1] | Stag-Hunter + Can_Stag"
     },
     {
+        "name": "Geo_Rock-Hive_After_Root",
+        "old": "Hive_02[left3]",
+        "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
+    },
+    {
+        "name": "Geo_Rock-Hive_Below_Root",
+        "old": "Hive_02[left3]",
+        "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
+    },
+    {
+        "name": "Geo_Rock-Hive_Outside_Bench",
+        "old": "Hive_02[left3]",
+        "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
+    },
+    {
         "name": "Geo_Rock-Pale_Lurker",
         "old": "GG_Lurker[left1]",
         "replacement": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
@@ -178,6 +193,21 @@
         "name": "Hallownest_Seal-Queen's_Gardens",
         "old": "Fungus3_48[bot1]",
         "replacement": "Fungus3_48[bot1] | Stag-Love_Key + Can_Stag"
+    },
+    {
+        "name": "Hive_01[right1]",
+        "old": "Hive_01[left1]",
+        "replacement": "Hive_01[left1] | Stag-Hive_Entryway + Can_Stag"
+    },
+    {
+        "name": "Hive_02[left1]",
+        "old": "Hive_02[left3]",
+        "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
+    },
+    {
+        "name": "Hive_02[left2]",
+        "old": "Hive_02[left3]",
+        "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
     },
     {
         "name": "King's_Idol-Pale_Lurker",
@@ -308,5 +338,10 @@
         "name": "Whispering_Root-City",
         "old": "Ruins1_17[top1]",
         "replacement": "Ruins1_17[top1] | Stag-Lower_Storerooms + Can_Stag"
+    },
+    {
+        "name": "Whispering_Root-Hive",
+        "old": "Hive_02[left3]",
+        "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
     }
 ]

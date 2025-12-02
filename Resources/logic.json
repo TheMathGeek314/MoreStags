@@ -201,15 +201,15 @@
   },
   {
     "name": "Stag-God_Spring",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "GG_Atrium_Roof | Stag-God_Spring + Can_Stag"
   },
   {
     "name": "Stag-Hall_of_Gods",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "GG_Workshop + Defeated_Pantheon_5 | Stag-Hall_of_Gods + Can_Stag"
   },
   {
     "name": "Stag-Blue_Room",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "GG_Blue_Room[left1] | Stag-Blue_Room + Can_Stag"
   },
   {
     "name": "Stag-Waterfall_East",
@@ -249,19 +249,19 @@
   },
   {
     "name": "Stag-Hive_Entryway",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Hive_01[left1] | Hive_01[right1] | Stag-Hive_Entryway + Can_Stag"
   },
   {
     "name": "Stag-Honey_Tree",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Hive_02[left1] | Hive_02[left2] | Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
   },
   {
-    "name": "Stag-Library",
-    "logic": "*Dirtmouth_Stag"
+    "name": "Stag-Bee_Library",
+    "logic": "Hive_03_c | Stag-Bee_Library + Can_Stag"
   },
   {
-    "name": "Stag-Stash",
-    "logic": "*Dirtmouth_Stag"
+    "name": "Stag-Honey_Stash",
+    "logic": "Hive_03[right1] | Hive_03[bot1] + (FULLCLAW | WINGS | LEFTCLAW + FULLDASH | RIGHTCLAW + FULLDASH + ENEMYPOGOS) | Stag-Honey_Stash + Can_Stag"
   },
   {
     "name": "Stag-Mato",

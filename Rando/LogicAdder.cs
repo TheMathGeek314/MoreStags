@@ -38,6 +38,15 @@ namespace MoreStags {
             using Stream stre = assembly.GetManifestResourceStream("MoreStags.Resources.waypoints.json");
             lmb.DeserializeFile(LogicFileType.Waypoints, fmt, stre);
 
+            using Stream strea = assembly.GetManifestResourceStream("MoreStags.Resources.macros.json");
+            lmb.DeserializeFile(LogicFileType.Macros, fmt, strea);
+
+            using Stream stream = assembly.GetManifestResourceStream("MoreStags.Resources.GodhomeWaypoints.json");
+            lmb.DeserializeFile(LogicFileType.Waypoints, fmt, stream);
+
+            using Stream streamz = assembly.GetManifestResourceStream("MoreStags.Resources.transitions.json");
+            lmb.DeserializeFile(LogicFileType.Transitions, fmt, streamz);
+
             DefineTermsAndItems(lmb, fmt);
         }
 
