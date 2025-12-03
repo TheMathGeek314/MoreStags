@@ -5,6 +5,16 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Collapser-Deepnest_By_Mantis_Lords_Path",
+        "logicOverride": "ORIG | Stag-Labyrinth + Can_Stag + (LEFTCLAW | WINGS + (RIGHTCLAW | ENEMYPOGOS + COMPLEXSKIPS + DIFFICULTSKIPS))",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Collapser-Deepnest_By_Mantis_Lords_Bottom",
+        "logicOverride": "ORIG | Stag-Labyrinth + Can_Stag + (WINGS | ANYCLAW | DAMAGEBOOSTS + $TAKEDAMAGE)",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Collapser-Waterways_Tram_Grub",
         "logicOverride": "ORIG | Stag-East_Waterways + Can_Stag + ((RIGHTSUPERDASH | ACID) + (RIGHTCLAW | LEFTCLAW + WINGS) + Collapser-Waterways_Tram_Grub | RIGHTSUPERDASH + WINGS + (RIGHTCLAW | LEFTCLAW + ENEMYPOGOS | ENEMYPOGOS + DANGEROUSSKIPS) | ACID + (RIGHTCLAW | LEFTCLAW + WINGS | WINGS + ENEMYPOGOS + DANGEROUSSKIPS))",
         "logicSubstitutions": {}
@@ -56,6 +66,18 @@
         "logicOverride": "",
         "logicSubstitutions": {
             "Abyss_21[right1]": "Abyss_21[right1] | Stag-Monarch_Wings + Can_Stag"
+        }
+    },
+    {
+        "name": "Plank-Baldur_Shell_Upper",
+        "logicOverride": "ORIG | Stag-Baldur_Shell + Can_Stag + (LEFTCLAW | RIGHTCLAW + WINGS)",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Plank-Cliff's_Pass",
+        "logicOverride": "",
+        "logicSubstitutions": {
+            "Cliffs_02": "Cliffs_02 | Stag-Mato + Can_Stag"
         }
     },
     {

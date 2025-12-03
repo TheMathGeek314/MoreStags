@@ -15,6 +15,11 @@
         "replacement": "Fungus3_archive[bot1] | Stag-Archives_Entrance + Can_Stag"
     },
     {
+        "name": "Cliffs_02[right1]",
+        "old": "Cliffs_02",
+        "replacement": "Cliffs_02 | Stag-Mato + Can_Stag"
+    },
+    {
         "name": "Crossroads_18",
         "old": "Crossroads_18[right1]",
         "replacement": "Crossroads_18[right1] | Stag-Southwest_Crossroads + Can_Stag"
@@ -28,6 +33,11 @@
         "name": "Crossroads_36[right2]",
         "old": "Crossroads_36[right2]",
         "replacement": "Crossroads_36[right2] | Stag-Brooding_Mawlek + Can_Stag"
+    },
+    {
+        "name": "Deepnest_35",
+        "old": "Deepnest_35[bot1]",
+        "replacement": "Deepnest_35[bot1] | Stag-Galien + Can_Stag"
     },
     {
         "name": "Deepnest_East_14[door1]",

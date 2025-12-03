@@ -40,6 +40,10 @@
         "logic": "ORIG | Stag-Birthplace + Can_Stag + (LEFTDASH | LEFTSUPERDASH) + (ANYCLAW | WINGS)"
     },
     {
+        "name": "Baldur_Shell",
+        "logic": "ORIG | Stag-Baldur_Shell + Can_Stag"
+    },
+    {
         "name": "Bench-Bretta",
         "logic": "ORIG | Stag-Bretta + Can_Stag + $BENCHRESET"
     },
@@ -54,6 +58,22 @@
     {
         "name": "Boss_Essence-Failed_Champion",
         "logic": "ORIG | Stag-False_Knight + Can_Stag + Defeated_False_Knight + Defeated_Failed_Champion + DREAMNAIL"
+    },
+    {
+        "name": "Cliffs_01",
+        "logic": "ORIG | Stag-Wasteland + Can_Stag"
+    },
+    {
+        "name": "Cliffs_02",
+        "logic": "ORIG | Stag-Mato + Can_Stag + (LEFTDASH | WINGS | LEFTCLAW | ENEMYPOGOS)"
+    },
+    {
+        "name": "Cliffs_02[bot1]",
+        "logic": "ORIG | Stag-Mato + Can_Stag + Plank-Cliff's_Pass?FALSE"
+    },
+    {
+        "name": "Cliffs_02[bot2]",
+        "logic": "ORIG | Stag-Mato + Can_Stag"
     },
     {
         "name": "Crossroads_10[left1]",
@@ -74,6 +94,30 @@
     {
         "name": "Crossroads_46b[right1]",
         "logic": "ORIG | Stag-Upper_Tram + Can_Stag"
+    },
+    {
+        "name": "Deepnest_16[bot1]",
+        "logic": "ORIG | Stag-Labyrinth + Can_Stag + (LEFTCLAW | WINGS + (RIGHTCLAW | $SHADESKIP))"
+    },
+    {
+        "name": "Deepnest_16[left1]",
+        "logic": "ORIG | Stag-Labyrinth + Can_Stag + Collapser-Deepnest_By_Mantis_Lords_Path?TRUE + (LEFTCLAW | WINGS + (RIGHTCLAW | ENEMYPOGOS + COMPLEXSKIPS + DIFFICULTSKIPS))"
+    },
+    {
+        "name": "Deepnest_26",
+        "logic": "ORIG | Stag-Failed_Tramway + Can_Stag + (WINGS | ANYCLAW)"
+    },
+    {
+        "name": "Deepnest_30[top1]",
+        "logic": "ORIG | Stag-Garpedes + Can_Stag"
+    },
+    {
+        "name": "Deepnest_44[top1]",
+        "logic": "ORIG | Stag-Shadow_Gauntlet + Can_Stag + ANYCLAW"
+    },
+    {
+        "name": "Deepnest_45_v02[left1]",
+        "logic": "ORIG | Stag-Weavers'_Den + Can_Stag + (RIGHTCLAW | WINGS | LEFTCLAW + (RIGHTDASH | RIGHTSUPERDASH)) + Wall-Weaver's_Den_Secret?TRUE"
     },
     {
         "name": "Deepnest_East_04",
@@ -170,6 +214,14 @@
     {
         "name": "Fungus1_24[left1]",
         "logic": "ORIG | Stag-Garden_Respite + Can_Stag"
+    },
+    {
+        "name": "Fungus1_28[left1]",
+        "logic": "ORIG | Stag-Baldur_Shell + Can_Stag + (LEFTCLAW | RIGHTCLAW + WINGS)"
+    },
+    {
+        "name": "Fungus1_28[left2]",
+        "logic": "ORIG | Stag-Baldur_Shell + Can_Stag + (LEFTCLAW | RIGHTCLAW + WINGS)"
     },
     {
         "name": "Fungus1_30",
@@ -296,6 +348,10 @@
         "logic": "ORIG | Stag-Archives_Entrance + Can_Stag"
     },
     {
+        "name": "Geo_Chest-Weavers_Den",
+        "logic": "ORIG | Stag-Weavers'_Den + Can_Stag + (RIGHTCLAW | WINGS | LEFTCLAW + (RIGHTDASH | RIGHTSUPERDASH)) + Wall-Weaver's_Den_Secret?TRUE"
+    },
+    {
         "name": "Geo_Rock-Abyss_1",
         "logic": "ORIG | Stag-The_Abyss + Can_Stag + (RIGHTDASH + FULLCLAW | WINGS)"
     },
@@ -314,6 +370,18 @@
     {
         "name": "Geo_Rock-Crossroads_Before_Fungal",
         "logic": "ORIG | Stag-Southwest_Crossroads + Can_Stag"
+    },
+    {
+        "name": "Geo_Rock-Deepnest_By_Mantis_Lords_Requires_Claw_1",
+        "logic": "ORIG | Stag-Labyrinth + Can_Stag + (ANYCLAW | WINGS | DAMAGEBOOSTS + $TAKEDAMAGE)"
+    },
+    {
+        "name": "Geo_Rock-Deepnest_By_Mantis_Lords_Requires_Claw_2",
+        "logic": "ORIG | Stag-Labyrinth + Can_Stag"
+    },
+    {
+        "name": "Geo_Rock-Deepnest_By_Mantis_Lords_Requires_Claw_3",
+        "logic": "ORIG | Stag-Labyrinth + Can_Stag"
     },
     {
         "name": "Geo_Rock-Fungal_Below_Pilgrim's_Way",
@@ -358,6 +426,10 @@
     {
         "name": "Grub-Waterways_Requires_Tram",
         "logic": "ORIG | Stag-East_Waterways + Can_Stag + (RIGHTSUPERDASH + WINGS + (RIGHTCLAW | LEFTCLAW + ENEMYPOGOS | ENEMYPOGOS + DANGEROUSSKIPS) | ACID + (RIGHTCLAW | LEFTCLAW + WINGS | WINGS + ENEMYPOGOS + DANGEROUSSKIPS))"
+    },
+    {
+        "name": "Hallownest_Seal-Deepnest_By_Mantis_Lords",
+        "logic": "ORIG | Stag-Labyrinth + Can_Stag + (LEFTCLAW + (WINGS | RIGHTDASH) | WINGS + (RIGHTCLAW | ENEMYPOGOS + COMPLEXSKIPS + DIFFICULTSKIPS))"
     },
     {
         "name": "Hive_01[left1]",
@@ -508,6 +580,10 @@
         "logic": "ORIG | Stag-Watcher's_Spire + Can_Stag"
     },
     {
+        "name": "Sharp_Shadow",
+        "logic": "ORIG | Stag-Shadow_Gauntlet + Can_Stag + Plank-Sharp_Shadow?FALSE"
+    },
+    {
         "name": "Simple_Key-Basin",
         "logic": "ORIG | Stag-Mawlurks + Can_Stag"
     },
@@ -554,5 +630,9 @@
     {
         "name": "Waterways_14[bot2]",
         "logic": "ORIG | Stag-East_Waterways + Can_Stag + (ACID | RIGHTSUPERDASH)"
+    },
+    {
+        "name": "Weaversong",
+        "logic": "ORIG | Stag-Weavers'_Den + Can_Stag + (RIGHTCLAW | WINGS | LEFTCLAW + (RIGHTDASH | RIGHTSUPERDASH)) + Wall-Weaver's_Den_Secret?TRUE + (RIGHTDASH | WINGS)"
     }
 ]

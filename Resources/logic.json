@@ -93,27 +93,27 @@
   },
   {
     "name": "Stag-Weavers'_Den",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "(Deepnest_45_v02[left1] + Wall-Weaver's_Den?TRUE + Wall-Weaver's_Den_Secret?TRUE + (RIGHTCLAW | WINGS + (LEFTCLAW | ENEMYPOGOS)) + (LEFTDASH + WINGS | LEFTSUPERDASH) + (LEFTDASH | SPIKETUNNELS) + (LEFTCLAW | RIGHTCLAW | LEFTSLASH | UPSLASH | FIREBALL | SCREAM)) | Stag-Weavers'_Den + Can_Stag"
   },
   {
     "name": "Stag-Galien",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_35 | Deepnest_35[bot1] | Stag-Galien + Can_Stag"
   },
   {
     "name": "Stag-Failed_Tramway",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_26 + (LEFTCLAW | (WINGS + ENEMYPOGOS)) | Stag-Failed_Tramway + Can_Stag"
   },
   {
     "name": "Stag-Garpedes",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_30[top1] | Stag-Garpedes + Can_Stag"
   },
   {
     "name": "Stag-Labyrinth",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_16[bot1] + (LEFTCLAW | WINGS + RIGHTCLAW | WINGS + ANYDASH + ENEMYPOGOS + COMPLEXSKIPS + $SHADESKIP[2HITS] | $SHRIEKPOGO[6]) | Deepnest_16[left1] + (LEFTCLAW + WINGS | RIGHTCLAW) + Collapser-Deepnest_By_Mantis_Lords_Path?FALSE | Stag-Labyrinth + Can_Stag"
   },
   {
     "name": "Stag-Shadow_Gauntlet",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_44[top1] | Stag-Shadow_Gauntlet + Can_Stag"
   },
   {
     "name": "Stag-Fog_Canyon",
@@ -237,7 +237,7 @@
   },
   {
     "name": "Stag-Gulkas",
-    "logic": "Fungus1_11"
+    "logic": "Fungus1_11 | Stag-Gulkas + Can_Stag"
   },
   {
     "name": "Stag-Stone_Sanctuary",
@@ -265,15 +265,15 @@
   },
   {
     "name": "Stag-Mato",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Cliffs_02 | Stag-Mato + Can_Stag"
   },
   {
     "name": "Stag-Wasteland",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Cliffs_01 | Stag-Wasteland + Can_Stag"
   },
   {
     "name": "Stag-Baldur_Shell",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "(Fungus1_28[left1] | (Fungus1_28[left2] + (FULLCLAW | WINGS | RIGHTDASH | RIGHTSUPERDASH | $SHADESKIP))) + Defeated_Right_Cliffs_Baldur + (RIGHTCLAW + (WINGS | BACKGROUNDPOGOS) | WINGS + LEFTCLAW | FULLCLAW) | Fungus1_28[left1] + Plank-Baldur_Shell_Upper?FALSE | Stag-Baldur_Shell + Can_Stag"
   },
   {
     "name": "Stag-Lower_Kingdom's_Edge",
