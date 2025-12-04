@@ -1488,7 +1488,7 @@
     "name": "Bardoon",
     "scene": "Deepnest_East_04",
     "region": "Edge",
-    "cost": "350",
+    "cost": 350,
     "leftSide": false,
     "_bellCoords": {
       "x": 31,

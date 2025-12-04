@@ -82,7 +82,7 @@ Upper Tram, Dreamshield, Grey Mourner, Shrine of Believers
 Lower Kingdom's Edge, Hoppers, Scarecrow, Quick Slash, Camp, Bardoon, Pale Lurker
 
 #### Hive
-Hive Entryway, Honey Tree, Library, Stash
+Hive Entryway, Honey Tree, Bee Library, Honey Stash
 
 #### Deepnest
 Labyrinth, Garpedes, Shadow Gauntlet, Galien, Failed Tramway, Weavers' Den

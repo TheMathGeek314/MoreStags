@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using Newtonsoft.Json;
+using UnityEngine;
 using RandomizerCore.Extensions;
 using RandomizerMod.RandomizerData;
 using RandomizerMod.RC;
 using RandomizerMod.Settings;
-using UnityEngine;
 
 namespace MoreStags {
     public class RequestModifier {
@@ -20,43 +19,39 @@ namespace MoreStags {
             RequestBuilder.OnUpdate.Subscribe(1100f, AddGodhomeTransitions);
         }
 
-        private static void AddGodhomeTransitions(RequestBuilder rb)
-        {
-            if (!MoreStags.Settings.Enabled)
+        private static void AddGodhomeTransitions(RequestBuilder rb) {
+            if(!MoreStags.Settings.Enabled)
                 return;
-            
+            if(MoreStags.Settings.RemoveCursedLocations)
+                return;
+
             Assembly assembly = Assembly.GetExecutingAssembly();
-            JsonSerializer jsonSerializer = new() {TypeNameHandling = TypeNameHandling.Auto};
+            JsonSerializer jsonSerializer = new() { TypeNameHandling = TypeNameHandling.Auto };
             using Stream stream = assembly.GetManifestResourceStream("MoreStags.Resources.TransitionDefs.json");
             StreamReader reader = new(stream);
             List<TransitionDef> list = jsonSerializer.Deserialize<List<TransitionDef>>(new JsonTextReader(reader));
             int group = 1;
-            foreach (TransitionDef def in list)
-            {
+            foreach(TransitionDef def in list) {
                 bool shouldBeIncluded = def.IsMapAreaTransition && (rb.gs.TransitionSettings.Mode >= TransitionSettings.TransitionMode.MapAreaRandomizer);
                 shouldBeIncluded |= def.IsTitledAreaTransition && (rb.gs.TransitionSettings.Mode >= TransitionSettings.TransitionMode.FullAreaRandomizer);
                 shouldBeIncluded |= rb.gs.TransitionSettings.Mode >= TransitionSettings.TransitionMode.RoomRandomizer;
-                if (shouldBeIncluded)
-                {
+                if(shouldBeIncluded) {
                     rb.EditTransitionRequest($"{def.SceneName}[{def.DoorName}]", info => info.getTransitionDef = () => def);
                     bool uncoupled = rb.gs.TransitionSettings.TransitionMatching == TransitionSettings.TransitionMatchingSetting.NonmatchingDirections;
-                    if (uncoupled)
-                    {
+                    if(uncoupled) {
                         SelfDualTransitionGroupBuilder tgb = rb.EnumerateTransitionGroups().First(x => x.label == RBConsts.TwoWayGroup) as SelfDualTransitionGroupBuilder;
                         tgb.Transitions.Add($"{def.SceneName}[{def.DoorName}]");
                     }
-                    else
-                    {
+                    else {
                         SymmetricTransitionGroupBuilder stgb = rb.EnumerateTransitionGroups().First(x => x.label == RBConsts.InLeftOutRightGroup) as SymmetricTransitionGroupBuilder;
-                        if (group == 1)
+                        if(group == 1)
                             stgb.Group1.Add($"{def.SceneName}[{def.DoorName}]");
                         else
                             stgb.Group2.Add($"{def.SceneName}[{def.DoorName}]");
                     }
                     group = group == 1 ? 2 : 1;
                 }
-                else
-                {
+                else {
                     rb.EditTransitionRequest($"{def.SceneName}[{def.DoorName}]", info => info.getTransitionDef = () => def);
                     rb.EnsureVanillaSourceTransition($"{def.SceneName}[{def.DoorName}]");
                 }
@@ -255,7 +250,7 @@ namespace MoreStags {
                     startItems.AddRange(stags);
                     break;
             }
-            
+
             foreach(StagData stag in startItems) {
                 string name = stag.isVanilla ? Consts.LocationNames[stag.name] : RandoInterop.nameToLocation(stag.name);
                 rb.AddToStart(name);

@@ -11,17 +11,14 @@ using RandomizerMod.RC;
 using RandomizerMod.Settings;
 
 namespace MoreStags {
-    public static class LogicAdder
-    {
-        public static void Hook()
-        {
+    public static class LogicAdder {
+        public static void Hook() {
             RCData.RuntimeLogicOverride.Subscribe(50f, ApplyLogic);
             RCData.RuntimeLogicOverride.Subscribe(69420f, AlterConnectionLogic);
         }
 
-        private static void ApplyLogic(GenerationSettings gs, LogicManagerBuilder lmb)
-        {
-            if (!MoreStags.Settings.Enabled)
+        private static void ApplyLogic(GenerationSettings gs, LogicManagerBuilder lmb) {
+            if(!MoreStags.Settings.Enabled)
                 return;
             JsonLogicFormat fmt = new();
             Assembly assembly = typeof(LogicAdder).Assembly;
@@ -38,20 +35,21 @@ namespace MoreStags {
             using Stream stre = assembly.GetManifestResourceStream("MoreStags.Resources.waypoints.json");
             lmb.DeserializeFile(LogicFileType.Waypoints, fmt, stre);
 
-            using Stream strea = assembly.GetManifestResourceStream("MoreStags.Resources.macros.json");
-            lmb.DeserializeFile(LogicFileType.Macros, fmt, strea);
+            if(!MoreStags.Settings.RemoveCursedLocations) {
+                using Stream strea = assembly.GetManifestResourceStream("MoreStags.Resources.macros.json");
+                lmb.DeserializeFile(LogicFileType.Macros, fmt, strea);
 
-            using Stream stream = assembly.GetManifestResourceStream("MoreStags.Resources.GodhomeWaypoints.json");
-            lmb.DeserializeFile(LogicFileType.Waypoints, fmt, stream);
+                using Stream stream = assembly.GetManifestResourceStream("MoreStags.Resources.GodhomeWaypoints.json");
+                lmb.DeserializeFile(LogicFileType.Waypoints, fmt, stream);
 
-            using Stream streamz = assembly.GetManifestResourceStream("MoreStags.Resources.transitions.json");
-            lmb.DeserializeFile(LogicFileType.Transitions, fmt, streamz);
+                using Stream streamz = assembly.GetManifestResourceStream("MoreStags.Resources.transitions.json");
+                lmb.DeserializeFile(LogicFileType.Transitions, fmt, streamz);
+            }
 
             DefineTermsAndItems(lmb, fmt);
         }
 
-        private static void DefineTermsAndItems(LogicManagerBuilder lmb, JsonLogicFormat fmt)
-        {
+        private static void DefineTermsAndItems(LogicManagerBuilder lmb, JsonLogicFormat fmt) {
             using Stream t = typeof(LogicAdder).Assembly.GetManifestResourceStream("MoreStags.Resources.terms.json");
             lmb.DeserializeFile(LogicFileType.Terms, fmt, t);
 
@@ -63,9 +61,8 @@ namespace MoreStags {
             }
         }
 
-        private static void AlterConnectionLogic(GenerationSettings gs, LogicManagerBuilder lmb)
-        {
-            if (!MoreStags.Settings.Enabled)
+        private static void AlterConnectionLogic(GenerationSettings gs, LogicManagerBuilder lmb) {
+            if(!MoreStags.Settings.Enabled)
                 return;
 
             Assembly assembly = Assembly.GetExecutingAssembly();
@@ -75,27 +72,23 @@ namespace MoreStags {
             StreamReader reader = new(stream);
             List<ConnectionLogicObject> objectList = jsonSerializer.Deserialize<List<ConnectionLogicObject>>(new JsonTextReader(reader));
 
-            foreach (ConnectionLogicObject o in objectList)
-            {
-                foreach (var sub in o.logicSubstitutions)
-                {
+            foreach(ConnectionLogicObject o in objectList) {
+                foreach(var sub in o.logicSubstitutions) {
                     bool exists = lmb.LogicLookup.TryGetValue(o.name, out _);
-                    if (exists)
+                    if(exists)
                         lmb.DoSubst(new(o.name, sub.Key, sub.Value));
                 }
 
-                if (o.logicOverride != "")
-                {
+                if(o.logicOverride != "") {
                     bool exists = lmb.LogicLookup.TryGetValue(o.name, out _);
-                    if (exists)
+                    if(exists)
                         lmb.DoLogicEdit(new(o.name, o.logicOverride));
                 }
             }
         }
     }
-    
-    public class ConnectionLogicObject
-    {
+
+    public class ConnectionLogicObject {
         public string name;
         public string logicOverride;
         public Dictionary<string, string> logicSubstitutions;
