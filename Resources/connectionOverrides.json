@@ -47,6 +47,11 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Lever-Palace_Final",
+        "logicOverride": "ORIG | Stag-Upper_Balcony + Can_Stag + RIGHTDASH",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Lever-Pilgrim's_Way_Left",
         "logicOverride": "ORIG | Stag-City_Gate + Can_Stag + (ACID | (RIGHTDASH | WINGS) | Lever-Pilgrim's_Way_Left)",
         "logicSubstitutions": {}

@@ -97,7 +97,7 @@ The Abyss, Void Tendrils, Birthplace
 Baldur Shell, Wasteland, Mato
 
 #### White Palace
-Palace Entrance, Palace Foyer, Palace Atrium, Right Atrium Far, Right Atrium Near, Lower Left Atrium, Upper Left Atrium, Balcony, Upper Balcony, Workshop, Nursery, Path of Pain 2, Path of Pain 3, Path of Pain 4
+Palace Entrance, Palace Foyer, Palace Atrium, Right Atrium Far, Right Atrium Near, Lower Left Atrium, Upper Left Atrium, Lower Balcony, Upper Balcony, Workshop, Nursery, Path of Pain 2, Path of Pain 3, Path of Pain 4
 
 #### Godhome
 Blue Room, Hall of Gods, God Spring

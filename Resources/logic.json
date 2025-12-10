@@ -357,58 +357,58 @@
   },
   {
     "name": "Stag-Palace_Entrance",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "White_Palace_11[door2] | Warp-Palace_Grounds_to_White_Palace | Stag-Palace_Entrance + Can_Stag"
   },
   {
     "name": "Stag-Palace_Foyer",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "White_Palace_01[left1] + (RIGHTDASH | RIGHTCLAW | WINGS | LEFTCLAW + RIGHTSUPERDASH) | White_Palace_01 | Stag-Palace_Foyer + Can_Stag"
   },
   {
     "name": "Stag-Palace_Atrium",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "White_Palace_03_hub | Stag-Palace_Atrium + Can_Stag"
   },
   {
     "name": "Stag-Right_Atrium_Far",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "White_Palace_16[left1] | White_Palace_16[left2] + (FULLCLAW | WINGS) | Stag-Right_Atrium_Far + Can_Stag"
   },
   {
     "name": "Stag-Right_Atrium_Near",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "White_Palace_15[right1] | Stag-Right_Atrium_Near + Can_Stag"
   },
   {
     "name": "Stag-Lower_Left_Atrium",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "White_Palace_04[top1] | White_Palace_04[right2] + (LEFTDASH | LEFTSUPERDASH + PRECISEMOVEMENT | OBSCURESKIPS + SPRINT) + (WINGS + (ANYCLAW | PRECISEMOVEMENT) | OBSCURESKIPS + RIGHTCLAW + RIGHTDASH + LEFTSUPERDASH)"
   },
   {
     "name": "Stag-Upper_Left_Atrium",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "White_Palace_14[bot1] + (RIGHTCLAW | WINGS) + (RIGHTDASH | RIGHTSUPERDASH | OBSCURESKIPS + DASHSPRINT) + (RIGHTDASH | LEFTCLAW + RIGHTSUPERDASH | DANGEROUSSKIPS + DIFFICULTSKIPS) | White_Palace_14[right1] + (LEFTDASH | LEFTSUPERDASH | WINGS) + (LEFTCLAW | WINGS + RIGHTCLAW) | Stag-Upper_Left_Atrium + Can_Stag"
   },
   {
     "name": "Stag-Path_of_Pain_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "(White_Palace_17[bot1] | White_Palace_17[right1] + Lever-Path_of_Pain) + (FULLDASH + FULLCLAW + WINGS | FULLDASH + (LEFTCLAW + $SHRIEKPOGO[1,2,NOSTALL] | RIGHTCLAW + $SHRIEKPOGO[2,NOSTALL]) | WINGS + ANYCLAW + Collapser-Path_of_Pain?FALSE) | Stag-Path_of_Pain_2 + Can_Stag"
   },
   {
     "name": "Stag-Path_of_Pain_3",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "White_Palace_19[left1] + FULLDASH + FULLCLAW + FULLSUPERDASH + WINGS | White_Palace_19[top1] | Stag-Path_of_Pain_3 + Can_Stag"
   },
   {
     "name": "Stag-Path_of_Pain_4",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "White_Palace_20[bot1] | Stag-Path_of_Pain_4 + Can_Stag"
   },
   {
-    "name": "Stag-Balcony",
-    "logic": "*Dirtmouth_Stag"
+    "name": "Stag-Lower_Balcony",
+    "logic": "White_Palace_07[bot1] + (RIGHTCLAW + FULLDASH + WINGS) | White_Palace_07[top1] + (WINGS | RIGHTDASH + (RIGHTCLAW | PRECISEMOVEMENT)) | Stag-Lower_Balcony + Can_Stag"
   },
   {
     "name": "Stag-Upper_Balcony",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "White_Palace_12[bot1] + (RIGHTCLAW + LEFTSUPERDASH + (WINGS | LEFTDASH | Wall-White_Palace_Shortcut?UPWALLBREAK) | Lever-Palace_Final?FALSE + WINGS + ANYCLAW + DIFFICULTSKIPS + (Wall-White_Palace_Shortcut?FALSE + Plank-White_Palace_Shortcut_Exit?FALSE | LEFTDASH))"
   },
   {
     "name": "Stag-Workshop",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "White_Palace_08[right1] | White_Palace_08[left1] + (WINGS | ANYCLAW | $SHRIEKPOGO)"
   },
   {
     "name": "Stag-Nursery",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "White_Palace_09[right1] + (LEFTSUPERDASH + (FULLCLAW | WINGS) | RIGHTCLAW + LEFTDASH + OBSCURESKIPS + PRECISEMOVEMENT + ($SHRIEKPOGO[1,1,1,1,1] | LEFTSHARPSHADOW + $SHRIEKPOGO[1,1,1,1])) + Dive_Floor-White_Palace_Nursery?QUAKE + $CASTSPELL | Stag-Nursery + Can_Stag"
   }
 ]

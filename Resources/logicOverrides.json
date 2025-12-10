@@ -456,6 +456,14 @@
         "logic": "ORIG | Stag-Void_Tendrils + Can_Stag"
     },
     {
+        "name": "King_Fragment",
+        "logic": "ORIG | Stag-Nursery + Can_Stag + Dive_Floor-White_Palace_Nursery?FALSE + (ANYCLAW | WINGS)"
+    },
+    {
+        "name": "Lever-Path_of_Pain",
+        "logic": "ORIG | Stag-Path_of_Pain_2 + Can_Stag"
+    },
+    {
         "name": "Lore_Tablet-Archives_Right",
         "logic": "ORIG | (READ ? TRUE) + Stag-Teacher's_Archives + Can_Stag + (ANYCLAW | $SHRIEKPOGO[2])"
     },
@@ -608,12 +616,32 @@
         "logic": "ORIG | Stag-Pale_Lurker + Can_Stag"
     },
     {
+        "name": "Soul_Totem-Path_of_Pain_Below_Lever",
+        "logic": "ORIG | Stag-Path_of_Pain_2 + Can_Stag + Collapser-Path_of_Pain?FALSE"
+    },
+    {
+        "name": "Soul_Totem-Path_of_Pain_Hidden",
+        "logic": "ORIG | Stag-Path_of_Pain_3 + Can_Stag + RIGHTDASH + WINGS + RIGHTCLAW"
+    },
+    {
+        "name": "Soul_Totem-Path_of_Pain_Left_of_Lever",
+        "logic": "ORIG | Stag-Path_of_Pain_2 + Can_Stag + WINGS + RIGHTDASH + (LEFTDASH | PRECISEMOVEMENT)"
+    },
+    {
         "name": "Soul_Totem-Pilgrim's_Way",
         "logic": "ORIG | Stag-City_Gate + Can_Stag"
     },
     {
         "name": "Soul_Totem-Waterways_Flukemarm",
         "logic": "ORIG | Stag-Flukemarm + Can_Stag"
+    },
+    {
+        "name": "Soul_Totem-White_Palace_Left",
+        "logic": "ORIG | Stag-Lower_Left_Atrium + Can_Stag + (WINGS | (LEFTDASH | PRECISEMOVEMENT) + (RIGHTDASH | LEFTCLAW + RIGHTSUPERDASH))"
+    },
+    {
+        "name": "Warp-White_Palace_Entrance_to_Palace_Grounds",
+        "logic": "ORIG | Stag-Palace_Entrance + Can_Stag"
     },
     {
         "name": "Waterways_08[left1]",
@@ -634,5 +662,65 @@
     {
         "name": "Weaversong",
         "logic": "ORIG | Stag-Weavers'_Den + Can_Stag + (RIGHTCLAW | WINGS | LEFTCLAW + (RIGHTDASH | RIGHTSUPERDASH)) + Wall-Weaver's_Den_Secret?TRUE + (RIGHTDASH | WINGS)"
+    },
+    {
+        "name": "White_Palace_03_hub",
+        "logic": "ORIG | Stag-Palace_Atrium + Can_Stag"
+    },
+    {
+        "name": "White_Palace_04[top1]",
+        "logic": "ORIG | Stag-Lower_Left_Atrium + Can_Stag + (WINGS | FULLCLAW + RIGHTSUPERDASH + (LEFTDASH | PRECISEMOVEMENT))"
+    },
+    {
+        "name": "White_Palace_07[bot1]",
+        "logic": "ORIG | Stag-Lower_Balcony + Can_Stag + (WINGS | LEFTCLAW + LEFTDASH)"
+    },
+    {
+        "name": "White_Palace_07[top1]",
+        "logic": "ORIG | Stag-Lower_Balcony + Can_Stag + WINGS"
+    },
+    {
+        "name": "White_Palace_09[right1]",
+        "logic": "ORIG | Stag-Nursery + Can_Stag + Dive_Floor-White_Palace_Nursery?FALSE + (ANYCLAW | WINGS) + RIGHTSUPERDASH"
+    },
+    {
+        "name": "White_Palace_12[bot1]",
+        "logic": "ORIG | Stag-Upper_Balcony + Can_Stag + (RIGHTDASH + Lever-Palace_Final?TRUE | LEFTCLAW + RIGHTSUPERDASH + DANGEROUSSKIPS)"
+    },
+    {
+        "name": "White_Palace_14[bot1]",
+        "logic": "ORIG | Stag-Upper_Left_Atrium + Can_Stag + (LEFTDASH | DANGEROUSSKIPS + DIFFICULTSKIPS + OBSCURESKIPS + DASHSPRINT)"
+    },
+    {
+        "name": "White_Palace_14[right1]",
+        "logic": "ORIG | Stag-Upper_Left_Atrium + Can_Stag + (OBSCURESKIPS + (WINGS | RIGHTDASH | RIGHTSUPERDASH + RIGHTCLAW) | FULLDASH + (WINGS | FULLCLAW | PRECISEMOVEMENT))"
+    },
+    {
+        "name": "White_Palace_15[right1]",
+        "logic": "ORIG | Stag-Right_Atrium_Near + Can_Stag"
+    },
+    {
+        "name": "White_Palace_16[left1]",
+        "logic": "ORIG | Stag-Right_Atrium_Far + Can_Stag + (LEFTDASH | LEFTCLAW | WINGS | LEFTSUPERDASH)"
+    },
+    {
+        "name": "White_Palace_16[left2]",
+        "logic": "ORIG | Stag-Right_Atrium_Far + Can_Stag"
+    },
+    {
+        "name": "White_Palace_17[bot1]",
+        "logic": "ORIG | Stag-Path_of_Pain_2 + Can_Stag + Collapser-Path_of_Pain?FALSE"
+    },
+    {
+        "name": "White_Palace_17[right1]",
+        "logic": "ORIG | Stag-Path_of_Pain_2 + Can_Stag + Lever-Path_of_Pain"
+    },
+    {
+        "name": "White_Palace_19[top1]",
+        "logic": "ORIG | Stag-Path_of_Pain_3 + Can_Stag + (WINGS | ANYCLAW)"
+    },
+    {
+        "name": "White_Palace_20[bot1]",
+        "logic": "ORIG | Stag-Path_of_Pain_4 + Can_Stag"
     }
 ]

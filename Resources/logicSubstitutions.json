@@ -20,6 +20,11 @@
         "replacement": "Cliffs_02 | Stag-Mato + Can_Stag"
     },
     {
+        "name": "Completed_Path_of_Pain",
+        "old": "White_Palace_20[bot1]",
+        "replacement": "White_Palace_20[bot1] | Stag-Path_of_Pain_4 + Can_Stag"
+    },
+    {
         "name": "Crossroads_18",
         "old": "Crossroads_18[right1]",
         "replacement": "Crossroads_18[right1] | Stag-Southwest_Crossroads + Can_Stag"
@@ -245,6 +250,11 @@
         "replacement": "Fungus2_12[bot1] | Stag-Mantis_Outskirts + Can_Stag"
     },
     {
+        "name": "Lore_Tablet-Palace_Workshop",
+        "old": "White_Palace_08[right1]",
+        "replacement": "White_Palace_08[right1] | Stag-Workshop + Can_Stag"
+    },
+    {
         "name": "Lore_Tablet-Watcher's_Spire",
         "old": "Ruins2_Watcher_Room[bot1]",
         "replacement": "Ruins2_Watcher_Room[bot1] | Stag-Watcher's_Spire + Can_Stag"
@@ -325,6 +335,16 @@
         "replacement": "Fungus1_07[top1] | Stag-Hunter + Can_Stag"
     },
     {
+        "name": "Soul_Totem-Path_of_Pain_Below_Thornskip",
+        "old": "White_Palace_19[top1]",
+        "replacement": "White_Palace_19[top1] | Stag-Path_of_Pain_3 + Can_Stag"
+    },
+    {
+        "name": "Soul_Totem-Path_of_Pain_Final",
+        "old": "White_Palace_20[bot1]",
+        "replacement": "White_Palace_20[bot1] | Stag-Path_of_Pain_4 + Can_Stag"
+    },
+    {
         "name": "Vessel_Fragment-Basin",
         "old": "Abyss_04[top1]",
         "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
@@ -353,5 +373,35 @@
         "name": "Whispering_Root-Hive",
         "old": "Hive_02[left3]",
         "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
+    },
+    {
+        "name": "White_Palace_01",
+        "old": "White_Palace[left1]",
+        "replacement": "White_Palace[left1] | Stag-Palace_Foyer + Can_Stag"
+    },
+    {
+        "name": "White_Palace_04[right2]",
+        "old": "White_Palace_04[top1]",
+        "replacement": "White_Palace_04[top1] | Stag-Lower_Left_Atrium + Can_Stag"
+    },
+    {
+        "name": "White_Palace_08[left1]",
+        "old": "White_Palace_08[right1]",
+        "replacement": "White_Palace_08[right1] | Stag-Workshop + Can_Stag"
+    },
+    {
+        "name": "White_Palace_08[right1]",
+        "old": "White_Palace_08[right1]",
+        "replacement": "White_Palace_08[right1] | Stag-Workshop + Can_Stag"
+    },
+    {
+        "name": "White_Palace_11[door2]",
+        "old": "Warp-Palace_Grounds_to_White_Palace",
+        "replacement": "Warp-Palace_Grounds_to_White_Palace | Stag-Palace_Entrance + Can_Stag"
+    },
+    {
+        "name": "White_Palace_19[left1]",
+        "old": "White_Palace_19[top1]",
+        "replacement": "White_Palace_19[top1] | Stag-Path_of_Pain_3 + Can_Stag"
     }
 ]

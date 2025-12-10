@@ -46,6 +46,21 @@ namespace MoreStags {
                 lmb.DeserializeFile(LogicFileType.Transitions, fmt, streamz);
             }
 
+            int stagCount = MoreStags.Settings.Quantity;
+            if (MoreStags.Settings.StagNestThreshold == StagNestThreshold.Half)
+                stagCount /= 2;
+            if (MoreStags.Settings.StagNestThreshold == StagNestThreshold.Many)
+            {
+                stagCount *= 3;
+                stagCount /= 4;
+            }
+            if (MoreStags.Settings.StagNestThreshold == StagNestThreshold.Most)
+            {
+                stagCount *= 9;
+                stagCount /= 10;
+            }
+            lmb.DoMacroEdit(new("ALLSTAGS", $"STAGS>{stagCount - 1}"));
+
             DefineTermsAndItems(lmb, fmt);
         }
 
