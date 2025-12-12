@@ -9,6 +9,7 @@ using RandomizerCore.Logic;
 using RandomizerCore.LogicItems;
 using RandomizerMod.RC;
 using RandomizerMod.Settings;
+using UnityEngine;
 
 namespace MoreStags {
     public static class LogicAdder {
@@ -100,6 +101,83 @@ namespace MoreStags {
                         lmb.DoLogicEdit(new(o.name, o.logicOverride));
                 }
             }
+
+            System.Random rng = new(gs.Seed + 114);
+            SelectStags(gs, rng);
+            string clause = string.Join(" | ", MoreStags.localData.activeStags.Select(s => $"*{(s.isVanilla ? Consts.LocationNames[s.name] : RandoInterop.nameToLocation(s.name))}"));
+            lmb.DoLogicEdit(new("Can_Stag", clause));
+        }
+
+        private static void SelectStags(GenerationSettings gs, System.Random rng) {
+            GlobalSettings ms = MoreStags.Settings;
+            if(!ms.Enabled)
+                return;
+            List<StagData> stagsToActivate = [StagData.dataByRoom["Room_Town_Stag_Station"]];
+            bool isRoomRando = gs.TransitionSettings.Mode == TransitionSettings.TransitionMode.RoomRandomizer;
+            if(!gs.SkipSettings.EnemyPogos && !isRoomRando) {
+                stagsToActivate.Add(StagData.dataByRoom["Cliffs_03"]);
+            }
+            switch(ms.Selection) {
+                case StagSelection.Balanced:
+                    List<string> masterRegionList = new(Consts.Regions);
+                    List<string> regions = new(masterRegionList);
+                    if(stagsToActivate.Count == 2)
+                        regions.Remove("Cliffs");
+                    while(stagsToActivate.Count < ms.Quantity) {
+                        if(regions.Count == 0) {
+                            if(masterRegionList.Count == 0) {
+                                break;
+                            }
+                            regions.AddRange(masterRegionList);
+                        }
+                        string region = regions[rng.Next(regions.Count)];
+                        regions.Remove(region);
+                        List<StagData> regionalCandidates = new(StagData.allStags.Where(stag => stag.region == region && !stagsToActivate.Contains(stag)));
+                        filterBySettings(regionalCandidates);
+                        if(regionalCandidates.Count == 0) {
+                            masterRegionList.Remove(region);
+                            continue;
+                        }
+                        StagData chosenCandi = regionalCandidates[rng.Next(regionalCandidates.Count)];
+                        stagsToActivate.Add(chosenCandi);
+                    }
+                    break;
+                case StagSelection.Random:
+                    List<StagData> candidates = new(StagData.allStags.Where(stag => stag.name != "Dirtmouth"));
+                    if(stagsToActivate.Count == 2)
+                        candidates.RemoveAll(stag => stag.name == "Stag Nest");
+                    filterBySettings(candidates);
+                    while(stagsToActivate.Count < ms.Quantity) {
+                        if(candidates.Count == 0)
+                            break;
+                        StagData chosenCandi = candidates[rng.Next(candidates.Count)];
+                        candidates.Remove(chosenCandi);
+                        stagsToActivate.Add(chosenCandi);
+                    }
+                    break;
+            }
+            LocalData ld = MoreStags.localData;
+            ld.activeStags.Clear();
+            ld.opened.Clear();
+            foreach(StagData data in stagsToActivate) {
+                ld.activeStags.Add(data);
+                ld.opened.Add(data.name, false);
+            }
+            ld.activeStags.Sort((a, b) => a.positionNumber.CompareTo(b.positionNumber));
+            ld.threshold = Mathf.RoundToInt(ms.StagNestThreshold switch {
+                StagNestThreshold.Half => 0.5f,
+                StagNestThreshold.Many => 0.75f,
+                StagNestThreshold.Most => 0.9f,
+                StagNestThreshold.All => 1f,
+                _ => 1f
+            } * stagsToActivate.Count) - 3;
+        }
+
+        private static void filterBySettings(List<StagData> data) {
+            if(MoreStags.Settings.PreferNonVanilla)
+                data.RemoveAll(stag => stag.isVanilla);
+            if(MoreStags.Settings.RemoveCursedLocations)
+                data.RemoveAll(stag => stag.isCursed);
         }
     }
 

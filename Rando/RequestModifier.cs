@@ -3,8 +3,8 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using Newtonsoft.Json;
-using UnityEngine;
 using RandomizerCore.Extensions;
+using RandomizerCore.Logic;
 using RandomizerMod.RandomizerData;
 using RandomizerMod.RC;
 using RandomizerMod.Settings;
@@ -12,10 +12,11 @@ using RandomizerMod.Settings;
 namespace MoreStags {
     public class RequestModifier {
         public static void Hook() {
-            RequestBuilder.OnUpdate.Subscribe(3, ApplyStagDef);
-            RequestBuilder.OnUpdate.Subscribe(4, SetupItems);
-            RequestBuilder.OnUpdate.Subscribe(6, EditStartItems);
-            RequestBuilder.OnUpdate.Subscribe(0, WriteToLocal);
+            ProgressionInitializer.OnCreateProgressionInitializer += SetPI;
+            RequestBuilder.OnUpdate.Subscribe(55f, ApplyStagDef);
+            RequestBuilder.OnUpdate.Subscribe(60f, SetupItems);
+            RequestBuilder.OnUpdate.Subscribe(75f, EditStartItems);
+            RequestBuilder.OnUpdate.Subscribe(80f, WriteToLocal);
             RequestBuilder.OnUpdate.Subscribe(1100f, AddGodhomeTransitions);
         }
 
@@ -59,7 +60,6 @@ namespace MoreStags {
         }
 
         private static void ApplyStagDef(RequestBuilder rb) {
-            SelectStags(rb);
             AddAndRemoveLocations(rb);
             PreserveLevers(rb);
             ConsiderTram(rb);
@@ -68,71 +68,6 @@ namespace MoreStags {
         private static void PreserveLevers(RequestBuilder rb) {
             bool areLeversOn = rb.GetItemGroupFor("Lever-Resting_Grounds_Stag").Items.GetCount("Lever-Resting_Grounds_Stag") > 0;
             MoreStags.localData.preserveStagLevers = areLeversOn;
-        }
-
-        private static void SelectStags(RequestBuilder rb) {
-            GlobalSettings ms = MoreStags.Settings;
-            if(!ms.Enabled)
-                return;
-            List<StagData> stagsToActivate = [StagData.dataByRoom["Room_Town_Stag_Station"]];
-            bool isRoomRando = rb.gs.TransitionSettings.Mode == TransitionSettings.TransitionMode.RoomRandomizer;
-            if(!rb.gs.SkipSettings.EnemyPogos && !isRoomRando) {
-                stagsToActivate.Add(StagData.dataByRoom["Cliffs_03"]);
-            }
-            switch(ms.Selection) {
-                case StagSelection.Balanced:
-                    List<string> masterRegionList = new(Consts.Regions);
-                    List<string> regions = new(masterRegionList);
-                    if(stagsToActivate.Count == 2)
-                        regions.Remove("Cliffs");
-                    while(stagsToActivate.Count < ms.Quantity) {
-                        if(regions.Count == 0) {
-                            if(masterRegionList.Count == 0) {
-                                break;
-                            }
-                            regions.AddRange(masterRegionList);
-                        }
-                        string region = regions[rb.rng.Next(regions.Count)];
-                        regions.Remove(region);
-                        List<StagData> regionalCandidates = new(StagData.allStags.Where(stag => stag.region == region && !stagsToActivate.Contains(stag)));
-                        filterBySettings(regionalCandidates);
-                        if(regionalCandidates.Count == 0) {
-                            masterRegionList.Remove(region);
-                            continue;
-                        }
-                        StagData chosenCandi = regionalCandidates[rb.rng.Next(regionalCandidates.Count)];
-                        stagsToActivate.Add(chosenCandi);
-                    }
-                    break;
-                case StagSelection.Random:
-                    List<StagData> candidates = new(StagData.allStags.Where(stag => stag.name != "Dirtmouth"));
-                    if(stagsToActivate.Count == 2)
-                        candidates.RemoveAll(stag => stag.name == "Stag Nest");
-                    filterBySettings(candidates);
-                    while(stagsToActivate.Count < ms.Quantity) {
-                        if(candidates.Count == 0)
-                            break;
-                        StagData chosenCandi = candidates[rb.rng.Next(candidates.Count)];
-                        candidates.Remove(chosenCandi);
-                        stagsToActivate.Add(chosenCandi);
-                    }
-                    break;
-            }
-            LocalData ld = MoreStags.localData;
-            ld.activeStags.Clear();
-            ld.opened.Clear();
-            foreach(StagData data in stagsToActivate) {
-                ld.activeStags.Add(data);
-                ld.opened.Add(data.name, false);
-            }
-            ld.activeStags.Sort((a, b) => a.positionNumber.CompareTo(b.positionNumber));
-            ld.threshold = Mathf.RoundToInt(ms.StagNestThreshold switch {
-                StagNestThreshold.Half => 0.5f,
-                StagNestThreshold.Many => 0.75f,
-                StagNestThreshold.Most => 0.9f,
-                StagNestThreshold.All => 1f,
-                _ => 1f
-            } * stagsToActivate.Count) - 3;
         }
 
         private static void AddAndRemoveLocations(RequestBuilder rb) {
@@ -202,13 +137,6 @@ namespace MoreStags {
             }
         }
 
-        private static void filterBySettings(List<StagData> data) {
-            if(MoreStags.Settings.PreferNonVanilla)
-                data.RemoveAll(stag => stag.isVanilla);
-            if(MoreStags.Settings.RemoveCursedLocations)
-                data.RemoveAll(stag => stag.isCursed);
-        }
-
         private static void EditStartItems(RequestBuilder rb) {
             foreach(string vanillaStag in Data.GetPoolDef(PoolNames.Stag).IncludeItems.ToArray()) {
                 if(rb.IsAtStart(vanillaStag))
@@ -260,6 +188,17 @@ namespace MoreStags {
 
         private static void WriteToLocal(RequestBuilder rb) {
             MoreStags.localData.enabled = MoreStags.Settings.Enabled;
+        }
+
+        private static void SetPI(LogicManager lm, GenerationSettings gs, ProgressionInitializer pi)
+        {
+            if (!MoreStags.Settings.Enabled)
+                return;
+            
+            // Lake tram is only considered logical for traversing Crossroads_50 if this is enabled.
+            // For the moment it considers either a full tram pass or any of the Split Tram halves.
+            if (gs.Seed % 10 == 3)
+                pi.Setters.Add(new(lm.GetTerm("LAKETRAM"), 1));
         }
     }
 }

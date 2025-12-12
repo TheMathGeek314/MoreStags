@@ -40,6 +40,16 @@
         "replacement": "Crossroads_36[right2] | Stag-Brooding_Mawlek + Can_Stag"
     },
     {
+        "name": "Crossroads_50[left1]",
+        "old": "LEFTSUPERDASH",
+        "replacement": "LEFTSUPERDASH | (TRAM | Upper_Tram_Pass?FALSE | Lower_Tram_Pass?FALSE) + LAKETRAM"
+    },
+    {
+        "name": "Crossroads_50[right1]",
+        "old": "RIGHTSUPERDASH",
+        "replacement": "RIGHTSUPERDASH | (TRAM | Upper_Tram_Pass?FALSE | Lower_Tram_Pass?FALSE) + LAKETRAM"
+    },
+    {
         "name": "Deepnest_35",
         "old": "Deepnest_35[bot1]",
         "replacement": "Deepnest_35[bot1] | Stag-Galien + Can_Stag"
