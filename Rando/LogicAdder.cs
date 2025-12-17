@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -47,16 +48,20 @@ namespace MoreStags {
                 lmb.DeserializeFile(LogicFileType.Transitions, fmt, streamz);
             }
 
-            int stagCount = MoreStags.Settings.Quantity;
-            if (MoreStags.Settings.StagNestThreshold == StagNestThreshold.Half)
+            int stagMax = 114;
+            if(MoreStags.Settings.RemoveCursedLocations)
+                stagMax -= 3;
+            int requireStagNest = gs.TransitionSettings.Mode != TransitionSettings.TransitionMode.RoomRandomizer && !gs.SkipSettings.EnemyPogos ? 1 : 0;
+            if(MoreStags.Settings.PreferNonVanilla)
+                stagMax -= 10 - requireStagNest;
+            int stagCount = Mathf.Min(MoreStags.Settings.Quantity, stagMax) - 2;
+            if(MoreStags.Settings.StagNestThreshold == StagNestThreshold.Half)
                 stagCount /= 2;
-            if (MoreStags.Settings.StagNestThreshold == StagNestThreshold.Many)
-            {
+            if(MoreStags.Settings.StagNestThreshold == StagNestThreshold.Many) {
                 stagCount *= 3;
                 stagCount /= 4;
             }
-            if (MoreStags.Settings.StagNestThreshold == StagNestThreshold.Most)
-            {
+            if(MoreStags.Settings.StagNestThreshold == StagNestThreshold.Most) {
                 stagCount *= 9;
                 stagCount /= 10;
             }
@@ -164,13 +169,13 @@ namespace MoreStags {
                 ld.opened.Add(data.name, false);
             }
             ld.activeStags.Sort((a, b) => a.positionNumber.CompareTo(b.positionNumber));
-            ld.threshold = Mathf.RoundToInt(ms.StagNestThreshold switch {
+            ld.threshold = Mathf.FloorToInt(ms.StagNestThreshold switch {
                 StagNestThreshold.Half => 0.5f,
                 StagNestThreshold.Many => 0.75f,
                 StagNestThreshold.Most => 0.9f,
                 StagNestThreshold.All => 1f,
                 _ => 1f
-            } * stagsToActivate.Count) - 3;
+            } * stagsToActivate.Where(stag => stag.name != "Dirtmouth" && stag.name != "Stag Nest").Count()) - 1;
         }
 
         private static void filterBySettings(List<StagData> data) {

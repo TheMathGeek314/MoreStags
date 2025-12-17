@@ -19,7 +19,6 @@ These are brand new locations and are not pooled with the rest of the rando chec
 	- *Many*: 75%
 	- *Most*: 90%
 	- *All*: 100%
-	- Due to Dirtmouth and Stag Nest being obtainable items, the exact count may be slightly off
 - **Prefer Non Vanilla** - Removes vanilla stags from the selection pool
 	- Dirtmouth and Stag Nest may ignore this setting
 - **Remove Cursed Locations** - Removes *Stag-God_Spring*, *Stag-Blue_Room*, and *Stag-Hall_of_Gods* from the selection pool
@@ -32,6 +31,7 @@ These are brand new locations and are not pooled with the rest of the rando chec
 	- In rare cases, this could cause impossible seeds when using TheRealJournalRando, especially in decoupled room randos
 - When a stag item is obtained in the same room as a stag location, in some cases you must reload the room to be able to travel to the new station
 	- This only happens if you open the stag menu before picking up the item
+	- This is a known bug, but no fix is planned because it would induce excessive lag every time you open the stag menu. If encountered, either leaving the room or stagging anywhere else will update the menu to show the missing entry.
 
 ## Compatibility / Interop
 - **DebugMod**'s *All Stags* bind will grant all active stags, rather than all vanilla stags
@@ -40,6 +40,13 @@ These are brand new locations and are not pooled with the rest of the rando chec
 	- A new file "*MoreStagsActiveSpoiler.txt*" will provide a list of active stags even if stags are not randomized
 - **QoL**'s *Stag Arrive* setting works with all new locations
 - **RandoSettingsManager** works as expected
+- **AlreadyEnoughPlayMaker** is recommended to reduce lag while scrolling but is not strictly required as a dependency
+
+## Known Bug
+- When a stag item is found in the same room as a stag location, the new item will not appear if the menu has already been opened in that room.
+- Reloading the room or stagging somewhere else will properly update the stag menu.
+- No fix is planned for this because doing so would induce excessive lag every time the stag menu is opened.
+- (This excessive lag technically already happens on room entry, but that's pretty unavoidable)
 
 ## New Stags (by area)
 #### Crossroads

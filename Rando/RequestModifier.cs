@@ -106,7 +106,7 @@ namespace MoreStags {
                 rb.EditItemRequest(stagLocation, info => {
                     info.getItemDef = () => new ItemDef() {
                         Name = stagLocation,
-                        Pool = "Stag",
+                        Pool = PoolNames.Stag,
                         PriceCap = 500,
                         MajorItem = false
                     };
