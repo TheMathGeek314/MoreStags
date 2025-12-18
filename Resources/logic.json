@@ -200,18 +200,6 @@
     "logic": "Fungus2_15 | Stag-Mantis_Village + Can_Stag"
   },
   {
-    "name": "Stag-God_Spring",
-    "logic": "GG_Atrium_Roof | Stag-God_Spring + Can_Stag"
-  },
-  {
-    "name": "Stag-Hall_of_Gods",
-    "logic": "GG_Workshop + Defeated_Pantheon_5 | Stag-Hall_of_Gods + Can_Stag"
-  },
-  {
-    "name": "Stag-Blue_Room",
-    "logic": "GG_Blue_Room[left1] | Stag-Blue_Room + Can_Stag"
-  },
-  {
     "name": "Stag-Waterfall_East",
     "logic": "Fungus1_01[left1] | Fungus1_01[right1] | Stag-Waterfall_East + Can_Stag"
   },

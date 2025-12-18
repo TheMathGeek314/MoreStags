@@ -45,6 +45,9 @@ namespace MoreStags {
 
                 using Stream streamz = assembly.GetManifestResourceStream("MoreStags.Resources.transitions.json");
                 lmb.DeserializeFile(LogicFileType.Transitions, fmt, streamz);
+
+                using Stream streamzy = assembly.GetManifestResourceStream("MoreStags.Resources.GodhomeStags.json");
+                lmb.DeserializeFile(LogicFileType.Locations, fmt, stream);
             }
 
             int stagMax = 114;
@@ -108,7 +111,10 @@ namespace MoreStags {
 
             System.Random rng = new(gs.Seed + 114);
             SelectStags(gs, rng);
-            string clause = string.Join(" | ", MoreStags.localData.activeStags.Select(s => $"*{(s.isVanilla ? Consts.LocationNames[s.name] : RandoInterop.nameToLocation(s.name))}"));
+            List<StagData> activeStags = MoreStags.localData.activeStags;
+            if (MoreStags.Settings.RemoveCursedLocations)
+                activeStags = activeStags.Where(s => !s.isCursed).ToList();
+            string clause = string.Join(" | ", activeStags.Select(s => $"*{(s.isVanilla ? Consts.LocationNames[s.name] : RandoInterop.nameToLocation(s.name))}"));
             lmb.DoLogicEdit(new("Can_Stag", clause));
         }
 
