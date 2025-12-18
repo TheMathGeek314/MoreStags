@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using ItemChanger;
 using Newtonsoft.Json;
 using RandomizerCore.Extensions;
 using RandomizerCore.Logic;
@@ -13,10 +14,11 @@ namespace MoreStags {
     public class RequestModifier {
         public static void Hook() {
             ProgressionInitializer.OnCreateProgressionInitializer += SetPI;
-            RequestBuilder.OnUpdate.Subscribe(55f, ApplyStagDef);
-            RequestBuilder.OnUpdate.Subscribe(60f, SetupItems);
-            RequestBuilder.OnUpdate.Subscribe(75f, EditStartItems);
-            RequestBuilder.OnUpdate.Subscribe(80f, WriteToLocal);
+            RequestBuilder.OnUpdate.Subscribe(-100f, ApplyStagDef);
+            RequestBuilder.OnUpdate.Subscribe(-499f, SetupItems);
+            RequestBuilder.OnUpdate.Subscribe(6f, EditStartItems);
+            RequestBuilder.OnUpdate.Subscribe(0f, WriteToLocal);
+            RequestBuilder.OnUpdate.Subscribe(-499.5f, DefinePool);
             RequestBuilder.OnUpdate.Subscribe(1100f, AddGodhomeTransitions);
         }
 
@@ -190,15 +192,30 @@ namespace MoreStags {
             MoreStags.localData.enabled = MoreStags.Settings.Enabled;
         }
 
-        private static void SetPI(LogicManager lm, GenerationSettings gs, ProgressionInitializer pi)
-        {
-            if (!MoreStags.Settings.Enabled)
+        private static void SetPI(LogicManager lm, GenerationSettings gs, ProgressionInitializer pi) {
+            if(!MoreStags.Settings.Enabled)
                 return;
-            
+
             // Lake tram is only considered logical for traversing Crossroads_50 if this is enabled.
             // For the moment it considers either a full tram pass or any of the Split Tram halves.
-            if (gs.Seed % 10 == 3)
+            if(gs.Seed % 10 == 3)
                 pi.Setters.Add(new(lm.GetTerm("LAKETRAM"), 1));
+        }
+
+        private static void DefinePool(RequestBuilder rb) {
+            if(!MoreStags.Settings.Enabled)
+                return;
+            rb.OnGetGroupFor.Subscribe(0.01f, ResolveStagGroup);
+            bool ResolveStagGroup(RequestBuilder rb, string item, RequestBuilder.ElementType type, out GroupBuilder gb) {
+                if(item.StartsWith("Stag-")) {
+                    if(type == RequestBuilder.ElementType.Item || type == RequestBuilder.ElementType.Location) {
+                        gb = rb.GetGroupFor(ItemNames.Crossroads_Stag);
+                        return true;
+                    }
+                }
+                gb = default;
+                return false;
+            }
         }
     }
 }
