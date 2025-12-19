@@ -82,7 +82,7 @@
         "name": "Plank-Cliff's_Pass",
         "logicOverride": "",
         "logicSubstitutions": {
-            "Cliffs_02": "Cliffs_02 | Stag-Mato + Can_Stag"
+            "Cliffs_02": "Cliffs_02 | Stag-Gorb + Can_Stag"
         }
     },
     {

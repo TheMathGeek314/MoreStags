@@ -5,7 +5,7 @@ namespace MoreStags {
         public bool Enabled = false;
         public StagSelection Selection = StagSelection.Balanced;
 
-        [MenuChanger.Attributes.MenuRange(11, 114)]
+        [MenuChanger.Attributes.MenuRange(11, 115)]
         public int Quantity = 11;
 
         public StagNestThreshold StagNestThreshold = StagNestThreshold.All;

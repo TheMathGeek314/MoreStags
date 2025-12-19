@@ -8,10 +8,10 @@ These are brand new locations and are not pooled with the rest of the rando chec
 - **Enabled** - Toggles whether the set of active stags is vanilla or shuffled
 	- This is different from randomizing stags. Shuffled stags can behave as either vanilla stag tolls or as rando shiny checks depending on the base Randomizer stag setting.
 - **Selection** - Choose between a *Balanced* or *Random* selection process
-	- *Balanced* - Stags will be chosen from each of 20 areas without repeating an area until all have been used (repeating this process up to 41, 61, etc)
+	- *Balanced* - Stags will be chosen from each of 20 areas without repeating an area until all have been used (repeating this process up to 41, etc)
 	- *Random* - No smart algorithm will be used, stags will be chosen completely at random
 - **Quantity** - The number of stags active in your seed
-	- This ranges from the default 11 up to all 114 active at once
+	- This ranges from the default 11 up to all 115 active at once
 	- The actual number of active stags may be lower than this value if set higher than the filter settings will allow
 	- Setting this to 21 while using the Balanced setting will guarantee one stag in every area (20 areas + Dirtmouth)
 - **Stag Nest Threshold** - The percentage of active stags required to unlock Stag Nest (if Stag Nest is active)
@@ -59,7 +59,7 @@ Waterfall East, Waterfall West, Central Greenpath, Moss Knight
 Hunter, Artist's Approach, Gulkas, Durandoos, Stone Sanctuary
 
 #### Fog Canyon
-Fog Canyon, Archives Entrance, Teacher's Archives
+West Fog Canyon, East Fog Canyon, Archives Entrance, Teacher's Archives
 
 #### Upper Fungal
 Fungal Colony, Upper Wastes, Elder Hu, Pilgrim's Way, Fungal Nexus, City Gate
@@ -68,10 +68,10 @@ Fungal Colony, Upper Wastes, Elder Hu, Pilgrim's Way, Fungal Nexus, City Gate
 Mantis Outskirts, Bretta, Mantis Village, Fungal Core, Fungal Elder
 
 #### Queen's Gardens
-Droppers, Garden Respite, Love Key, Loodles, Upper Gardens, White Lady
+Mantis Petras, Garden Respite, Love Key, Loodles, Upper Gardens, White Lady
 
 #### West City
-Rafters, Triple Gate, Office, Lower Storerooms, Soul Sanctum
+Rafters Lookout, Triple Gate, Office, Lower Storerooms, Soul Sanctum
 
 #### East City
 East Elevator, Flooded Station, Memorial, Watcher's Spire
@@ -80,19 +80,19 @@ East Elevator, Flooded Station, Memorial, Watcher's Spire
 Isma's Grove, Flukemarm, East Waterways
 
 #### Crystal Peak
-Mine Entrance, Overlook, Conga Line, Crystallised Mound, Crystal Corridor, Hallownest's Crown
+Mine Entrance, Overlook, Crystal Peak, Crystallised Mound, Crystal Corridor, Hallownest's Crown
 
 #### Resting Grounds
 Upper Tram, Dreamshield, Grey Mourner, Shrine of Believers
 
 #### Kingdom's Edge
-Lower Kingdom's Edge, Hoppers, Scarecrow, Quick Slash, Camp, Bardoon, Pale Lurker
+Lower Kingdom's Edge, Hoppers, East Kingdom's Edge, Quick Slash, Camp, Bardoon, Pale Lurker
 
 #### Hive
-Hive Entryway, Honey Tree, Bee Library, Honey Stash
+Hive Entryway, Honey Tree, Library, Stash
 
 #### Deepnest
-Labyrinth, Garpedes, Shadow Gauntlet, Galien, Failed Tramway, Weavers' Den
+Labyrinth, Deep Spring, Shadow Gauntlet, Galien, Failed Tramway, Weavers' Den
 
 #### Ancient Basin
 Broken Bridge, Lower Tramway, Ancient Basin, Mawlurks, Monarch Wings
@@ -101,10 +101,10 @@ Broken Bridge, Lower Tramway, Ancient Basin, Mawlurks, Monarch Wings
 The Abyss, Void Tendrils, Birthplace
 
 #### Howling Cliffs
-Baldur Shell, Wasteland, Mato
+Baldur Shell, Wasteland, Gorb
 
 #### White Palace
-Palace Entrance, Palace Foyer, Palace Atrium, Right Atrium Far, Right Atrium Near, Lower Left Atrium, Upper Left Atrium, Lower Balcony, Upper Balcony, Workshop, Nursery, Path of Pain 2, Path of Pain 3, Path of Pain 4
+Palace Entrance, Palace Foyer, Palace Atrium, Right Atrium East, Right Atrium West, Lower Left Atrium, Upper Left Atrium, Lower Balcony, Upper Balcony, Workshop, Nursery, Path of Pain Lever, Path of Pain Climb, Path of Pain Final
 
 #### Godhome
 Blue Room, Hall of Gods, God Spring

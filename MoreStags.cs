@@ -87,6 +87,8 @@ namespace MoreStags {
         private void earlySceneChange(Scene arg0, Scene arg1) {
             if(!IsRandoSave() || !localData.enabled)
                 return;
+
+            //place stag objects
             if(StagData.dataByRoom.TryGetValue(arg1.name, out StagData data)) {
                 if(data.isActive(localData) && !data.isVanilla) {
                     GameObject stag = GameObject.Instantiate(data.leftSide ? stagPrefabLeft : stagPrefabRight, data.stagPosition, Quaternion.identity);
@@ -111,6 +113,8 @@ namespace MoreStags {
                     }
                 }
             }
+
+            //lake tram
             if(arg1.name == "Room_Tram_RG") {
                 if(TramData.enteringTram) {
                     TramData.insideTram = true;
@@ -133,6 +137,12 @@ namespace MoreStags {
                 tramBoxRight.name += " Right";
                 tramBoxRight.SetActive(true);
                 tram.SetActive(true);
+            }
+
+            //patch Lower Kingdom's Edge pool
+            if(arg1.name == SceneNames.Deepnest_East_02) {
+                BoxCollider2D box = GameObject.Find("Acid Control v2").FindGameObjectInChildren("Surface Water Region").GetComponent<BoxCollider2D>();
+                box.size = new Vector2(50f, box.size.y);
             }
         }
 
@@ -559,7 +569,3 @@ namespace MoreStags {
         }
     }
 }
-
-//--todo--
-//any stag renames?
-//check whether split tram causes problems

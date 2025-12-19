@@ -17,12 +17,12 @@
     {
         "name": "Cliffs_02[right1]",
         "old": "Cliffs_02",
-        "replacement": "Cliffs_02 | Stag-Mato + Can_Stag"
+        "replacement": "Cliffs_02 | Stag-Gorb + Can_Stag"
     },
     {
         "name": "Completed_Path_of_Pain",
         "old": "White_Palace_20[bot1]",
-        "replacement": "White_Palace_20[bot1] | Stag-Path_of_Pain_4 + Can_Stag"
+        "replacement": "White_Palace_20[bot1] | Stag-Path_of_Pain_Final + Can_Stag"
     },
     {
         "name": "Crossroads_18",
@@ -57,22 +57,22 @@
     {
         "name": "Deepnest_East_14[door1]",
         "old": "Deepnest_East_14[top2]",
-        "replacement": "Deepnest_East_14[top2] | Stag-Scarecrow + Can_Stag"
+        "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
     },
     {
         "name": "Deepnest_East_14[door1]",
         "old": "Broke_Oro_Quake_Floor_2",
-        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-Scarecrow + Can_Stag"
+        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-East_Kingdom's_Edge + Can_Stag"
     },
     {
         "name": "Deepnest_East_14[left1]",
         "old": "Deepnest_East_14[top2]",
-        "replacement": "Deepnest_East_14[top2] | Stag-Scarecrow + Can_Stag"
+        "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
     },
     {
         "name": "Deepnest_East_14[left1]",
         "old": "Broke_Oro_Quake_Floor_2",
-        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-Scarecrow + Can_Stag"
+        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-East_Kingdom's_Edge + Can_Stag"
     },
     {
         "name": "Defeated_False_Knight",
@@ -192,12 +192,12 @@
     {
         "name": "Grub-Kingdom's_Edge_Oro",
         "old": "Deepnest_East_14[top2]",
-        "replacement": "Deepnest_East_14[top2] | Stag-Scarecrow + Can_Stag"
+        "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
     },
     {
         "name": "Grub-Kingdom's_Edge_Oro",
         "old": "Broke_Oro_Quake_Floor_2",
-        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-Scarecrow + Can_Stag"
+        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-East_Kingdom's_Edge + Can_Stag"
     },
     {
         "name": "Grub-King's_Station",
@@ -212,7 +212,7 @@
     {
         "name": "Hallownest_Seal-Fog_Canyon_West",
         "old": "Fungus3_30[bot1]",
-        "replacement": "Fungus3_30[bot1] | Stag-Fog_Canyon + Can_Stag"
+        "replacement": "Fungus3_30[bot1] | Stag-West_Fog_Canyon + Can_Stag"
     },
     {
         "name": "Hallownest_Seal-Queen's_Gardens",
@@ -242,7 +242,7 @@
     {
         "name": "Lifeblood_Cocoon-Fog_Canyon_West",
         "old": "Fungus3_30[bot1]",
-        "replacement": "Fungus3_30[bot1] | Stag-Fog_Canyon + Can_Stag"
+        "replacement": "Fungus3_30[bot1] | Stag-West_Fog_Canyon + Can_Stag"
     },
     {
         "name": "Lifeblood_Cocoon-Greenpath",
@@ -292,12 +292,12 @@
     {
         "name": "Rancid_Egg-Near_Quick_Slash",
         "old": "Deepnest_East_14[top2]",
-        "replacement": "Deepnest_East_14[top2] | Stag-Scarecrow + Can_Stag"
+        "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
     },
     {
         "name": "Rancid_Egg-Near_Quick_Slash",
         "old": "Broke_Oro_Quake_Floor_2",
-        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-Scarecrow + Can_Stag"
+        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-East_Kingdom's_Edge + Can_Stag"
     },
     {
         "name": "Ruins2_07[right1]",
@@ -327,12 +327,12 @@
     {
         "name": "Soul_Totem-Oro_Dive_2",
         "old": "Deepnest_East_14[top2]",
-        "replacement": "Deepnest_East_14[top2] | Stag-Scarecrow + Can_Stag"
+        "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
     },
     {
         "name": "Soul_Totem-Oro_Dive_2",
         "old": "Broke_Oro_Quake_Floor_2",
-        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-Scarecrow + Can_Stag"
+        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-East_Kingdom's_Edge + Can_Stag"
     },
     {
         "name": "Soul_Totem-Crossroads_Mawlek_Lower",
@@ -347,12 +347,12 @@
     {
         "name": "Soul_Totem-Path_of_Pain_Below_Thornskip",
         "old": "White_Palace_19[top1]",
-        "replacement": "White_Palace_19[top1] | Stag-Path_of_Pain_3 + Can_Stag"
+        "replacement": "White_Palace_19[top1] | Stag-Path_of_Pain_Climb + Can_Stag"
     },
     {
         "name": "Soul_Totem-Path_of_Pain_Final",
         "old": "White_Palace_20[bot1]",
-        "replacement": "White_Palace_20[bot1] | Stag-Path_of_Pain_4 + Can_Stag"
+        "replacement": "White_Palace_20[bot1] | Stag-Path_of_Pain_Final + Can_Stag"
     },
     {
         "name": "Vessel_Fragment-Basin",
@@ -412,6 +412,6 @@
     {
         "name": "White_Palace_19[left1]",
         "old": "White_Palace_19[top1]",
-        "replacement": "White_Palace_19[top1] | Stag-Path_of_Pain_3 + Can_Stag"
+        "replacement": "White_Palace_19[top1] | Stag-Path_of_Pain_Climb + Can_Stag"
     }
 ]

@@ -60,8 +60,8 @@
     "logic": "Ruins1_17[top1] | Ruins1_17[right1] | Stag-Lower_Storerooms + Can_Stag"
   },
   {
-    "name": "Stag-Rafters",
-    "logic": "Ruins1_02[top1] | Ruins1_02[bot1] + (ANYCLAW | WINGS) | Stag-Rafters + Can_Stag | Bench-Quirrel"
+    "name": "Stag-Rafters_Lookout",
+    "logic": "Ruins1_02[top1] | Ruins1_02[bot1] + (ANYCLAW | WINGS) | Stag-Rafters_Lookout + Can_Stag | Bench-Quirrel"
   },
   {
     "name": "Stag-Soul_Sanctum",
@@ -84,8 +84,8 @@
     "logic": "Mines_02 | Stag-Mine_Entrance + Can_Stag"
   },
   {
-    "name": "Stag-Conga_Line",
-    "logic": "Mines_20 | Stag-Conga_Line + Can_Stag"
+    "name": "Stag-Crystal_Peak",
+    "logic": "Mines_20 | Stag-Crystal_Peak + Can_Stag"
   },
   {
     "name": "Stag-Crystallised_Mound",
@@ -104,8 +104,8 @@
     "logic": "Deepnest_26 + (LEFTCLAW | (WINGS + ENEMYPOGOS)) | Stag-Failed_Tramway + Can_Stag"
   },
   {
-    "name": "Stag-Garpedes",
-    "logic": "Deepnest_30[top1] | Stag-Garpedes + Can_Stag"
+    "name": "Stag-Deep_Spring",
+    "logic": "Deepnest_30[top1] | Stag-Deep_Spring + Can_Stag"
   },
   {
     "name": "Stag-Labyrinth",
@@ -116,8 +116,12 @@
     "logic": "Deepnest_44[top1] | Stag-Shadow_Gauntlet + Can_Stag"
   },
   {
-    "name": "Stag-Fog_Canyon",
-    "logic": "Fungus3_30[bot1] | Stag-Fog_Canyon + Can_Stag"
+    "name": "Stag-West_Fog_Canyon",
+    "logic": "Fungus3_30[bot1] | Stag-West_Fog_Canyon + Can_Stag"
+  },
+  {
+    "name": "Stag-East_Fog_Canyon",
+    "logic": "*Dirtmouth_Stag"
   },
   {
     "name": "Stag-Archives_Entrance",
@@ -244,16 +248,16 @@
     "logic": "Hive_02[left1] | Hive_02[left2] | Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
   },
   {
-    "name": "Stag-Bee_Library",
-    "logic": "Hive_03_c | Stag-Bee_Library + Can_Stag"
+    "name": "Stag-Library",
+    "logic": "Hive_03_c | Stag-Library + Can_Stag"
   },
   {
-    "name": "Stag-Honey_Stash",
-    "logic": "Hive_03[right1] | Hive_03[bot1] + (FULLCLAW | WINGS | LEFTCLAW + FULLDASH | RIGHTCLAW + FULLDASH + ENEMYPOGOS) | Stag-Honey_Stash + Can_Stag"
+    "name": "Stag-Stash",
+    "logic": "Hive_03[right1] | Hive_03[bot1] + (FULLCLAW | WINGS | LEFTCLAW + FULLDASH | RIGHTCLAW + FULLDASH + ENEMYPOGOS) | Stag-Stash + Can_Stag"
   },
   {
-    "name": "Stag-Mato",
-    "logic": "Cliffs_02 | Stag-Mato + Can_Stag"
+    "name": "Stag-Gorb",
+    "logic": "Cliffs_02 | Stag-Gorb + Can_Stag"
   },
   {
     "name": "Stag-Wasteland",
@@ -272,8 +276,8 @@
     "logic": "(Deepnest_East_06[left1] | Deepnest_East_06[top1] | (Deepnest_East_06[bot1] | Deepnest_East_06[door1] | Deepnest_East_06[right1]) + (LEFTCLAW | WINGS + ENEMYPOGOS)) + (RIGHTCLAW | WINGS + LEFTCLAW + ENEMYPOGOS | WINGS + $SHADESKIP | WINGS + $SHRIEKPOGO[2,before:ROOMSOUL])"
   },
   {
-    "name": "Stag-Scarecrow",
-    "logic": "Deepnest_East_14[top2] + Broke_Oro_Quake_Floor_2 | Stag-Scarecrow + Can_Stag"
+    "name": "Stag-East_Kingdom's_Edge",
+    "logic": "Deepnest_East_14[top2] + Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
   },
   {
     "name": "Stag-Quick_Slash",
@@ -292,8 +296,8 @@
     "logic": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
   },
   {
-    "name": "Stag-Droppers",
-    "logic": "Fungus3_04 | Stag-Droppers + Can_Stag"
+    "name": "Stag-Mantis_Petras",
+    "logic": "Fungus3_04 | Stag-Mantis_Petras + Can_Stag"
   },
   {
     "name": "Stag-Garden_Respite",
@@ -356,12 +360,12 @@
     "logic": "White_Palace_03_hub | Stag-Palace_Atrium + Can_Stag"
   },
   {
-    "name": "Stag-Right_Atrium_Far",
-    "logic": "White_Palace_16[left1] | White_Palace_16[left2] + (FULLCLAW | WINGS) | Stag-Right_Atrium_Far + Can_Stag"
+    "name": "Stag-Right_Atrium_East",
+    "logic": "White_Palace_16[left1] | White_Palace_16[left2] + (FULLCLAW | WINGS) | Stag-Right_Atrium_East + Can_Stag"
   },
   {
-    "name": "Stag-Right_Atrium_Near",
-    "logic": "White_Palace_15[right1] | Stag-Right_Atrium_Near + Can_Stag"
+    "name": "Stag-Right_Atrium_West",
+    "logic": "White_Palace_15[right1] | Stag-Right_Atrium_West + Can_Stag"
   },
   {
     "name": "Stag-Lower_Left_Atrium",
@@ -372,16 +376,16 @@
     "logic": "White_Palace_14[bot1] + (RIGHTCLAW | WINGS) + (RIGHTDASH | RIGHTSUPERDASH | OBSCURESKIPS + DASHSPRINT) + (RIGHTDASH | LEFTCLAW + RIGHTSUPERDASH | DANGEROUSSKIPS + DIFFICULTSKIPS) | White_Palace_14[right1] + (LEFTDASH | LEFTSUPERDASH | WINGS) + (LEFTCLAW | WINGS + RIGHTCLAW) | Stag-Upper_Left_Atrium + Can_Stag"
   },
   {
-    "name": "Stag-Path_of_Pain_2",
-    "logic": "(White_Palace_17[bot1] | White_Palace_17[right1] + Lever-Path_of_Pain) + (FULLDASH + FULLCLAW + WINGS | FULLDASH + (LEFTCLAW + $SHRIEKPOGO[1,2,NOSTALL] | RIGHTCLAW + $SHRIEKPOGO[2,NOSTALL]) | WINGS + ANYCLAW + Collapser-Path_of_Pain?FALSE) | Stag-Path_of_Pain_2 + Can_Stag"
+    "name": "Stag-Path_of_Pain_Lever",
+    "logic": "(White_Palace_17[bot1] | White_Palace_17[right1] + Lever-Path_of_Pain) + (FULLDASH + FULLCLAW + WINGS | FULLDASH + (LEFTCLAW + $SHRIEKPOGO[1,2,NOSTALL] | RIGHTCLAW + $SHRIEKPOGO[2,NOSTALL]) | WINGS + ANYCLAW + Collapser-Path_of_Pain?FALSE) | Stag-Path_of_Pain_Lever + Can_Stag"
   },
   {
-    "name": "Stag-Path_of_Pain_3",
-    "logic": "White_Palace_19[left1] + FULLDASH + FULLCLAW + FULLSUPERDASH + WINGS | White_Palace_19[top1] | Stag-Path_of_Pain_3 + Can_Stag"
+    "name": "Stag-Path_of_Pain_Climb",
+    "logic": "White_Palace_19[left1] + FULLDASH + FULLCLAW + FULLSUPERDASH + WINGS | White_Palace_19[top1] | Stag-Path_of_Pain_Climb + Can_Stag"
   },
   {
-    "name": "Stag-Path_of_Pain_4",
-    "logic": "White_Palace_20[bot1] | Stag-Path_of_Pain_4 + Can_Stag"
+    "name": "Stag-Path_of_Pain_Final",
+    "logic": "White_Palace_20[bot1] | Stag-Path_of_Pain_Final + Can_Stag"
   },
   {
     "name": "Stag-Lower_Balcony",

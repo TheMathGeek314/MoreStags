@@ -53,7 +53,7 @@
     },
     {
         "name": "Bench-Quirrel",
-        "logic": "ORIG | Stag-Rafters + Can_Stag + $BENCHRESET"
+        "logic": "ORIG | Stag-Rafters_Lookout + Can_Stag + $BENCHRESET"
     },
     {
         "name": "Boss_Essence-Failed_Champion",
@@ -65,15 +65,15 @@
     },
     {
         "name": "Cliffs_02",
-        "logic": "ORIG | Stag-Mato + Can_Stag + (LEFTDASH | WINGS | LEFTCLAW | ENEMYPOGOS)"
+        "logic": "ORIG | Stag-Gorb + Can_Stag + (LEFTDASH | WINGS | LEFTCLAW | ENEMYPOGOS)"
     },
     {
         "name": "Cliffs_02[bot1]",
-        "logic": "ORIG | Stag-Mato + Can_Stag + Plank-Cliff's_Pass?FALSE"
+        "logic": "ORIG | Stag-Gorb + Can_Stag + Plank-Cliff's_Pass?FALSE"
     },
     {
         "name": "Cliffs_02[bot2]",
-        "logic": "ORIG | Stag-Mato + Can_Stag"
+        "logic": "ORIG | Stag-Gorb + Can_Stag"
     },
     {
         "name": "Crossroads_10[left1]",
@@ -109,7 +109,7 @@
     },
     {
         "name": "Deepnest_30[top1]",
-        "logic": "ORIG | Stag-Garpedes + Can_Stag"
+        "logic": "ORIG | Stag-Deep_Spring + Can_Stag"
     },
     {
         "name": "Deepnest_44[top1]",
@@ -321,7 +321,7 @@
     },
     {
         "name": "Fungus3_04",
-        "logic": "ORIG | Stag-Droppers + Can_Stag"
+        "logic": "ORIG | Stag-Mantis_Petras + Can_Stag"
     },
     {
         "name": "Fungus3_22",
@@ -329,7 +329,7 @@
     },
     {
         "name": "Fungus3_30[bot1]",
-        "logic": "ORIG | Stag-Fog_Canyon + Can_Stag"
+        "logic": "ORIG | Stag-West_Fog_Canyon + Can_Stag"
     },
     {
         "name": "Fungus3_39[left1]",
@@ -437,15 +437,15 @@
     },
     {
         "name": "Hive_03[bot1]",
-        "logic": "ORIG | Stag-Honey_Stash + Can_Stag + (RIGHTCLAW | (LEFTCLAW | WINGS) + ENEMYPOGOS)"
+        "logic": "ORIG | Stag-Stash + Can_Stag + (RIGHTCLAW | (LEFTCLAW | WINGS) + ENEMYPOGOS)"
     },
     {
         "name": "Hive_03[right1]",
-        "logic": "ORIG | Stag-Honey_Stash + Can_Stag + (RIGHTCLAW | (LEFTCLAW | WINGS) + ENEMYPOGOS)"
+        "logic": "ORIG | Stag-Stash + Can_Stag + (RIGHTCLAW | (LEFTCLAW | WINGS) + ENEMYPOGOS)"
     },
     {
         "name": "Hive_03_c",
-        "logic": "ORIG | Stag-Bee_Library + Can_Stag"
+        "logic": "ORIG | Stag-Library + Can_Stag"
     },
     {
         "name": "Journal_Entry-Charged_Lumafly",
@@ -461,7 +461,7 @@
     },
     {
         "name": "Lever-Path_of_Pain",
-        "logic": "ORIG | Stag-Path_of_Pain_2 + Can_Stag"
+        "logic": "ORIG | Stag-Path_of_Pain_Lever + Can_Stag"
     },
     {
         "name": "Lore_Tablet-Archives_Right",
@@ -469,7 +469,7 @@
     },
     {
         "name": "Lore_Tablet-City_Entrance",
-        "logic": "ORIG | (READ ? TRUE) + Stag-Rafters + Can_Stag"
+        "logic": "ORIG | (READ ? TRUE) + Stag-Rafters_Lookout + Can_Stag"
     },
     {
         "name": "Lore_Tablet-Fungal_Wastes_Hidden",
@@ -617,15 +617,15 @@
     },
     {
         "name": "Soul_Totem-Path_of_Pain_Below_Lever",
-        "logic": "ORIG | Stag-Path_of_Pain_2 + Can_Stag + Collapser-Path_of_Pain?FALSE"
+        "logic": "ORIG | Stag-Path_of_Pain_Lever + Can_Stag + Collapser-Path_of_Pain?FALSE"
     },
     {
         "name": "Soul_Totem-Path_of_Pain_Hidden",
-        "logic": "ORIG | Stag-Path_of_Pain_3 + Can_Stag + RIGHTDASH + WINGS + RIGHTCLAW"
+        "logic": "ORIG | Stag-Path_of_Pain_Climb + Can_Stag + RIGHTDASH + WINGS + RIGHTCLAW"
     },
     {
         "name": "Soul_Totem-Path_of_Pain_Left_of_Lever",
-        "logic": "ORIG | Stag-Path_of_Pain_2 + Can_Stag + WINGS + RIGHTDASH + (LEFTDASH | PRECISEMOVEMENT)"
+        "logic": "ORIG | Stag-Path_of_Pain_Lever + Can_Stag + WINGS + RIGHTDASH + (LEFTDASH | PRECISEMOVEMENT)"
     },
     {
         "name": "Soul_Totem-Pilgrim's_Way",
@@ -697,30 +697,30 @@
     },
     {
         "name": "White_Palace_15[right1]",
-        "logic": "ORIG | Stag-Right_Atrium_Near + Can_Stag"
+        "logic": "ORIG | Stag-Right_Atrium_West + Can_Stag"
     },
     {
         "name": "White_Palace_16[left1]",
-        "logic": "ORIG | Stag-Right_Atrium_Far + Can_Stag + (LEFTDASH | LEFTCLAW | WINGS | LEFTSUPERDASH)"
+        "logic": "ORIG | Stag-Right_Atrium_East + Can_Stag + (LEFTDASH | LEFTCLAW | WINGS | LEFTSUPERDASH)"
     },
     {
         "name": "White_Palace_16[left2]",
-        "logic": "ORIG | Stag-Right_Atrium_Far + Can_Stag"
+        "logic": "ORIG | Stag-Right_Atrium_East + Can_Stag"
     },
     {
         "name": "White_Palace_17[bot1]",
-        "logic": "ORIG | Stag-Path_of_Pain_2 + Can_Stag + Collapser-Path_of_Pain?FALSE"
+        "logic": "ORIG | Stag-Path_of_Pain_Lever + Can_Stag + Collapser-Path_of_Pain?FALSE"
     },
     {
         "name": "White_Palace_17[right1]",
-        "logic": "ORIG | Stag-Path_of_Pain_2 + Can_Stag + Lever-Path_of_Pain"
+        "logic": "ORIG | Stag-Path_of_Pain_Lever + Can_Stag + Lever-Path_of_Pain"
     },
     {
         "name": "White_Palace_19[top1]",
-        "logic": "ORIG | Stag-Path_of_Pain_3 + Can_Stag + (WINGS | ANYCLAW)"
+        "logic": "ORIG | Stag-Path_of_Pain_Climb + Can_Stag + (WINGS | ANYCLAW)"
     },
     {
         "name": "White_Palace_20[bot1]",
-        "logic": "ORIG | Stag-Path_of_Pain_4 + Can_Stag"
+        "logic": "ORIG | Stag-Path_of_Pain_Final + Can_Stag"
     }
 ]

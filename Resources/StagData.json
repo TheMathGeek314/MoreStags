@@ -457,7 +457,7 @@
     }
   },
   {
-    "name": "Fog Canyon",
+    "name": "West Fog Canyon",
     "scene": "Fungus3_30",
     "region": "Canyon",
     "cost": 150,
@@ -477,6 +477,27 @@
     },
     "objectsToRemove": [ "fung_new_0065_Layer-294 (1)", "health plant 02 break (2)" ],
     "childrenToRemove": [ "Fungus_Fat_pole", "bush_set7/fung_bush6" ]
+  },
+  {
+    "name": "East Fog Canyon",
+    "scene": "Fungus3_25b",
+    "region": "Canyon",
+    "cost": 250,
+    "leftSide": false,
+    "_bellCoords": {
+      "x": 53,
+      "y": 15
+    },
+    "_transitionX": 56.7,
+    "_stagCoords": {
+      "x": 61.2,
+      "y": 15
+    },
+    "_markerPosition": {
+      "x": 1552,
+      "y": 1037
+    },
+    "enemiesToRemove": [ "Jellyfish Baby (10)", "Jellyfish Baby (11)" ]
   },
   {
     "name": "Archives Entrance",
@@ -641,7 +662,7 @@
     },
     "_transitionX": 65.6,
     "_stagCoords": {
-      "x": 68.2,
+      "x": 69.1,
       "y": 36
     },
     "_markerPosition": {
@@ -756,7 +777,7 @@
     "enemiesToRemove": [ "Mushroom Roller (3)" ]
   },
   {
-    "name": "Droppers",
+    "name": "Mantis Petras",
     "scene": "Fungus3_04",
     "region": "Gardens",
     "cost": 200,
@@ -767,7 +788,7 @@
     },
     "_transitionX": 31.8,
     "_stagCoords": {
-      "x": 35.1,
+      "x": 35.4,
       "y": 21
     },
     "_markerPosition": {
@@ -890,7 +911,7 @@
     }
   },
   {
-    "name": "Rafters",
+    "name": "Rafters Lookout",
     "scene": "Ruins1_02",
     "region": "West City",
     "cost": 200,
@@ -923,7 +944,7 @@
     },
     "_transitionX": 13,
     "_stagCoords": {
-      "x": 16.9,
+      "x": 17.2,
       "y": 92
     },
     "_markerPosition": {
@@ -1008,7 +1029,7 @@
     },
     "_transitionX": 7.2,
     "_stagCoords": {
-      "x": 4.6,
+      "x": 3.7,
       "y": 49
     },
     "_markerPosition": {
@@ -1046,10 +1067,10 @@
     "cost": 300,
     "leftSide": true,
     "_bellCoords": {
-      "x": 57.2,
+      "x": 64.1,
       "y": 15
     },
-    "_transitionX": 55.4,
+    "_transitionX": 56.4,
     "_stagCoords": {
       "x": 52,
       "y": 15
@@ -1190,7 +1211,7 @@
     "objectsToRemove": [ "Mines Table" ]
   },
   {
-    "name": "Conga Line",
+    "name": "Crystal Peak",
     "scene": "Mines_20",
     "region": "Peak",
     "cost": 250,
@@ -1421,7 +1442,7 @@
     "enemiesToRemove": [ "Hopper Spawn (2)" ]
   },
   {
-    "name": "Scarecrow",
+    "name": "East Kingdom's Edge",
     "scene": "Deepnest_East_14",
     "region": "Edge",
     "cost": 350,
@@ -1570,7 +1591,7 @@
     "enemiesToRemove": [ "Zombie Hive (1)" ]
   },
   {
-    "name": "Bee Library",
+    "name": "Library",
     "scene": "Hive_03_c",
     "region": "Hive",
     "cost": 350,
@@ -1591,7 +1612,7 @@
     "objectsToRemove": [ "hive_extras_living_0006_Layer-26 (2)", "hive_scenery_0025_h 1 (8)", "hive_scenery_0025_h 1 (6)" ]
   },
   {
-    "name": "Honey Stash",
+    "name": "Stash",
     "scene": "Hive_03",
     "region": "Hive",
     "cost": 350,
@@ -1636,7 +1657,7 @@
     "childrenToRemove": [ "Secret Mask (3)" ]
   },
   {
-    "name": "Garpedes",
+    "name": "Deep Spring",
     "scene": "Deepnest_30",
     "region": "Deepnest",
     "cost": 250,
@@ -1868,7 +1889,7 @@
     },
     "_transitionX": 92.6,
     "_stagCoords": {
-      "x": 95.1,
+      "x": 97.2,
       "y": 108
     },
     "_markerPosition": {
@@ -1965,7 +1986,7 @@
     }
   },
   {
-    "name": "Mato",
+    "name": "Gorb",
     "scene": "Cliffs_02",
     "region": "Cliffs",
     "cost": 170,
@@ -2055,7 +2076,7 @@
     }
   },
   {
-    "name": "Right Atrium Far",
+    "name": "Right Atrium East",
     "scene": "White_Palace_16",
     "region": "Palace",
     "cost": 450,
@@ -2081,7 +2102,7 @@
     }
   },
   {
-    "name": "Right Atrium Near",
+    "name": "Right Atrium West",
     "scene": "White_Palace_15",
     "region": "Palace",
     "cost": 450,
@@ -2182,7 +2203,7 @@
     },
     "_transitionX": 27.5,
     "_stagCoords": {
-      "x": 30.9,
+      "x": 31.3,
       "y": 206
     },
     "_markerPosition": {
@@ -2238,7 +2259,7 @@
     "childrenToRemove": [ "white_vine_01_silhouette", "white_vine_01_silhouette (10)", "white_vine_01_silhouette (11)" ]
   },
   {
-    "name": "Path of Pain 2",
+    "name": "Path of Pain Lever",
     "scene": "White_Palace_17",
     "region": "Palace",
     "cost": 450,
@@ -2260,7 +2281,7 @@
     "childrenToRemove": [ "white_pillar (16)/_0052_white", "white_pillar (16)/_0052_white (1)" ]
   },
   {
-    "name": "Path of Pain 3",
+    "name": "Path of Pain Climb",
     "scene": "White_Palace_19",
     "region": "Palace",
     "cost": 450,
@@ -2281,7 +2302,7 @@
     "objectsToRemove": [ "wp_cloth_furniture4 (3)" ]
   },
   {
-    "name": "Path of Pain 4",
+    "name": "Path of Pain Final",
     "scene": "White_Palace_20",
     "region": "Palace",
     "cost": 450,

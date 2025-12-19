@@ -47,10 +47,10 @@ namespace MoreStags {
                 lmb.DeserializeFile(LogicFileType.Transitions, fmt, streamz);
 
                 using Stream streamzy = assembly.GetManifestResourceStream("MoreStags.Resources.GodhomeStags.json");
-                lmb.DeserializeFile(LogicFileType.Locations, fmt, stream);
+                lmb.DeserializeFile(LogicFileType.Locations, fmt, streamzy);
             }
 
-            int stagMax = 114;
+            int stagMax = 115;
             if(MoreStags.Settings.RemoveCursedLocations)
                 stagMax -= 3;
             int requireStagNest = gs.TransitionSettings.Mode != TransitionSettings.TransitionMode.RoomRandomizer && !gs.SkipSettings.EnemyPogos ? 1 : 0;
@@ -109,7 +109,7 @@ namespace MoreStags {
                 }
             }
 
-            System.Random rng = new(gs.Seed + 114);
+            System.Random rng = new(gs.Seed + 115);
             SelectStags(gs, rng);
             List<StagData> activeStags = MoreStags.localData.activeStags;
             if (MoreStags.Settings.RemoveCursedLocations)
