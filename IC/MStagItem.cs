@@ -16,11 +16,28 @@ namespace MoreStags {
                 shopDesc = new LanguageString("UI", "ITEMCHANGER_STAG_DESC"),
                 sprite = new ItemChangerSprite("ShopIcons.StagPin")
             };
+            AddTag(CurseTag());
         }
 
         public override void GiveImmediate(GiveInfo info) {
             MoreStags.localData.opened[rawName] = true;
             PlayerData.instance.IncrementInt(nameof(PlayerData.stationsOpened));
+        }
+
+        private InteropTag CurseTag() {
+            InteropTag tag = new();
+            tag.Properties["CanMimic"] = new BoxedBool(true);
+            tag.Properties["MimicNames"] = new string[] {
+                "Stag - Grand Bellway",
+                "Stag - Blasted Steps",
+                "Stag - Bone Bottom",
+                "Stag - Weavenest",
+                "Stag - Shellwood",
+                "Stag - Bilewater"
+            };
+            tag.Properties["Weight"] = 0.2f;
+            tag.Message = "CurseData";
+            return tag;
         }
     }
 }
