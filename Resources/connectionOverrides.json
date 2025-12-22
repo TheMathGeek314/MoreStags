@@ -96,6 +96,11 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Plank-Fungal_Core",
+        "logicOverride": "ORIG | Stag-Fungal_Core + Can_Stag",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Quirrel_After_Monomon",
         "logicOverride": "ORIG | Stag-Teacher's_Archives + Can_Stag + QUIRREL>7 + (LISTEN ? TRUE) + DREAMNAIL + (ACID | LEFTSUPERDASH + RIGHTCLAW) + (LEFTCLAW | WINGS + RIGHTCLAW)",
         "logicSubstitutions": {}

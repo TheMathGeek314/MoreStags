@@ -14,7 +14,7 @@ namespace MoreStags {
     public class RequestModifier {
         public static void Hook() {
             ProgressionInitializer.OnCreateProgressionInitializer += SetPI;
-            RequestBuilder.OnUpdate.Subscribe(-100f, ApplyStagDef);
+            RequestBuilder.OnUpdate.Subscribe(1f, ApplyStagDef);
             RequestBuilder.OnUpdate.Subscribe(-499f, SetupItems);
             RequestBuilder.OnUpdate.Subscribe(6f, EditStartItems);
             RequestBuilder.OnUpdate.Subscribe(0f, WriteToLocal);

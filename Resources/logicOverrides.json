@@ -120,12 +120,20 @@
         "logic": "ORIG | Stag-Weavers'_Den + Can_Stag + (RIGHTCLAW | WINGS | LEFTCLAW + (RIGHTDASH | RIGHTSUPERDASH)) + Wall-Weaver's_Den_Secret?TRUE"
     },
     {
+        "name": "Deepnest_East_02",
+        "logic": "ORIG | Stag-Lower_Kingdom's_Edge + Can_Stag + (LEFTDASH | WINGS | LEFTSUPERDASH | ACID | SPELLAIRSTALL + $CASTSPELL)"
+    },
+    {
         "name": "Deepnest_East_04",
         "logic": "ORIG | Stag-Bardoon + Can_Stag"
     },
     {
-        "name": "Deepnest_East_02",
-        "logic": "ORIG | Stag-Lower_Kingdom's_Edge + Can_Stag + (LEFTDASH | WINGS | LEFTSUPERDASH | ACID | SPELLAIRSTALL + $CASTSPELL)"
+        "name": "Deepnest_East_04[left2]",
+        "logic": "ORIG | Stag-Bardoon + Can_Stag"
+    },
+    {
+        "name": "Deepnest_East_04[right2]",
+        "logic": "ORIG | Stag-Bardoon + Can_Stag"
     },
     {
         "name": "Deepnest_East_06[left1]",
@@ -326,6 +334,14 @@
     {
         "name": "Fungus3_22",
         "logic": "ORIG | Stag-Upper_Gardens + Can_Stag"
+    },
+    {
+        "name": "Fungus3_25b[left1]",
+        "logic": "ORIG | Stag-East_Fog_Canyon + Can_Stag"
+    },
+    {
+        "name": "Fungus3_25b[right1]",
+        "logic": "ORIG | Stag-East_Fog_Canyon + Can_Stag"
     },
     {
         "name": "Fungus3_30[bot1]",
