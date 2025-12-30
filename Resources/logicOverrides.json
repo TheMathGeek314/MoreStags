@@ -521,7 +521,23 @@
     },
     {
         "name": "Mines_20",
-        "logic": "ORIG | Stag-Overlook + Can_Stag + ANYCLAW"
+        "logic": "ORIG | Stag-Crystal_Peak + Can_Stag + ANYCLAW"
+    },
+    {
+        "name": "Mines_20[bot1]",
+        "logic": "ORIG | Stag-Crystal_Peak + Can_Stag + (Lever-Crystal_Peak_Tall_Room_Upper?TRUE + Lever-Crystal_Peak_Tall_Room_Middle?TRUE | Lever-Crystal_Peak_Tall_Room_Lower?TRUE)"
+    },
+    {
+        "name": "Mines_20[left2]",
+        "logic": "ORIG | Stag-Crystal_Peak + Can_Stag + Lever-Crystal_Peak_Tall_Room_Upper?TRUE"
+    },
+    {
+        "name": "Mines_20[left3]",
+        "logic": "ORIG | Stag-Crystal_Peak + Can_Stag + (Lever-Crystal_Peak_Tall_Room_Upper?TRUE + Lever-Crystal_Peak_Tall_Room_Middle?TRUE | Lever-Crystal_Peak_Tall_Room_Lower?TRUE)"
+    },
+    {
+        "name": "Mines_20[right2]",
+        "logic": "ORIG | Stag-Crystal_Peak + Can_Stag"
     },
     {
         "name": "Mines_34[bot1]",
