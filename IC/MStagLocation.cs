@@ -35,8 +35,9 @@ namespace MoreStags {
             orig(self);
             if(self.FsmName == "Stag Control") {
                 FsmState openGrate = self.GetState("Open Grate");
-                openGrate.Actions[0].Enabled = false;
-                openGrate.Actions[1].Enabled = false;
+                for(int i = 0; i < Mathf.Min(2, openGrate.Actions.Length); i++) {
+                    openGrate.Actions[i].Enabled = false;
+                }
 
                 FsmBool cancelTravel = self.AddFsmBool("Cancel Travel", false);
 

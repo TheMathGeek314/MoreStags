@@ -170,7 +170,7 @@
       "x": 2048,
       "y": 852
     },
-    "enemiesToRemove": [ "Buzzer 2", "Buzzer 3" ]
+    "enemiesToRemove": [ "Buzzer 2", "Buzzer 3", "Angry Buzzer (2)" ]
   },
   {
     "name": "East Crossroads",

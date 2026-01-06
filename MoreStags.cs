@@ -220,9 +220,10 @@ namespace MoreStags {
                         yes.InsertCustomAction(() => { localData.opened[data.name] = true; }, 0);
                     }
                 }
-                FsmState checkProx = self.GetValidState("Check Proximity");
-                checkProx.ChangeTransition("MOVE RIGHT", "Turn Hero Left");
-                checkProx.ChangeTransition("MOVE LEFT", "Turn Hero Right");
+                if(self.TryGetState("Check Proximity", out FsmState checkProx)) {
+                    checkProx.ChangeTransition("MOVE RIGHT", "Turn Hero Left");
+                    checkProx.ChangeTransition("MOVE LEFT", "Turn Hero Right");
+                }
             }
             else if(self.FsmName == "Stag Control") {
                 if(StagData.dataByRoom.TryGetValue(self.gameObject.scene.name, out StagData data) && !data.isVanilla && data.isActive(localData)) {
