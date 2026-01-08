@@ -1,5 +1,9 @@
 [
     {
+        "name": "Abyss_02[bot1]",
+        "logic": "ORIG | Stag-Broken_Bridge + Can_Stag"
+    },
+    {
         "name": "Abyss_02[right1]",
         "logic": "ORIG | Stag-Broken_Bridge + Can_Stag + (RIGHTCLAW | WINGS | RIGHTDASH | RIGHTSUPERDASH | ENEMYPOGOS)"
     },
