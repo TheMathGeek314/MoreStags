@@ -67,7 +67,7 @@
         "logicSubstitutions": {}
     },
     {
-        "name": "Mr_Mushroom-Ancient_Basin",
+        "name": "MoreDoors-Mantis_Warrior-Above_Bretta_Bench",
         "logicOverride": "",
         "logicSubstitutions": {
             "Fungus2_13": "Fungus2_13 | Stag-Bretta + Can_Stag"
