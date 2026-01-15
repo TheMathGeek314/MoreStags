@@ -436,6 +436,10 @@
         "logic": "ORIG | Stag-Pale_Lurker + Can_Stag + (WINGS + LEFTCLAW | Defeated_Pale_Lurker + (LEFTDASH | LEFTSUPERDASH | WINGS | LEFTCLAW))"
     },
     {
+        "name": "Grimmkin_Flame-Crystal_Peak",
+        "logic": "ORIG | Stag-Crystal_Corridor + Can_Stag + GRIMMCHILD"
+    },
+    {
         "name": "Grub-Crossroads_Spike",
         "logic": "ORIG | Stag-East_Crossroads + Can_Stag"
     },
@@ -478,6 +482,10 @@
     {
         "name": "King_Fragment",
         "logic": "ORIG | Stag-Nursery + Can_Stag + Dive_Floor-White_Palace_Nursery?FALSE + (ANYCLAW | WINGS)"
+    },
+    {
+        "name": "King's_Idol-Glade_of_Hope",
+        "logic": "ORIG | Stag-Shrine_of_Believers + Can_Stag"
     },
     {
         "name": "Lever-Path_of_Pain",
