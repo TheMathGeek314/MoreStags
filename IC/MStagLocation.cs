@@ -64,9 +64,12 @@ namespace MoreStags {
                 }));
             }
             else if(self.FsmName == "Stag Bell") {
-                FsmState init = self.GetState("Init");
-                init.GetFirstActionOfType<StagOpenedBoolTest>().Enabled = false;
-                init.AddTransition("FINISHED", "Opened");
+                if(Satchel.FsmUtil.TryGetState(self, "Init", out FsmState init)) {
+                    if(init.GetActionsOfType<StagOpenedBoolTest>().Length > 0) {
+                        init.GetFirstActionOfType<StagOpenedBoolTest>().Enabled = false;
+                    }
+                    init.AddTransition("FINISHED", "Opened");
+                }
             }
         }
 

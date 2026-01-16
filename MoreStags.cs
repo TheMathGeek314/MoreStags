@@ -157,15 +157,18 @@ namespace MoreStags {
                     foreach(string toDelete in data.objectsToRemove) {
                         GameObject.Find(toDelete).GetComponent<SpriteRenderer>().enabled = false;
                     }
-                    if((HeroController.instance.transform.position - GameObject.Find("door_stagExit").transform.position).magnitude < 1.5f) {
-                        foreach(string toDelete in data.enemiesToRemove) {
-                            GameObject go = GameObject.Find(toDelete);
-                            if(go != null) {
-                                go.SetActive(false);
+                    GameObject doorStagExit = GameObject.Find("door_stagExit");
+                    if(doorStagExit) {
+                        if((HeroController.instance.transform.position - doorStagExit.transform.position).magnitude < 1.5f) {
+                            foreach(string toDelete in data.enemiesToRemove) {
+                                GameObject go = GameObject.Find(toDelete);
+                                if(go != null) {
+                                    go.SetActive(false);
+                                }
                             }
-                        }
-                        if(!string.IsNullOrEmpty(data.returnScene)) {
-                            PlayerData.instance.dreamReturnScene = data.returnScene;
+                            if(!string.IsNullOrEmpty(data.returnScene)) {
+                                PlayerData.instance.dreamReturnScene = data.returnScene;
+                            }
                         }
                     }
                     foreach(string toDelete in data.childrenToRemove) {
@@ -184,7 +187,10 @@ namespace MoreStags {
                 case SceneNames.Abyss_19:
                     if(GameManager.instance.entryGateName == "left1") {
                         foreach(string toHide in new string[] { "infected_door", "Rewake Range", "Battle Start" }) {
-                            GameObject.Find(toHide).SetActive(false);
+                            try {
+                                GameObject.Find(toHide).SetActive(false);
+                            }
+                            catch(Exception) { }
                         }
                     }
                     break;
