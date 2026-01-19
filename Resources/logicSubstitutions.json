@@ -310,6 +310,11 @@
         "replacement": "Ruins2_07[left1] | Stag-Flooded_Station + Can_Stag"
     },
     {
+        "name": "Ruins2_07[left1]",
+        "old": "Ruins2_07[left1]",
+        "replacement": "Ruins2_07[left1] | Stag-Flooded_Station + Can_Stag"
+    },
+    {
         "name": "Simple_Key-City",
         "old": "Ruins1_17[top1]",
         "replacement": "Ruins1_17[top1] | Stag-Lower_Storerooms + Can_Stag"
