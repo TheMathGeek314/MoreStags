@@ -661,7 +661,7 @@
     },
     {
         "name": "Soul_Totem-Path_of_Pain_Below_Lever",
-        "logic": "ORIG | Stag-Path_of_Pain_Lever + Can_Stag + Collapser-Path_of_Pain?FALSE"
+        "logic": "ORIG | Stag-Path_of_Pain_Lever + Can_Stag + Collapser-Path_of_Pain?TRUE"
     },
     {
         "name": "Soul_Totem-Path_of_Pain_Hidden",
@@ -753,7 +753,7 @@
     },
     {
         "name": "White_Palace_17[bot1]",
-        "logic": "ORIG | Stag-Path_of_Pain_Lever + Can_Stag + Collapser-Path_of_Pain?FALSE"
+        "logic": "ORIG | Stag-Path_of_Pain_Lever + Can_Stag + Collapser-Path_of_Pain?TRUE"
     },
     {
         "name": "White_Palace_17[right1]",
