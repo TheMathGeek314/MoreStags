@@ -112,6 +112,8 @@ namespace MoreStags {
             System.Random rng = new(gs.Seed + 115);
             SelectStags(gs, rng);
             List<StagData> activeStags = MoreStags.localData.activeStags;
+            // Stag Nest, even if enabled, can't be used as source stag.
+            activeStags = activeStags.Where(s => s.name != "Stag Nest").ToList();
             if (MoreStags.Settings.RemoveCursedLocations)
                 activeStags = activeStags.Where(s => !s.isCursed).ToList();
             string clause = string.Join(" | ", activeStags.Select(s => $"*{(s.isVanilla ? Consts.LocationNames[s.name] : RandoInterop.nameToLocation(s.name))}"));
