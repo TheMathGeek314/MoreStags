@@ -47,6 +47,16 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Lever-Crystal_Peak_Tall_Room_Upper",
+        "logicOverride": "ORIG | Stag-Crystal_Peak + Can_Stag",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Lever-Failed_Tramway_Right",
+        "logicOverride": "ORIG | Stag-Failed_Tramway + Can_Stag + (WINGS | ANYCLAW)",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Lever-Palace_Final",
         "logicOverride": "ORIG | Stag-Upper_Balcony + Can_Stag + RIGHTDASH",
         "logicSubstitutions": {}
