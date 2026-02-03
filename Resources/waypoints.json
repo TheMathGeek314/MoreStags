@@ -38,5 +38,10 @@
         "name": "Fungus2_10",
         "logic": "Fungus2_10[bot1] | Fungus2_10[right1] | Fungus2_10[right2] | Stag-Pilgrim's_Way + Can_Stag",
         "Stateless": false
+    },
+    {
+        "name": "Shrine_of_Believers",
+        "logic": "RestingGrounds_08[left1] + ((SWIM + LEFTCLAW) | (SWIM + WINGS + ANYCLAW) | (RIGHTSUPERDASH + FULLCLAW) | (RIGHTSUPERDASH + WINGS + ANYCLAW) | (WINGS + RIGHTDASH) | (RIGHTCLAW + RIGHTDASH + DIFFICULTSKIPS + (SWIM | RIGHTSUPERDASH))) + DREAMNAIL + (WINGS | LEFTCLAW + LEFTDASH + PRECISEMOVEMENT) | Stag-Shrine_of_Believers + Can_Stag",
+        "Stateless": false
     }
 ]

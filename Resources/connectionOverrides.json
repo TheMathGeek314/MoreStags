@@ -5,6 +5,11 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Cloth_Basin",
+        "logicOverride": "ORIG | Stag-Lower_Tramway + (LEFTDASH | WINGS | LEFTSUPERDASH) + CLOTH + (LISTEN ? TRUE)",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Collapser-Deepnest_By_Mantis_Lords_Path",
         "logicOverride": "ORIG | Stag-Labyrinth + Can_Stag + (LEFTCLAW | WINGS + (RIGHTCLAW | ENEMYPOGOS + COMPLEXSKIPS + DIFFICULTSKIPS))",
         "logicSubstitutions": {}
@@ -20,11 +25,21 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Defeated_Any_Hopper",
+        "logicOverride": "ORIG | Stag-East_Kingdom's_Edge + Can_Stag",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Defeated_Any_Maggot",
         "logicOverride": "",
         "logicSubstitutions": {
             "Crossroads_10[left1]": "Stag-False_Knight + Can_Stag + Defeated_False_Knight"
         }
+    },
+    {
+        "name": "Defeated_Any_Primal_Aspid",
+        "logicOverride": "ORIG | Stag-East_Kingdom's_Edge + Can_Stag",
+        "logicSubstitutions": {}
     },
     {
         "name": "Defeated_Any_Shadow_Creeper",
@@ -72,8 +87,18 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Lower_Glade",
+        "logicOverride": "ORIG | Shrine_of_Believers",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Lurien's_Telescope",
         "logicOverride": "ORIG | Stag-Watcher's_Spire + Can_Stag",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Middle_Glade",
+        "logicOverride": "ORIG | Shrine_of_Believers + (RIGHTCLAW | LEFTDASH | WINGS | SPELLAIRSTALL + $CASTSPELL[3])",
         "logicSubstitutions": {}
     },
     {
@@ -137,6 +162,11 @@
     {
         "name": "Split_Elevator_Pass",
         "logicOverride": "ORIG | Stag-East_Elevator + Can_Stag",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Upper_Glade",
+        "logicOverride": "ORIG | Shrine_of_Believers + (RIGHTCLAW | WINGS + (LEFTDASH | SPELLAIRSTALL + $CASTSPELL) | LEFTSHARPSHADOW + SPELLAIRSTALL + $CASTSPELL[3])",
         "logicSubstitutions": {}
     },
     {

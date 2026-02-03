@@ -428,6 +428,10 @@
         "logic": "ORIG | Fungus1_02"
     },
     {
+        "name": "Geo_Rock-Hive_Stash",
+        "logic": "ORIG | Stag-Stash + Can_Stag"
+    },
+    {
         "name": "Geo_Rock-Love_Key",
         "logic": "ORIG | Stag-Love_Key + Can_Stag"
     },
@@ -485,7 +489,7 @@
     },
     {
         "name": "King's_Idol-Glade_of_Hope",
-        "logic": "ORIG | Stag-Shrine_of_Believers + Can_Stag"
+        "logic": "ORIG | Shrine_of_Believers"
     },
     {
         "name": "Lever-Path_of_Pain",
@@ -562,6 +566,10 @@
     {
         "name": "Monomon",
         "logic": "ORIG | Stag-Teacher's_Archives + Can_Stag + DREAMNAIL + (ACID | LEFTSUPERDASH + RIGHTCLAW) + (LEFTCLAW | WINGS + RIGHTCLAW)"
+    },
+    {
+        "name": "Pale_Ore-Basin",
+        "logic": "ORIG | Stag-Lower_Tramway + Can_Stag"
     },
     {
         "name": "Queen_Fragment",
@@ -706,6 +714,10 @@
     {
         "name": "Weaversong",
         "logic": "ORIG | Stag-Weavers'_Den + Can_Stag + (RIGHTCLAW | WINGS | LEFTCLAW + (RIGHTDASH | RIGHTSUPERDASH)) + Wall-Weaver's_Den_Secret?TRUE + (RIGHTDASH | WINGS)"
+    },
+    {
+        "name": "Whispering_Root-Spirits_Glade",
+        "logic": "ORIG | Shrine_of_Believers + (RIGHTCLAW | WINGS + (LEFTDASH | SPELLAIRSTALL + $CASTSPELL) | LEFTSHARPSHADOW + SPELLAIRSTALL + $CASTSPELL[3])"
     },
     {
         "name": "White_Palace_03_hub",

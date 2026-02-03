@@ -62,7 +62,7 @@
     {
         "name": "Deepnest_East_14[door1]",
         "old": "Broke_Oro_Quake_Floor_2",
-        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-East_Kingdom's_Edge + Can_Stag"
+        "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
     },
     {
         "name": "Deepnest_East_14[left1]",
@@ -72,7 +72,7 @@
     {
         "name": "Deepnest_East_14[left1]",
         "old": "Broke_Oro_Quake_Floor_2",
-        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-East_Kingdom's_Edge + Can_Stag"
+        "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
     },
     {
         "name": "Defeated_False_Knight",
@@ -197,7 +197,7 @@
     {
         "name": "Grub-Kingdom's_Edge_Oro",
         "old": "Broke_Oro_Quake_Floor_2",
-        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-East_Kingdom's_Edge + Can_Stag"
+        "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
     },
     {
         "name": "Grub-King's_Station",
@@ -285,11 +285,6 @@
         "replacement": "Abyss_21[right1] | Stag-Monarch_Wings + Can_Stag"
     },
     {
-        "name": "Pale_Ore-Basin",
-        "old": "Abyss_17[top1]",
-        "replacement": "Abyss_17[top1] | Stag-Lower_Tramway + Can_Stag"
-    },
-    {
         "name": "Rancid_Egg-Near_Quick_Slash",
         "old": "Deepnest_East_14[top2]",
         "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
@@ -297,7 +292,7 @@
     {
         "name": "Rancid_Egg-Near_Quick_Slash",
         "old": "Broke_Oro_Quake_Floor_2",
-        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-East_Kingdom's_Edge + Can_Stag"
+        "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
     },
     {
         "name": "Ruins2_07[right1]",
@@ -337,7 +332,7 @@
     {
         "name": "Soul_Totem-Oro_Dive_2",
         "old": "Broke_Oro_Quake_Floor_2",
-        "replacement": "Broke_Oro_Quake_Floor_2  | Stag-East_Kingdom's_Edge + Can_Stag"
+        "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
     },
     {
         "name": "Soul_Totem-Crossroads_Mawlek_Lower",
