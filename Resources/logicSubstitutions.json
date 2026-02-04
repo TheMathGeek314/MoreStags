@@ -15,6 +15,16 @@
         "replacement": "Fungus3_archive[bot1] | Stag-Archives_Entrance + Can_Stag"
     },
     {
+        "name": "Broke_Oro_Quake_Floor_3",
+        "old": "Broke_Oro_Quake_Floor_2",
+        "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
+    },
+    {
+        "name": "Broke_Oro_Quake_Floor_3",
+        "old": "Deepnest_East_14[top2]",
+        "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
+    },
+    {
         "name": "Cliffs_02[right1]",
         "old": "Cliffs_02",
         "replacement": "Cliffs_02 | Stag-Gorb + Can_Stag"

@@ -101,11 +101,11 @@
     },
     {
         "name": "Deepnest_16[bot1]",
-        "logic": "ORIG | Stag-Labyrinth + Can_Stag + (LEFTCLAW | WINGS + (RIGHTCLAW | $SHADESKIP))"
+        "logic": "ORIG | Stag-Labyrinth + Can_Stag + (LEFTCLAW | WINGS + (RIGHTCLAW | $SHADESKIP | ENEMYPOGOS))"
     },
     {
         "name": "Deepnest_16[left1]",
-        "logic": "ORIG | Stag-Labyrinth + Can_Stag + Collapser-Deepnest_By_Mantis_Lords_Path?TRUE + (LEFTCLAW | WINGS + (RIGHTCLAW | ENEMYPOGOS + COMPLEXSKIPS + DIFFICULTSKIPS))"
+        "logic": "ORIG | Stag-Labyrinth + Can_Stag + Collapser-Deepnest_By_Mantis_Lords_Path?TRUE + (LEFTCLAW | WINGS + (RIGHTCLAW | ENEMYPOGOS))"
     },
     {
         "name": "Deepnest_26",
@@ -457,7 +457,7 @@
     },
     {
         "name": "Hallownest_Seal-Deepnest_By_Mantis_Lords",
-        "logic": "ORIG | Stag-Labyrinth + Can_Stag + (LEFTCLAW + (WINGS | RIGHTDASH) | WINGS + (RIGHTCLAW | ENEMYPOGOS + COMPLEXSKIPS + DIFFICULTSKIPS))"
+        "logic": "ORIG | Stag-Labyrinth + Can_Stag + (LEFTCLAW + (WINGS | RIGHTDASH) | WINGS + (RIGHTCLAW | ENEMYPOGOS))"
     },
     {
         "name": "Hive_01[left1]",

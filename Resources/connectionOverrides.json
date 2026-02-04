@@ -161,7 +161,49 @@
     },
     {
         "name": "Split_Elevator_Pass",
-        "logicOverride": "ORIG | Stag-East_Elevator + Can_Stag",
+        "logicOverride": "ORIG | Stag-East_Kingdom + Can_Stag",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Stalactite-Oro_Dive_Grub_1",
+        "logicOverride": "",
+        "logicSubstitutions": {
+            "Broke_Oro_Quake_Floor_2": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag",
+            "Deepnest_East_14[top2]": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
+        }
+    },
+    {
+        "name": "Stalactite-Oro_Dive_Grub_Path_1",
+        "logicOverride": "",
+        "logicSubstitutions": {
+            "Broke_Oro_Quake_Floor_2": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag",
+            "Deepnest_East_14[top2]": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
+        }
+    },
+    {
+        "name": "Stalactite-Oro_Dive_Grub_Path_2",
+        "logicOverride": "",
+        "logicSubstitutions": {
+            "Broke_Oro_Quake_Floor_2": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag",
+            "Deepnest_East_14[top2]": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
+        }
+    },
+    {
+        "name": "Stalactite-Oro_Dive_Primal_Aspids",
+        "logicOverride": "",
+        "logicSubstitutions": {
+            "Broke_Oro_Quake_Floor_2": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag",
+            "Deepnest_East_14[top2]": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
+        }
+    },
+    {
+        "name": "Stalactite-Oro_Dive_Second_1",
+        "logicOverride": "ORIG | Stag-East_Kingdom's_Edge + Can_Stag",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Stalactite-Quick_Slash_Exit_1",
+        "logicOverride": "ORIG | Stag-Quick_Slash + Can_Stag",
         "logicSubstitutions": {}
     },
     {
