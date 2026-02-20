@@ -52,6 +52,20 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Fishing_Spot-Pale_Lurker",
+        "logicOverride": "",
+        "logicSubstitutions": {
+            "GG_Lurker[left1]": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
+        }
+    },
+    {
+        "name": "Fishing_Spot-Waterways_Long_Acid_Pool",
+        "logicOverride": "ORIG | Stag-East_Waterways + Can_Stag",
+        "logicSubstitutions": {
+            "GG_Lurker[left1]": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
+        }
+    },
+    {
         "name": "Hornet_Abyss",
         "logicOverride": "ORIG | Stag-The_Abyss + Can_Stag + (RIGHTDASH + FULLCLAW | WINGS) + (LISTEN ? TRUE) + HORNET>2",
         "logicSubstitutions": {}

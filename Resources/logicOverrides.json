@@ -692,6 +692,10 @@
         "logic": "ORIG | Stag-Lower_Left_Atrium + Can_Stag + (WINGS | (LEFTDASH | PRECISEMOVEMENT) + (RIGHTDASH | LEFTCLAW + RIGHTSUPERDASH))"
     },
     {
+        "name": "Void_Heart",
+        "logic": "ORIG | Stag-Birthplace + Can_Stag + DREAMNAIL + Shade_Gate-Void_Heart?RIGHTSHADOWDASH + (FULLCLAW | WINGS | OBSCURESKIPS + RIGHTCLAW | OBSCURESKIPS + LEFTCLAW + FULLSUPERDASH)"
+    },
+    {
         "name": "Warp-White_Palace_Entrance_to_Palace_Grounds",
         "logic": "ORIG | Stag-Palace_Entrance + Can_Stag"
     },
