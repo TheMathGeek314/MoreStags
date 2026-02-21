@@ -1,12 +1,12 @@
 ﻿using Modding;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using ItemChanger;
+using ItemChanger.Internal;
 using ItemChanger.Tags;
 using RandomizerMod.RC;
-using System.Collections.Generic;
-using ItemChanger.Internal;
 
 namespace MoreStags {
     internal static class RandoInterop {
