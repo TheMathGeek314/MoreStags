@@ -4,6 +4,9 @@ using System.Linq;
 using System.Reflection;
 using ItemChanger;
 using ItemChanger.Tags;
+using RandomizerMod.RC;
+using System.Collections.Generic;
+using ItemChanger.Internal;
 
 namespace MoreStags {
     internal static class RandoInterop {
@@ -14,6 +17,8 @@ namespace MoreStags {
 
             DefineLocations();
             DefineItems();
+
+            RandoController.OnExportCompleted += RemovePlatforms;
 
             if(ModHooks.GetMod("CondensedSpoilerLogger") is Mod)
                 CSLInterop.Hook();
@@ -56,6 +61,22 @@ namespace MoreStags {
                 MStagItem stagItem = new(data.name);
                 Finder.DefineCustomItem(stagItem);
             }
+        }
+
+        private static void RemovePlatforms(RandoController rc) {
+            if(rc.ctx.itemPlacements.Any(placement => placement.Item.Name == "Stag-Lower_Tramway")) {
+                List<IDeployer> deployers = Ref.Settings.Deployers;
+                foreach(IDeployer deployer in deployers) {
+                    if(ShouldRemoveDeployer(deployer)) {
+                        Events.RemoveSceneChangeEdit(deployer.SceneName, deployer.OnSceneChange);
+                    }
+                }
+                deployers.RemoveAll(ShouldRemoveDeployer);
+            }
+        }
+
+        private static bool ShouldRemoveDeployer(IDeployer deployer) {
+            return deployer is SmallPlatform platform && platform.SceneName == SceneNames.Abyss_17;
         }
 
         internal static InteropTag AddTag(TaggableObject obj) {

@@ -27,7 +27,7 @@ namespace MoreStags {
         private void TryEditFsm(Scene arg0, LoadSceneMode arg1) {
             if(arg0.name == UnsafeSceneName)
                 On.PlayMakerFSM.OnEnable += EditMStag;
-            else
+            else if(!arg0.name.EndsWith("_boss") && !arg0.name.EndsWith("_boss_defeated"))
                 On.PlayMakerFSM.OnEnable -= EditMStag;
         }
 
@@ -43,7 +43,11 @@ namespace MoreStags {
 
                 if(!MoreStags.localData.opened[rawName]) {
                     self.FsmVariables.GetFsmInt("Station Position Number").Value = 0;
-                    self.GetState("Current Location Check").GetFirstActionOfType<IntCompare>().Enabled = false;
+                    IntCompare curLocAction = self.GetState("Current Location Check").GetFirstActionOfType<IntCompare>();
+                    if(curLocAction != null)
+                        curLocAction.Enabled = false;
+                    else
+                        Modding.Logger.Log($"[MoreStags] - no IntCompare found in {UnsafeSceneName}");
                     FsmState checkResult = self.GetState("Check Result");
                     checkResult.AddFirstAction(new Lambda(() => {
                         if(cancelTravel.Value) {
@@ -59,9 +63,12 @@ namespace MoreStags {
                 });
             }
             else if(self.gameObject.name == "UI List Stag" && self.FsmName == "ui_list") {
-                self.GetState("Selection Made Cancel").AddFirstAction(new Lambda(() => {
-                    GameObject.Find("Stag").LocateMyFSM("Stag Control").FsmVariables.GetFsmBool("Cancel Travel").Value = true;
-                }));
+                FsmState selectionMade = self.GetState("Selection Made Cancel");
+                if(selectionMade.Actions[0] is not Lambda) {
+                    selectionMade.AddFirstAction(new Lambda(() => {
+                        GameObject.Find("Stag").LocateMyFSM("Stag Control").FsmVariables.GetFsmBool("Cancel Travel").Value = true;
+                    }));
+                }
             }
             else if(self.FsmName == "Stag Bell") {
                 if(Satchel.FsmUtil.TryGetState(self, "Init", out FsmState init)) {

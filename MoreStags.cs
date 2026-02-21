@@ -298,7 +298,9 @@ namespace MoreStags {
             }
             else if(self.FsmName == "Conversation Control" && self.gameObject.name == "Stag") {
                 self.GetValidState("Convo Choice").AddTransition("FINISHED", "Exhausted");
-                self.GetValidState("Remember Convo").GetFirstActionOfType<BoolTestMulti>().Enabled = localData.opened.ContainsKey("Stag Nest");
+                FsmState rememberConvo = self.GetValidState("Remember Convo");
+                rememberConvo.GetActions<IntTestToBool>().Where(action => action.int2.Value == 8).First().int2.Value = localData.threshold;
+                rememberConvo.GetFirstActionOfType<BoolTestMulti>().Enabled = localData.opened.ContainsKey("Stag Nest");
             }
             else if(self.gameObject.name == "UI List Stag" && self.FsmName == "ui_list") {
                 self.GetValidState("Activate").InsertCustomAction(() => scrollStagMenu(self, "Initial Item"), 1);
