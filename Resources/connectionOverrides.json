@@ -175,7 +175,7 @@
     },
     {
         "name": "Split_Elevator_Pass",
-        "logicOverride": "ORIG | Stag-East_Kingdom + Can_Stag",
+        "logicOverride": "ORIG | Stag-East_Elevator + Can_Stag",
         "logicSubstitutions": {}
     },
     {
