@@ -14,7 +14,7 @@ using Satchel;
 namespace MoreStags {
     public class MoreStags: Mod, ILocalSettings<LocalData>, IGlobalSettings<GlobalSettings> {
         new public string GetName() => "MoreStags";
-        public override string GetVersion() => "1.0.0.0";
+        public override string GetVersion() => "1.0.1.0";
 
         public static GlobalSettings Settings { get; set; } = new();
         public void OnLoadGlobal(GlobalSettings s) => Settings = s;
@@ -119,7 +119,14 @@ namespace MoreStags {
                 if(TramData.enteringTram) {
                     TramData.insideTram = true;
                     TramData.enteringTram = false;
-                    GameObject.Find("RestBench").SetActive(false);
+                    foreach(string objectToRemove in new string[] { "RestBench", "Dream Dialogue (1)", "tram_rg_corpses_0002_1", "tram_rg_corpses_0001_2", "tram_rg_corpses_0000_3" })
+                        GameObject.Find(objectToRemove).SetActive(false);
+                    foreach(GameObject go in UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects()) {
+                        if(go.name == "Dream Dialogue") {
+                            go.SetActive(false);
+                            break;
+                        }
+                    }
                     GameObject.Instantiate(tramChairPrefab, new Vector3(26.68f, 8.84f, 0.23f), Quaternion.identity).SetActive(true);
                 }
             }
@@ -204,6 +211,13 @@ namespace MoreStags {
                         polyCollider.points = points;
                     }
                     break;
+            }
+
+            //patch reverse Uumuu
+            if(self.sceneName == SceneNames.Fungus3_archive_02) {
+                GameObject.Find("Hazard Respawn Trigger v2 (6)").transform.SetScaleX(0.9f);
+                BoxCollider2D box = GameObject.Find("Battle Scene")?.GetComponent<BoxCollider2D>();
+                box.size = new Vector2(36, box.size.y);
             }
         }
 
