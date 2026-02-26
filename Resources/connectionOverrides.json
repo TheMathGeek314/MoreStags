@@ -25,6 +25,23 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Corpse_Dream-Fountain_1",
+        "logicOverride": "",
+        "logicSubstitutions": {
+            "Abyss_04[top1]": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
+        }
+    },
+    {
+        "name": "Corpse_Dream-Pilgrim's_Way",
+        "logicOverride": "ORIG | Stag-Pilgrim's_Way + Can_Stag + DREAMNAIL",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Corpse_Dream-Weavers'_Den",
+        "logicOverride": "ORIG | Stag-Weavers'_Den + Can_Stag + DREAMNAIL + (RIGHTCLAW | WINGS | LEFTCLAW + (RIGHTDASH | RIGHTSUPERDASH)) + Wall-Weaver's_Den_Secret?TRUE",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Defeated_Any_Hopper",
         "logicOverride": "ORIG | Stag-East_Kingdom's_Edge + Can_Stag",
         "logicSubstitutions": {}
@@ -63,6 +80,13 @@
         "logicOverride": "ORIG | Stag-East_Waterways + Can_Stag",
         "logicSubstitutions": {
             "GG_Lurker[left1]": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
+        }
+    },
+    {
+        "name": "Fishing_Spot-West_Lake_Shore",
+        "logicOverride": "",
+        "logicSubstitutions": {
+            "SWIM": "SWIM | (TRAM | Upper_Tram_Pass?FALSE | Lower_Tram_Pass?FALSE) + LAKETRAM"
         }
     },
     {
@@ -219,6 +243,13 @@
         "name": "Stalactite-Quick_Slash_Exit_1",
         "logicOverride": "ORIG | Stag-Quick_Slash + Can_Stag",
         "logicSubstitutions": {}
+    },
+    {
+        "name": "Tiso_Blue_Lake",
+        "logicOverride": "",
+        "logicSubstitutions": {
+            "SWIM": "SWIM | (TRAM | Upper_Tram_Pass?FALSE | Lower_Tram_Pass?FALSE) + LAKETRAM"
+        }
     },
     {
         "name": "Upper_Glade",
