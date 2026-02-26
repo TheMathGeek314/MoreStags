@@ -14,7 +14,7 @@ using Satchel;
 namespace MoreStags {
     public class MoreStags: Mod, ILocalSettings<LocalData>, IGlobalSettings<GlobalSettings> {
         new public string GetName() => "MoreStags";
-        public override string GetVersion() => "1.0.1.0";
+        public override string GetVersion() => "1.0.1.1";
 
         public static GlobalSettings Settings { get; set; } = new();
         public void OnLoadGlobal(GlobalSettings s) => Settings = s;
@@ -35,6 +35,7 @@ namespace MoreStags {
         public GameObject tramPrefab;
         public GameObject tramBoxPrefab;
         public GameObject tramChairPrefab;
+        public List<GameObject> archivesBossPrefabs = new();
 
         public static Dictionary<string, FsmOwnerDefault> uiGameobjectDict = new();
 
@@ -57,6 +58,8 @@ namespace MoreStags {
             tramPrefab = preloadedObjects["Crossroads_46"]["Tram Main"];
             tramBoxPrefab = preloadedObjects["Crossroads_46"]["Tram Call Box"];
             tramChairPrefab = preloadedObjects["Room_Tram_RG"]["tram_interior_0006_MID"];
+            foreach(string objName in new string[] { "Battle Gate Archives", "Battle Gate Archives (1)", "Battle Scene" })
+                archivesBossPrefabs.Add(preloadedObjects["Fungus3_archive_02_boss"][objName]);
 
             foreach(GameObject go in Resources.FindObjectsOfTypeAll<GameObject>()) {
                 if(!go.scene.IsValid() && go.name == "Stag Map") {
@@ -80,7 +83,10 @@ namespace MoreStags {
                 ("Ruins2_08", "door_stagExit"),
                 ("Crossroads_46", "Tram Main"),
                 ("Crossroads_46", "Tram Call Box"),
-                ("Room_Tram_RG", "tram_interior_0006_MID")
+                ("Room_Tram_RG", "tram_interior_0006_MID"),
+                ("Fungus3_archive_02_boss", "Battle Gate Archives"),
+                ("Fungus3_archive_02_boss", "Battle Gate Archives (1)"),
+                ("Fungus3_archive_02_boss", "Battle Scene")
             };
         }
 
@@ -216,8 +222,20 @@ namespace MoreStags {
             //patch reverse Uumuu
             if(self.sceneName == SceneNames.Fungus3_archive_02) {
                 GameObject.Find("Hazard Respawn Trigger v2 (6)").transform.SetScaleX(0.9f);
-                BoxCollider2D box = GameObject.Find("Battle Scene")?.GetComponent<BoxCollider2D>();
-                box.size = new Vector2(36, box.size.y);
+                try {
+                    BoxCollider2D box = GameObject.Find("Battle Scene").GetComponent<BoxCollider2D>();
+                    box.size = new Vector2(36, box.size.y);
+                }
+                catch(NullReferenceException _) {
+                    archivesBossPrefabs.ForEach(prefab => {
+                        GameObject go = GameObject.Instantiate(prefab, prefab.transform.position, prefab.transform.rotation);
+                        go.SetActive(true);
+                        if(go.name.StartsWith("Battle Scene")) {
+                            BoxCollider2D box = go.GetComponent<BoxCollider2D>();
+                            box.size = new Vector2(36, box.size.y);
+                        }
+                    });
+                }
             }
         }
 
@@ -398,6 +416,11 @@ namespace MoreStags {
                     }
                 }
             }
+            /*if(self.FsmName == "BG Control" && (self.gameObject.name == "Battle Gate Archives" || self.gameObject.name == "Battle Gate Archives (1)")) {
+                FsmBool startClosed = self.FsmVariables.GetFsmBool("Start Closed");
+                Modding.Logger.Log($"[MoreStags] - {self.gameObject.name} started with StartClosed={startClosed}, defeatedMegaJelly={PlayerData.instance.defeatedMegaJelly}");
+                startClosed.Value = !PlayerData.instance.defeatedMegaJelly;
+            }*/
         }
 
         private void createUiObjects(GameObject uiList) {
