@@ -5,6 +5,13 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Bench-Basin_Hub",
+        "logicOverride": "",
+        "logicSubstitutions": {
+            "Abyss_04[top1]": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
+        }
+    },
+    {
         "name": "Cloth_Basin",
         "logicOverride": "ORIG | Stag-Lower_Tramway + (LEFTDASH | WINGS | LEFTSUPERDASH) + CLOTH + (LISTEN ? TRUE)",
         "logicSubstitutions": {}
