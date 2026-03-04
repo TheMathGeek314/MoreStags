@@ -35,7 +35,6 @@ namespace MoreStags {
         public GameObject tramPrefab;
         public GameObject tramBoxPrefab;
         public GameObject tramChairPrefab;
-        public List<GameObject> archivesBossPrefabs = new();
 
         public static Dictionary<string, FsmOwnerDefault> uiGameobjectDict = new();
 
@@ -58,8 +57,6 @@ namespace MoreStags {
             tramPrefab = preloadedObjects["Crossroads_46"]["Tram Main"];
             tramBoxPrefab = preloadedObjects["Crossroads_46"]["Tram Call Box"];
             tramChairPrefab = preloadedObjects["Room_Tram_RG"]["tram_interior_0006_MID"];
-            foreach(string objName in new string[] { "Battle Gate Archives", "Battle Gate Archives (1)", "Battle Scene" })
-                archivesBossPrefabs.Add(preloadedObjects["Fungus3_archive_02_boss"][objName]);
 
             foreach(GameObject go in Resources.FindObjectsOfTypeAll<GameObject>()) {
                 if(!go.scene.IsValid() && go.name == "Stag Map") {
@@ -83,10 +80,7 @@ namespace MoreStags {
                 ("Ruins2_08", "door_stagExit"),
                 ("Crossroads_46", "Tram Main"),
                 ("Crossroads_46", "Tram Call Box"),
-                ("Room_Tram_RG", "tram_interior_0006_MID"),
-                ("Fungus3_archive_02_boss", "Battle Gate Archives"),
-                ("Fungus3_archive_02_boss", "Battle Gate Archives (1)"),
-                ("Fungus3_archive_02_boss", "Battle Scene")
+                ("Room_Tram_RG", "tram_interior_0006_MID")
             };
         }
 
@@ -227,14 +221,7 @@ namespace MoreStags {
                     box.size = new Vector2(36, box.size.y);
                 }
                 catch(NullReferenceException) {
-                    archivesBossPrefabs.ForEach(prefab => {
-                        GameObject go = GameObject.Instantiate(prefab, prefab.transform.position, prefab.transform.rotation);
-                        go.SetActive(true);
-                        if(go.name.StartsWith("Battle Scene")) {
-                            BoxCollider2D box = go.GetComponent<BoxCollider2D>();
-                            box.size = new Vector2(36, box.size.y);
-                        }
-                    });
+                    Log("Fungus3_archive_02_boss scene not loaded, I blame ItemChanger");
                 }
             }
         }
@@ -416,11 +403,6 @@ namespace MoreStags {
                     }
                 }
             }
-            /*if(self.FsmName == "BG Control" && (self.gameObject.name == "Battle Gate Archives" || self.gameObject.name == "Battle Gate Archives (1)")) {
-                FsmBool startClosed = self.FsmVariables.GetFsmBool("Start Closed");
-                Modding.Logger.Log($"[MoreStags] - {self.gameObject.name} started with StartClosed={startClosed}, defeatedMegaJelly={PlayerData.instance.defeatedMegaJelly}");
-                startClosed.Value = !PlayerData.instance.defeatedMegaJelly;
-            }*/
         }
 
         private void createUiObjects(GameObject uiList) {
