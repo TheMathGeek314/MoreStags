@@ -226,7 +226,7 @@ namespace MoreStags {
                     BoxCollider2D box = GameObject.Find("Battle Scene").GetComponent<BoxCollider2D>();
                     box.size = new Vector2(36, box.size.y);
                 }
-                catch(NullReferenceException _) {
+                catch(NullReferenceException) {
                     archivesBossPrefabs.ForEach(prefab => {
                         GameObject go = GameObject.Instantiate(prefab, prefab.transform.position, prefab.transform.rotation);
                         go.SetActive(true);

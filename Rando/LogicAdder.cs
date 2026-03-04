@@ -67,7 +67,14 @@ namespace MoreStags {
                 stagCount *= 9;
                 stagCount /= 10;
             }
-            lmb.DoMacroEdit(new("ALLSTAGS", $"STAGS>{stagCount - 1}"));
+
+            System.Random rng = new(gs.Seed + 115);
+            SelectStags(gs, rng);
+            List<StagData> activeStags = MoreStags.localData.activeStags;
+            if (activeStags.Count(s => s.name == "Stag Nest") == 1)
+                lmb.DoMacroEdit(new("ALLSTAGS", $"STAGS>{stagCount - 1}"));
+            else
+                lmb.DoMacroEdit(new("ALLSTAGS", "FALSE"));
 
             DefineTermsAndItems(lmb, fmt);
         }
@@ -109,8 +116,6 @@ namespace MoreStags {
                 }
             }
 
-            System.Random rng = new(gs.Seed + 115);
-            SelectStags(gs, rng);
             List<StagData> activeStags = MoreStags.localData.activeStags;
             // Stag Nest, even if enabled, can't be used as source stag.
             activeStags = activeStags.Where(s => s.name != "Stag Nest").ToList();
