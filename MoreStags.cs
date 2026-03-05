@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -14,7 +16,7 @@ using Satchel;
 namespace MoreStags {
     public class MoreStags: Mod, ILocalSettings<LocalData>, IGlobalSettings<GlobalSettings> {
         new public string GetName() => "MoreStags";
-        public override string GetVersion() => "1.0.1.1";
+        public override string GetVersion() => "1.0.1.2";
 
         public static GlobalSettings Settings { get; set; } = new();
         public void OnLoadGlobal(GlobalSettings s) => Settings = s;
@@ -35,6 +37,9 @@ namespace MoreStags {
         public GameObject tramPrefab;
         public GameObject tramBoxPrefab;
         public GameObject tramChairPrefab;
+
+        private MethodInfo salcOnEnable = typeof(SceneAdditiveLoadConditional).GetMethod("OnEnable", BindingFlags.NonPublic | BindingFlags.Instance);
+        private FieldInfo salcSceneLoaded = typeof(SceneAdditiveLoadConditional).GetField("sceneLoaded", BindingFlags.NonPublic | BindingFlags.Instance);
 
         public static Dictionary<string, FsmOwnerDefault> uiGameobjectDict = new();
 
@@ -221,9 +226,19 @@ namespace MoreStags {
                     box.size = new Vector2(36, box.size.y);
                 }
                 catch(NullReferenceException) {
-                    Log("Fungus3_archive_02_boss scene not loaded, I blame ItemChanger");
+                    retryArchivesLoad();
                 }
             }
+        }
+
+        private async void retryArchivesLoad() {
+            SceneAdditiveLoadConditional.loadInSequence = false;
+            SceneAdditiveLoadConditional salc = GameObject.FindObjectOfType<SceneAdditiveLoadConditional>();
+            salcOnEnable.Invoke(salc, null);
+            while(!(bool)salcSceneLoaded.GetValue(salc))
+                await Task.Yield();
+            BoxCollider2D box = GameObject.Find("Battle Scene").GetComponent<BoxCollider2D>();
+            box.size = new Vector2(36, box.size.y);
         }
 
         private void editFsm(On.PlayMakerFSM.orig_OnEnable orig, PlayMakerFSM self) {
