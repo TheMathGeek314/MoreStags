@@ -6,6 +6,8 @@ using System.Reflection;
 using ItemChanger;
 using ItemChanger.Internal;
 using ItemChanger.Tags;
+using RandomizerMod.Logging;
+using RandomizerMod.RandomizerData;
 using RandomizerMod.RC;
 
 namespace MoreStags {
@@ -19,6 +21,7 @@ namespace MoreStags {
             DefineItems();
 
             RandoController.OnExportCompleted += RemovePlatforms;
+            SettingsLog.AfterLogSettings += LogRandoSettings;
 
             if(ModHooks.GetMod("CondensedSpoilerLogger") is Mod)
                 CSLInterop.Hook();
@@ -73,6 +76,11 @@ namespace MoreStags {
                 }
                 deployers.RemoveAll(ShouldRemoveDeployer);
             }
+        }
+
+        private static void LogRandoSettings(LogArguments args, TextWriter w) {
+            w.WriteLine("Logging MoreStags settings:");
+            w.WriteLine(JsonUtil.Serialize(MoreStags.Settings));
         }
 
         private static bool ShouldRemoveDeployer(IDeployer deployer) {
