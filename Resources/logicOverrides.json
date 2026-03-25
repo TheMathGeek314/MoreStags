@@ -92,6 +92,10 @@
         "logic": "ORIG | Stag-Southwest_Crossroads + Can_Stag"
     },
     {
+        "name": "Crossroads_31[right1]",
+        "logic": "ORIG | Stag-East_Crossroads + Can_Stag"
+    },
+    {
         "name": "Crossroads_38[right1]",
         "logic": "ORIG | Stag-Grubfather + Can_Stag"
     },
