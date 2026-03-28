@@ -22,6 +22,8 @@ namespace MoreStags {
         public override void GiveImmediate(GiveInfo info) {
             MoreStags.localData.opened[rawName] = true;
             PlayerData.instance.IncrementInt(nameof(PlayerData.stationsOpened));
+            if(RandoInterop.UseAdditionalTimelines)
+                MStagTimeline.instance.Record(rawName);
         }
 
         private InteropTag CurseTag() {

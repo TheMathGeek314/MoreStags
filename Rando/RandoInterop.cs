@@ -12,6 +12,8 @@ using RandomizerMod.RC;
 
 namespace MoreStags {
     internal static class RandoInterop {
+        internal static bool UseAdditionalTimelines;
+
         public static void Hook() {
             RandoMenuPage.Hook();
             RequestModifier.Hook();
@@ -28,6 +30,14 @@ namespace MoreStags {
 
             if(ModHooks.GetMod("RandoSettingsManager") is Mod)
               RSMInterop.Hook();
+
+            if(ModHooks.GetMod("AdditionalTimelines") is Mod) {
+                UseAdditionalTimelines = true;
+                SetupTimeline();
+            }
+            else {
+                UseAdditionalTimelines = false;
+            }
         }
 
         public static void DefineLocations() {
@@ -85,6 +95,10 @@ namespace MoreStags {
 
         private static bool ShouldRemoveDeployer(IDeployer deployer) {
             return deployer is SmallPlatform platform && platform.SceneName == SceneNames.Abyss_17;
+        }
+
+        private static void SetupTimeline() {
+            FStats.API.OnGenerateFile += gen => gen(new MStagTimeline());
         }
 
         internal static InteropTag AddTag(TaggableObject obj) {

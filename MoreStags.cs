@@ -16,7 +16,7 @@ using Satchel;
 namespace MoreStags {
     public class MoreStags: Mod, ILocalSettings<LocalData>, IGlobalSettings<GlobalSettings> {
         new public string GetName() => "MoreStags";
-        public override string GetVersion() => "1.0.2.0";
+        public override string GetVersion() => "1.0.3.0";
 
         public static GlobalSettings Settings { get; set; } = new();
         public void OnLoadGlobal(GlobalSettings s) => Settings = s;
