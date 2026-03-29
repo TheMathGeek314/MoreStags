@@ -81,6 +81,13 @@ namespace MoreStags {
                     string nameToRemove = Consts.LocationNames[data.name];
                     rb.RemoveLocationByName(nameToRemove);
                     rb.RemoveItemByName(nameToRemove);
+                    rb.RemoveItemByName($"{PlaceholderItem.Prefix}{nameToRemove}");
+                    if (data.name == "Resting Grounds")
+                    {
+                        rb.RemoveItemByName("Lever-Resting_Grounds_Stag");
+                        rb.RemoveItemByName($"{PlaceholderItem.Prefix}Lever-Resting_Grounds_Stag");
+                        rb.RemoveLocationByName("Lever-Resting_Grounds_Stag");
+                    }
                 }
                 foreach(StagData data in ld.activeStags.Where(stag => !stag.isVanilla)) {
                     string stagLocation = RandoInterop.nameToLocation(data.name);

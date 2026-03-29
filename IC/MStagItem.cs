@@ -1,6 +1,7 @@
 ﻿using ItemChanger;
 using ItemChanger.Tags;
 using ItemChanger.UIDefs;
+using RandomizerMod.RandomizerData;
 
 namespace MoreStags {
     public class MStagItem: AbstractItem {
@@ -11,6 +12,7 @@ namespace MoreStags {
             this.name = RandoInterop.nameToLocation(name);
             InteropTag tag = RandoInterop.AddTag(this);
             tag.Properties["PinSprite"] = new EmbeddedSprite("stagpin");
+            tag.Properties["PoolGroup"] = "Stags";
             UIDef = new MsgUIDef {
                 name = new BoxedString(RandoInterop.clean(this.name)),
                 shopDesc = new LanguageString("UI", "ITEMCHANGER_STAG_DESC"),
