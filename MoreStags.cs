@@ -16,7 +16,7 @@ using Satchel;
 namespace MoreStags {
     public class MoreStags: Mod, ILocalSettings<LocalData>, IGlobalSettings<GlobalSettings> {
         new public string GetName() => "MoreStags";
-        public override string GetVersion() => "1.0.3.0";
+        public override string GetVersion() => "1.0.3.1";
 
         public static GlobalSettings Settings { get; set; } = new();
         public void OnLoadGlobal(GlobalSettings s) => Settings = s;
@@ -167,7 +167,10 @@ namespace MoreStags {
             if(StagData.dataByRoom.TryGetValue(self.sceneName, out StagData data)) {
                 if(data.isActive(localData)) {
                     foreach(string toDelete in data.objectsToRemove) {
-                        GameObject.Find(toDelete).GetComponent<SpriteRenderer>().enabled = false;
+                        GameObject toDelObj = GameObject.Find(toDelete);
+                        if(toDelObj != null && toDelObj.TryGetComponent(out SpriteRenderer sr)) {
+                            sr.enabled = false;
+                        }
                     }
                     GameObject doorStagExit = GameObject.Find("door_stagExit");
                     if(doorStagExit) {
