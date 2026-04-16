@@ -61,6 +61,11 @@
         }
     },
     {
+        "name": "Defeated_Any_Mawlurk",
+        "logicOverride": "ORIG | Stag-Mawlurks + Can_Stag",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Defeated_Any_Primal_Aspid",
         "logicOverride": "ORIG | Stag-East_Kingdom's_Edge + Can_Stag",
         "logicSubstitutions": {}

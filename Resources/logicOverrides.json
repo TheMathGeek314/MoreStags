@@ -36,6 +36,10 @@
         "logic": "ORIG | Abyss_19[left1] + Plank-Broken_Vessel_Shortcut?TRUE"
     },
     {
+        "name": "Abyss_20[top1]",
+        "logic": "ORIG | Stag-Mawlurks + Can_Stag"
+    },
+    {
         "name": "Abyss_21[right1]",
         "logic": "ORIG | Stag-Monarch_Wings + Can_Stag"
     },

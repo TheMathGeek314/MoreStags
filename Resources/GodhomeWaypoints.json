@@ -1,7 +1,7 @@
 [
     {
         "name": "GG_Atrium",
-        "logic": "Warp-Junk_Pit_to_Godhome + (RIGHTCLAW | WINGS | LEFTCLAW + RIGHTSUPERDASH) | (GG_Atrium[Door_Workshop] | GG_Atrium[door1_blueRoom]) + (LEFTCLAW | RIGHTCLAW + WINGS | $SHRIEKPOGO[5]) | Bench-Godhome_Atrium",
+        "logic": "Warp-Junk_Pit_to_Godhome + (RIGHTCLAW | WINGS | LEFTCLAW + RIGHTSUPERDASH) | (GG_Atrium[Door_Workshop] | GG_Atrium[door1_blueRoom]) + (LEFTCLAW | RIGHTCLAW + WINGS | $SHRIEKPOGO[5]) | Bench-Godhome_Atrium | GG_Atrium_Roof",
         "Stateless": false
     },
     {

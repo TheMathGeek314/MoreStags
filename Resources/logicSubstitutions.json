@@ -5,6 +5,11 @@
         "replacement": "Abyss_17[top1] | Stag-Lower_Tramway + Can_Stag"
     },
     {
+        "name": "Abyss_20[top2]",
+        "old": "Abyss_20[top1]",
+        "replacement": "Abyss_20[top1] | Stag-Mawlurks + Can_Stag"
+    },
+    {
         "name": "Ancient_Basin_Map",
         "old": "Abyss_04[top1]",
         "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
