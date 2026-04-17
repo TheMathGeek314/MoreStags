@@ -176,6 +176,11 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Plank-Basin_Pale_Ore",
+        "logicOverride": "ORIG | Stag-Lower_Tramway + Can_Stag + (LEFTCLAW + RIGHTDASH + BACKGROUNDPOGOS + DAMAGEBOOSTS + $TAKEDAMAGE[2] | RIGHTCLAW | WINGS | Plank-Basin_Pale_Ore)",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Plank-Cliff's_Pass",
         "logicOverride": "",
         "logicSubstitutions": {
