@@ -152,6 +152,11 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "MoreDoors-Lesser_Mawlek-Basin_Cloth_by_Tram_Door",
+        "logicOverride": "Abyss_17[top1] + (ANYCLAW | WINGS | DAMAGEBOOSTS + $TAKEDAMAGE)",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "MoreDoors-Mantis_Warrior-Above_Bretta_Bench",
         "logicOverride": "",
         "logicSubstitutions": {
