@@ -1,13 +1,20 @@
 ﻿using System.Collections.Generic;
+using MenuChanger.Attributes;
 
 namespace MoreStags {
     public class GlobalSettings {
         public bool Enabled = false;
-        public StagSelection Selection = StagSelection.Balanced;
 
-        [MenuChanger.Attributes.MenuRange(11, 115)]
+        [MenuIgnore]
         public int Quantity = 11;
-
+        [DynamicBound(nameof(Maximum), true)]
+        [MenuRange(11, 115)]
+        public int Minimum = 11;
+        [DynamicBound(nameof(Minimum), false)]
+        [MenuRange(11, 115)]
+        public int Maximum = 115;
+        
+        public StagSelection Distribution = StagSelection.Balanced;
         public StagNestThreshold StagNestThreshold = StagNestThreshold.All;
         public bool PreferNonVanilla = false;
         public bool RemoveCursedLocations = false;

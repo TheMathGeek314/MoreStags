@@ -56,6 +56,7 @@ namespace MoreStags {
             int requireStagNest = gs.TransitionSettings.Mode != TransitionSettings.TransitionMode.RoomRandomizer && !gs.SkipSettings.EnemyPogos ? 1 : 0;
             if(MoreStags.Settings.PreferNonVanilla)
                 stagMax -= 10 - requireStagNest;
+            MoreStags.Settings.Quantity = Random.Range(MoreStags.Settings.Minimum, MoreStags.Settings.Maximum + 1);
             int stagCount = Mathf.Min(MoreStags.Settings.Quantity, stagMax) - 2;
             if(MoreStags.Settings.StagNestThreshold == StagNestThreshold.Half)
                 stagCount /= 2;
@@ -134,7 +135,7 @@ namespace MoreStags {
             if(!gs.SkipSettings.EnemyPogos && !isRoomRando) {
                 stagsToActivate.Add(StagData.dataByRoom["Cliffs_03"]);
             }
-            switch(ms.Selection) {
+            switch(ms.Distribution) {
                 case StagSelection.Balanced:
                     List<string> masterRegionList = new(Consts.Regions);
                     List<string> regions = new(masterRegionList);

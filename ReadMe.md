@@ -7,13 +7,13 @@ These are brand new locations and are not pooled with the rest of the rando chec
 ## Settings
 - **Enabled** - Toggles whether the set of active stags is vanilla or shuffled
 	- This is different from randomizing stags. Shuffled stags can behave as either vanilla stag tolls or as rando shiny checks depending on the base Randomizer stag setting.
-- **Selection** - Choose between a *Balanced* or *Random* selection process
+- **Minimum**/**Maximum** - The range from which the quantity of stags will be randomly chosen
+	- This ranges from 11 to 115 total active stags
+	- If set to a higher value than the filter settings will permit, the actual quantity may be lower than Minimum
+	- Setting both min and max to 21 while using the Balanced distribution will guarantee one stag in every area (20 areas + Dirtmouth)
+- **Distribution** - Choose between a *Balanced* or *Random* selection process
 	- *Balanced* - Stags will be chosen from each of 20 areas without repeating an area until all have been used (repeating this process up to 41, etc)
 	- *Random* - No smart algorithm will be used, stags will be chosen completely at random
-- **Quantity** - The number of stags active in your seed
-	- This ranges from the default 11 up to all 115 active at once
-	- The actual number of active stags may be lower than this value if set higher than the filter settings will allow
-	- Setting this to 21 while using the Balanced setting will guarantee one stag in every area (20 areas + Dirtmouth)
 - **Stag Nest Threshold** - The percentage of active stags required to unlock Stag Nest (if Stag Nest is active)
 	- *Half*: 50%
 	- *Many*: 75%
