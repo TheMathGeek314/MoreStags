@@ -56,7 +56,7 @@ namespace MoreStags {
             int requireStagNest = gs.TransitionSettings.Mode != TransitionSettings.TransitionMode.RoomRandomizer && !gs.SkipSettings.EnemyPogos ? 1 : 0;
             if(MoreStags.Settings.PreferNonVanilla)
                 stagMax -= 10 - requireStagNest;
-            MoreStags.Settings.Quantity = Random.Range(MoreStags.Settings.Minimum, MoreStags.Settings.Maximum + 1);
+            MoreStags.Settings.Quantity = new System.Random(gs.Seed + 314).Next(MoreStags.Settings.Minimum, MoreStags.Settings.Maximum + 1);
             int stagCount = Mathf.Min(MoreStags.Settings.Quantity, stagMax) - 2;
             if(MoreStags.Settings.StagNestThreshold == StagNestThreshold.Half)
                 stagCount /= 2;
