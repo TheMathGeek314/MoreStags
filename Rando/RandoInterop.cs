@@ -33,7 +33,7 @@ namespace MoreStags {
 
             if(ModHooks.GetMod("AdditionalTimelines") is Mod) {
                 UseAdditionalTimelines = true;
-                SetupTimeline();
+                FStatsInterop.Hook();
             }
             else {
                 UseAdditionalTimelines = false;
@@ -77,14 +77,20 @@ namespace MoreStags {
         }
 
         private static void RemovePlatforms(RandoController rc) {
-            if(rc.ctx.itemPlacements.Any(placement => placement.Item.Name == "Stag-Lower_Tramway")) {
-                List<IDeployer> deployers = Ref.Settings.Deployers;
-                foreach(IDeployer deployer in deployers) {
-                    if(ShouldRemoveDeployer(deployer)) {
-                        Events.RemoveSceneChangeEdit(deployer.SceneName, deployer.OnSceneChange);
+            (string, string)[] platPairs = [
+                ("Stag-Lower_Tramway", SceneNames.Abyss_17),
+                ("Stag-Stash", SceneNames.Hive_03)
+            ];
+            foreach((string, string) platTuple in platPairs) {
+                if(rc.ctx.itemPlacements.Any(placement => placement.Item.Name == platTuple.Item1)) {
+                    List<IDeployer> deployers = Ref.Settings.Deployers;
+                    foreach(IDeployer deployer in deployers) {
+                        if(ShouldRemoveDeployer(deployer, platTuple.Item2)) {
+                            Events.RemoveSceneChangeEdit(deployer.SceneName, deployer.OnSceneChange);
+                        }
                     }
+                    deployers.RemoveAll(a => ShouldRemoveDeployer(a, platTuple.Item2));
                 }
-                deployers.RemoveAll(ShouldRemoveDeployer);
             }
         }
 
@@ -93,12 +99,8 @@ namespace MoreStags {
             w.WriteLine(JsonUtil.Serialize(MoreStags.Settings));
         }
 
-        private static bool ShouldRemoveDeployer(IDeployer deployer) {
-            return deployer is SmallPlatform platform && platform.SceneName == SceneNames.Abyss_17;
-        }
-
-        private static void SetupTimeline() {
-            FStats.API.OnGenerateFile += gen => gen(new MStagTimeline());
+        private static bool ShouldRemoveDeployer(IDeployer deployer, string scene) {
+            return deployer is SmallPlatform platform && platform.SceneName == scene;
         }
 
         internal static InteropTag AddTag(TaggableObject obj) {
