@@ -121,7 +121,7 @@
     },
     {
         "name": "Deepnest_30[top1]",
-        "logic": "ORIG | Stag-Deep_Spring + Can_Stag"
+        "logic": "ORIG | Stag-Deep_Spring + Can_Stag + (ANYCLAW | WINGS)"
     },
     {
         "name": "Deepnest_44[top1]",
@@ -130,10 +130,6 @@
     {
         "name": "Deepnest_45_v02[left1]",
         "logic": "ORIG | Stag-Weavers'_Den + Can_Stag + (RIGHTCLAW | WINGS | LEFTCLAW + (RIGHTDASH | RIGHTSUPERDASH)) + Wall-Weaver's_Den_Secret?TRUE"
-    },
-    {
-        "name": "Deepnest_East_02",
-        "logic": "ORIG | Stag-Lower_Kingdom's_Edge + Can_Stag + (LEFTDASH | WINGS | LEFTSUPERDASH | ACID | SPELLAIRSTALL + $CASTSPELL)"
     },
     {
         "name": "Deepnest_East_04",
