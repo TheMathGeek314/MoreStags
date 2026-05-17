@@ -12,11 +12,12 @@ using HutongGames.PlayMaker.Actions;
 using ItemChanger;
 using RandomizerMod.IC;
 using Satchel;
+using System.Collections;
 
 namespace MoreStags {
     public class MoreStags: Mod, ILocalSettings<LocalData>, IGlobalSettings<GlobalSettings> {
         new public string GetName() => "MoreStags";
-        public override string GetVersion() => "1.1.0.3";
+        public override string GetVersion() => "1.1.1.0";
 
         public static GlobalSettings Settings { get; set; } = new();
         public void OnLoadGlobal(GlobalSettings s) => Settings = s;
@@ -113,7 +114,7 @@ namespace MoreStags {
                     }) {
                         // Remove Stag levers only if Lever Rando is off
                         if(data.scene == scene && !localData.preserveStagLevers) {
-                            GameObject.Find(objectName).SetActive(false);
+                            GameManager.instance.StartCoroutine(disableLeversLater(objectName));
                         }
                     }
                 }
@@ -156,6 +157,12 @@ namespace MoreStags {
                 BoxCollider2D box = GameObject.Find("Acid Control v2").FindGameObjectInChildren("Surface Water Region").GetComponent<BoxCollider2D>();
                 box.size = new Vector2(50f, box.size.y);
             }
+        }
+
+        //idk if this does anything but hopefully it fixes the edge case where the lever still exists
+        private IEnumerator disableLeversLater(string objectName) {
+            yield return null;
+            GameObject.Find(objectName).SetActive(false);
         }
 
         private void lateSceneChange(On.GameManager.orig_OnNextLevelReady orig, GameManager self) {

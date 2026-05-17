@@ -1,7 +1,6 @@
 ﻿using ItemChanger;
 using ItemChanger.Tags;
 using ItemChanger.UIDefs;
-using RandomizerMod.RandomizerData;
 
 namespace MoreStags {
     public class MStagItem: AbstractItem {
@@ -25,7 +24,7 @@ namespace MoreStags {
             MoreStags.localData.opened[rawName] = true;
             PlayerData.instance.IncrementInt(nameof(PlayerData.stationsOpened));
             if(RandoInterop.UseAdditionalTimelines)
-                MStagTimeline.instance.Record(rawName);
+                FStatsInterop.RecordTimeline(rawName);
         }
 
         private InteropTag CurseTag() {

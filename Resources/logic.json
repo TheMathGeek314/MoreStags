@@ -284,6 +284,10 @@
     "logic": "Deepnest_East_14b[top1] | Deepnest_East_14b[right1] + (FULLCLAW | WINGS | ENEMYPOGOS + DANGEROUSSKIPS) | Stag-Quick_Slash + Can_Stag"
   },
   {
+    "name": "Stag-Buried_Treasure",
+    "logic": "*Dirtmouth_Stag | Stag-Buried_Treasure + Can_Stag"
+  },
+  {
     "name": "Stag-Camp",
     "logic": "Deepnest_East_11[left1] | Deepnest_East_11[right1] | Deepnest_East_11[top1] + Broke_Camp_Bench_Wall | Deepnest_East_11[bot1] + (LEFTDASH | RIGHTCLAW | WINGS | LEFTCLAW + (ENEMYPOGOS | SPELLAIRSTALL + $CASTSPELL[before:ROOMSOUL])) | Stag-Camp + Can_Stag"
   },

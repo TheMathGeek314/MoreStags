@@ -8,11 +8,11 @@ namespace MoreStags {
         [MenuIgnore]
         public int Quantity = 11;
         [DynamicBound(nameof(Maximum), true)]
-        [MenuRange(11, 115)]
+        [MenuRange(11, 116)]
         public int Minimum = 11;
         [DynamicBound(nameof(Minimum), false)]
-        [MenuRange(11, 115)]
-        public int Maximum = 115;
+        [MenuRange(11, 116)]
+        public int Maximum = 116;
         
         public StagSelection Distribution = StagSelection.Balanced;
         public StagNestThreshold StagNestThreshold = StagNestThreshold.All;

@@ -1485,6 +1485,29 @@
     "objectsToRemove": [ "_0038_nail8 (1)" ]
   },
   {
+    "name": "Buried Treasure",
+    "scene": "Deepnest_East_17",
+    "region": "Edge",
+    "cost": 350,
+    "leftSide": true,
+    "_bellCoords": {
+      "x": 13.2,
+      "y": 13.5
+    },
+    "_transitionX": 17.7,
+    "_transitionY": 8,
+    "_stagCoords": {
+      "x": 12.9,
+      "y": 8
+    },
+    "_markerPosition": {
+      "x": 3975,
+      "y": 2231
+    },
+    "objectsToRemove": [ "palace_root2 (1)", "ruin_fossil_01 (6)" ],
+    "childrenToRemove": [ "Quake Floor (7)/Active/black_solid 415 (11)", "Quake Floor (7)/Active/black_solid 415 (10)" ]
+  },
+  {
     "name": "Camp",
     "scene": "Deepnest_East_11",
     "region": "Edge",

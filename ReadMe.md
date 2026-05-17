@@ -86,7 +86,7 @@ Mine Entrance, Overlook, Crystal Peak, Crystallised Mound, Crystal Corridor, Hal
 Upper Tram, Dreamshield, Grey Mourner, Shrine of Believers
 
 #### Kingdom's Edge
-Lower Kingdom's Edge, Hoppers, East Kingdom's Edge, Quick Slash, Camp, Bardoon, Pale Lurker
+Lower Kingdom's Edge, Hoppers, East Kingdom's Edge, Quick Slash, Buried Treasure, Camp, Bardoon, Pale Lurker
 
 #### Hive
 Hive Entryway, Honey Tree, Library, Stash

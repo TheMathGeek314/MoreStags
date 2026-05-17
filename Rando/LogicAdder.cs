@@ -3,13 +3,13 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using Newtonsoft.Json;
+using UnityEngine;
 using RandomizerCore;
 using RandomizerCore.Json;
 using RandomizerCore.Logic;
 using RandomizerCore.LogicItems;
 using RandomizerMod.RC;
 using RandomizerMod.Settings;
-using UnityEngine;
 
 namespace MoreStags {
     public static class LogicAdder {
@@ -50,7 +50,7 @@ namespace MoreStags {
                 lmb.DeserializeFile(LogicFileType.Locations, fmt, streamzy);
             }
 
-            int stagMax = 115;
+            int stagMax = 116;
             if(MoreStags.Settings.RemoveCursedLocations)
                 stagMax -= 3;
             int requireStagNest = gs.TransitionSettings.Mode != TransitionSettings.TransitionMode.RoomRandomizer && !gs.SkipSettings.EnemyPogos ? 1 : 0;
@@ -69,7 +69,7 @@ namespace MoreStags {
                 stagCount /= 10;
             }
 
-            System.Random rng = new(gs.Seed + 115);
+            System.Random rng = new(gs.Seed + 116);
             SelectStags(gs, rng);
             List<StagData> activeStags = MoreStags.localData.activeStags;
             if (activeStags.Count(s => s.name == "Stag Nest") == 1)

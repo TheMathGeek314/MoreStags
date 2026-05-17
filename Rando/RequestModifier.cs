@@ -2,8 +2,8 @@
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using ItemChanger;
 using Newtonsoft.Json;
+using ItemChanger;
 using RandomizerCore.Extensions;
 using RandomizerCore.Logic;
 using RandomizerMod.RandomizerData;
