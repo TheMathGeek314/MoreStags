@@ -284,6 +284,18 @@
         "logic": "ORIG | Stag-Elder_Hu + Can_Stag"
     },
     {
+        "name": "Fungus2_10[bot1]",
+        "logic": "ORIG | Stag-Pilgrim's_Way + Can_Stag"
+    },
+    {
+        "name": "Fungus2_10[right1]",
+        "logic": "ORIG | Stag-Pilgrim's_Way + Can_Stag"
+    },
+    {
+        "name": "Fungus2_10[right2]",
+        "logic": "ORIG | Stag-Pilgrim's_Way + Can_Stag"
+    },
+    {
         "name": "Fungus2_11",
         "logic": "ORIG | Stag-Fungal_Nexus + Can_Stag"
     },
