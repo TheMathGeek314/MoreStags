@@ -285,7 +285,7 @@
   },
   {
     "name": "Stag-Buried_Treasure",
-    "logic": "*Dirtmouth_Stag | Stag-Buried_Treasure + Can_Stag"
+    "logic": "Deepnest_East_17[left1] + Broke_420_Rock_Quake_Floor_1 + Broke_420_Rock_Quake_Floor_2 + Broke_420_Rock_Quake_Floor_3 + Broke_420_Rock_Quake_Floor_4 + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 | Stag-Buried_Treasure + Can_Stag"
   },
   {
     "name": "Stag-Camp",

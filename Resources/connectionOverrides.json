@@ -81,6 +81,61 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Dive_Floor-420_Rock_1",
+        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_1 + Broke_420_Rock_Quake_Floor_2 + Broke_420_Rock_Quake_Floor_3 + Broke_420_Rock_Quake_Floor_4 + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Dive_Floor-420_Rock_2",
+        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_2 + Broke_420_Rock_Quake_Floor_3 + Broke_420_Rock_Quake_Floor_4 + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Dive_Floor-420_Rock_3",
+        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_3 + Broke_420_Rock_Quake_Floor_4 + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Dive_Floor-420_Rock_4",
+        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_4 + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Dive_Floor-420_Rock_5",
+        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Dive_Floor-420_Rock_6",
+        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Dive_Floor-420_Rock_7",
+        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Dive_Floor-420_Rock_8",
+        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Dive_Floor-420_Rock_9",
+        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Dive_Floor-420_Rock_10",
+        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Dive_Floor-420_Rock_11",
+        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Fishing_Spot-Pale_Lurker",
         "logicOverride": "",
         "logicSubstitutions": {

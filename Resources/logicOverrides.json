@@ -172,6 +172,10 @@
         "logic": "ORIG | Stag-Quick_Slash + Can_Stag + (LEFTCLAW | WINGS | ENEMYPOGOS)"
     },
     {
+        "name": "Deepnest_East_17[left1]",
+        "logic": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_1 + Broke_420_Rock_Quake_Floor_2 + Broke_420_Rock_Quake_Floor_3 + Broke_420_Rock_Quake_Floor_4 + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11"
+    },
+    {
         "name": "Descending_Dark",
         "logic": "ORIG | Stag-Crystallised_Mound + Can_Stag"
     },
@@ -436,6 +440,14 @@
         "logic": "ORIG | Stag-Stash + Can_Stag"
     },
     {
+        "name": "Geo_Rock-Kingdom's_Edge_Above_420_Geo_Rock",
+        "logic": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_11 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_4 + Broke_420_Rock_Quake_Floor_3"
+    },
+    {
+        "name": "Geo_Rock-Kingdom's_Edge_420_Geo_Rock",
+        "logic": "ORIG | Stag-Buried_Treasure + Can_Stag"
+    },
+    {
         "name": "Geo_Rock-Love_Key",
         "logic": "ORIG | Stag-Love_Key + Can_Stag"
     },
@@ -514,6 +526,10 @@
     {
         "name": "Lore_Tablet-Greenpath_Lifeblood",
         "logic": "ORIG | (READ ? TRUE) + Stag-Moss_Knight + Can_Stag"
+    },
+        {
+        "name": "Lore_Tablet-Kingdom's_Edge",
+        "logic": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + SPORESHROOM + Broke_420_Rock_Quake_Floor_11 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_6"
     },
     {
         "name": "Mask_Shard-Stone_Sanctuary",
@@ -650,6 +666,10 @@
     {
         "name": "Simple_Key-Basin",
         "logic": "ORIG | Stag-Mawlurks + Can_Stag"
+    },
+    {
+        "name": "Soul_Totem-420_Geo_Rock",
+        "logic": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_11 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_9"
     },
     {
         "name": "Soul_Totem-Crossroads_Myla",
