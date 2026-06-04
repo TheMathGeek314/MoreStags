@@ -8,7 +8,7 @@ These are brand new locations and are not pooled with the rest of the rando chec
 - **Enabled** - Toggles whether the set of active stags is vanilla or shuffled
 	- This is different from randomizing stags. Shuffled stags can behave as either vanilla stag tolls or as rando shiny checks depending on the base Randomizer stag setting.
 - **Minimum**/**Maximum** - The range from which the quantity of stags will be randomly chosen
-	- This ranges from 11 to 115 total active stags
+	- This ranges from 11 to 116 total active stags
 	- If set to a higher value than the filter settings will permit, the actual quantity may be lower than Minimum
 	- Setting both min and max to 21 while using the Balanced distribution will guarantee one stag in every area (20 areas + Dirtmouth)
 - **Distribution** - Choose between a *Balanced* or *Random* selection process
