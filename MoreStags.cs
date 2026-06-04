@@ -1,5 +1,6 @@
 ﻿using Modding;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -12,7 +13,6 @@ using HutongGames.PlayMaker.Actions;
 using ItemChanger;
 using RandomizerMod.IC;
 using Satchel;
-using System.Collections;
 
 namespace MoreStags {
     public class MoreStags: Mod, ILocalSettings<LocalData>, IGlobalSettings<GlobalSettings> {
