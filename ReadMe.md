@@ -41,6 +41,7 @@ These are brand new locations and are not pooled with the rest of the rando chec
 - **QoL**'s *Stag Arrive* setting works with all new locations
 - **RandoSettingsManager** works as expected
 - **AlreadyEnoughPlayMaker** is recommended to reduce lag while scrolling but is not strictly required as a dependency
+- **LoreRandomizer**'s *Cursed Listening* has been accounted for
 
 ## Known Bug
 - When a stag item is found in the same room as a stag location, the new item will not appear if the menu has already been opened in that room.

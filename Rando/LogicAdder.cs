@@ -123,7 +123,7 @@ namespace MoreStags {
             if (MoreStags.Settings.RemoveCursedLocations)
                 activeStags = activeStags.Where(s => !s.isCursed).ToList();
             string clause = string.Join(" | ", activeStags.Select(s => $"*{(s.isVanilla ? Consts.LocationNames[s.name] : RandoInterop.nameToLocation(s.name))}"));
-            lmb.DoLogicEdit(new("Can_Stag", clause));
+            lmb.DoLogicEdit(new("Can_Stag", $"({clause}) + LISTEN?TRUE"));
         }
 
         private static void SelectStags(GenerationSettings gs, System.Random rng) {
