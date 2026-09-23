@@ -492,6 +492,10 @@
         "logic": "ORIG | Stag-Hive_Entryway + Can_Stag"
     },
     {
+        "name": "Hive_02[left3]",
+        "logic": "ORIG | Stag-Honey_Tree + Can_Stag"
+    },
+    {
         "name": "Hive_03[bot1]",
         "logic": "ORIG | Stag-Stash + Can_Stag + (RIGHTCLAW | (LEFTCLAW | WINGS) + ENEMYPOGOS)"
     },
