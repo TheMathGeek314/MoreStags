@@ -672,6 +672,14 @@
         "logic": "ORIG | Stag-Lower_Storerooms + Can_Stag"
     },
     {
+        "name": "Ruins1_27[left1]",
+        "logic": "ORIG | Stag-Memorial + Can_Stag"
+    },
+    {
+        "name": "Ruins1_27[right1]",
+        "logic": "ORIG | Stag-Memorial + Can_Stag"
+    },
+    {
         "name": "Ruins1_30",
         "logic": "ORIG | Stag-Soul_Sanctum + Can_Stag"
     },

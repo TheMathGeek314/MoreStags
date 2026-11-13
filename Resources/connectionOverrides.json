@@ -71,6 +71,11 @@
         }
     },
     {
+        "name": "Defeated_Any_Mantis_Petra",
+        "logicOverride": "ORIG | Stag-Upper_Gardens + Can_Stag",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Defeated_Any_Mawlurk",
         "logicOverride": "ORIG | Stag-Mawlurks + Can_Stag",
         "logicSubstitutions": {}
@@ -88,6 +93,11 @@
     {
         "name": "Defeated_Any_Shardmite",
         "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag + (FIREBALL>1 + $CASTSPELL | LEFTCLAW | WINGS + (RIGHTCLAW | SCREAM>1 + $CASTSPELL))",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Defeated_Any_Spiny_Husk",
+        "logicOverride": "ORIG | Stag-Upper_Gardens + Can_Stag",
         "logicSubstitutions": {}
     },
     {
