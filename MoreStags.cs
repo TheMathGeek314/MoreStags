@@ -17,7 +17,7 @@ using Satchel;
 namespace MoreStags {
     public class MoreStags: Mod, ILocalSettings<LocalData>, IGlobalSettings<GlobalSettings> {
         new public string GetName() => "MoreStags";
-        public override string GetVersion() => "1.1.2.7";
+        public override string GetVersion() => "1.1.2.8";
 
         public static GlobalSettings Settings { get; set; } = new();
         public void OnLoadGlobal(GlobalSettings s) => Settings = s;
@@ -41,6 +41,8 @@ namespace MoreStags {
 
         private MethodInfo salcOnEnable = typeof(SceneAdditiveLoadConditional).GetMethod("OnEnable", BindingFlags.NonPublic | BindingFlags.Instance);
         private FieldInfo salcSceneLoaded = typeof(SceneAdditiveLoadConditional).GetField("sceneLoaded", BindingFlags.NonPublic | BindingFlags.Instance);
+
+        internal static Action<string> earlierSceneChange;
 
         public static Dictionary<string, FsmOwnerDefault> uiGameobjectDict = new();
 
@@ -93,6 +95,8 @@ namespace MoreStags {
         private void earlySceneChange(Scene arg0, Scene arg1) {
             if(!IsRandoSave() || !localData.enabled)
                 return;
+
+            earlierSceneChange?.Invoke(arg1.name);
 
             //place stag objects
             if(StagData.dataByRoom.TryGetValue(arg1.name, out StagData data)) {

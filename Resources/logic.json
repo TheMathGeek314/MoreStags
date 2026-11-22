@@ -273,7 +273,7 @@
   },
   {
     "name": "Stag-Hoppers",
-    "logic": "(Deepnest_East_06[left1] | Deepnest_East_06[top1] | (Deepnest_East_06[bot1] | Deepnest_East_06[door1] | Deepnest_East_06[right1]) + (LEFTCLAW | WINGS + ENEMYPOGOS)) + (RIGHTCLAW | WINGS + LEFTCLAW + ENEMYPOGOS | WINGS + $SHADESKIP | WINGS + $SHRIEKPOGO[2,before:ROOMSOUL])"
+    "logic": "(Deepnest_East_06[left1] | Deepnest_East_06[top1] | (Deepnest_East_06[bot1] | Deepnest_East_06[door1] | Deepnest_East_06[right1]) + (LEFTCLAW | WINGS + ENEMYPOGOS)) + (RIGHTCLAW | WINGS + LEFTCLAW + ENEMYPOGOS | WINGS + $SHADESKIP | WINGS + $SHRIEKPOGO[2,before:ROOMSOUL]) | Stag-Hoppers + Can_Stag"
   },
   {
     "name": "Stag-East_Kingdom's_Edge",

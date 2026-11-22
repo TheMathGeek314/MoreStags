@@ -1,381 +1,406 @@
 [
-    {
-        "name": "Bardoon",
-        "logicOverride": "ORIG | Stag-Bardoon + Can_Stag + (LEFTCLAW | WINGS) + (LISTEN ? TRUE)",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Bench-Basin_Hub",
-        "logicOverride": "",
-        "logicSubstitutions": {
-            "Abyss_04[top1]": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
-        }
-    },
-    {
-        "name": "Cloth_Basin",
-        "logicOverride": "ORIG | Stag-Lower_Tramway + (LEFTDASH | WINGS | LEFTSUPERDASH) + CLOTH + (LISTEN ? TRUE)",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Collapser-Deepnest_By_Mantis_Lords_Path",
-        "logicOverride": "ORIG | Stag-Labyrinth + Can_Stag + (LEFTCLAW | WINGS + (RIGHTCLAW | ENEMYPOGOS + COMPLEXSKIPS + DIFFICULTSKIPS))",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Collapser-Deepnest_By_Mantis_Lords_Bottom",
-        "logicOverride": "ORIG | Stag-Labyrinth + Can_Stag + (WINGS | ANYCLAW | DAMAGEBOOSTS + $TAKEDAMAGE)",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Collapser-Waterways_Tram_Grub",
-        "logicOverride": "ORIG | Stag-East_Waterways + Can_Stag + ((RIGHTSUPERDASH | ACID) + (RIGHTCLAW | LEFTCLAW + WINGS) + Collapser-Waterways_Tram_Grub | RIGHTSUPERDASH + WINGS + (RIGHTCLAW | LEFTCLAW + ENEMYPOGOS | ENEMYPOGOS + DANGEROUSSKIPS) | ACID + (RIGHTCLAW | LEFTCLAW + WINGS | WINGS + ENEMYPOGOS + DANGEROUSSKIPS))",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Corpse_Dream-Fountain_1",
-        "logicOverride": "",
-        "logicSubstitutions": {
-            "Abyss_04[top1]": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
-        }
-    },
-    {
-        "name": "Corpse_Dream-Pilgrim's_Way",
-        "logicOverride": "ORIG | Stag-Pilgrim's_Way + Can_Stag + DREAMNAIL",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Corpse_Dream-Weavers'_Den",
-        "logicOverride": "ORIG | Stag-Weavers'_Den + Can_Stag + DREAMNAIL + (RIGHTCLAW | WINGS | LEFTCLAW + (RIGHTDASH | RIGHTSUPERDASH)) + Wall-Weaver's_Den_Secret?TRUE",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Defeated_Any_Baldur",
-        "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Defeated_Any_Crystal_Hunter",
-        "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Defeated_Any_Hopper",
-        "logicOverride": "ORIG | Stag-East_Kingdom's_Edge + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Defeated_Any_Maggot",
-        "logicOverride": "",
-        "logicSubstitutions": {
-            "Crossroads_10[left1]": "Stag-False_Knight + Can_Stag + Defeated_False_Knight"
-        }
-    },
-    {
-        "name": "Defeated_Any_Mantis_Petra",
-        "logicOverride": "ORIG | Stag-Upper_Gardens + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Defeated_Any_Mawlurk",
-        "logicOverride": "ORIG | Stag-Mawlurks + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Defeated_Any_Primal_Aspid",
-        "logicOverride": "ORIG | Stag-East_Kingdom's_Edge + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Defeated_Any_Shadow_Creeper",
-        "logicOverride": "ORIG | Stag-The_Abyss + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Defeated_Any_Shardmite",
-        "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag + (FIREBALL>1 + $CASTSPELL | LEFTCLAW | WINGS + (RIGHTCLAW | SCREAM>1 + $CASTSPELL))",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Defeated_Any_Spiny_Husk",
-        "logicOverride": "ORIG | Stag-Upper_Gardens + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Defeated_Any_Wingmould",
-        "logicOverride": "ORIG | Stag-Path_of_Pain_Climb + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Dive_Floor-Crystallized_Mound",
-        "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag + Plank-Crystallized_Mound?TRUE + QUAKE + $CASTSPELL",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Dive_Floor-420_Rock_1",
-        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_1 + Broke_420_Rock_Quake_Floor_2 + Broke_420_Rock_Quake_Floor_3 + Broke_420_Rock_Quake_Floor_4 + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Dive_Floor-420_Rock_2",
-        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_2 + Broke_420_Rock_Quake_Floor_3 + Broke_420_Rock_Quake_Floor_4 + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Dive_Floor-420_Rock_3",
-        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_3 + Broke_420_Rock_Quake_Floor_4 + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Dive_Floor-420_Rock_4",
-        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_4 + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Dive_Floor-420_Rock_5",
-        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Dive_Floor-420_Rock_6",
-        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Dive_Floor-420_Rock_7",
-        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Dive_Floor-420_Rock_8",
-        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Dive_Floor-420_Rock_9",
-        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Dive_Floor-420_Rock_10",
-        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Dive_Floor-420_Rock_11",
-        "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Fishing_Spot-Pale_Lurker",
-        "logicOverride": "",
-        "logicSubstitutions": {
-            "GG_Lurker[left1]": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
-        }
-    },
-    {
-        "name": "Fishing_Spot-Waterways_Long_Acid_Pool",
-        "logicOverride": "ORIG | Stag-East_Waterways + Can_Stag",
-        "logicSubstitutions": {
-            "GG_Lurker[left1]": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
-        }
-    },
-    {
-        "name": "Fishing_Spot-West_Lake_Shore",
-        "logicOverride": "",
-        "logicSubstitutions": {
-            "SWIM": "SWIM | (TRAM | Upper_Tram_Pass?FALSE | Lower_Tram_Pass?FALSE) + LAKETRAM"
-        }
-    },
-    {
-        "name": "Hornet_Abyss",
-        "logicOverride": "ORIG | Stag-The_Abyss + Can_Stag + (RIGHTDASH + FULLCLAW | WINGS) + (LISTEN ? TRUE) + HORNET>2",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Lever-City_Above_Lemm_Upper",
-        "logicOverride": "ORIG | Stag-Office + Can_Stag + (RIGHTCLAW | LEFTCLAW + (WINGS | ENEMYPOGOS) | WINGS + (LEFTCLAW | ENEMYPOGOS))",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Lever-Crystal_Peak_Tall_Room_Upper",
-        "logicOverride": "ORIG | Stag-Crystal_Peak + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Lever-Failed_Tramway_Right",
-        "logicOverride": "ORIG | Stag-Failed_Tramway + Can_Stag + (WINGS | ANYCLAW)",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Lever-Palace_Final",
-        "logicOverride": "ORIG | Stag-Upper_Balcony + Can_Stag + RIGHTDASH",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Lever-Pilgrim's_Way_Left",
-        "logicOverride": "ORIG | Stag-City_Gate + Can_Stag + (ACID | (RIGHTDASH | WINGS) | Lever-Pilgrim's_Way_Left)",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Lever-Pilgrim's_Way_Right",
-        "logicOverride": "ORIG | Stag-City_Gate + Can_Stag + (ACID | (RIGHTDASH | WINGS) + (RIGHTSUPERDASH | Lever-Pilgrim's_Way_Right))",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Lower_Glade",
-        "logicOverride": "ORIG | Shrine_of_Believers",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Lurien's_Telescope",
-        "logicOverride": "ORIG | Stag-Watcher's_Spire + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Middle_Glade",
-        "logicOverride": "ORIG | Shrine_of_Believers + (RIGHTCLAW | LEFTDASH | WINGS | SPELLAIRSTALL + $CASTSPELL[3])",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "MoreDoors-Crystal_Hunter-Crystallized_Mound",
-        "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "MoreDoors-Lesser_Mawlek-Basin_Cloth_by_Tram_Door",
-        "logicOverride": "Abyss_17[top1] + (ANYCLAW | WINGS | DAMAGEBOOSTS + $TAKEDAMAGE)",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "MoreDoors-Mantis_Warrior-Above_Bretta_Bench",
-        "logicOverride": "",
-        "logicSubstitutions": {
-            "Fungus2_13": "Fungus2_13 | Stag-Bretta + Can_Stag"
-        }
-    },
-    {
-        "name": "Mr_Mushroom-Ancient_Basin",
-        "logicOverride": "",
-        "logicSubstitutions": {
-            "Abyss_21[right1]": "Abyss_21[right1] | Stag-Monarch_Wings + Can_Stag"
-        }
-    },
-    {
-        "name": "Plank-Baldur_Shell_Upper",
-        "logicOverride": "ORIG | Stag-Baldur_Shell + Can_Stag + (LEFTCLAW | RIGHTCLAW + WINGS)",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Plank-Basin_Pale_Ore",
-        "logicOverride": "ORIG | Stag-Lower_Tramway + Can_Stag + (LEFTCLAW + RIGHTDASH + BACKGROUNDPOGOS + DAMAGEBOOSTS + $TAKEDAMAGE[2] | RIGHTCLAW | WINGS | Plank-Basin_Pale_Ore)",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Plank-Cliff's_Pass",
-        "logicOverride": "",
-        "logicSubstitutions": {
-            "Cliffs_02": "Cliffs_02 | Stag-Gorb + Can_Stag"
-        }
-    },
-    {
-        "name": "Plank-Crystallized_Mound",
-        "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Plank-Fungal_Bouncy_Shortcut",
-        "logicOverride": "Fungus2_10",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Plank-Fungal_Core",
-        "logicOverride": "ORIG | Stag-Fungal_Core + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Quirrel_After_Monomon",
-        "logicOverride": "ORIG | Stag-Teacher's_Archives + Can_Stag + QUIRREL>7 + (LISTEN ? TRUE) + DREAMNAIL + (ACID | LEFTSUPERDASH + RIGHTCLAW) + (LEFTCLAW | WINGS + RIGHTCLAW)",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Quirrel_Peaks",
-        "logicOverride": "",
-        "logicSubstitutions": {
-            "Mines_13[right1]": "Mines_13[right1] | Stag-Overlook + Can_Stag"
-        }
-    },
-    {
-        "name": "Shroom_King_Dream",
-        "logicOverride": "ORIG | Stag-Fungal_Elder + Can_Stag + (RIGHTCLAW | WINGS | LEFTCLAW + (LEFTDASH | LEFTSUPERDASH)) + DREAMNAIL",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Split_Elevator_Pass",
-        "logicOverride": "ORIG | Stag-East_Elevator + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Stalactite-Oro_Dive_Grub_1",
-        "logicOverride": "",
-        "logicSubstitutions": {
-            "Broke_Oro_Quake_Floor_2": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag",
-            "Deepnest_East_14[top2]": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
-        }
-    },
-    {
-        "name": "Stalactite-Oro_Dive_Grub_Path_1",
-        "logicOverride": "",
-        "logicSubstitutions": {
-            "Broke_Oro_Quake_Floor_2": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag",
-            "Deepnest_East_14[top2]": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
-        }
-    },
-    {
-        "name": "Stalactite-Oro_Dive_Grub_Path_2",
-        "logicOverride": "",
-        "logicSubstitutions": {
-            "Broke_Oro_Quake_Floor_2": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag",
-            "Deepnest_East_14[top2]": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
-        }
-    },
-    {
-        "name": "Stalactite-Oro_Dive_Primal_Aspids",
-        "logicOverride": "",
-        "logicSubstitutions": {
-            "Broke_Oro_Quake_Floor_2": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag",
-            "Deepnest_East_14[top2]": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
-        }
-    },
-    {
-        "name": "Stalactite-Oro_Dive_Second_1",
-        "logicOverride": "ORIG | Stag-East_Kingdom's_Edge + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Stalactite-Quick_Slash_Exit_1",
-        "logicOverride": "ORIG | Stag-Quick_Slash + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Tiso_Blue_Lake",
-        "logicOverride": "",
-        "logicSubstitutions": {
-            "SWIM": "SWIM | (TRAM | Upper_Tram_Pass?FALSE | Lower_Tram_Pass?FALSE) + LAKETRAM"
-        }
-    },
-    {
-        "name": "Upper_Glade",
-        "logicOverride": "ORIG | Shrine_of_Believers + (RIGHTCLAW | WINGS + (LEFTDASH | SPELLAIRSTALL + $CASTSPELL) | LEFTSHARPSHADOW + SPELLAIRSTALL + $CASTSPELL[3])",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Wall-Greenpath_Lifeblood",
-        "logicOverride": "ORIG | Stag-Moss_Knight + Can_Stag",
-        "logicSubstitutions": {}
-    },
-    {
-        "name": "Wall-Maggot_Room",
-        "logicOverride": "ORIG | Stag-False_Knight + Can_Stag + Defeated_False_Knight",
-        "logicSubstitutions": {}
+  {
+    "name": "Bardoon",
+    "logicOverride": "ORIG | Stag-Bardoon + Can_Stag + (LEFTCLAW | WINGS) + (LISTEN ? TRUE)",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Bench-Basin_Hub",
+    "logicOverride": "",
+    "logicSubstitutions": {
+      "Abyss_04[top1]": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
     }
+  },
+  {
+    "name": "Cloth_Basin",
+    "logicOverride": "ORIG | Stag-Lower_Tramway + (LEFTDASH | WINGS | LEFTSUPERDASH) + CLOTH + (LISTEN ? TRUE)",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Collapser-Deepnest_By_Mantis_Lords_Path",
+    "logicOverride": "ORIG | Stag-Labyrinth + Can_Stag + (LEFTCLAW | WINGS + (RIGHTCLAW | ENEMYPOGOS + COMPLEXSKIPS + DIFFICULTSKIPS))",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Collapser-Deepnest_By_Mantis_Lords_Bottom",
+    "logicOverride": "ORIG | Stag-Labyrinth + Can_Stag + (WINGS | ANYCLAW | DAMAGEBOOSTS + $TAKEDAMAGE)",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Collapser-Waterways_Tram_Grub",
+    "logicOverride": "ORIG | Stag-East_Waterways + Can_Stag + ((RIGHTSUPERDASH | ACID) + (RIGHTCLAW | LEFTCLAW + WINGS) + Collapser-Waterways_Tram_Grub | RIGHTSUPERDASH + WINGS + (RIGHTCLAW | LEFTCLAW + ENEMYPOGOS | ENEMYPOGOS + DANGEROUSSKIPS) | ACID + (RIGHTCLAW | LEFTCLAW + WINGS | WINGS + ENEMYPOGOS + DANGEROUSSKIPS))",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Corpse_Dream-Fountain_1",
+    "logicOverride": "",
+    "logicSubstitutions": {
+      "Abyss_04[top1]": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
+    }
+  },
+  {
+    "name": "Corpse_Dream-Pilgrim's_Way",
+    "logicOverride": "ORIG | Stag-Pilgrim's_Way + Can_Stag + DREAMNAIL",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Corpse_Dream-Weavers'_Den",
+    "logicOverride": "ORIG | Stag-Weavers'_Den + Can_Stag + DREAMNAIL + (RIGHTCLAW | WINGS | LEFTCLAW + (RIGHTDASH | RIGHTSUPERDASH)) + Wall-Weaver's_Den_Secret?TRUE",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Defeated_Any_Baldur",
+    "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Defeated_Any_Crystal_Hunter",
+    "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Defeated_Any_Hopper",
+    "logicOverride": "ORIG | Stag-East_Kingdom's_Edge + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Defeated_Any_Maggot",
+    "logicOverride": "",
+    "logicSubstitutions": {
+      "Crossroads_10[left1]": "Crossroads_10[left1] | Stag-False_Knight + Can_Stag + Defeated_False_Knight"
+    }
+  },
+  {
+    "name": "Defeated_Any_Mantis_Petra",
+    "logicOverride": "ORIG | Stag-Upper_Gardens + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Defeated_Any_Mantis_Warrior",
+    "logicOverride": "ORIG | Stag-Mantis_Village + Can_Stag + (Lever-Mantis_Lords_Bottom_Left?FALSE | Lever-Mantis_Lords_Bottom_Right?FALSE)",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Defeated_Any_Mantis_Youth",
+    "logicOverride": "ORIG | Stag-Mantis_Village + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Defeated_Any_Mawlurk",
+    "logicOverride": "ORIG | Stag-Mawlurks + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Defeated_Any_Primal_Aspid",
+    "logicOverride": "ORIG | Stag-East_Kingdom's_Edge + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Defeated_Any_Shadow_Creeper",
+    "logicOverride": "ORIG | Stag-The_Abyss + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Defeated_Any_Shardmite",
+    "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag + (FIREBALL>1 + $CASTSPELL | LEFTCLAW | WINGS + (RIGHTCLAW | SCREAM>1 + $CASTSPELL))",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Defeated_Any_Sibling",
+    "logicOverride": "ORIG | Stag-Birthplace + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Defeated_Any_Spiny_Husk",
+    "logicOverride": "ORIG | Stag-Upper_Gardens + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Defeated_Any_Wingmould",
+    "logicOverride": "ORIG | Stag-Path_of_Pain_Climb + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Dive_Floor-Crystallized_Mound",
+    "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag + Plank-Crystallized_Mound?TRUE + QUAKE + $CASTSPELL",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Dive_Floor-420_Rock_1",
+    "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_1 + Broke_420_Rock_Quake_Floor_2 + Broke_420_Rock_Quake_Floor_3 + Broke_420_Rock_Quake_Floor_4 + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Dive_Floor-420_Rock_2",
+    "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_2 + Broke_420_Rock_Quake_Floor_3 + Broke_420_Rock_Quake_Floor_4 + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Dive_Floor-420_Rock_3",
+    "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_3 + Broke_420_Rock_Quake_Floor_4 + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Dive_Floor-420_Rock_4",
+    "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_4 + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Dive_Floor-420_Rock_5",
+    "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_5 + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Dive_Floor-420_Rock_6",
+    "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_6 + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Dive_Floor-420_Rock_7",
+    "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_7 + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Dive_Floor-420_Rock_8",
+    "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_8 + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Dive_Floor-420_Rock_9",
+    "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_9 + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Dive_Floor-420_Rock_10",
+    "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_10 + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Dive_Floor-420_Rock_11",
+    "logicOverride": "ORIG | Stag-Buried_Treasure + Can_Stag + ANYCLAW + Broke_420_Rock_Quake_Floor_11 + QUAKE + $CASTSPELL",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Fishing_Spot-Pale_Lurker",
+    "logicOverride": "",
+    "logicSubstitutions": {
+      "GG_Lurker[left1]": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
+    }
+  },
+  {
+    "name": "Fishing_Spot-Waterways_Long_Acid_Pool",
+    "logicOverride": "ORIG | Stag-East_Waterways + Can_Stag",
+    "logicSubstitutions": {
+      "GG_Lurker[left1]": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
+    }
+  },
+  {
+    "name": "Fishing_Spot-West_Lake_Shore",
+    "logicOverride": "",
+    "logicSubstitutions": {
+      "SWIM": "SWIM | (TRAM | Upper_Tram_Pass?FALSE | Lower_Tram_Pass?FALSE) + LAKETRAM"
+    }
+  },
+  {
+    "name": "Hornet_Abyss",
+    "logicOverride": "ORIG | Stag-The_Abyss + Can_Stag + (RIGHTDASH + FULLCLAW | WINGS) + (LISTEN ? TRUE) + HORNET>2",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Lever-City_Above_Lemm_Upper",
+    "logicOverride": "ORIG | Stag-Office + Can_Stag + (RIGHTCLAW | LEFTCLAW + (WINGS | ENEMYPOGOS) | WINGS + (LEFTCLAW | ENEMYPOGOS))",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Lever-Crystal_Peak_Tall_Room_Upper",
+    "logicOverride": "ORIG | Stag-Crystal_Peak + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Lever-Failed_Tramway_Right",
+    "logicOverride": "ORIG | Stag-Failed_Tramway + Can_Stag + (WINGS | ANYCLAW)",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Lever-Mantis_Lords_Bottom_Left",
+    "logicOverride": "ORIG | Stag-Mantis_Village + Can_Stag + (Lever-Mantis_Lords_Bottom_Left | Lever-Mantis_Lords_Bottom_Right + ANYCLAW)",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Lever-Mantis_Lords_Bottom_Right",
+    "logicOverride": "ORIG | Stag-Mantis_Village + Can_Stag + (Lever-Mantis_Lords_Bottom_Right | Lever-Mantis_Lords_Bottom_Left + ANYCLAW)",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Lever-Palace_Final",
+    "logicOverride": "ORIG | Stag-Upper_Balcony + Can_Stag + RIGHTDASH",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Lever-Pilgrim's_Way_Left",
+    "logicOverride": "ORIG | Stag-City_Gate + Can_Stag + (ACID | (RIGHTDASH | WINGS) | Lever-Pilgrim's_Way_Left)",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Lever-Pilgrim's_Way_Right",
+    "logicOverride": "ORIG | Stag-City_Gate + Can_Stag + (ACID | (RIGHTDASH | WINGS) + (RIGHTSUPERDASH | Lever-Pilgrim's_Way_Right))",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Lower_Glade",
+    "logicOverride": "ORIG | Shrine_of_Believers",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Lurien's_Telescope",
+    "logicOverride": "ORIG | Stag-Watcher's_Spire + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Middle_Glade",
+    "logicOverride": "ORIG | Shrine_of_Believers + (RIGHTCLAW | LEFTDASH | WINGS | SPELLAIRSTALL + $CASTSPELL[3])",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "MoreDoors-Crystal_Hunter-Crystallized_Mound",
+    "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "MoreDoors-Lesser_Mawlek-Basin_Cloth_by_Tram_Door",
+    "logicOverride": "Abyss_17[top1] + (ANYCLAW | WINGS | DAMAGEBOOSTS + $TAKEDAMAGE)",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "MoreDoors-Mantis_Warrior-Above_Bretta_Bench",
+    "logicOverride": "",
+    "logicSubstitutions": {
+      "Fungus2_13": "Fungus2_13 | Stag-Bretta + Can_Stag"
+    }
+  },
+  {
+    "name": "Mr_Mushroom-Ancient_Basin",
+    "logicOverride": "",
+    "logicSubstitutions": {
+      "Abyss_21[right1]": "Abyss_21[right1] | Stag-Monarch_Wings + Can_Stag"
+    }
+  },
+  {
+    "name": "Plank-Baldur_Shell_Upper",
+    "logicOverride": "ORIG | Stag-Baldur_Shell + Can_Stag + (LEFTCLAW | RIGHTCLAW + WINGS)",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Plank-Basin_Pale_Ore",
+    "logicOverride": "ORIG | Stag-Lower_Tramway + Can_Stag + (LEFTCLAW + RIGHTDASH + BACKGROUNDPOGOS + DAMAGEBOOSTS + $TAKEDAMAGE[2] | RIGHTCLAW | WINGS | Plank-Basin_Pale_Ore)",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Plank-Cliff's_Pass",
+    "logicOverride": "",
+    "logicSubstitutions": {
+      "Cliffs_02": "Cliffs_02 | Stag-Gorb + Can_Stag"
+    }
+  },
+  {
+    "name": "Plank-Crystallized_Mound",
+    "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Plank-Fungal_Bouncy_Shortcut",
+    "logicOverride": "Fungus2_10",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Plank-Fungal_Core",
+    "logicOverride": "ORIG | Stag-Fungal_Core + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Quirrel_After_Monomon",
+    "logicOverride": "ORIG | Stag-Teacher's_Archives + Can_Stag + QUIRREL>7 + (LISTEN ? TRUE) + DREAMNAIL + (ACID | LEFTSUPERDASH + RIGHTCLAW) + (LEFTCLAW | WINGS + RIGHTCLAW)",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Quirrel_Peaks",
+    "logicOverride": "",
+    "logicSubstitutions": {
+      "Mines_13[right1]": "Mines_13[right1] | Stag-Overlook + Can_Stag"
+    }
+  },
+  {
+    "name": "Shroom_King_Dream",
+    "logicOverride": "ORIG | Stag-Fungal_Elder + Can_Stag + (RIGHTCLAW | WINGS | LEFTCLAW + (LEFTDASH | LEFTSUPERDASH)) + DREAMNAIL",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Split_Elevator_Pass",
+    "logicOverride": "ORIG | Stag-East_Elevator + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Stalactite-Oro_Dive_Grub_1",
+    "logicOverride": "",
+    "logicSubstitutions": {
+      "Broke_Oro_Quake_Floor_2": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag",
+      "Deepnest_East_14[top2]": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
+    }
+  },
+  {
+    "name": "Stalactite-Oro_Dive_Grub_Path_1",
+    "logicOverride": "",
+    "logicSubstitutions": {
+      "Broke_Oro_Quake_Floor_2": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag",
+      "Deepnest_East_14[top2]": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
+    }
+  },
+  {
+    "name": "Stalactite-Oro_Dive_Grub_Path_2",
+    "logicOverride": "",
+    "logicSubstitutions": {
+      "Broke_Oro_Quake_Floor_2": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag",
+      "Deepnest_East_14[top2]": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
+    }
+  },
+  {
+    "name": "Stalactite-Oro_Dive_Primal_Aspids",
+    "logicOverride": "",
+    "logicSubstitutions": {
+      "Broke_Oro_Quake_Floor_2": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag",
+      "Deepnest_East_14[top2]": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
+    }
+  },
+  {
+    "name": "Stalactite-Oro_Dive_Second_1",
+    "logicOverride": "ORIG | Stag-East_Kingdom's_Edge + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Stalactite-Quick_Slash_Exit_1",
+    "logicOverride": "ORIG | Stag-Quick_Slash + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Tiso_Blue_Lake",
+    "logicOverride": "",
+    "logicSubstitutions": {
+      "SWIM": "SWIM | (TRAM | Upper_Tram_Pass?FALSE | Lower_Tram_Pass?FALSE) + LAKETRAM"
+    }
+  },
+  {
+    "name": "Upper_Glade",
+    "logicOverride": "ORIG | Shrine_of_Believers + (RIGHTCLAW | WINGS + (LEFTDASH | SPELLAIRSTALL + $CASTSPELL) | LEFTSHARPSHADOW + SPELLAIRSTALL + $CASTSPELL[3])",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Wall-Greenpath_Lifeblood",
+    "logicOverride": "ORIG | Stag-Moss_Knight + Can_Stag",
+    "logicSubstitutions": {}
+  },
+  {
+    "name": "Wall-Maggot_Room",
+    "logicOverride": "ORIG | Stag-False_Knight + Can_Stag + Defeated_False_Knight",
+    "logicSubstitutions": {}
+  }
 ]

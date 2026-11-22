@@ -1,432 +1,442 @@
 [
-    {
-        "name": "Abyss_17[top1]",
-        "old": "Abyss_17[top1]",
-        "replacement": "Abyss_17[top1] | Stag-Lower_Tramway + Can_Stag"
-    },
-    {
-        "name": "Abyss_20[top2]",
-        "old": "Abyss_20[top1]",
-        "replacement": "Abyss_20[top1] | Stag-Mawlurks + Can_Stag"
-    },
-    {
-        "name": "Ancient_Basin_Map",
-        "old": "Abyss_04[top1]",
-        "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
-    },
-    {
-        "name": "Bench-Archives",
-        "old": "Fungus3_archive[bot1]",
-        "replacement": "Fungus3_archive[bot1] | Stag-Archives_Entrance + Can_Stag"
-    },
-    {
-        "name": "Broke_Oro_Quake_Floor_3",
-        "old": "Broke_Oro_Quake_Floor_2",
-        "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
-    },
-    {
-        "name": "Broke_Oro_Quake_Floor_3",
-        "old": "Deepnest_East_14[top2]",
-        "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
-    },
-    {
-        "name": "Cliffs_02[right1]",
-        "old": "Cliffs_02",
-        "replacement": "Cliffs_02 | Stag-Gorb + Can_Stag"
-    },
-    {
-        "name": "Completed_Path_of_Pain",
-        "old": "White_Palace_20[bot1]",
-        "replacement": "White_Palace_20[bot1] | Stag-Path_of_Pain_Final + Can_Stag"
-    },
-    {
-        "name": "Crossroads_18",
-        "old": "Crossroads_18[right1]",
-        "replacement": "Crossroads_18[right1] | Stag-Southwest_Crossroads + Can_Stag"
-    },
-    {
-        "name": "Crossroads_36[right1]",
-        "old": "Crossroads_36[right2]",
-        "replacement": "Crossroads_36[right2] | Stag-Brooding_Mawlek + Can_Stag"
-    },
-    {
-        "name": "Crossroads_36[right2]",
-        "old": "Crossroads_36[right2]",
-        "replacement": "Crossroads_36[right2] | Stag-Brooding_Mawlek + Can_Stag"
-    },
-    {
-        "name": "Crossroads_50[left1]",
-        "old": "LEFTSUPERDASH",
-        "replacement": "LEFTSUPERDASH | (TRAM | Upper_Tram_Pass?FALSE | Lower_Tram_Pass?FALSE) + LAKETRAM"
-    },
-    {
-        "name": "Crossroads_50[right1]",
-        "old": "RIGHTSUPERDASH",
-        "replacement": "RIGHTSUPERDASH | (TRAM | Upper_Tram_Pass?FALSE | Lower_Tram_Pass?FALSE) + LAKETRAM"
-    },
-    {
-        "name": "Deepnest_35",
-        "old": "Deepnest_35[bot1]",
-        "replacement": "Deepnest_35[bot1] | Stag-Galien + Can_Stag"
-    },
-    {
-        "name": "Deepnest_East_02",
-        "old": "Deepnest_East_02[bot1]",
-        "replacement": "Deepnest_East_02[bot1] | Stag-Lower_Kingdom's_Edge + Can_Stag + (LEFTDASH | WINGS | LEFTSUPERDASH | ACID | SPELLAIRSTALL + $CASTSPELL)"
-    },
-    {
-        "name": "Deepnest_East_14[door1]",
-        "old": "Deepnest_East_14[top2]",
-        "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
-    },
-    {
-        "name": "Deepnest_East_14[door1]",
-        "old": "Broke_Oro_Quake_Floor_2",
-        "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
-    },
-    {
-        "name": "Deepnest_East_14[left1]",
-        "old": "Deepnest_East_14[top2]",
-        "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
-    },
-    {
-        "name": "Deepnest_East_14[left1]",
-        "old": "Broke_Oro_Quake_Floor_2",
-        "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
-    },
-    {
-        "name": "Defeated_False_Knight",
-        "old": "Crossroads_10[right1]",
-        "replacement": "Crossroads_10[right1] | Stag-False_Knight + Can_Stag + (ANYCLAW | WINGS | RIGHTDASH | ENEMYPOGOS)"
-    },
-    {
-        "name": "Defeated_Pale_Lurker",
-        "old": "GG_Lurker[left1]",
-        "replacement": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
-    },
-    {
-        "name": "Fungus1_02[left1]",
-        "old": "Fungus1_02[right2]",
-        "replacement": "Fungus1_02[right2] | Stag-Waterfall_West + Can_Stag"
-    },
-    {
-        "name": "Fungus2_12[left1]",
-        "old": "Fungus2_12[bot1]",
-        "replacement": "Fungus2_12[bot1] | Stag-Mantis_Outskirts + Can_Stag"
-    },
-    {
-        "name": "Fungus3_39[right1]",
-        "old": "Fungus3_39[left1]",
-        "replacement": "Fungus3_39[left1] | Stag-Love_Key + Can_Stag"
-    },
-    {
-        "name": "Fungus3_48[right2]",
-        "old": "Fungus3_48[bot1]",
-        "replacement": "Fungus3_48[bot1] | Stag-Love_Key + Can_Stag"
-    },
-    {
-        "name": "Geo_Chest-Greenpath",
-        "old": "Fungus1_13[right1]",
-        "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
-    },
-    {
-        "name": "Geo_Rock-Broken_Bridge_Lower",
-        "old": "Abyss_02[right1]",
-        "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag"
-    },
-    {
-        "name": "Geo_Rock-Broken_Bridge_Upper",
-        "old": "Abyss_02[right1]",
-        "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag"
-    },
-    {
-        "name": "Geo_Rock-Crossroads_Above_Mawlek",
-        "old": "Crossroads_36[right2]",
-        "replacement": "Crossroads_36[right2] | Stag-Brooding_Mawlek + Can_Stag"
-    },
-    {
-        "name": "Geo_Rock-Crossroads_Goam_Alcove",
-        "old": "Crossroads_42[right1]",
-        "replacement": "Crossroads_42"
-    },
-    {
-        "name": "Geo_Rock-Crossroads_Goam_Damage_Boost",
-        "old": "Crossroads_42[right1]",
-        "replacement": "Crossroads_42"
-    },
-    {
-        "name": "Geo_Rock-Fungal_After_Cloth",
-        "old": "Fungus2_10[bot1]",
-        "replacement": "Fungus2_10[bot1] | Stag-Pilgrim's_Way + Can_Stag"
-    },
-    {
-        "name": "Geo_Rock-Greenpath_Hunter's_Journal",
-        "old": "Fungus1_07[top1]",
-        "replacement": "Fungus1_07[top1] | Stag-Hunter + Can_Stag"
-    },
-    {
-        "name": "Geo_Rock-Hive_After_Root",
-        "old": "Hive_02[left3]",
-        "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
-    },
-    {
-        "name": "Geo_Rock-Hive_Below_Root",
-        "old": "Hive_02[left3]",
-        "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
-    },
-    {
-        "name": "Geo_Rock-Hive_Outside_Bench",
-        "old": "Hive_02[left3]",
-        "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
-    },
-    {
-        "name": "Geo_Rock-Pale_Lurker",
-        "old": "GG_Lurker[left1]",
-        "replacement": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
-    },
-    {
-        "name": "Geo_Rock-Queen's_Gardens_Above_Marmu",
-        "old": "Fungus3_48[bot1]",
-        "replacement": "Fungus3_48[bot1] | Stag-Love_Key + Can_Stag"
-    },
-    {
-        "name": "Grimmkin_Flame-Ancient_Basin",
-        "old": "Abyss_02[right1]",
-        "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag + (RIGHTCLAW | WINGS | RIGHTDASH | RIGHTSUPERDASH | ENEMYPOGOS)"
-    },
-    {
-        "name": "Grub-Basin_Requires_Dive",
-        "old": "Abyss_17[top1]",
-        "replacement": "Abyss_17[top1] | Stag-Lower_Tramway + Can_Stag"
-    },
-    {
-        "name": "Grub-Greenpath_Journal",
-        "old": "Fungus1_07[top1]",
-        "replacement": "Fungus1_07[top1] | Stag-Hunter + Can_Stag"
-    },
-    {
-        "name": "Grub-Greenpath_MMC",
-        "old": "Fungus1_13[right1]",
-        "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
-    },
-    {
-        "name": "Grub-Kingdom's_Edge_Oro",
-        "old": "Deepnest_East_14[top2]",
-        "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
-    },
-    {
-        "name": "Grub-Kingdom's_Edge_Oro",
-        "old": "Broke_Oro_Quake_Floor_2",
-        "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
-    },
-    {
-        "name": "Grub-King's_Station",
-        "old": "Ruins2_07[left1]",
-        "replacement": "Ruins2_07[left1] | Stag-Flooded_Station + Can_Stag"
-    },
-    {
-        "name": "Grub-Queen's_Gardens_Marmu",
-        "old": "Fungus3_48[bot1]",
-        "replacement": "Fungus3_48[bot1] | Stag-Love_Key + Can_Stag"
-    },
-    {
-        "name": "Hallownest_Seal-Fog_Canyon_West",
-        "old": "Fungus3_30[bot1]",
-        "replacement": "Fungus3_30[bot1] | Stag-West_Fog_Canyon + Can_Stag"
-    },
-    {
-        "name": "Hallownest_Seal-Queen's_Gardens",
-        "old": "Fungus3_48[bot1]",
-        "replacement": "Fungus3_48[bot1] | Stag-Love_Key + Can_Stag"
-    },
-    {
-        "name": "Hive_01[right1]",
-        "old": "Hive_01[left1]",
-        "replacement": "Hive_01[left1] | Stag-Hive_Entryway + Can_Stag"
-    },
-    {
-        "name": "Hive_02[left1]",
-        "old": "Hive_02[left3]",
-        "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
-    },
-    {
-        "name": "Hive_02[left2]",
-        "old": "Hive_02[left3]",
-        "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
-    },
-    {
-        "name": "King's_Idol-Pale_Lurker",
-        "old": "GG_Lurker[left1]",
-        "replacement": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
-    },
-    {
-        "name": "Lifeblood_Cocoon-Fog_Canyon_West",
-        "old": "Fungus3_30[bot1]",
-        "replacement": "Fungus3_30[bot1] | Stag-West_Fog_Canyon + Can_Stag"
-    },
-    {
-        "name": "Lifeblood_Cocoon-Greenpath",
-        "old": "Fungus1_32[top1]",
-        "replacement": "Fungus1_32[top1] | Stag-Moss_Knight + Can_Stag"
-    },
-    {
-        "name": "Lore_Tablet-Greenpath_QG",
-        "old": "Fungus1_13[right1]",
-        "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
-    },
-    {
-        "name": "Lore_Tablet-Mantis_Outskirts",
-        "old": "Fungus2_12[bot1]",
-        "replacement": "Fungus2_12[bot1] | Stag-Mantis_Outskirts + Can_Stag"
-    },
-    {
-        "name": "Lore_Tablet-Palace_Workshop",
-        "old": "White_Palace_08[right1]",
-        "replacement": "White_Palace_08[right1] | Stag-Workshop + Can_Stag"
-    },
-    {
-        "name": "Lore_Tablet-Watcher's_Spire",
-        "old": "Ruins2_Watcher_Room[bot1]",
-        "replacement": "Ruins2_Watcher_Room[bot1] | Stag-Watcher's_Spire + Can_Stag"
-    },
-    {
-        "name": "Love_Key",
-        "old": "Fungus3_39[left1]",
-        "replacement": "Fungus3_39[left1] | Stag-Love_Key + Can_Stag + (ANYCLAW | WINGS)"
-    },
-    {
-        "name": "Lurien",
-        "old": "Ruins2_Watcher_Room[bot1]",
-        "replacement": "Ruins2_Watcher_Room[bot1] | Stag-Watcher's_Spire + Can_Stag"
-    },
-    {
-        "name": "Monarch_Wings",
-        "old": "Abyss_21[right1]",
-        "replacement": "Abyss_21[right1] | Stag-Monarch_Wings + Can_Stag"
-    },
-    {
-        "name": "Rancid_Egg-Near_Quick_Slash",
-        "old": "Deepnest_East_14[top2]",
-        "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
-    },
-    {
-        "name": "Rancid_Egg-Near_Quick_Slash",
-        "old": "Broke_Oro_Quake_Floor_2",
-        "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
-    },
-    {
-        "name": "Ruins2_07[right1]",
-        "old": "Ruins2_07[left1]",
-        "replacement": "Ruins2_07[left1] | Stag-Flooded_Station + Can_Stag"
-    },
-    {
-        "name": "Ruins2_07[top1]",
-        "old": "Ruins2_07[left1]",
-        "replacement": "Ruins2_07[left1] | Stag-Flooded_Station + Can_Stag"
-    },
-    {
-        "name": "Ruins2_07[left1]",
-        "old": "Ruins2_07[left1]",
-        "replacement": "Ruins2_07[left1] | Stag-Flooded_Station + Can_Stag"
-    },
-    {
-        "name": "Simple_Key-City",
-        "old": "Ruins1_17[top1]",
-        "replacement": "Ruins1_17[top1] | Stag-Lower_Storerooms + Can_Stag"
-    },
-    {
-        "name": "Simple_Key-Lurker",
-        "old": "GG_Lurker[left1]",
-        "replacement": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
-    },
-    {
-        "name": "Soul_Totem-Basin",
-        "old": "Abyss_04[top1]",
-        "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
-    },
-    {
-        "name": "Soul_Totem-Oro_Dive_2",
-        "old": "Deepnest_East_14[top2]",
-        "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
-    },
-    {
-        "name": "Soul_Totem-Oro_Dive_2",
-        "old": "Broke_Oro_Quake_Floor_2",
-        "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
-    },
-    {
-        "name": "Soul_Totem-Crossroads_Mawlek_Lower",
-        "old": "Crossroads_36[right2]",
-        "replacement": "Crossroads_36[right2] | Stag-Brooding_Mawlek + Can_Stag"
-    },
-    {
-        "name": "Soul_Totem-Greenpath_Hunter's_Journal",
-        "old": "Fungus1_07[top1]",
-        "replacement": "Fungus1_07[top1] | Stag-Hunter + Can_Stag"
-    },
-    {
-        "name": "Soul_Totem-Path_of_Pain_Below_Thornskip",
-        "old": "White_Palace_19[top1]",
-        "replacement": "White_Palace_19[top1] | Stag-Path_of_Pain_Climb + Can_Stag"
-    },
-    {
-        "name": "Soul_Totem-Path_of_Pain_Final",
-        "old": "White_Palace_20[bot1]",
-        "replacement": "White_Palace_20[bot1] | Stag-Path_of_Pain_Final + Can_Stag"
-    },
-    {
-        "name": "Vessel_Fragment-Basin",
-        "old": "Abyss_04[top1]",
-        "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
-    },
-    {
-        "name": "Vessel_Fragment-Greenpath",
-        "old": "Fungus1_13[right1]",
-        "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
-    },
-    {
-        "name": "Wanderer's_Journal-Ancient_Basin",
-        "old": "Abyss_02[right1]",
-        "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag + (RIGHTCLAW | WINGS | RIGHTDASH | RIGHTSUPERDASH | ENEMYPOGOS)"
-    },
-    {
-        "name": "Whispering_Root-City",
-        "old": "Ruins1_17[top1]",
-        "replacement": "Ruins1_17[top1] | Stag-Lower_Storerooms + Can_Stag"
-    },
-    {
-        "name": "Whispering_Root-Hive",
-        "old": "Hive_02[left3]",
-        "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
-    },
-    {
-        "name": "White_Palace_01",
-        "old": "White_Palace[left1]",
-        "replacement": "White_Palace[left1] | Stag-Palace_Foyer + Can_Stag"
-    },
-    {
-        "name": "White_Palace_04[right2]",
-        "old": "White_Palace_04[top1]",
-        "replacement": "White_Palace_04[top1] | Stag-Lower_Left_Atrium + Can_Stag"
-    },
-    {
-        "name": "White_Palace_08[left1]",
-        "old": "White_Palace_08[right1]",
-        "replacement": "White_Palace_08[right1] | Stag-Workshop + Can_Stag"
-    },
-    {
-        "name": "White_Palace_08[right1]",
-        "old": "White_Palace_08[right1]",
-        "replacement": "White_Palace_08[right1] | Stag-Workshop + Can_Stag"
-    },
-    {
-        "name": "White_Palace_11[door2]",
-        "old": "Warp-Palace_Grounds_to_White_Palace",
-        "replacement": "Warp-Palace_Grounds_to_White_Palace | Stag-Palace_Entrance + Can_Stag"
-    },
-    {
-        "name": "White_Palace_19[left1]",
-        "old": "White_Palace_19[top1]",
-        "replacement": "White_Palace_19[top1] | Stag-Path_of_Pain_Climb + Can_Stag"
-    }
+  {
+    "name": "Abyss_17[top1]",
+    "old": "Abyss_17[top1]",
+    "replacement": "Abyss_17[top1] | Stag-Lower_Tramway + Can_Stag"
+  },
+  {
+    "name": "Abyss_20[top2]",
+    "old": "Abyss_20[top1]",
+    "replacement": "Abyss_20[top1] | Stag-Mawlurks + Can_Stag"
+  },
+  {
+    "name": "Ancient_Basin_Map",
+    "old": "Abyss_04[top1]",
+    "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
+  },
+  {
+    "name": "Bench-Archives",
+    "old": "Fungus3_archive[bot1]",
+    "replacement": "Fungus3_archive[bot1] | Stag-Archives_Entrance + Can_Stag"
+  },
+  {
+    "name": "Broke_Oro_Quake_Floor_3",
+    "old": "Broke_Oro_Quake_Floor_2",
+    "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
+  },
+  {
+    "name": "Broke_Oro_Quake_Floor_3",
+    "old": "Deepnest_East_14[top2]",
+    "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
+  },
+  {
+    "name": "Cliffs_02[right1]",
+    "old": "Cliffs_02",
+    "replacement": "Cliffs_02 | Stag-Gorb + Can_Stag"
+  },
+  {
+    "name": "Completed_Path_of_Pain",
+    "old": "White_Palace_20[bot1]",
+    "replacement": "White_Palace_20[bot1] | Stag-Path_of_Pain_Final + Can_Stag"
+  },
+  {
+    "name": "Crossroads_18",
+    "old": "Crossroads_18[right1]",
+    "replacement": "Crossroads_18[right1] | Stag-Southwest_Crossroads + Can_Stag"
+  },
+  {
+    "name": "Crossroads_36[right1]",
+    "old": "Crossroads_36[right2]",
+    "replacement": "Crossroads_36[right2] | Stag-Brooding_Mawlek + Can_Stag"
+  },
+  {
+    "name": "Crossroads_36[right2]",
+    "old": "Crossroads_36[right2]",
+    "replacement": "Crossroads_36[right2] | Stag-Brooding_Mawlek + Can_Stag"
+  },
+  {
+    "name": "Crossroads_50[left1]",
+    "old": "LEFTSUPERDASH",
+    "replacement": "LEFTSUPERDASH | (TRAM | Upper_Tram_Pass?FALSE | Lower_Tram_Pass?FALSE) + LAKETRAM"
+  },
+  {
+    "name": "Crossroads_50[right1]",
+    "old": "RIGHTSUPERDASH",
+    "replacement": "RIGHTSUPERDASH | (TRAM | Upper_Tram_Pass?FALSE | Lower_Tram_Pass?FALSE) + LAKETRAM"
+  },
+  {
+    "name": "Deepnest_35",
+    "old": "Deepnest_35[bot1]",
+    "replacement": "Deepnest_35[bot1] | Stag-Galien + Can_Stag"
+  },
+  {
+    "name": "Deepnest_East_02",
+    "old": "Deepnest_East_02[bot1]",
+    "replacement": "Deepnest_East_02[bot1] | Stag-Lower_Kingdom's_Edge + Can_Stag + (LEFTDASH | WINGS | LEFTSUPERDASH | ACID | SPELLAIRSTALL + $CASTSPELL)"
+  },
+  {
+    "name": "Deepnest_East_14[door1]",
+    "old": "Deepnest_East_14[top2]",
+    "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
+  },
+  {
+    "name": "Deepnest_East_14[door1]",
+    "old": "Broke_Oro_Quake_Floor_2",
+    "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
+  },
+  {
+    "name": "Deepnest_East_14[left1]",
+    "old": "Deepnest_East_14[top2]",
+    "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
+  },
+  {
+    "name": "Deepnest_East_14[left1]",
+    "old": "Broke_Oro_Quake_Floor_2",
+    "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
+  },
+  {
+    "name": "Defeated_False_Knight",
+    "old": "Crossroads_10[right1]",
+    "replacement": "Crossroads_10[right1] | Stag-False_Knight + Can_Stag + (ANYCLAW | WINGS | RIGHTDASH | ENEMYPOGOS)"
+  },
+  {
+    "name": "Defeated_Mantis_Lords",
+    "old": "Fungus2_15[top3]",
+    "replacement": "Fungus2_15[top3] | Stag-Mantis_Village + Can_Stag + (Lever-Mantis_Lords_Bottom_Left?FALSE | Lever-Mantis_Lords_Bottom_Right?FALSE)"
+  },
+  {
+    "name": "Defeated_Pale_Lurker",
+    "old": "GG_Lurker[left1]",
+    "replacement": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
+  },
+  {
+    "name": "Fungus1_02[left1]",
+    "old": "Fungus1_02[right2]",
+    "replacement": "Fungus1_02[right2] | Stag-Waterfall_West + Can_Stag"
+  },
+  {
+    "name": "Fungus2_12[left1]",
+    "old": "Fungus2_12[bot1]",
+    "replacement": "Fungus2_12[bot1] | Stag-Mantis_Outskirts + Can_Stag"
+  },
+  {
+    "name": "Fungus2_15[left1]",
+    "old": "Fungus2_15[top3]",
+    "replacement": "Fungus2_15[top3] | Stag-Mantis_Village + Can_Stag"
+  },
+  {
+    "name": "Fungus3_39[right1]",
+    "old": "Fungus3_39[left1]",
+    "replacement": "Fungus3_39[left1] | Stag-Love_Key + Can_Stag"
+  },
+  {
+    "name": "Fungus3_48[right2]",
+    "old": "Fungus3_48[bot1]",
+    "replacement": "Fungus3_48[bot1] | Stag-Love_Key + Can_Stag"
+  },
+  {
+    "name": "Geo_Chest-Greenpath",
+    "old": "Fungus1_13[right1]",
+    "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
+  },
+  {
+    "name": "Geo_Rock-Broken_Bridge_Lower",
+    "old": "Abyss_02[right1]",
+    "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag"
+  },
+  {
+    "name": "Geo_Rock-Broken_Bridge_Upper",
+    "old": "Abyss_02[right1]",
+    "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag"
+  },
+  {
+    "name": "Geo_Rock-Crossroads_Above_Mawlek",
+    "old": "Crossroads_36[right2]",
+    "replacement": "Crossroads_36[right2] | Stag-Brooding_Mawlek + Can_Stag"
+  },
+  {
+    "name": "Geo_Rock-Crossroads_Goam_Alcove",
+    "old": "Crossroads_42[right1]",
+    "replacement": "Crossroads_42"
+  },
+  {
+    "name": "Geo_Rock-Crossroads_Goam_Damage_Boost",
+    "old": "Crossroads_42[right1]",
+    "replacement": "Crossroads_42"
+  },
+  {
+    "name": "Geo_Rock-Fungal_After_Cloth",
+    "old": "Fungus2_10[bot1]",
+    "replacement": "Fungus2_10[bot1] | Stag-Pilgrim's_Way + Can_Stag"
+  },
+  {
+    "name": "Geo_Rock-Greenpath_Hunter's_Journal",
+    "old": "Fungus1_07[top1]",
+    "replacement": "Fungus1_07[top1] | Stag-Hunter + Can_Stag"
+  },
+  {
+    "name": "Geo_Rock-Hive_After_Root",
+    "old": "Hive_02[left3]",
+    "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
+  },
+  {
+    "name": "Geo_Rock-Hive_Below_Root",
+    "old": "Hive_02[left3]",
+    "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
+  },
+  {
+    "name": "Geo_Rock-Hive_Outside_Bench",
+    "old": "Hive_02[left3]",
+    "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
+  },
+  {
+    "name": "Geo_Rock-Pale_Lurker",
+    "old": "GG_Lurker[left1]",
+    "replacement": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
+  },
+  {
+    "name": "Geo_Rock-Queen's_Gardens_Above_Marmu",
+    "old": "Fungus3_48[bot1]",
+    "replacement": "Fungus3_48[bot1] | Stag-Love_Key + Can_Stag"
+  },
+  {
+    "name": "Grimmkin_Flame-Ancient_Basin",
+    "old": "Abyss_02[right1]",
+    "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag + (RIGHTCLAW | WINGS | RIGHTDASH | RIGHTSUPERDASH | ENEMYPOGOS)"
+  },
+  {
+    "name": "Grub-Basin_Requires_Dive",
+    "old": "Abyss_17[top1]",
+    "replacement": "Abyss_17[top1] | Stag-Lower_Tramway + Can_Stag"
+  },
+  {
+    "name": "Grub-Greenpath_Journal",
+    "old": "Fungus1_07[top1]",
+    "replacement": "Fungus1_07[top1] | Stag-Hunter + Can_Stag"
+  },
+  {
+    "name": "Grub-Greenpath_MMC",
+    "old": "Fungus1_13[right1]",
+    "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
+  },
+  {
+    "name": "Grub-Kingdom's_Edge_Oro",
+    "old": "Deepnest_East_14[top2]",
+    "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
+  },
+  {
+    "name": "Grub-Kingdom's_Edge_Oro",
+    "old": "Broke_Oro_Quake_Floor_2",
+    "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
+  },
+  {
+    "name": "Grub-King's_Station",
+    "old": "Ruins2_07[left1]",
+    "replacement": "Ruins2_07[left1] | Stag-Flooded_Station + Can_Stag"
+  },
+  {
+    "name": "Grub-Queen's_Gardens_Marmu",
+    "old": "Fungus3_48[bot1]",
+    "replacement": "Fungus3_48[bot1] | Stag-Love_Key + Can_Stag"
+  },
+  {
+    "name": "Hallownest_Seal-Fog_Canyon_West",
+    "old": "Fungus3_30[bot1]",
+    "replacement": "Fungus3_30[bot1] | Stag-West_Fog_Canyon + Can_Stag"
+  },
+  {
+    "name": "Hallownest_Seal-Queen's_Gardens",
+    "old": "Fungus3_48[bot1]",
+    "replacement": "Fungus3_48[bot1] | Stag-Love_Key + Can_Stag"
+  },
+  {
+    "name": "Hive_01[right1]",
+    "old": "Hive_01[left1]",
+    "replacement": "Hive_01[left1] | Stag-Hive_Entryway + Can_Stag"
+  },
+  {
+    "name": "Hive_02[left1]",
+    "old": "Hive_02[left3]",
+    "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
+  },
+  {
+    "name": "Hive_02[left2]",
+    "old": "Hive_02[left3]",
+    "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
+  },
+  {
+    "name": "King's_Idol-Pale_Lurker",
+    "old": "GG_Lurker[left1]",
+    "replacement": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
+  },
+  {
+    "name": "Lifeblood_Cocoon-Fog_Canyon_West",
+    "old": "Fungus3_30[bot1]",
+    "replacement": "Fungus3_30[bot1] | Stag-West_Fog_Canyon + Can_Stag"
+  },
+  {
+    "name": "Lifeblood_Cocoon-Greenpath",
+    "old": "Fungus1_32[top1]",
+    "replacement": "Fungus1_32[top1] | Stag-Moss_Knight + Can_Stag"
+  },
+  {
+    "name": "Lore_Tablet-Greenpath_QG",
+    "old": "Fungus1_13[right1]",
+    "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
+  },
+  {
+    "name": "Lore_Tablet-Mantis_Outskirts",
+    "old": "Fungus2_12[bot1]",
+    "replacement": "Fungus2_12[bot1] | Stag-Mantis_Outskirts + Can_Stag"
+  },
+  {
+    "name": "Lore_Tablet-Palace_Workshop",
+    "old": "White_Palace_08[right1]",
+    "replacement": "White_Palace_08[right1] | Stag-Workshop + Can_Stag"
+  },
+  {
+    "name": "Lore_Tablet-Watcher's_Spire",
+    "old": "Ruins2_Watcher_Room[bot1]",
+    "replacement": "Ruins2_Watcher_Room[bot1] | Stag-Watcher's_Spire + Can_Stag"
+  },
+  {
+    "name": "Love_Key",
+    "old": "Fungus3_39[left1]",
+    "replacement": "Fungus3_39[left1] | Stag-Love_Key + Can_Stag + (ANYCLAW | WINGS)"
+  },
+  {
+    "name": "Lurien",
+    "old": "Ruins2_Watcher_Room[bot1]",
+    "replacement": "Ruins2_Watcher_Room[bot1] | Stag-Watcher's_Spire + Can_Stag"
+  },
+  {
+    "name": "Monarch_Wings",
+    "old": "Abyss_21[right1]",
+    "replacement": "Abyss_21[right1] | Stag-Monarch_Wings + Can_Stag"
+  },
+  {
+    "name": "Rancid_Egg-Near_Quick_Slash",
+    "old": "Deepnest_East_14[top2]",
+    "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
+  },
+  {
+    "name": "Rancid_Egg-Near_Quick_Slash",
+    "old": "Broke_Oro_Quake_Floor_2",
+    "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
+  },
+  {
+    "name": "Ruins2_07[right1]",
+    "old": "Ruins2_07[left1]",
+    "replacement": "Ruins2_07[left1] | Stag-Flooded_Station + Can_Stag"
+  },
+  {
+    "name": "Ruins2_07[top1]",
+    "old": "Ruins2_07[left1]",
+    "replacement": "Ruins2_07[left1] | Stag-Flooded_Station + Can_Stag"
+  },
+  {
+    "name": "Ruins2_07[left1]",
+    "old": "Ruins2_07[left1]",
+    "replacement": "Ruins2_07[left1] | Stag-Flooded_Station + Can_Stag"
+  },
+  {
+    "name": "Simple_Key-City",
+    "old": "Ruins1_17[top1]",
+    "replacement": "Ruins1_17[top1] | Stag-Lower_Storerooms + Can_Stag"
+  },
+  {
+    "name": "Simple_Key-Lurker",
+    "old": "GG_Lurker[left1]",
+    "replacement": "GG_Lurker[left1] | Stag-Pale_Lurker + Can_Stag"
+  },
+  {
+    "name": "Soul_Totem-Basin",
+    "old": "Abyss_04[top1]",
+    "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
+  },
+  {
+    "name": "Soul_Totem-Oro_Dive_2",
+    "old": "Deepnest_East_14[top2]",
+    "replacement": "Deepnest_East_14[top2] | Stag-East_Kingdom's_Edge + Can_Stag"
+  },
+  {
+    "name": "Soul_Totem-Oro_Dive_2",
+    "old": "Broke_Oro_Quake_Floor_2",
+    "replacement": "Broke_Oro_Quake_Floor_2 | Stag-East_Kingdom's_Edge + Can_Stag"
+  },
+  {
+    "name": "Soul_Totem-Crossroads_Mawlek_Lower",
+    "old": "Crossroads_36[right2]",
+    "replacement": "Crossroads_36[right2] | Stag-Brooding_Mawlek + Can_Stag"
+  },
+  {
+    "name": "Soul_Totem-Greenpath_Hunter's_Journal",
+    "old": "Fungus1_07[top1]",
+    "replacement": "Fungus1_07[top1] | Stag-Hunter + Can_Stag"
+  },
+  {
+    "name": "Soul_Totem-Path_of_Pain_Below_Thornskip",
+    "old": "White_Palace_19[top1]",
+    "replacement": "White_Palace_19[top1] | Stag-Path_of_Pain_Climb + Can_Stag"
+  },
+  {
+    "name": "Soul_Totem-Path_of_Pain_Final",
+    "old": "White_Palace_20[bot1]",
+    "replacement": "White_Palace_20[bot1] | Stag-Path_of_Pain_Final + Can_Stag"
+  },
+  {
+    "name": "Vessel_Fragment-Basin",
+    "old": "Abyss_04[top1]",
+    "replacement": "Abyss_04[top1] | Stag-Ancient_Basin + Can_Stag"
+  },
+  {
+    "name": "Vessel_Fragment-Greenpath",
+    "old": "Fungus1_13[right1]",
+    "replacement": "Fungus1_13[right1] | Stag-Durandoos + Can_Stag"
+  },
+  {
+    "name": "Wanderer's_Journal-Ancient_Basin",
+    "old": "Abyss_02[right1]",
+    "replacement": "Abyss_02[right1] | Stag-Broken_Bridge + Can_Stag + (RIGHTCLAW | WINGS | RIGHTDASH | RIGHTSUPERDASH | ENEMYPOGOS)"
+  },
+  {
+    "name": "Whispering_Root-City",
+    "old": "Ruins1_17[top1]",
+    "replacement": "Ruins1_17[top1] | Stag-Lower_Storerooms + Can_Stag"
+  },
+  {
+    "name": "Whispering_Root-Hive",
+    "old": "Hive_02[left3]",
+    "replacement": "Hive_02[left3] | Stag-Honey_Tree + Can_Stag"
+  },
+  {
+    "name": "White_Palace_01",
+    "old": "White_Palace[left1]",
+    "replacement": "White_Palace[left1] | Stag-Palace_Foyer + Can_Stag"
+  },
+  {
+    "name": "White_Palace_04[right2]",
+    "old": "White_Palace_04[top1]",
+    "replacement": "White_Palace_04[top1] | Stag-Lower_Left_Atrium + Can_Stag"
+  },
+  {
+    "name": "White_Palace_08[left1]",
+    "old": "White_Palace_08[right1]",
+    "replacement": "White_Palace_08[right1] | Stag-Workshop + Can_Stag"
+  },
+  {
+    "name": "White_Palace_08[right1]",
+    "old": "White_Palace_08[right1]",
+    "replacement": "White_Palace_08[right1] | Stag-Workshop + Can_Stag"
+  },
+  {
+    "name": "White_Palace_11[door2]",
+    "old": "Warp-Palace_Grounds_to_White_Palace",
+    "replacement": "Warp-Palace_Grounds_to_White_Palace | Stag-Palace_Entrance + Can_Stag"
+  },
+  {
+    "name": "White_Palace_19[left1]",
+    "old": "White_Palace_19[top1]",
+    "replacement": "White_Palace_19[top1] | Stag-Path_of_Pain_Climb + Can_Stag"
+  }
 ]

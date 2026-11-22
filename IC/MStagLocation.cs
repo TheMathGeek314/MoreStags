@@ -1,13 +1,11 @@
-﻿using HutongGames.PlayMaker;
+﻿using UnityEngine;
+using HutongGames.PlayMaker;
 using HutongGames.PlayMaker.Actions;
-using UnityEngine;
-using UnityEngine.SceneManagement;
 using ItemChanger;
 using ItemChanger.Extensions;
 using ItemChanger.FsmStateActions;
 using ItemChanger.Locations;
 using ItemChanger.Placements;
-using uManager = UnityEngine.SceneManagement.SceneManager;
 
 namespace MoreStags {
     public class MStagLocation: CoordinateLocation {
@@ -16,18 +14,18 @@ namespace MoreStags {
 
         protected override void OnLoad() {
             base.OnLoad();
-            uManager.sceneLoaded += TryEditFsm;
+            MoreStags.earlierSceneChange += TryEditFsm;
         }
 
         protected override void OnUnload() {
             base.OnUnload();
-            uManager.sceneLoaded -= TryEditFsm;
+            MoreStags.earlierSceneChange -= TryEditFsm;
         }
 
-        private void TryEditFsm(Scene arg0, LoadSceneMode arg1) {
-            if(arg0.name == UnsafeSceneName)
+        private void TryEditFsm(string scene) {
+            if(scene == UnsafeSceneName)
                 On.PlayMakerFSM.OnEnable += EditMStag;
-            else if(!arg0.name.EndsWith("_boss") && !arg0.name.EndsWith("_boss_defeated"))
+            else if(!scene.EndsWith("_boss") && !scene.EndsWith("_boss_defeated"))
                 On.PlayMakerFSM.OnEnable -= EditMStag;
         }
 
