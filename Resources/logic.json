@@ -373,7 +373,7 @@
   },
   {
     "name": "Stag-Lower_Left_Atrium",
-    "logic": "White_Palace_04[top1] | White_Palace_04[right2] + (LEFTDASH | LEFTSUPERDASH + PRECISEMOVEMENT | OBSCURESKIPS + SPRINT) + (WINGS + (ANYCLAW | PRECISEMOVEMENT) | OBSCURESKIPS + RIGHTCLAW + RIGHTDASH + LEFTSUPERDASH)"
+    "logic": "White_Palace_04[top1] | White_Palace_04[right2] + (LEFTDASH | LEFTSUPERDASH + PRECISEMOVEMENT | OBSCURESKIPS + SPRINT) + (WINGS + (ANYCLAW | PRECISEMOVEMENT) | OBSCURESKIPS + RIGHTCLAW + RIGHTDASH + LEFTSUPERDASH) | Stag-Lower_Left_Atrium + Can_Stag"
   },
   {
     "name": "Stag-Upper_Left_Atrium",
@@ -397,7 +397,7 @@
   },
   {
     "name": "Stag-Upper_Balcony",
-    "logic": "White_Palace_12[bot1] + (RIGHTCLAW + LEFTSUPERDASH + (WINGS | LEFTDASH | Wall-White_Palace_Shortcut?UPWALLBREAK) | Lever-Palace_Final?FALSE + WINGS + ANYCLAW + DIFFICULTSKIPS + (Wall-White_Palace_Shortcut?FALSE + Plank-White_Palace_Shortcut_Exit?FALSE | LEFTDASH))"
+    "logic": "White_Palace_12[bot1] + (RIGHTCLAW + LEFTSUPERDASH + (WINGS | LEFTDASH | Wall-White_Palace_Shortcut?UPWALLBREAK) | Lever-Palace_Final?FALSE + WINGS + ANYCLAW + DIFFICULTSKIPS + (Wall-White_Palace_Shortcut?FALSE + Plank-White_Palace_Shortcut_Exit?FALSE | LEFTDASH)) | Stag-Upper_Balcony + Can_Stag"
   },
   {
     "name": "Stag-Workshop",
